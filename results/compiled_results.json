@@ -1,0 +1,1322 @@
+{
+  "dataset": {
+    "total_pairs": 2217,
+    "labeled_pairs": 346
+  },
+  "l1_interception": {
+    "merge": 1400,
+    "reject": 270,
+    "escalate": 547,
+    "interception_rate": 75.32701849345963
+  },
+  "accuracy": {
+    "exact_string_match": {
+      "precision": 0.9967532467532467,
+      "recall": 0.9136904761904762,
+      "f1": 0.953416149068323,
+      "accuracy": 0.9132947976878613,
+      "tp": 307,
+      "fp": 1,
+      "fn": 29,
+      "tn": 9
+    },
+    "similarity_threshold": {
+      "precision": 0.9967105263157895,
+      "recall": 0.9017857142857143,
+      "f1": 0.946875,
+      "accuracy": 0.9017341040462428,
+      "tp": 303,
+      "fp": 1,
+      "fn": 33,
+      "tn": 9
+    },
+    "l1_only": {
+      "precision": 0.972972972972973,
+      "recall": 0.42857142857142855,
+      "f1": 0.5950413223140496,
+      "accuracy": 0.43352601156069365,
+      "tp": 144,
+      "fp": 4,
+      "fn": 192,
+      "tn": 6
+    },
+    "l1_l2_oracle": {
+      "precision": 0.9866220735785953,
+      "recall": 0.8779761904761905,
+      "f1": 0.9291338582677166,
+      "accuracy": 0.869942196531792,
+      "tp": 295,
+      "fp": 4,
+      "fn": 41,
+      "tn": 6
+    }
+  },
+  "l2": {
+    "model": "glm-5.1",
+    "total_calls": 187,
+    "precision": 0.9852941176470589,
+    "recall": 0.8874172185430463,
+    "f1": 0.9337979094076654,
+    "accuracy": 0.8789808917197452
+  },
+  "ablation": [
+    {
+      "config": "Full System",
+      "accuracy": 0.43352601156069365,
+      "precision": 0.972972972972973,
+      "recall": 0.42857142857142855,
+      "f1": 0.5950413223140496,
+      "tp": 144,
+      "fp": 4,
+      "fn": 192,
+      "tn": 6,
+      "l1_interception_rate": 75.32701849345963,
+      "llm_calls": 547
+    },
+    {
+      "config": "w/o Penalty (λ=1.0)",
+      "accuracy": 0.47109826589595377,
+      "precision": 0.9751552795031055,
+      "recall": 0.46726190476190477,
+      "f1": 0.6317907444668008,
+      "tp": 157,
+      "fp": 4,
+      "fn": 179,
+      "tn": 6,
+      "l1_interception_rate": 65.49391069012178,
+      "llm_calls": 765
+    },
+    {
+      "config": "w/o Hard Conflict",
+      "accuracy": 0.43352601156069365,
+      "precision": 0.972972972972973,
+      "recall": 0.42857142857142855,
+      "f1": 0.5950413223140496,
+      "tp": 144,
+      "fp": 4,
+      "fn": 192,
+      "tn": 6,
+      "l1_interception_rate": 75.32701849345963,
+      "llm_calls": 547
+    },
+    {
+      "config": "w/o Near-Perfect",
+      "accuracy": 0.4277456647398844,
+      "precision": 0.9726027397260274,
+      "recall": 0.4226190476190476,
+      "f1": 0.5892116182572614,
+      "tp": 142,
+      "fp": 4,
+      "fn": 194,
+      "tn": 6,
+      "l1_interception_rate": 75.23680649526388,
+      "llm_calls": 549
+    },
+    {
+      "config": "w/o Penalty + w/o Hard Conflict",
+      "accuracy": 0.47109826589595377,
+      "precision": 0.9751552795031055,
+      "recall": 0.46726190476190477,
+      "f1": 0.6317907444668008,
+      "tp": 157,
+      "fp": 4,
+      "fn": 179,
+      "tn": 6,
+      "l1_interception_rate": 65.49391069012178,
+      "llm_calls": 765
+    },
+    {
+      "config": "Strict Thresholds (0.7/-0.5)",
+      "accuracy": 0.1994219653179191,
+      "precision": 0.9836065573770492,
+      "recall": 0.17857142857142858,
+      "f1": 0.30226700251889166,
+      "tp": 60,
+      "fp": 1,
+      "fn": 276,
+      "tn": 9,
+      "l1_interception_rate": 23.545331529093367,
+      "llm_calls": 1695
+    },
+    {
+      "config": "Loose Thresholds (0.3/-0.1)",
+      "accuracy": 0.7658959537572254,
+      "precision": 0.9704797047970479,
+      "recall": 0.7827380952380952,
+      "f1": 0.8665568369028006,
+      "tp": 263,
+      "fp": 8,
+      "fn": 73,
+      "tn": 2,
+      "l1_interception_rate": 98.33107803337843,
+      "llm_calls": 37
+    }
+  ],
+  "cost": {
+    "exact_string_match": {
+      "llm_calls": 0,
+      "cost_usd": 0.0,
+      "latency_s": 0.2217
+    },
+    "similarity_threshold": {
+      "llm_calls": 0,
+      "cost_usd": 0.0,
+      "latency_s": 1.1085
+    },
+    "pure_llm": {
+      "llm_calls": 2217,
+      "cost_usd": 4.434,
+      "latency_s": 3325.5
+    },
+    "l1_l2_cascade": {
+      "llm_calls": 547,
+      "cost_usd": 1.094,
+      "latency_s": 822.717
+    }
+  },
+  "feedback_loop": {
+    "feedback_loop": {
+      "baseline_accuracy": 0.8789808917197452,
+      "baseline_pairs": 157,
+      "iterations": [
+        {
+          "iteration": 0,
+          "pairs": 32,
+          "correct": 30,
+          "accuracy": 0.9375,
+          "few_shot_count": 0
+        },
+        {
+          "iteration": 1,
+          "pairs": 32,
+          "correct": 29,
+          "accuracy": 0.90625,
+          "few_shot_count": 7
+        },
+        {
+          "iteration": 2,
+          "pairs": 31,
+          "correct": 28,
+          "accuracy": 0.9032258064516129,
+          "few_shot_count": 18
+        },
+        {
+          "iteration": 3,
+          "pairs": 31,
+          "correct": 29,
+          "accuracy": 0.9354838709677419,
+          "few_shot_count": 27
+        },
+        {
+          "iteration": 4,
+          "pairs": 31,
+          "correct": 31,
+          "accuracy": 1.0,
+          "few_shot_count": 35
+        }
+      ]
+    },
+    "all_fold_results": [
+      {
+        "id": 1581,
+        "label": "same",
+        "prediction": "different",
+        "latency_s": 5.283018589019775,
+        "iteration": 0
+      },
+      {
+        "id": 673,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.513108968734741,
+        "iteration": 0
+      },
+      {
+        "id": 2290,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.246395826339722,
+        "iteration": 0
+      },
+      {
+        "id": 2316,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.8308639526367188,
+        "iteration": 0
+      },
+      {
+        "id": 1305,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 10.36792802810669,
+        "iteration": 0
+      },
+      {
+        "id": 1750,
+        "label": "same",
+        "prediction": "different",
+        "latency_s": 11.934636354446411,
+        "iteration": 0
+      },
+      {
+        "id": 675,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.507774829864502,
+        "iteration": 0
+      },
+      {
+        "id": 480,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 7.077112436294556,
+        "iteration": 0
+      },
+      {
+        "id": 511,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.644895553588867,
+        "iteration": 0
+      },
+      {
+        "id": 945,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 6.838154077529907,
+        "iteration": 0
+      },
+      {
+        "id": 686,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.751416444778442,
+        "iteration": 0
+      },
+      {
+        "id": 2318,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.723989725112915,
+        "iteration": 0
+      },
+      {
+        "id": 668,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 7.354465961456299,
+        "iteration": 0
+      },
+      {
+        "id": 520,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.132023572921753,
+        "iteration": 0
+      },
+      {
+        "id": 510,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 10.17350959777832,
+        "iteration": 0
+      },
+      {
+        "id": 2171,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.817822456359863,
+        "iteration": 0
+      },
+      {
+        "id": 1580,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.959522724151611,
+        "iteration": 0
+      },
+      {
+        "id": 1594,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.1461501121521,
+        "iteration": 0
+      },
+      {
+        "id": 2044,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.1137709617614746,
+        "iteration": 0
+      },
+      {
+        "id": 1501,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 8.198297023773193,
+        "iteration": 0
+      },
+      {
+        "id": 2276,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.328524589538574,
+        "iteration": 0
+      },
+      {
+        "id": 724,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.847806215286255,
+        "iteration": 0
+      },
+      {
+        "id": 20,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 10.665654420852661,
+        "iteration": 0
+      },
+      {
+        "id": 947,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 9.319027423858643,
+        "iteration": 0
+      },
+      {
+        "id": 513,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.272147178649902,
+        "iteration": 0
+      },
+      {
+        "id": 21,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.76652455329895,
+        "iteration": 0
+      },
+      {
+        "id": 2043,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.504239320755005,
+        "iteration": 0
+      },
+      {
+        "id": 679,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 8.110175132751465,
+        "iteration": 0
+      },
+      {
+        "id": 2496,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 12.314967393875122,
+        "iteration": 0
+      },
+      {
+        "id": 16,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.698381662368774,
+        "iteration": 0
+      },
+      {
+        "id": 38,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 6.888548851013184,
+        "iteration": 0
+      },
+      {
+        "id": 15,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.80802583694458,
+        "iteration": 0
+      },
+      {
+        "id": 518,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.151709794998169,
+        "iteration": 1
+      },
+      {
+        "id": 892,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 6.263967514038086,
+        "iteration": 1
+      },
+      {
+        "id": 240,
+        "label": "different",
+        "prediction": "same",
+        "latency_s": 6.677226781845093,
+        "iteration": 1
+      },
+      {
+        "id": 3,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.283186435699463,
+        "iteration": 1
+      },
+      {
+        "id": 2288,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.2428576946258545,
+        "iteration": 1
+      },
+      {
+        "id": 1434,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.466419458389282,
+        "iteration": 1
+      },
+      {
+        "id": 677,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 7.440662384033203,
+        "iteration": 1
+      },
+      {
+        "id": 1737,
+        "label": "same",
+        "prediction": "different",
+        "latency_s": 7.693537473678589,
+        "iteration": 1
+      },
+      {
+        "id": 39,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.9540162086486816,
+        "iteration": 1
+      },
+      {
+        "id": 1503,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 19.082359790802002,
+        "iteration": 1
+      },
+      {
+        "id": 557,
+        "label": "same",
+        "prediction": "different",
+        "latency_s": 9.228069067001343,
+        "iteration": 1
+      },
+      {
+        "id": 684,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.009794235229492,
+        "iteration": 1
+      },
+      {
+        "id": 1168,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.513604164123535,
+        "iteration": 1
+      },
+      {
+        "id": 1924,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.993105173110962,
+        "iteration": 1
+      },
+      {
+        "id": 2541,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 8.13047194480896,
+        "iteration": 1
+      },
+      {
+        "id": 1797,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 7.966776371002197,
+        "iteration": 1
+      },
+      {
+        "id": 19,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.462893009185791,
+        "iteration": 1
+      },
+      {
+        "id": 516,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.330263376235962,
+        "iteration": 1
+      },
+      {
+        "id": 2295,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 6.552468538284302,
+        "iteration": 1
+      },
+      {
+        "id": 1593,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 7.880034685134888,
+        "iteration": 1
+      },
+      {
+        "id": 894,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.144862174987793,
+        "iteration": 1
+      },
+      {
+        "id": 729,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 6.612213134765625,
+        "iteration": 1
+      },
+      {
+        "id": 1596,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 6.5707197189331055,
+        "iteration": 1
+      },
+      {
+        "id": 14,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.742694616317749,
+        "iteration": 1
+      },
+      {
+        "id": 1824,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 13.409778594970703,
+        "iteration": 1
+      },
+      {
+        "id": 24,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 16.00785994529724,
+        "iteration": 1
+      },
+      {
+        "id": 889,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 6.349531412124634,
+        "iteration": 1
+      },
+      {
+        "id": 1505,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 16.092340230941772,
+        "iteration": 1
+      },
+      {
+        "id": 1795,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.256591320037842,
+        "iteration": 1
+      },
+      {
+        "id": 18,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 11.458887100219727,
+        "iteration": 1
+      },
+      {
+        "id": 501,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 1.8573462963104248,
+        "iteration": 1
+      },
+      {
+        "id": 44,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 11.783117771148682,
+        "iteration": 1
+      },
+      {
+        "id": 504,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.5345749855041504,
+        "iteration": 2
+      },
+      {
+        "id": 1597,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.787435293197632,
+        "iteration": 2
+      },
+      {
+        "id": 1060,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 14.420409202575684,
+        "iteration": 2
+      },
+      {
+        "id": 683,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.9820473194122314,
+        "iteration": 2
+      },
+      {
+        "id": 1508,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 17.469475269317627,
+        "iteration": 2
+      },
+      {
+        "id": 2109,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 32.19239783287048,
+        "iteration": 2
+      },
+      {
+        "id": 9,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.27065896987915,
+        "iteration": 2
+      },
+      {
+        "id": 25,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.555887222290039,
+        "iteration": 2
+      },
+      {
+        "id": 1050,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 11.498922348022461,
+        "iteration": 2
+      },
+      {
+        "id": 671,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.1584579944610596,
+        "iteration": 2
+      },
+      {
+        "id": 37,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.395036220550537,
+        "iteration": 2
+      },
+      {
+        "id": 879,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.9268524646759033,
+        "iteration": 2
+      },
+      {
+        "id": 1658,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.8555057048797607,
+        "iteration": 2
+      },
+      {
+        "id": 10,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.5066235065460205,
+        "iteration": 2
+      },
+      {
+        "id": 1796,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.990804672241211,
+        "iteration": 2
+      },
+      {
+        "id": 432,
+        "label": "same",
+        "prediction": "different",
+        "latency_s": 12.868723154067993,
+        "iteration": 2
+      },
+      {
+        "id": 748,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.6390018463134766,
+        "iteration": 2
+      },
+      {
+        "id": 32,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.065688848495483,
+        "iteration": 2
+      },
+      {
+        "id": 1502,
+        "label": "same",
+        "prediction": "different",
+        "latency_s": 10.590988636016846,
+        "iteration": 2
+      },
+      {
+        "id": 46,
+        "label": "different",
+        "prediction": "same",
+        "latency_s": 14.202728033065796,
+        "iteration": 2
+      },
+      {
+        "id": 36,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 15.06078028678894,
+        "iteration": 2
+      },
+      {
+        "id": 1435,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.874373197555542,
+        "iteration": 2
+      },
+      {
+        "id": 26,
+        "label": "different",
+        "prediction": "different",
+        "latency_s": 9.511047124862671,
+        "iteration": 2
+      },
+      {
+        "id": 1379,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.272001028060913,
+        "iteration": 2
+      },
+      {
+        "id": 514,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.611257553100586,
+        "iteration": 2
+      },
+      {
+        "id": 880,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.65816855430603,
+        "iteration": 2
+      },
+      {
+        "id": 2287,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 6.429890155792236,
+        "iteration": 2
+      },
+      {
+        "id": 595,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.44884467124939,
+        "iteration": 2
+      },
+      {
+        "id": 667,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.062753677368164,
+        "iteration": 2
+      },
+      {
+        "id": 1482,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.764789342880249,
+        "iteration": 2
+      },
+      {
+        "id": 665,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.61260724067688,
+        "iteration": 2
+      },
+      {
+        "id": 30,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.1640491485595703,
+        "iteration": 3
+      },
+      {
+        "id": 1991,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 10.484572649002075,
+        "iteration": 3
+      },
+      {
+        "id": 28,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 7.303646087646484,
+        "iteration": 3
+      },
+      {
+        "id": 512,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 1.8166940212249756,
+        "iteration": 3
+      },
+      {
+        "id": 8,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.0878682136535645,
+        "iteration": 3
+      },
+      {
+        "id": 1579,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.1369147300720215,
+        "iteration": 3
+      },
+      {
+        "id": 1061,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 6.2386415004730225,
+        "iteration": 3
+      },
+      {
+        "id": 2273,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.8727409839630127,
+        "iteration": 3
+      },
+      {
+        "id": 682,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.929478645324707,
+        "iteration": 3
+      },
+      {
+        "id": 27,
+        "label": "different",
+        "prediction": "different",
+        "latency_s": 4.6902992725372314,
+        "iteration": 3
+      },
+      {
+        "id": 2046,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.2671077251434326,
+        "iteration": 3
+      },
+      {
+        "id": 2045,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.203308343887329,
+        "iteration": 3
+      },
+      {
+        "id": 1062,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.540826320648193,
+        "iteration": 3
+      },
+      {
+        "id": 948,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 10.041345596313477,
+        "iteration": 3
+      },
+      {
+        "id": 840,
+        "label": "same",
+        "prediction": "different",
+        "latency_s": 5.970962285995483,
+        "iteration": 3
+      },
+      {
+        "id": 1504,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 18.354331254959106,
+        "iteration": 3
+      },
+      {
+        "id": 500,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.0828893184661865,
+        "iteration": 3
+      },
+      {
+        "id": 1398,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 12.669233798980713,
+        "iteration": 3
+      },
+      {
+        "id": 1595,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 1.7150726318359375,
+        "iteration": 3
+      },
+      {
+        "id": 878,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.7985949516296387,
+        "iteration": 3
+      },
+      {
+        "id": 681,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.986124277114868,
+        "iteration": 3
+      },
+      {
+        "id": 503,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 13.696767091751099,
+        "iteration": 3
+      },
+      {
+        "id": 676,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.7735400199890137,
+        "iteration": 3
+      },
+      {
+        "id": 499,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.748977899551392,
+        "iteration": 3
+      },
+      {
+        "id": 22,
+        "label": "different",
+        "prediction": "same",
+        "latency_s": 23.00501585006714,
+        "iteration": 3
+      },
+      {
+        "id": 2249,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.5484282970428467,
+        "iteration": 3
+      },
+      {
+        "id": 509,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.871690511703491,
+        "iteration": 3
+      },
+      {
+        "id": 1436,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.282797336578369,
+        "iteration": 3
+      },
+      {
+        "id": 560,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 7.772818326950073,
+        "iteration": 3
+      },
+      {
+        "id": 34,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.720467805862427,
+        "iteration": 3
+      },
+      {
+        "id": 670,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 10.325718402862549,
+        "iteration": 3
+      },
+      {
+        "id": 2048,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 1.9482324123382568,
+        "iteration": 4
+      },
+      {
+        "id": 680,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 11.781076431274414,
+        "iteration": 4
+      },
+      {
+        "id": 1029,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 11.323750972747803,
+        "iteration": 4
+      },
+      {
+        "id": 674,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.7611353397369385,
+        "iteration": 4
+      },
+      {
+        "id": 31,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 8.050882339477539,
+        "iteration": 4
+      },
+      {
+        "id": 669,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.3244376182556152,
+        "iteration": 4
+      },
+      {
+        "id": 556,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 10.029602766036987,
+        "iteration": 4
+      },
+      {
+        "id": 521,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.345156669616699,
+        "iteration": 4
+      },
+      {
+        "id": 672,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 17.364484548568726,
+        "iteration": 4
+      },
+      {
+        "id": 893,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 7.319790840148926,
+        "iteration": 4
+      },
+      {
+        "id": 1500,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 24.151999711990356,
+        "iteration": 4
+      },
+      {
+        "id": 502,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.071331262588501,
+        "iteration": 4
+      },
+      {
+        "id": 1531,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.222454786300659,
+        "iteration": 4
+      },
+      {
+        "id": 2274,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 9.963673114776611,
+        "iteration": 4
+      },
+      {
+        "id": 946,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.9471139907836914,
+        "iteration": 4
+      },
+      {
+        "id": 33,
+        "label": "different",
+        "prediction": "different",
+        "latency_s": 28.042993545532227,
+        "iteration": 4
+      },
+      {
+        "id": 2291,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 8.930729866027832,
+        "iteration": 4
+      },
+      {
+        "id": 739,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 32.14561128616333,
+        "iteration": 4
+      },
+      {
+        "id": 1059,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.53214430809021,
+        "iteration": 4
+      },
+      {
+        "id": 1525,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.37944483757019,
+        "iteration": 4
+      },
+      {
+        "id": 515,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.567155599594116,
+        "iteration": 4
+      },
+      {
+        "id": 2322,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.345989465713501,
+        "iteration": 4
+      },
+      {
+        "id": 666,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 3.3066608905792236,
+        "iteration": 4
+      },
+      {
+        "id": 685,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.521945238113403,
+        "iteration": 4
+      },
+      {
+        "id": 517,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 2.5678272247314453,
+        "iteration": 4
+      },
+      {
+        "id": 508,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.235492944717407,
+        "iteration": 4
+      },
+      {
+        "id": 7,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 13.174798488616943,
+        "iteration": 4
+      },
+      {
+        "id": 519,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 17.891069412231445,
+        "iteration": 4
+      },
+      {
+        "id": 35,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 5.276876926422119,
+        "iteration": 4
+      },
+      {
+        "id": 2047,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 12.710853815078735,
+        "iteration": 4
+      },
+      {
+        "id": 678,
+        "label": "same",
+        "prediction": "same",
+        "latency_s": 4.417824745178223,
+        "iteration": 4
+      }
+    ],
+    "baseline_accuracy": 0.8789808917197452
+  }
+}
