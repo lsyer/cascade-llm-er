@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USN Monitor — 美海军全球态势感知</title>
+<link href="./css/maplibre-gl.css" rel="stylesheet" />
+<link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+
+<!-- 全宽顶部导航 -->
+<nav id="topnav">
+  <div class="nav-brand">⚓ USN Monitor</div>
+  <div class="nav-links">
+    <button class="nav-link active" data-view="dashboard">🗺️ 态势首页</button>
+    <button class="nav-link" data-view="articles">📰 原始数据</button>
+    <button class="nav-link" data-view="knowledge">📖 知识百科</button>
+    <button class="nav-link" data-view="pending">⚠️ 待决队列</button>
+  </div>
+  <div class="nav-stats" id="stats">加载中...</div>
+</nav>
+
+<!-- ═══ 态势首页 ═══ -->
+<div id="app">
+  <div id="map"></div>
+  <div id="sidebar">
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="搜索舰船、人员、基地、活动..." />
+    </div>
+    <div class="entity-tabs">
+      <button class="entity-tab active" data-type="equipment">⚙️ 器装</button>
+      <button class="entity-tab" data-type="person">👤 人员</button>
+      <button class="entity-tab" data-type="location">📍 位置</button>
+      <button class="entity-tab" data-type="activity">🎯 活动</button>
+    </div>
+    <div class="sub-filters" id="sub-filters"></div>
+    <div class="entity-list" id="entity-list"></div>
+  </div>
+  <button id="sidebar-toggle" onclick="toggleSidebar()">▶</button>
+  <div id="detail-panel">
+    <button class="close-btn" onclick="closeDetail()">✕</button>
+    <div id="detail-content"></div>
+  </div>
+</div>
+
+<div class="toolbar">
+  <button onclick="refreshData()">🔄 刷新数据</button>
+  <button onclick="toggleHeatmap()">🔥 热力图</button>
+  <button onclick="showTracks()">📍 轨迹</button>
+</div>
+
+<div class="legend">
+  <h4>图例</h4>
+  <div class="legend-item"><div class="legend-dot" style="background:#3b82f6"></div> 航母</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#10b981"></div> 驱逐舰</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f59e0b"></div> 巡洋舰</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div> 潜艇</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#8b5cf6"></div> 两栖舰</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#94a3b8"></div> 其他器装</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#eab308;border:2px solid #eab308"></div> 基地/位置</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f472b6"></div> 人员</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f97316"></div> 活动</div>
+</div>
+
+<!-- ═══ 原始数据页面（全屏，无地图） ═══ -->
+<div id="page-articles" style="display:none">
+  <div class="articles-topbar">
+    <div class="articles-filters" id="article-filters"></div>
+    <div class="articles-actions">
+      <button onclick="retryAllFailed()" id="btn-retry-all">▶ 重试全部失败</button>
+      <button onclick="triggerNewScrape()">📡 采集新文章</button>
+    </div>
+  </div>
+  <div class="articles-table-wrap">
+    <table class="articles-table">
+      <thead>
+        <tr>
+          <th style="width:40px">ID</th>
+          <th>标题</th>
+          <th style="width:90px">状态</th>
+          <th style="width:80px">实体数</th>
+          <th style="width:100px">发布时间</th>
+          <th style="width:70px">字数</th>
+          <th style="width:160px">操作</th>
+        </tr>
+      </thead>
+      <tbody id="articles-tbody"></tbody>
+    </table>
+  </div>
+  <div class="articles-pagination" id="articles-pagination"></div>
+</div>
+
+<!-- 文章详情弹窗 -->
+<div id="article-modal">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h3></h3>
+      <button onclick="closeArticleModal()" style="background:none;border:none;color:#94a3b8;font-size:22px;cursor:pointer;padding:0 4px;flex-shrink:0">✕</button>
+    </div>
+    <div class="modal-body"><div class="content"></div></div>
+    <div class="modal-footer">
+      <a href="#" target="_blank" style="color:#60a5fa;font-size:12px;text-decoration:none">🔗 查看原始页面</a>
+      <span style="color:#4b5563">|</span>
+      <a href="#" target="_blank" class="orig-link" style="color:#4b5563;font-size:11px;text-decoration:none;max-width:400px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"></a>
+      <span style="color:#4b5563">|</span>
+      <button class="reprocess-btn" style="background:#374151;color:#d1d5db;border:1px solid #4b5563;border-radius:4px;padding:4px 10px;font-size:11px;cursor:pointer">🔄 重新处理</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 知识百科 ═══ -->
+<div id="page-knowledge" style="display:none">
+  <!-- 统计概览 -->
+  <div class="kb-section">
+    <div class="kb-header">
+      <h3>📊 图谱概览</h3>
+      <button class="kb-btn" id="btn-refresh-stats" onclick="kbRefreshStats()">🔄 刷新统计</button>
+    </div>
+    <div class="kb-stats" id="kb-stats">
+      <div class="kb-stat-card"><div class="kb-stat-num" id="kb-total-v">-</div><div class="kb-stat-label">总节点</div></div>
+      <div class="kb-stat-card"><div class="kb-stat-num" id="kb-total-e">-</div><div class="kb-stat-label">总边</div></div>
+      <div class="kb-stat-card"><div class="kb-stat-num" id="kb-equip">-</div><div class="kb-stat-label">⚙️ 器装</div></div>
+      <div class="kb-stat-card"><div class="kb-stat-num" id="kb-loc">-</div><div class="kb-stat-label">📍 位置</div></div>
+      <div class="kb-stat-card"><div class="kb-stat-num" id="kb-event">-</div><div class="kb-stat-label">🎯 事件</div></div>
+      <div class="kb-stat-card"><div class="kb-stat-num" id="kb-person">-</div><div class="kb-stat-label">👤 人员</div></div>
+      <div class="kb-stat-card"><div class="kb-stat-num" id="kb-org">-</div><div class="kb-stat-label">🏢 组织</div></div>
+      <div class="kb-stat-card"><div class="kb-stat-num" id="kb-record">-</div><div class="kb-stat-label">📄 数据记录</div></div>
+    </div>
+  </div>
+
+  <!-- 图节点浏览 -->
+  <div class="kb-section">
+    <div class="kb-header">
+      <h3>🗂️ 图节点浏览</h3>
+      <div class="kb-node-controls">
+        <select id="kb-node-type" onchange="kbLoadNodes()">
+          <option value="equipment">⚙️ 器装</option>
+          <option value="location">📍 位置</option>
+          <option value="event">🎯 事件</option>
+          <option value="person">👤 人员</option>
+          <option value="organization">🏢 组织</option>
+          <option value="datarecord">📄 数据记录</option>
+        </select>
+        <input type="text" id="kb-node-search" placeholder="搜索名称..." oninput="kbLoadNodes()" />
+      </div>
+    </div>
+    <div class="kb-node-grid" id="kb-node-grid">加载中...</div>
+    <div class="kb-pagination" id="kb-node-pagination"></div>
+  </div>
+</div>
+
+<!-- ═══ 待决队列（系统级：抽取流程 + 全量扫描 → LLM 不确定时汇入此列表） ═══ -->
+<div id="page-pending" style="display:none">
+  <div class="kb-section">
+    <div class="kb-header">
+      <h3>⚠️ 待决队列</h3>
+      <p style="color:#9ca3af;font-size:12px;margin:4px 0 0">机器处理不了的实体对汇入此处，来源：抽取流程 L2 不确定 + 全量扫描 L1+L2 不确定</p>
+      <div class="kb-fusion-controls" style="margin-top:8px">
+        <button class="kb-btn kb-btn-primary" id="btn-fusion-analyze" onclick="kbFusionAnalyze()" title="全量扫描图中同类型节点对，L1自动融合≥0.85，0.3~0.85调LLM判断，LLM不确定的进待决列表">🔍 全量扫描</button>
+        <select id="kb-pending-filter" onchange="kbLoadPending()">
+          <option value="pending">⏳ 待决</option>
+          <option value="merged">✅ 已融合</option>
+          <option value="disambiguated">🔀 已消歧</option>
+          <option value="rejected">❌ 已拒绝</option>
+          <option value="">全部</option>
+        </select>
+      </div>
+    </div>
+    <div class="kb-pending-info" id="kb-pending-info"></div>
+    <table class="kb-table" id="kb-pending-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>类型</th>
+          <th>实体 A</th>
+          <th>实体 B</th>
+          <th>相似度</th>
+          <th>LLM 判断</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody id="kb-pending-tbody"></tbody>
+    </table>
+    <div class="kb-pagination" id="kb-pending-pagination"></div>
+  </div>
+</div>
+
+<!-- ═══ 待决队列对比弹窗 ═══ -->
+<div id="pending-compare-overlay" class="pd-overlay" style="display:none">
+  <div class="pd-modal">
+    <div class="pd-close" onclick="kbCloseCompare()">✕</div>
+    <div id="pending-compare-body"></div>
+  </div>
+</div>
+
+<script src="./js/lib/maplibre-gl.js"></script>
+<script type="module" src="./js/app.js?v=20260602b"></script>
+
+<!-- ═══ 智能问答 ═══ -->
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+{
+  "experiment": "Three-Level Hierarchical Strategy Comparison (Table XIII)",
+  "levels": {
+    "level_0_fixed": {
+      "L1_acc": 65.8,
+      "interception": 39.6,
+      "pipeline_empirical": 84.4
+    },
+    "level_1_unified_lr": {
+      "L1_acc": 80.0,
+      "interception": 74.3,
+      "pipeline": 84.4,
+      "L2_calls": 25.7
+    },
+    "level_2_hybrid_lr": {
+      "L1_acc": 83.0,
+      "interception": 64.3,
+      "pipeline": 89.0,
+      "L2_calls": 35.7,
+      "min_samples": 50
+    }
+  },
+  "unified_lr_weights": {
+    "name_match": 0.0,
+    "region_match": 0.0,
+    "coordinate_match": 0.0,
+    "organization_match": 0.0,
+    "timeline_match": 0.0,
+    "model_match": 0.0,
+    "participant_match": 0.0,
+    "name_conflict": 0.0,
+    "organization_conflict": 0.0,
+    "timeline_conflict": 0.0,
+    "model_conflict": 0.0,
+    "match_count": 0.0,
+    "conflict_count": 0.0,
+    "unknowns": 0.0,
+    "prop_overlap_rate": 0.0,
+    "type_consistency": 0.0,
+    "near_perfect_flag": 0.0,
+    "industry_match": 0.0,
+    "time_match": 0.0,
+    "coords_match_admin": 0.0
+  },
+  "per_type_weights": {
+    "unknown": {
+      "n_pairs": 2634,
+      "top3_features": [
+        [
+          "name_match",
+          0.0
+        ],
+        [
+          "region_match",
+          0.0
+        ],
+        [
+          "coordinate_match",
+          0.0
+        ]
+      ],
+      "all_weights": {
+        "name_match": 0.0,
+        "region_match": 0.0,
+        "coordinate_match": 0.0,
+        "organization_match": 0.0,
+        "timeline_match": 0.0,
+        "model_match": 0.0,
+        "participant_match": 0.0,
+        "name_conflict": 0.0,
+        "organization_conflict": 0.0,
+        "timeline_conflict": 0.0,
+        "model_conflict": 0.0,
+        "match_count": 0.0,
+        "conflict_count": 0.0,
+        "unknowns": 0.0,
+        "prop_overlap_rate": 0.0,
+        "type_consistency": 0.0,
+        "near_perfect_flag": 0.0,
+        "industry_match": 0.0,
+        "time_match": 0.0,
+        "coords_match_admin": 0.0
+      }
+    }
+  },
+  "conclusion": "Hybrid (min_samples=50) achieves best pipeline accuracy (89.0%), +4.6pp over fixed/unified."
+}

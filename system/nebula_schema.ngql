@@ -1,0 +1,64 @@
+-- Nebula Graph Schema for MINEC corpus
+-- Space: usn_main
+
+CREATE SPACE IF NOT EXISTS usn_main (vid_type=FIXED_STRING(128));
+USE usn_main;
+
+-- Tag: datarecord
+CREATE TAG IF NOT EXISTS datarecord (source_db fixed_string(64), source_table fixed_string(64), source_pk fixed_string(64), summary string, imported_at fixed_string(32));
+
+-- Tag: dataset
+CREATE TAG IF NOT EXISTS dataset (name fixed_string(256), source_db fixed_string(64), source_table fixed_string(64), record_count int64, description string, imported_at fixed_string(32));
+
+-- Tag: equipment
+CREATE TAG IF NOT EXISTS equipment (name fixed_string(256), aliases string, equip_type fixed_string(32), category fixed_string(64), state fixed_string(16), parent_unit fixed_string(256), home_location fixed_string(256), description string, confidence double, created_at fixed_string(32), updated_at fixed_string(32), latest_reported_at fixed_string(32));
+
+-- Tag: event
+CREATE TAG IF NOT EXISTS event (name fixed_string(512), aliases string, event_type fixed_string(32), occurred_at fixed_string(32), location_name fixed_string(256), description string, confidence double, created_at fixed_string(32), updated_at fixed_string(32), start_date fixed_string(32), end_date fixed_string(32));
+
+-- Tag: identifier
+CREATE TAG IF NOT EXISTS identifier (value fixed_string(256), display_name fixed_string(256), id_type fixed_string(16), state fixed_string(8), confidence double, created_at fixed_string(32), updated_at fixed_string(32));
+
+-- Tag: location
+CREATE TAG IF NOT EXISTS location (name fixed_string(256), aliases string, loc_type fixed_string(32), region fixed_string(128), coordinates fixed_string(64), description string, confidence double, created_at fixed_string(32), updated_at fixed_string(32));
+
+-- Tag: organization
+CREATE TAG IF NOT EXISTS organization (name fixed_string(256), aliases string, org_type fixed_string(32), industry fixed_string(64), region fixed_string(128), description string, confidence double, created_at fixed_string(32), updated_at fixed_string(32));
+
+-- Tag: person
+CREATE TAG IF NOT EXISTS person (name fixed_string(256), aliases string, gender fixed_string(8), nationality fixed_string(32), occupation fixed_string(64), org_name fixed_string(256), description string, labels string, confidence double, created_at fixed_string(32), updated_at fixed_string(32));
+
+-- Edge: employ
+CREATE EDGE IF NOT EXISTS employ (sub_type fixed_string(64), confidence double, source fixed_string(128), created_at fixed_string(32));
+
+-- Edge: locate
+CREATE EDGE IF NOT EXISTS locate (sub_type fixed_string(64), confidence double, source fixed_string(128), created_at fixed_string(32));
+
+-- Edge: org_relation
+CREATE EDGE IF NOT EXISTS org_relation (sub_type fixed_string(64), confidence double, source fixed_string(128), created_at fixed_string(32));
+
+-- Edge: participate
+CREATE EDGE IF NOT EXISTS participate (sub_type fixed_string(64), confidence double, source fixed_string(128), created_at fixed_string(32));
+
+-- Edge: social
+CREATE EDGE IF NOT EXISTS social (sub_type fixed_string(64), confidence double, source fixed_string(128), created_at fixed_string(32));
+
+-- Edge: spatial
+CREATE EDGE IF NOT EXISTS spatial (sub_type fixed_string(64), confidence double, source fixed_string(128), created_at fixed_string(32));
+
+-- Edge: trace
+CREATE EDGE IF NOT EXISTS trace (sub_type fixed_string(64), confidence double, source fixed_string(128), created_at fixed_string(32));
+
+-- Edge: use_edge
+CREATE EDGE IF NOT EXISTS use_edge (sub_type fixed_string(64), confidence double, source fixed_string(128), created_at fixed_string(32));
+
+-- Index: {'Index Name': 'idx_dr_source', 'By Tag': 'datarecord', 'Columns': '["source_db", "source_table"]'}
+-- Index: {'Index Name': 'idx_ds_name', 'By Tag': 'dataset', 'Columns': '["name"]'}
+-- Index: {'Index Name': 'idx_equip_name', 'By Tag': 'equipment', 'Columns': '["name"]'}
+-- Index: {'Index Name': 'idx_equip_type', 'By Tag': 'equipment', 'Columns': '["equip_type"]'}
+-- Index: {'Index Name': 'idx_event_name', 'By Tag': 'event', 'Columns': '["name"]'}
+-- Index: {'Index Name': 'idx_id_type', 'By Tag': 'identifier', 'Columns': '["id_type"]'}
+-- Index: {'Index Name': 'idx_id_value', 'By Tag': 'identifier', 'Columns': '["value"]'}
+-- Index: {'Index Name': 'idx_loc_name', 'By Tag': 'location', 'Columns': '["name"]'}
+-- Index: {'Index Name': 'idx_org_name', 'By Tag': 'organization', 'Columns': '["name"]'}
+-- Index: {'Index Name': 'idx_person_name', 'By Tag': 'person', 'Columns': '["name"]'}

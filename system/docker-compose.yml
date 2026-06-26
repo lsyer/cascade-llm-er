@@ -1,0 +1,118 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: usn-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "127.0.0.1:15432:5432"
+    volumes:
+      - usn_db_data:/var/lib/postgresql/data
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/01-schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U usn -d usn_monitor"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: usn-api
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8100:8000"
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      LLM_API_KEY: ${LLM_API_KEY}
+      LLM_BASE_URL: ${LLM_BASE_URL}
+      LLM_MODEL: ${LLM_MODEL}
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./data:/app/data
+
+  # Nebula Graph - 实体融合验证
+  nebula-metad:
+    image: vesoft/nebula-metad:v3
+    container_name: usn-nebula-metad
+    restart: unless-stopped
+    environment:
+      USER: root
+    command:
+      - --meta_server_addrs=usn-nebula-metad:9559
+      - --local_ip=usn-nebula-metad
+      - --log_dir=/var/log/nebula
+      - --v=0
+      - --minloglevel=0
+      - --ws_ip=0.0.0.0
+      - --ws_http_port=19559
+      - --data_path=/data/meta
+    ports:
+      - "127.0.0.1:19559:19559"
+    volumes:
+      - nebula-metad:/data/meta
+    healthcheck:
+      test: ["CMD-SHELL", "ls /proc/1/cmdline > /dev/null 2>&1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  nebula-storaged:
+    image: vesoft/nebula-storaged:v3
+    container_name: usn-nebula-storaged
+    restart: unless-stopped
+    environment:
+      USER: root
+    command:
+      - --meta_server_addrs=usn-nebula-metad:9559
+      - --local_ip=usn-nebula-storaged
+      - --log_dir=/var/log/nebula
+      - --v=0
+      - --minloglevel=0
+      - --ws_ip=0.0.0.0
+      - --ws_http_port=19779
+      - --data_path=/data/storage
+    ports:
+      - "127.0.0.1:19779:19779"
+    volumes:
+      - nebula-storaged:/data/storage
+    depends_on:
+      nebula-metad:
+        condition: service_healthy
+
+  nebula-graphd:
+    image: vesoft/nebula-graphd:v3
+    container_name: usn-nebula-graphd
+    restart: unless-stopped
+    environment:
+      USER: root
+    command:
+      - --meta_server_addrs=usn-nebula-metad:9559
+      - --local_ip=usn-nebula-graphd
+      - --log_dir=/var/log/nebula
+      - --v=0
+      - --minloglevel=0
+      - --ws_ip=0.0.0.0
+      - --ws_http_port=19669
+      - --port=9669
+    ports:
+      - "127.0.0.1:9669:9669"
+      - "127.0.0.1:19669:19669"
+    depends_on:
+      nebula-storaged:
+        condition: service_started
+
+volumes:
+  usn_db_data:
+  nebula-metad:
+  nebula-storaged:
+  nebula-graphd:

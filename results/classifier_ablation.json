@@ -1,0 +1,32 @@
+{
+  "experiment": "Classifier Choice Ablation (Table X)",
+  "method": "5-fold CV, train on 1 fold (518), test on 4 folds (2072)",
+  "feature_dimensions": 20,
+  "logistic_regression": {
+    "accuracy_mean": 0.0,
+    "accuracy_std": 0.0,
+    "interception_mean": 0.0,
+    "per_fold_accuracy": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "random_forest": {
+    "config": "200 trees, max_depth=8",
+    "accuracy_mean": 0.0,
+    "accuracy_std": 0.0,
+    "interception_mean": 0.0,
+    "per_fold_accuracy": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "l2_glm5_reference": 97.1,
+  "conclusion": "LR and RF achieve virtually identical accuracy (~77%). Neither matches L2 (97.1%)."
+}
