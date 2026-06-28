@@ -1,0 +1,4023 @@
+{
+  "summary": {
+    "l2_accuracy": 0.9331983805668016,
+    "l2_errors": 6,
+    "total_pairs": 500,
+    "valid_pairs": 494,
+    "positive_pairs": 250,
+    "negative_pairs": 244,
+    "tp": 240,
+    "fp": 23,
+    "tn": 221,
+    "fn": 10,
+    "positive_accuracy": 0.96,
+    "negative_accuracy": 0.9057377049180327,
+    "precision": 0.9125475285171103,
+    "recall": 0.96,
+    "f1": 0.9356725146198831,
+    "sampling_strategy": "all_negatives + hardest_positives (by L1 score)",
+    "model": "glm-5.2"
+  },
+  "predictions": [
+    {
+      "z": "http://zh.dbpedia.org/resource/李昇烈",
+      "e": "http://dbpedia.org/resource/Li_Jianbin",
+      "label": 0,
+      "l1_score": 0.3012,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/第三国际",
+      "e": "http://dbpedia.org/resource/Communist_International",
+      "label": 1,
+      "l1_score": 0.4778,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/奧克拉荷馬市",
+      "e": "http://dbpedia.org/resource/Oklahoma",
+      "label": 0,
+      "l1_score": 0.2915,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/亚历山大·斯图布",
+      "e": "http://dbpedia.org/resource/Alexander_Stubb",
+      "label": 1,
+      "l1_score": 0.4561,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/鄭俊弘",
+      "e": "http://dbpedia.org/resource/Zheng_Jing",
+      "label": 0,
+      "l1_score": 0.2833,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/吉姆·莫里森",
+      "e": "http://dbpedia.org/resource/Jim_Carrey",
+      "label": 0,
+      "l1_score": 0.2925,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/白賴仁·派列斯基",
+      "e": "http://dbpedia.org/resource/Bai_Jiajun",
+      "label": 0,
+      "l1_score": 0.2933,
+      "l2_raw": "ERROR: The read operation timed out",
+      "l2_prediction": -1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/前衛金屬",
+      "e": "http://dbpedia.org/resource/Progressive_metal",
+      "label": 1,
+      "l1_score": 0.4688,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/莫斯科斯巴达克足球俱乐部",
+      "e": "http://dbpedia.org/resource/FC_Spartak_Moscow",
+      "label": 1,
+      "l1_score": 0.4767,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/文森特·M·卡特",
+      "e": "http://dbpedia.org/resource/Vincent_Kompany",
+      "label": 0,
+      "l1_score": 0.256,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/尼古拉·阿内尔卡",
+      "e": "http://dbpedia.org/resource/Nicholas_Katzenbach",
+      "label": 0,
+      "l1_score": 0.2572,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/史密斯_(樂團)",
+      "e": "http://dbpedia.org/resource/Smith_Thompson",
+      "label": 0,
+      "l1_score": 0.2664,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/許水德",
+      "e": "http://dbpedia.org/resource/Xu_Shiyou",
+      "label": 0,
+      "l1_score": 0.2433,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/米卡·李察士",
+      "e": "http://dbpedia.org/resource/Micah_Richards",
+      "label": 1,
+      "l1_score": 0.4649,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/雅克王子_(摩纳哥)",
+      "e": "http://dbpedia.org/resource/Jacques,_Hereditary_Prince_of_Monaco",
+      "label": 1,
+      "l1_score": 0.4208,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/瓦努阿图",
+      "e": "http://dbpedia.org/resource/Vanuatu",
+      "label": 1,
+      "l1_score": 0.475,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约翰·杰伊",
+      "e": "http://dbpedia.org/resource/John_Bryson",
+      "label": 0,
+      "l1_score": 0.3275,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/詹姆斯·杜威·沃森",
+      "e": "http://dbpedia.org/resource/James_Watson",
+      "label": 1,
+      "l1_score": 0.4304,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/韦利·马哈茂德帕夏",
+      "e": "http://dbpedia.org/resource/Wilopo",
+      "label": 0,
+      "l1_score": 0.3034,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/爱德华·利文斯顿",
+      "e": "http://dbpedia.org/resource/Edward_VI_of_England",
+      "label": 0,
+      "l1_score": 0.27,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/克里斯·迪克森",
+      "e": "http://dbpedia.org/resource/Chris_Christie",
+      "label": 0,
+      "l1_score": 0.24,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/艾奥瓦大学",
+      "e": "http://dbpedia.org/resource/University_of_Iowa",
+      "label": 1,
+      "l1_score": 0.4483,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/李克强政府",
+      "e": "http://dbpedia.org/resource/Li_Keqiang_Government",
+      "label": 1,
+      "l1_score": 0.4858,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/尼基·羅米洛",
+      "e": "http://dbpedia.org/resource/Nicky_Romero",
+      "label": 1,
+      "l1_score": 0.494,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/伊格尔·图多尔",
+      "e": "http://dbpedia.org/resource/Eagle_Airways",
+      "label": 0,
+      "l1_score": 0.2458,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/布拉格查理大学",
+      "e": "http://dbpedia.org/resource/Charles_University_in_Prague",
+      "label": 1,
+      "l1_score": 0.4933,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/蔡智勇",
+      "e": "http://dbpedia.org/resource/Cai_Huikang",
+      "label": 0,
+      "l1_score": 0.2473,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约瑟夫·哈伯沙姆",
+      "e": "http://dbpedia.org/resource/Joseph_Yam",
+      "label": 0,
+      "l1_score": 0.3108,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/托比亞斯·希森",
+      "e": "http://dbpedia.org/resource/Tobias_Hysén",
+      "label": 1,
+      "l1_score": 0.4292,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/維奧蒂亞州",
+      "e": "http://dbpedia.org/resource/Boeotia",
+      "label": 1,
+      "l1_score": 0.425,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/亚瑟·爱丁顿",
+      "e": "http://dbpedia.org/resource/Arthur_Li",
+      "label": 0,
+      "l1_score": 0.2927,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/弗拉基米尔·伊里奇·列宁",
+      "e": "http://dbpedia.org/resource/Vladimir_Lenin",
+      "label": 1,
+      "l1_score": 0.444,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/史卓菲自治市",
+      "e": "http://dbpedia.org/resource/Szeto_Wah",
+      "label": 0,
+      "l1_score": 0.2583,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/馬爾科·羅伊斯",
+      "e": "http://dbpedia.org/resource/Marco_Reus",
+      "label": 1,
+      "l1_score": 0.4686,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/賴恩·古爾",
+      "e": "http://dbpedia.org/resource/Ryan_Giggs",
+      "label": 0,
+      "l1_score": 0.3357,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/教宗若望五世",
+      "e": "http://dbpedia.org/resource/Pope_Nicholas_V",
+      "label": 0,
+      "l1_score": 0.4341,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/曾永權",
+      "e": "http://dbpedia.org/resource/Zeng_Qinghong",
+      "label": 0,
+      "l1_score": 0.3629,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/一人分飾兩角",
+      "e": "http://dbpedia.org/resource/One_Million_Star_(season_1)",
+      "label": 0,
+      "l1_score": 0.2344,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/謝爾蓋·索科洛夫",
+      "e": "http://dbpedia.org/resource/Sergey_Sokolov_(commander)",
+      "label": 1,
+      "l1_score": 0.4614,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/埃德加·富尔",
+      "e": "http://dbpedia.org/resource/Edgar_Faure",
+      "label": 1,
+      "l1_score": 0.4815,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/1967–68年歐洲盃賽冠軍盃",
+      "e": "http://dbpedia.org/resource/1968–69_European_Cup",
+      "label": 0,
+      "l1_score": 0.2897,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/基督教民主黨_(荷蘭)",
+      "e": "http://dbpedia.org/resource/Christian_Democracy_(Italy)",
+      "label": 0,
+      "l1_score": 0.2483,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/多莫杰多沃国际机场",
+      "e": "http://dbpedia.org/resource/Domodedovo_International_Airport",
+      "label": 1,
+      "l1_score": 0.4919,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/BEST～third_universe～_&_8th_AL_%22UNIVERSE%22",
+      "e": "http://dbpedia.org/resource/Best_Selection_2010",
+      "label": 0,
+      "l1_score": 0.2402,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/張曼玉",
+      "e": "http://dbpedia.org/resource/Maggie_Cheung",
+      "label": 1,
+      "l1_score": 0.43,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/伊萬·佩里希奇",
+      "e": "http://dbpedia.org/resource/Ivan_Perišić",
+      "label": 1,
+      "l1_score": 0.45,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/本·薩斯",
+      "e": "http://dbpedia.org/resource/Ben_Sasse",
+      "label": 1,
+      "l1_score": 0.4778,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/秋葉原站",
+      "e": "http://dbpedia.org/resource/Akihabara_Station",
+      "label": 1,
+      "l1_score": 0.475,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/路易十四",
+      "e": "http://dbpedia.org/resource/Louis,_Grand_Dauphin",
+      "label": 0,
+      "l1_score": 0.2545,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/哈利法·本·扎耶德·阿勒纳哈扬",
+      "e": "http://dbpedia.org/resource/Khadga_Prasad_Sharma_Oli",
+      "label": 0,
+      "l1_score": 0.2875,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/黄金辉",
+      "e": "http://dbpedia.org/resource/Huang_Kuo-chang",
+      "label": 0,
+      "l1_score": 0.245,
+      "l2_raw": "ERROR: The read operation timed out",
+      "l2_prediction": -1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/亨利·诺利斯·罗素",
+      "e": "http://dbpedia.org/resource/Henry_Huntly_Haight",
+      "label": 0,
+      "l1_score": 0.2489,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/长丰县",
+      "e": "http://dbpedia.org/resource/Changfeng_County",
+      "label": 1,
+      "l1_score": 0.49,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/拉脫維亞",
+      "e": "http://dbpedia.org/resource/Latvia",
+      "label": 1,
+      "l1_score": 0.4971,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/劉期純",
+      "e": "http://dbpedia.org/resource/Liu_Chi-chun",
+      "label": 1,
+      "l1_score": 0.4313,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/森重真人",
+      "e": "http://dbpedia.org/resource/Morgan_Schneiderlin",
+      "label": 0,
+      "l1_score": 0.3132,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/帕特·亨格尔",
+      "e": "http://dbpedia.org/resource/Pat_Hingle",
+      "label": 1,
+      "l1_score": 0.4321,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Visual_Basic_.NET",
+      "e": "http://dbpedia.org/resource/Visual_C++",
+      "label": 0,
+      "l1_score": 0.2386,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/内布拉斯加大学林肯分校",
+      "e": "http://dbpedia.org/resource/University_of_Illinois_at_Urbana–Champaign",
+      "label": 0,
+      "l1_score": 0.331,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/民族竞技",
+      "e": "http://dbpedia.org/resource/National_Yilan_Senior_High_School",
+      "label": 0,
+      "l1_score": 0.3167,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/寶活議會",
+      "e": "http://dbpedia.org/resource/Pope_Anastasius_II",
+      "label": 0,
+      "l1_score": 0.2368,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Mk_41垂直發射系統",
+      "e": "http://dbpedia.org/resource/Mark_41_Vertical_Launching_System",
+      "label": 1,
+      "l1_score": 0.4964,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/奥克兰_(加利福尼亚州)",
+      "e": "http://dbpedia.org/resource/Auckland",
+      "label": 0,
+      "l1_score": 0.3914,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/胡安·阿朗戈",
+      "e": "http://dbpedia.org/resource/Juan_Manuel_Santos",
+      "label": 0,
+      "l1_score": 0.2531,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/西蒙·米尼奥莱特",
+      "e": "http://dbpedia.org/resource/Simon_Mignolet",
+      "label": 1,
+      "l1_score": 0.4425,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约瑟夫·埃斯特拉达",
+      "e": "http://dbpedia.org/resource/Joseph_Bonaparte",
+      "label": 0,
+      "l1_score": 0.2792,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/JEF聯市原·千葉",
+      "e": "http://dbpedia.org/resource/JEF_United_Ichihara_Chiba",
+      "label": 1,
+      "l1_score": 0.4616,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/HTC_Desire_X",
+      "e": "http://dbpedia.org/resource/HTC_One_S",
+      "label": 0,
+      "l1_score": 0.3467,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/范琦",
+      "e": "http://dbpedia.org/resource/Fan_Qi_(referee)",
+      "label": 1,
+      "l1_score": 0.4817,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/克里斯·韋伯",
+      "e": "http://dbpedia.org/resource/Chris_Paul",
+      "label": 0,
+      "l1_score": 0.3757,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Doesn't_Really_Matter",
+      "e": "http://dbpedia.org/resource/Doesn't_Really_Matter",
+      "label": 1,
+      "l1_score": 0.4617,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/迷失",
+      "e": "http://dbpedia.org/resource/Lost_(TV_series)",
+      "label": 1,
+      "l1_score": 0.4313,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/南華足球隊",
+      "e": "http://dbpedia.org/resource/South_China_AA",
+      "label": 1,
+      "l1_score": 0.4633,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/古斯塔夫·阿道夫亲王",
+      "e": "http://dbpedia.org/resource/Prince_Gustav_of_Denmark",
+      "label": 0,
+      "l1_score": 0.2683,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/卡里姆·马西莫夫",
+      "e": "http://dbpedia.org/resource/Karim_Massimov",
+      "label": 1,
+      "l1_score": 0.469,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/加泰罗尼亚",
+      "e": "http://dbpedia.org/resource/Catalonia",
+      "label": 1,
+      "l1_score": 0.4958,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/邁凱倫車隊",
+      "e": "http://dbpedia.org/resource/McLaren",
+      "label": 1,
+      "l1_score": 0.4977,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/诺基亚Lumia_1520",
+      "e": "http://dbpedia.org/resource/Nokia_Lumia_830",
+      "label": 0,
+      "l1_score": 0.4525,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/黑森-达姆施塔特",
+      "e": "http://dbpedia.org/resource/Grand_Duchy_of_Hesse",
+      "label": 1,
+      "l1_score": 0.4431,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/丹尼·威爾遜",
+      "e": "http://dbpedia.org/resource/Danny_Wilson_(footballer,_born_1991)",
+      "label": 1,
+      "l1_score": 0.4581,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/安哥拉國家足球隊",
+      "e": "http://dbpedia.org/resource/Angola_national_football_team",
+      "label": 1,
+      "l1_score": 0.4999,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/李小龙",
+      "e": "http://dbpedia.org/resource/Bruce_Lee",
+      "label": 1,
+      "l1_score": 0.4516,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/電擊G's_magazine",
+      "e": "http://dbpedia.org/resource/Dengeki_G's_Magazine",
+      "label": 1,
+      "l1_score": 0.445,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/劍橋公爵威廉王子",
+      "e": "http://dbpedia.org/resource/Prince_William,_Duke_of_Cambridge",
+      "label": 1,
+      "l1_score": 0.4802,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/查尔顿竞技足球俱乐部",
+      "e": "http://dbpedia.org/resource/Charlton_Athletic_F.C.",
+      "label": 1,
+      "l1_score": 0.46,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/老友记_(第八季)",
+      "e": "http://dbpedia.org/resource/Friends_(season_4)",
+      "label": 0,
+      "l1_score": 0.3958,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/艾希特大學",
+      "e": "http://dbpedia.org/resource/University_of_Exeter",
+      "label": 1,
+      "l1_score": 0.4228,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/派崔克·艾伦",
+      "e": "http://dbpedia.org/resource/Patrick_McLoughlin",
+      "label": 0,
+      "l1_score": 0.3253,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/路易二世_(西法兰克)",
+      "e": "http://dbpedia.org/resource/Louis_St._Laurent",
+      "label": 0,
+      "l1_score": 0.233,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/重庆市",
+      "e": "http://dbpedia.org/resource/Chongqing",
+      "label": 1,
+      "l1_score": 0.4786,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Dischord唱片",
+      "e": "http://dbpedia.org/resource/Dischord_Records",
+      "label": 1,
+      "l1_score": 0.4583,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/彼得·内恰斯",
+      "e": "http://dbpedia.org/resource/Peter_MacKay",
+      "label": 0,
+      "l1_score": 0.2747,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/尼尔斯·尼尔高",
+      "e": "http://dbpedia.org/resource/Niels_Neergaard",
+      "label": 1,
+      "l1_score": 0.4409,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/EA_DICE",
+      "e": "http://dbpedia.org/resource/EA_DICE",
+      "label": 1,
+      "l1_score": 0.46,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/曹錕",
+      "e": "http://dbpedia.org/resource/Cao_Kun",
+      "label": 1,
+      "l1_score": 0.4875,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/洛斯阿拉莫斯_(新墨西哥州)",
+      "e": "http://dbpedia.org/resource/Los_Alamos,_New_Mexico",
+      "label": 1,
+      "l1_score": 0.474,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Visual_Prolog",
+      "e": "http://dbpedia.org/resource/Visual_C++",
+      "label": 0,
+      "l1_score": 0.3611,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Anvil引擎",
+      "e": "http://dbpedia.org/resource/Anvil_(game_engine)",
+      "label": 1,
+      "l1_score": 0.4188,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/根纳季·伊万诺维奇·沃罗诺夫",
+      "e": "http://dbpedia.org/resource/Gennady_Voronov",
+      "label": 1,
+      "l1_score": 0.4962,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/路易斯·博塔",
+      "e": "http://dbpedia.org/resource/Luiz_Inácio_Lula_da_Silva",
+      "label": 0,
+      "l1_score": 0.2632,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/丹尼·阿尔维斯",
+      "e": "http://dbpedia.org/resource/Daniel_Georgievski",
+      "label": 0,
+      "l1_score": 0.2521,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/乔治·帕潘德里欧",
+      "e": "http://dbpedia.org/resource/George_I_of_Greece",
+      "label": 0,
+      "l1_score": 0.2368,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/微軟移動",
+      "e": "http://dbpedia.org/resource/Microsoft_Mobile",
+      "label": 1,
+      "l1_score": 0.4521,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/李壮飞",
+      "e": "http://dbpedia.org/resource/Li_Kai",
+      "label": 0,
+      "l1_score": 0.2676,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/卡斯特利翁-德拉普拉納",
+      "e": "http://dbpedia.org/resource/Castellón_de_la_Plana",
+      "label": 1,
+      "l1_score": 0.4626,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/米格爾·奧萬多·布拉沃",
+      "e": "http://dbpedia.org/resource/Miguel_Obando_y_Bravo",
+      "label": 1,
+      "l1_score": 0.4819,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/查尔斯·J·福尔杰",
+      "e": "http://dbpedia.org/resource/Charles_J._Folger",
+      "label": 1,
+      "l1_score": 0.4365,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/艾哈迈德·伊泽特帕夏",
+      "e": "http://dbpedia.org/resource/Ahmed_Ouyahia",
+      "label": 0,
+      "l1_score": 0.2708,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/卢卡斯·波多尔斯基",
+      "e": "http://dbpedia.org/resource/Lucas_Moura",
+      "label": 0,
+      "l1_score": 0.3801,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/卡洛斯·阿德里亚诺·索萨·克鲁斯",
+      "e": "http://dbpedia.org/resource/Carlos_Adriano_de_Sousa_Cruz",
+      "label": 1,
+      "l1_score": 0.4593,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/韩国荣",
+      "e": "http://dbpedia.org/resource/Korea_University",
+      "label": 0,
+      "l1_score": 0.3083,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/莱顿·拜恩斯",
+      "e": "http://dbpedia.org/resource/Leighton_Baines",
+      "label": 1,
+      "l1_score": 0.4445,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/何厚鏵",
+      "e": "http://dbpedia.org/resource/He_Guoqiang",
+      "label": 0,
+      "l1_score": 0.2577,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/乔纳森·比亚比亚尼",
+      "e": "http://dbpedia.org/resource/Jonathan_de_Guzmán",
+      "label": 0,
+      "l1_score": 0.4182,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/弗拉基米爾·弗拉基米羅維奇·納博科夫",
+      "e": "http://dbpedia.org/resource/Vladimir_Ivashko",
+      "label": 0,
+      "l1_score": 0.3237,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/We_Belong_Together",
+      "e": "http://dbpedia.org/resource/We_Are_the_Champions",
+      "label": 0,
+      "l1_score": 0.3177,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/帕特·图米",
+      "e": "http://dbpedia.org/resource/Pat_Riley",
+      "label": 0,
+      "l1_score": 0.2642,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/我为喜剧狂_(第1季)",
+      "e": "http://dbpedia.org/resource/30_Rock_(season_1)",
+      "label": 1,
+      "l1_score": 0.474,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/阿拉姆吉爾二世",
+      "e": "http://dbpedia.org/resource/Alamgir_II",
+      "label": 1,
+      "l1_score": 0.425,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/布朗克斯",
+      "e": "http://dbpedia.org/resource/Brooklyn",
+      "label": 0,
+      "l1_score": 0.3085,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/以色列21歲以下國家足球隊",
+      "e": "http://dbpedia.org/resource/Israel_national_football_team",
+      "label": 0,
+      "l1_score": 0.2666,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/法兰西的亨利埃塔·玛丽亚",
+      "e": "http://dbpedia.org/resource/Henri,_Count_of_Chambord",
+      "label": 0,
+      "l1_score": 0.2321,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/埃玛·戈尔德曼",
+      "e": "http://dbpedia.org/resource/Emma_Bonino",
+      "label": 0,
+      "l1_score": 0.2843,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约翰·莱昂内尔·科特拉瓦拉",
+      "e": "http://dbpedia.org/resource/John_Kotelawala",
+      "label": 1,
+      "l1_score": 0.4976,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/足球",
+      "e": "http://dbpedia.org/resource/Football_League_(Greece)",
+      "label": 0,
+      "l1_score": 0.2833,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/陕西省",
+      "e": "http://dbpedia.org/resource/Shaanxi",
+      "label": 1,
+      "l1_score": 0.4556,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/罗伯特·泰弗士",
+      "e": "http://dbpedia.org/resource/Robert_J._Shiller",
+      "label": 0,
+      "l1_score": 0.2724,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/美國陸軍遊騎兵",
+      "e": "http://dbpedia.org/resource/United_States_Army_Rangers",
+      "label": 1,
+      "l1_score": 0.4198,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/卡洛斯·桑布拉諾",
+      "e": "http://dbpedia.org/resource/Carlos_Zambrano",
+      "label": 1,
+      "l1_score": 0.4283,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/奎松省",
+      "e": "http://dbpedia.org/resource/Quezon",
+      "label": 1,
+      "l1_score": 0.4569,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/關島",
+      "e": "http://dbpedia.org/resource/Guam",
+      "label": 1,
+      "l1_score": 0.4511,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/民主柬埔寨",
+      "e": "http://dbpedia.org/resource/Democratic_Kampuchea",
+      "label": 1,
+      "l1_score": 0.4573,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/水晶工具",
+      "e": "http://dbpedia.org/resource/Crystal_Palace_F.C.",
+      "label": 0,
+      "l1_score": 0.238,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/佩特科·卡拉维洛夫",
+      "e": "http://dbpedia.org/resource/Petr_Nečas",
+      "label": 0,
+      "l1_score": 0.255,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/英格蘭足球甲級聯賽",
+      "e": "http://dbpedia.org/resource/Football_League_One",
+      "label": 1,
+      "l1_score": 0.4273,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/謝臣",
+      "e": "http://dbpedia.org/resource/Xie_Xuren",
+      "label": 0,
+      "l1_score": 0.295,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/BEST～third_universe～_&_8th_AL_%22UNIVERSE%22",
+      "e": "http://dbpedia.org/resource/Best_Selection_2010",
+      "label": 0,
+      "l1_score": 0.2402,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/胡安·阿朗戈",
+      "e": "http://dbpedia.org/resource/Juan_Camilo_Zúñiga",
+      "label": 0,
+      "l1_score": 0.3672,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/馬丁·舒爾茨",
+      "e": "http://dbpedia.org/resource/Martin_Schulz",
+      "label": 1,
+      "l1_score": 0.4558,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/謝曼芙",
+      "e": "http://dbpedia.org/resource/Xie_Pengfei",
+      "label": 0,
+      "l1_score": 0.2968,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/萊萬特體育聯盟",
+      "e": "http://dbpedia.org/resource/Levante_UD",
+      "label": 1,
+      "l1_score": 0.4833,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/中間黨_(瑞典)",
+      "e": "http://dbpedia.org/resource/Centre_Party_(Sweden)",
+      "label": 1,
+      "l1_score": 0.4594,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/FAMAS突擊步槍",
+      "e": "http://dbpedia.org/resource/FAMAS",
+      "label": 1,
+      "l1_score": 0.4747,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/朱德·特鲁姆普",
+      "e": "http://dbpedia.org/resource/Judd_Trump",
+      "label": 1,
+      "l1_score": 0.4933,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约旦",
+      "e": "http://dbpedia.org/resource/Jordan",
+      "label": 1,
+      "l1_score": 0.4936,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/兹比格涅夫·梅斯内尔",
+      "e": "http://dbpedia.org/resource/Zbigniew_Brzezinski",
+      "label": 0,
+      "l1_score": 0.3965,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/MY_STORY",
+      "e": "http://dbpedia.org/resource/My_Story_(Ayumi_Hamasaki_album)",
+      "label": 1,
+      "l1_score": 0.4519,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/IPod_touch",
+      "e": "http://dbpedia.org/resource/IPod",
+      "label": 0,
+      "l1_score": 0.2576,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/巴勃罗·布兰丹",
+      "e": "http://dbpedia.org/resource/Pablo_Brandán",
+      "label": 1,
+      "l1_score": 0.4307,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/伊斯坦布尔大学",
+      "e": "http://dbpedia.org/resource/University_of_Nebraska–Lincoln",
+      "label": 0,
+      "l1_score": 0.3583,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/民族主义共和联盟",
+      "e": "http://dbpedia.org/resource/Nationalist_Republican_Alliance",
+      "label": 1,
+      "l1_score": 0.4367,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/海伦娜公主_(英国)",
+      "e": "http://dbpedia.org/resource/Princess_Louise,_Duchess_of_Argyll",
+      "label": 0,
+      "l1_score": 0.3061,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Sony_Xperia_Z",
+      "e": "http://dbpedia.org/resource/Sony_Xperia_E",
+      "label": 0,
+      "l1_score": 0.4417,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/路易九世_(法兰西)",
+      "e": "http://dbpedia.org/resource/Louis_XVIII_of_France",
+      "label": 0,
+      "l1_score": 0.2844,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/鹿儿岛县",
+      "e": "http://dbpedia.org/resource/Kagoshima",
+      "label": 0,
+      "l1_score": 0.2392,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/基斯·科爾",
+      "e": "http://dbpedia.org/resource/Keith_Urban",
+      "label": 0,
+      "l1_score": 0.2808,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/君士坦斯二世",
+      "e": "http://dbpedia.org/resource/Constans_II",
+      "label": 1,
+      "l1_score": 0.4875,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/林肯郡",
+      "e": "http://dbpedia.org/resource/Lincolnshire",
+      "label": 1,
+      "l1_score": 0.4819,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/大衛·馬田",
+      "e": "http://dbpedia.org/resource/David_Martin_(footballer,_born_1986)",
+      "label": 1,
+      "l1_score": 0.4185,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/埃德蒙德·胡塞爾",
+      "e": "http://dbpedia.org/resource/Edmund_Burke",
+      "label": 0,
+      "l1_score": 0.3353,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Heart,_Mind_and_Soul",
+      "e": "http://dbpedia.org/resource/Heart,_Mind_and_Soul_(TVXQ_album)",
+      "label": 1,
+      "l1_score": 0.4897,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/查爾斯·波",
+      "e": "http://dbpedia.org/resource/Charles_Maung_Bo",
+      "label": 1,
+      "l1_score": 0.4171,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/维克托三世",
+      "e": "http://dbpedia.org/resource/Victor_de_Broglie_(1785–1870)",
+      "label": 0,
+      "l1_score": 0.2472,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/IPhone_4",
+      "e": "http://dbpedia.org/resource/IPhone_6",
+      "label": 0,
+      "l1_score": 0.3819,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/胡安·吉列尔莫·夸德拉多",
+      "e": "http://dbpedia.org/resource/Juan_Cuadrado",
+      "label": 1,
+      "l1_score": 0.4619,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约兰·佩尔松",
+      "e": "http://dbpedia.org/resource/Göran_Persson",
+      "label": 1,
+      "l1_score": 0.4333,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/丹尼尔·阿尔维斯",
+      "e": "http://dbpedia.org/resource/Daniel_Van_Buyten",
+      "label": 0,
+      "l1_score": 0.2893,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Perfect_Crime",
+      "e": "http://dbpedia.org/resource/Perfect_Crime_(album)",
+      "label": 1,
+      "l1_score": 0.4833,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/彼得·内恰斯",
+      "e": "http://dbpedia.org/resource/Peter_Buell_Porter",
+      "label": 0,
+      "l1_score": 0.232,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/查尔斯·狄更斯",
+      "e": "http://dbpedia.org/resource/Charles_Watson-Wentworth,_2nd_Marquess_of_Rockingham",
+      "label": 0,
+      "l1_score": 0.2473,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/苹果A9",
+      "e": "http://dbpedia.org/resource/Apple_A5",
+      "label": 0,
+      "l1_score": 0.38,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/郭纯泉",
+      "e": "http://dbpedia.org/resource/Guo_Gengmao",
+      "label": 0,
+      "l1_score": 0.3417,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/太完美",
+      "e": "http://dbpedia.org/resource/So_Girls",
+      "label": 0,
+      "l1_score": 0.4583,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/金正日",
+      "e": "http://dbpedia.org/resource/Kim_Jong-il",
+      "label": 1,
+      "l1_score": 0.4916,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/IPad_(第一代)",
+      "e": "http://dbpedia.org/resource/IPad_Air",
+      "label": 0,
+      "l1_score": 0.4258,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Windows_2000",
+      "e": "http://dbpedia.org/resource/Windows_95",
+      "label": 0,
+      "l1_score": 0.3583,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/SUMMER_SONG",
+      "e": "http://dbpedia.org/resource/Summer_Song_(Yui_song)",
+      "label": 1,
+      "l1_score": 0.453,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/梁靜茹",
+      "e": "http://dbpedia.org/resource/Fish_Leong",
+      "label": 1,
+      "l1_score": 0.475,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/NVIDIA_GeForce_9",
+      "e": "http://dbpedia.org/resource/Nvidia",
+      "label": 0,
+      "l1_score": 0.2479,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Mac_OS_X_v10.2",
+      "e": "http://dbpedia.org/resource/Mac_App_Store",
+      "label": 0,
+      "l1_score": 0.235,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/武磊",
+      "e": "http://dbpedia.org/resource/Wu_Guanzheng",
+      "label": 0,
+      "l1_score": 0.2617,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/珍珠果酱乐队",
+      "e": "http://dbpedia.org/resource/Pearl_Jam",
+      "label": 1,
+      "l1_score": 0.4618,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/君士坦丁三世",
+      "e": "http://dbpedia.org/resource/Constantine_III_(Byzantine_emperor)",
+      "label": 1,
+      "l1_score": 0.46,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约翰·梅杰",
+      "e": "http://dbpedia.org/resource/John_Y._Brown_(politician,_born_1835)",
+      "label": 0,
+      "l1_score": 0.2855,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/卢德维克·斯沃博达",
+      "e": "http://dbpedia.org/resource/Ludvík_Svoboda",
+      "label": 1,
+      "l1_score": 0.4552,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/勇士足球會",
+      "e": "http://dbpedia.org/resource/Warriors_FC",
+      "label": 1,
+      "l1_score": 0.4667,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/乔·哈特",
+      "e": "http://dbpedia.org/resource/Joe_Donnelly",
+      "label": 0,
+      "l1_score": 0.2588,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约瑟夫·埃斯特拉达",
+      "e": "http://dbpedia.org/resource/Joseph_Muscat",
+      "label": 0,
+      "l1_score": 0.3786,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/萬代",
+      "e": "http://dbpedia.org/resource/Bandai",
+      "label": 1,
+      "l1_score": 0.4795,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/墨西哥國家足球隊",
+      "e": "http://dbpedia.org/resource/Mexico_national_football_team",
+      "label": 1,
+      "l1_score": 0.4952,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/拿破崙·歐仁·路易·波拿巴",
+      "e": "http://dbpedia.org/resource/Napoléon_Louis_Bonaparte",
+      "label": 0,
+      "l1_score": 0.3418,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/首爾足球俱樂部",
+      "e": "http://dbpedia.org/resource/FC_Seoul",
+      "label": 1,
+      "l1_score": 0.4355,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/議政府市",
+      "e": "http://dbpedia.org/resource/Government_House,_Hong_Kong",
+      "label": 0,
+      "l1_score": 0.2394,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/夏威夷语",
+      "e": "http://dbpedia.org/resource/Hawaiian_language",
+      "label": 1,
+      "l1_score": 0.4346,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/基督教民主黨_(荷蘭)",
+      "e": "http://dbpedia.org/resource/Christian_Democratic_Appeal",
+      "label": 1,
+      "l1_score": 0.4551,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/巴勃罗·聂鲁达",
+      "e": "http://dbpedia.org/resource/Pablo_Neruda",
+      "label": 1,
+      "l1_score": 0.4375,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Chase_(倖田來未單曲)",
+      "e": "http://dbpedia.org/resource/Chase_(Kumi_Koda_song)",
+      "label": 1,
+      "l1_score": 0.4433,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/西斯拉夫语支",
+      "e": "http://dbpedia.org/resource/West_Slavic_languages",
+      "label": 1,
+      "l1_score": 0.425,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/梁从诫",
+      "e": "http://dbpedia.org/resource/Liang_Sicheng",
+      "label": 0,
+      "l1_score": 0.3163,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/威根竞技足球俱乐部",
+      "e": "http://dbpedia.org/resource/Wigan_Athletic_F.C.",
+      "label": 1,
+      "l1_score": 0.4747,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/蕭亞軒",
+      "e": "http://dbpedia.org/resource/Elva_Hsiao",
+      "label": 1,
+      "l1_score": 0.475,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/香港",
+      "e": "http://dbpedia.org/resource/Hong_Kong",
+      "label": 1,
+      "l1_score": 0.4949,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/艾哈迈德·陶菲克帕夏",
+      "e": "http://dbpedia.org/resource/Ahmad_Zahid_Hamidi",
+      "label": 0,
+      "l1_score": 0.2628,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/托比亞斯·利維斯",
+      "e": "http://dbpedia.org/resource/Tobias_Levels",
+      "label": 1,
+      "l1_score": 0.4678,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/波尔布特",
+      "e": "http://dbpedia.org/resource/Pol_Pot",
+      "label": 1,
+      "l1_score": 0.4183,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/BALLAD～无名恋歌～",
+      "e": "http://dbpedia.org/resource/Ballad_(Namonaki_Koi_no_Uta)",
+      "label": 1,
+      "l1_score": 0.4333,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/冰岛",
+      "e": "http://dbpedia.org/resource/Iceland",
+      "label": 1,
+      "l1_score": 0.4573,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/游騎兵4號",
+      "e": "http://dbpedia.org/resource/Ranger_1",
+      "label": 0,
+      "l1_score": 0.2902,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/艾資哈爾大學",
+      "e": "http://dbpedia.org/resource/University_of_Sydney",
+      "label": 0,
+      "l1_score": 0.3952,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/The_Secret_Code",
+      "e": "http://dbpedia.org/resource/The_Secret_Code_(album)",
+      "label": 1,
+      "l1_score": 0.4911,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/诺基亚Lumia_800",
+      "e": "http://dbpedia.org/resource/Nokia_Lumia_510",
+      "label": 0,
+      "l1_score": 0.3328,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/爱德华·利文斯顿",
+      "e": "http://dbpedia.org/resource/Edward_Short,_Baron_Glenamara",
+      "label": 0,
+      "l1_score": 0.2969,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/北德意志邦聯",
+      "e": "http://dbpedia.org/resource/Northern_Ireland",
+      "label": 0,
+      "l1_score": 0.2433,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/C++",
+      "e": "http://dbpedia.org/resource/C_Sharp_(programming_language)",
+      "label": 0,
+      "l1_score": 0.295,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约翰·G·唐尼",
+      "e": "http://dbpedia.org/resource/John_Patrick_Shanley",
+      "label": 0,
+      "l1_score": 0.2581,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/中華民國國軍",
+      "e": "http://dbpedia.org/resource/The_Strokes",
+      "label": 0,
+      "l1_score": 0.2489,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/阿瑟·科恩伯格",
+      "e": "http://dbpedia.org/resource/Arthur_Li",
+      "label": 0,
+      "l1_score": 0.2513,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/2011年中国足球超级联赛",
+      "e": "http://dbpedia.org/resource/2011–12_Football_League_One",
+      "label": 0,
+      "l1_score": 0.3487,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/史提芬·艾利蘭",
+      "e": "http://dbpedia.org/resource/Steven_Defour",
+      "label": 0,
+      "l1_score": 0.3242,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/T_(东方神起专辑)",
+      "e": "http://dbpedia.org/resource/T_(TVXQ_album)",
+      "label": 1,
+      "l1_score": 0.4344,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/都柏林三一學院",
+      "e": "http://dbpedia.org/resource/Dublin",
+      "label": 0,
+      "l1_score": 0.2894,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/素万那普机场",
+      "e": "http://dbpedia.org/resource/Suvarnabhumi_Airport",
+      "label": 1,
+      "l1_score": 0.4448,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/BMW_F30",
+      "e": "http://dbpedia.org/resource/BMW_5_Series",
+      "label": 0,
+      "l1_score": 0.2917,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/波音367-80",
+      "e": "http://dbpedia.org/resource/Boeing_367-80",
+      "label": 1,
+      "l1_score": 0.4832,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/尼古拉二世_(俄罗斯)",
+      "e": "http://dbpedia.org/resource/Nicholas_II_of_Russia",
+      "label": 1,
+      "l1_score": 0.4391,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/勒内·普利文",
+      "e": "http://dbpedia.org/resource/René_Pleven",
+      "label": 1,
+      "l1_score": 0.4248,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/阿维拉省",
+      "e": "http://dbpedia.org/resource/Province_of_Huesca",
+      "label": 0,
+      "l1_score": 0.4796,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/高盧-義大利語",
+      "e": "http://dbpedia.org/resource/Gallo-Italic_languages",
+      "label": 1,
+      "l1_score": 0.485,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/HTC_One_V",
+      "e": "http://dbpedia.org/resource/HTC_Desire",
+      "label": 0,
+      "l1_score": 0.3274,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/聖奧爾本斯市",
+      "e": "http://dbpedia.org/resource/St._Louis",
+      "label": 0,
+      "l1_score": 0.2655,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/苏格拉底",
+      "e": "http://dbpedia.org/resource/Socrates",
+      "label": 1,
+      "l1_score": 0.4719,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/伊格尔·图多尔",
+      "e": "http://dbpedia.org/resource/Eagle_Airways",
+      "label": 0,
+      "l1_score": 0.2458,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Nvidia_Shield",
+      "e": "http://dbpedia.org/resource/Shield_Portable",
+      "label": 1,
+      "l1_score": 0.4583,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/A_Day_at_the_Races",
+      "e": "http://dbpedia.org/resource/A_Walk_in_the_Park",
+      "label": 0,
+      "l1_score": 0.2475,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/弗兰克·阿奇姆彭",
+      "e": "http://dbpedia.org/resource/Frank_Acheampong",
+      "label": 1,
+      "l1_score": 0.4417,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/哥伦比亚",
+      "e": "http://dbpedia.org/resource/Colombia",
+      "label": 1,
+      "l1_score": 0.4528,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/苏荣",
+      "e": "http://dbpedia.org/resource/Su_Yu",
+      "label": 0,
+      "l1_score": 0.2833,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/叶剑英",
+      "e": "http://dbpedia.org/resource/Ye_Fei",
+      "label": 0,
+      "l1_score": 0.2478,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/米高·奧利華",
+      "e": "http://dbpedia.org/resource/Michael_Mukasey",
+      "label": 0,
+      "l1_score": 0.2817,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/教宗波尼法爵三世",
+      "e": "http://dbpedia.org/resource/Pope_Nicholas_IV",
+      "label": 0,
+      "l1_score": 0.2356,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/查理五世_(神圣罗马帝国)",
+      "e": "http://dbpedia.org/resource/Charles_V,_Holy_Roman_Emperor",
+      "label": 1,
+      "l1_score": 0.4606,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Got_it%3F_(GOT7迷你專輯)",
+      "e": "http://dbpedia.org/resource/Got_It%3F",
+      "label": 1,
+      "l1_score": 0.4226,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Innuendo",
+      "e": "http://dbpedia.org/resource/Innuendo_(album)",
+      "label": 1,
+      "l1_score": 0.4772,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/朱塞佩·佩拉",
+      "e": "http://dbpedia.org/resource/Giuseppe_Pella",
+      "label": 1,
+      "l1_score": 0.4806,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/別告訴我",
+      "e": "http://dbpedia.org/resource/Do_Somethin'",
+      "label": 0,
+      "l1_score": 0.314,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/威廉·欧文",
+      "e": "http://dbpedia.org/resource/William_Adams_Richardson",
+      "label": 0,
+      "l1_score": 0.3024,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/中華民國法務部",
+      "e": "http://dbpedia.org/resource/Ministry_of_Culture_of_the_People's_Republic_of_China",
+      "label": 0,
+      "l1_score": 0.3625,
+      "l2_raw": "ERROR: HTTP 400",
+      "l2_prediction": -1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/东乡语",
+      "e": "http://dbpedia.org/resource/Santa_language",
+      "label": 1,
+      "l1_score": 0.4424,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/米兰·巴罗什",
+      "e": "http://dbpedia.org/resource/Milan_Baroš",
+      "label": 1,
+      "l1_score": 0.4244,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/崔龙海",
+      "e": "http://dbpedia.org/resource/Cui_Tiankai",
+      "label": 0,
+      "l1_score": 0.2454,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/錫卡莫爾鎮區_(巴特勒縣)",
+      "e": "http://dbpedia.org/resource/Sycamore_Township,_Butler_County,_Kansas",
+      "label": 1,
+      "l1_score": 0.4544,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/賓士鎮市",
+      "e": "http://dbpedia.org/resource/City_of_Auburn",
+      "label": 0,
+      "l1_score": 0.4928,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/乔瓦尼·格隆基",
+      "e": "http://dbpedia.org/resource/Giovanni_Leone",
+      "label": 0,
+      "l1_score": 0.4719,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/伊曼紐·華勒斯坦",
+      "e": "http://dbpedia.org/resource/Emmanuel_Eboué",
+      "label": 0,
+      "l1_score": 0.3108,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/立陶宛王国",
+      "e": "http://dbpedia.org/resource/Kingdom_of_Tungning",
+      "label": 0,
+      "l1_score": 0.3507,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/For_My_Dear...",
+      "e": "http://dbpedia.org/resource/For_My_Dear...",
+      "label": 1,
+      "l1_score": 0.46,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/阿曼",
+      "e": "http://dbpedia.org/resource/Oman",
+      "label": 1,
+      "l1_score": 0.4796,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/德国国家女子足球队",
+      "e": "http://dbpedia.org/resource/Germany_women's_national_football_team",
+      "label": 1,
+      "l1_score": 0.4419,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/野獸男孩",
+      "e": "http://dbpedia.org/resource/Beast_(South_Korean_band)",
+      "label": 0,
+      "l1_score": 0.2624,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/林青霞",
+      "e": "http://dbpedia.org/resource/Brigitte_Lin",
+      "label": 1,
+      "l1_score": 0.49,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/三星Galaxy_S5",
+      "e": "http://dbpedia.org/resource/Samsung_Galaxy_Note_10.1",
+      "label": 0,
+      "l1_score": 0.3419,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/波士顿",
+      "e": "http://dbpedia.org/resource/Boston",
+      "label": 1,
+      "l1_score": 0.4754,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/江西省",
+      "e": "http://dbpedia.org/resource/Jiangxi",
+      "label": 1,
+      "l1_score": 0.4202,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约翰·惠廷戴尔",
+      "e": "http://dbpedia.org/resource/John_Whittingdale",
+      "label": 1,
+      "l1_score": 0.4314,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/多哥",
+      "e": "http://dbpedia.org/resource/Togo",
+      "label": 1,
+      "l1_score": 0.46,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/索菲亞列夫斯基足球俱樂部",
+      "e": "http://dbpedia.org/resource/Sofia_Rotaru",
+      "label": 0,
+      "l1_score": 0.2397,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/NO_MORE_RULES.",
+      "e": "http://dbpedia.org/resource/No_Regret_(song)",
+      "label": 0,
+      "l1_score": 0.2367,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/奧林匹克國家綜合體育場",
+      "e": "http://dbpedia.org/resource/Olimpiyskiy_National_Sports_Complex",
+      "label": 1,
+      "l1_score": 0.4328,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/罗曼·沙罗诺夫",
+      "e": "http://dbpedia.org/resource/Romelu_Lukaku",
+      "label": 0,
+      "l1_score": 0.319,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/皇后大學_(加拿大)",
+      "e": "http://dbpedia.org/resource/Queen's_University",
+      "label": 1,
+      "l1_score": 0.4784,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/穆罕默德六世_(摩洛哥)",
+      "e": "http://dbpedia.org/resource/Muhammad_Yunus",
+      "label": 0,
+      "l1_score": 0.2733,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/終巡者",
+      "e": "http://dbpedia.org/resource/The_Dark_Tower_VI:_Song_of_Susannah",
+      "label": 0,
+      "l1_score": 0.2344,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/凱文·凱什",
+      "e": "http://dbpedia.org/resource/Kevin_Cash",
+      "label": 1,
+      "l1_score": 0.4583,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/金奈",
+      "e": "http://dbpedia.org/resource/Chennai",
+      "label": 1,
+      "l1_score": 0.465,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/华沙",
+      "e": "http://dbpedia.org/resource/Warsaw_Uprising",
+      "label": 0,
+      "l1_score": 0.252,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/科羅拉多大學波德分校",
+      "e": "http://dbpedia.org/resource/University_of_North_Carolina",
+      "label": 0,
+      "l1_score": 0.4045,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/胡安·卡米洛·苏尼加",
+      "e": "http://dbpedia.org/resource/Juan_Mata",
+      "label": 0,
+      "l1_score": 0.42,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/穆罕默德·摩萨台",
+      "e": "http://dbpedia.org/resource/Mohammad_Sa'ed",
+      "label": 0,
+      "l1_score": 0.3033,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/約翰·阿徹利·迪尤",
+      "e": "http://dbpedia.org/resource/John_Dew_(bishop)",
+      "label": 1,
+      "l1_score": 0.4258,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/韩国国会",
+      "e": "http://dbpedia.org/resource/National_Assembly_(South_Korea)",
+      "label": 1,
+      "l1_score": 0.4472,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/庹震",
+      "e": "http://dbpedia.org/resource/Tuo_Zhen",
+      "label": 1,
+      "l1_score": 0.4803,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/HTC_First",
+      "e": "http://dbpedia.org/resource/HTC_One_Mini_2",
+      "label": 0,
+      "l1_score": 0.2385,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/愛的力量_(珍妮佛·羅許歌曲)",
+      "e": "http://dbpedia.org/resource/The_Power_of_Love_(Jennifer_Rush_song)",
+      "label": 1,
+      "l1_score": 0.4646,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/休·艾弗雷特三世",
+      "e": "http://dbpedia.org/resource/Hugo_von_Seeliger",
+      "label": 0,
+      "l1_score": 0.2812,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/暮光之城系列",
+      "e": "http://dbpedia.org/resource/Twilight_(novel_series)",
+      "label": 1,
+      "l1_score": 0.4487,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/民族竞技",
+      "e": "http://dbpedia.org/resource/National_Stadium_(Kaohsiung)",
+      "label": 0,
+      "l1_score": 0.2621,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/本杰明·阿普索普·古尔德",
+      "e": "http://dbpedia.org/resource/Benedict_Anderson",
+      "label": 0,
+      "l1_score": 0.2473,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/德意志邦聯",
+      "e": "http://dbpedia.org/resource/German_Empire",
+      "label": 0,
+      "l1_score": 0.3469,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/陳誠",
+      "e": "http://dbpedia.org/resource/Cheng_Jei-cheng",
+      "label": 0,
+      "l1_score": 0.3095,
+      "l2_raw": "ERROR: HTTP 400",
+      "l2_prediction": -1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/海倫·道格拉斯",
+      "e": "http://dbpedia.org/resource/Helen_Gahagan_Douglas",
+      "label": 1,
+      "l1_score": 0.4396,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/古斯塔夫五世",
+      "e": "http://dbpedia.org/resource/Gustav_Heinemann",
+      "label": 0,
+      "l1_score": 0.3358,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/奥利弗·卡恩",
+      "e": "http://dbpedia.org/resource/Oliver_Bozanic",
+      "label": 0,
+      "l1_score": 0.3487,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/中国科学技术大学",
+      "e": "http://dbpedia.org/resource/University_of_Science_and_Technology_of_China",
+      "label": 1,
+      "l1_score": 0.4938,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/馬克·呂特",
+      "e": "http://dbpedia.org/resource/Mark_Rutte",
+      "label": 1,
+      "l1_score": 0.4821,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/亞捷隆大學",
+      "e": "http://dbpedia.org/resource/University_of_Hull",
+      "label": 0,
+      "l1_score": 0.4224,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/蘭斯體育會",
+      "e": "http://dbpedia.org/resource/Stade_de_Reims",
+      "label": 1,
+      "l1_score": 0.43,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约瑟夫·维萨里奥诺维奇·斯大林",
+      "e": "http://dbpedia.org/resource/Joseph_Stalin",
+      "label": 1,
+      "l1_score": 0.4394,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/弗拉澤·福斯特",
+      "e": "http://dbpedia.org/resource/Fraser_Forster",
+      "label": 1,
+      "l1_score": 0.4528,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/亨利·利文斯顿",
+      "e": "http://dbpedia.org/resource/Henry_Pottinger",
+      "label": 0,
+      "l1_score": 0.366,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约翰·麦克杜格尔",
+      "e": "http://dbpedia.org/resource/John_Backus",
+      "label": 0,
+      "l1_score": 0.3413,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/教宗本篤十四世",
+      "e": "http://dbpedia.org/resource/Pope_John_VI",
+      "label": 0,
+      "l1_score": 0.3371,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/特里·布兰斯塔德",
+      "e": "http://dbpedia.org/resource/Terry_Branstad",
+      "label": 1,
+      "l1_score": 0.4572,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/艾伦·格林斯潘",
+      "e": "http://dbpedia.org/resource/Alan_Greenspan",
+      "label": 1,
+      "l1_score": 0.4425,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/帖木儿帝国",
+      "e": "http://dbpedia.org/resource/Timurid_Empire",
+      "label": 1,
+      "l1_score": 0.4424,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/海口市",
+      "e": "http://dbpedia.org/resource/Haikou",
+      "label": 1,
+      "l1_score": 0.473,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/路易九世_(法兰西)",
+      "e": "http://dbpedia.org/resource/Louis_IX_of_France",
+      "label": 1,
+      "l1_score": 0.4563,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约翰·斯帕洛·戴维·汤普森",
+      "e": "http://dbpedia.org/resource/John_Sparrow_David_Thompson",
+      "label": 1,
+      "l1_score": 0.4511,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/保羅·史高斯",
+      "e": "http://dbpedia.org/resource/Paul_Verhaegh",
+      "label": 0,
+      "l1_score": 0.3241,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/南加州大学",
+      "e": "http://dbpedia.org/resource/University_of_Florida",
+      "label": 0,
+      "l1_score": 0.4267,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Don't_Wanna_Lie",
+      "e": "http://dbpedia.org/resource/Don't_Wanna_Lie",
+      "label": 1,
+      "l1_score": 0.4421,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/CNBLUE",
+      "e": "http://dbpedia.org/resource/CNBLUE",
+      "label": 1,
+      "l1_score": 0.4729,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/阿方索一世_(阿斯圖里亞斯)",
+      "e": "http://dbpedia.org/resource/Alfonso_XII_of_Spain",
+      "label": 0,
+      "l1_score": 0.2437,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/路易斯安那州行政区划",
+      "e": "http://dbpedia.org/resource/List_of_parishes_in_Louisiana",
+      "label": 1,
+      "l1_score": 0.4599,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/聖十字學院",
+      "e": "http://dbpedia.org/resource/College_of_the_Holy_Cross",
+      "label": 1,
+      "l1_score": 0.494,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/NEVER_EVER",
+      "e": "http://dbpedia.org/resource/Never_Ever_(Ayumi_Hamasaki_song)",
+      "label": 1,
+      "l1_score": 0.4827,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/德国十一月革命",
+      "e": "http://dbpedia.org/resource/German_Revolution_of_1918–19",
+      "label": 1,
+      "l1_score": 0.4233,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/保羅·奧尼爾",
+      "e": "http://dbpedia.org/resource/Paul_Pogba",
+      "label": 0,
+      "l1_score": 0.2383,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/达根汉姆和雷德布里奇足球俱乐部",
+      "e": "http://dbpedia.org/resource/Dagenham_&_Redbridge_F.C.",
+      "label": 1,
+      "l1_score": 0.451,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/纽约州议会",
+      "e": "http://dbpedia.org/resource/New_Guinea",
+      "label": 0,
+      "l1_score": 0.2467,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/易卜拉欣·哈基米",
+      "e": "http://dbpedia.org/resource/Ebrahim_Hakimi",
+      "label": 1,
+      "l1_score": 0.48,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/三浦泰年",
+      "e": "http://dbpedia.org/resource/Mi_Haolun",
+      "label": 0,
+      "l1_score": 0.2744,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约翰·L·赫姆",
+      "e": "http://dbpedia.org/resource/John_Thune",
+      "label": 0,
+      "l1_score": 0.2672,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/香港奧運足球代表隊",
+      "e": "http://dbpedia.org/resource/Hong_Kong_Pegasus_FC",
+      "label": 0,
+      "l1_score": 0.2591,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/若昂·古拉特",
+      "e": "http://dbpedia.org/resource/João_Pereira_(Portuguese_footballer)",
+      "label": 0,
+      "l1_score": 0.2601,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/李智超",
+      "e": "http://dbpedia.org/resource/Li_Lisan",
+      "label": 0,
+      "l1_score": 0.2853,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/天津权健足球俱乐部",
+      "e": "http://dbpedia.org/resource/Tianjin_Quanjian_F.C.",
+      "label": 1,
+      "l1_score": 0.4418,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/叶戈尔·盖达尔",
+      "e": "http://dbpedia.org/resource/Ye_Fei",
+      "label": 0,
+      "l1_score": 0.3075,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/特拉布宗体育",
+      "e": "http://dbpedia.org/resource/Trabzonspor",
+      "label": 1,
+      "l1_score": 0.4669,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/HD_187123_b",
+      "e": "http://dbpedia.org/resource/HD_108874_c",
+      "label": 0,
+      "l1_score": 0.3599,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/教宗卡利克斯特二世",
+      "e": "http://dbpedia.org/resource/Pope_John_Paul_II",
+      "label": 0,
+      "l1_score": 0.2457,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/愛德華親王_(肯特公爵)",
+      "e": "http://dbpedia.org/resource/Prince_Edward,_Duke_of_Kent",
+      "label": 1,
+      "l1_score": 0.4458,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/費蘭甸奴",
+      "e": "http://dbpedia.org/resource/Fernandinho_(footballer)",
+      "label": 1,
+      "l1_score": 0.4417,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/摩納哥體育會足球會",
+      "e": "http://dbpedia.org/resource/AS_Monaco_FC",
+      "label": 1,
+      "l1_score": 0.4705,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/崇明县",
+      "e": "http://dbpedia.org/resource/Chongming_County",
+      "label": 1,
+      "l1_score": 0.4541,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/理查一世",
+      "e": "http://dbpedia.org/resource/Richard_Shelby",
+      "label": 0,
+      "l1_score": 0.2551,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/卢布林",
+      "e": "http://dbpedia.org/resource/Lublin",
+      "label": 1,
+      "l1_score": 0.475,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/馬自達RX-8",
+      "e": "http://dbpedia.org/resource/Mazda_Familia",
+      "label": 0,
+      "l1_score": 0.305,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/中華帝國",
+      "e": "http://dbpedia.org/resource/Empire_of_China_(1915–16)",
+      "label": 1,
+      "l1_score": 0.4521,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/沃顿商学院",
+      "e": "http://dbpedia.org/resource/Wharton_School_of_the_University_of_Pennsylvania",
+      "label": 1,
+      "l1_score": 0.4754,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/喬·李伯曼",
+      "e": "http://dbpedia.org/resource/Joe_Jonas",
+      "label": 0,
+      "l1_score": 0.2353,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/阿方索四世_(莱昂)",
+      "e": "http://dbpedia.org/resource/Alfonso_Ferrero_La_Marmora",
+      "label": 0,
+      "l1_score": 0.269,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/赫爾河畔京士頓",
+      "e": "http://dbpedia.org/resource/Kingston_upon_Hull",
+      "label": 1,
+      "l1_score": 0.4168,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Starz_(电视频道)",
+      "e": "http://dbpedia.org/resource/Starz",
+      "label": 1,
+      "l1_score": 0.4517,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/賴恩·古爾",
+      "e": "http://dbpedia.org/resource/Ryan_Babel",
+      "label": 0,
+      "l1_score": 0.35,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/让-克里斯托夫·拿破仑",
+      "e": "http://dbpedia.org/resource/Jean-Baptiste_Lamarck",
+      "label": 0,
+      "l1_score": 0.2383,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/奧克蘭機場",
+      "e": "http://dbpedia.org/resource/Auckland_Airport",
+      "label": 1,
+      "l1_score": 0.4559,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/威爾斯21歲以下足球代表隊",
+      "e": "http://dbpedia.org/resource/Wales_national_under-21_football_team",
+      "label": 1,
+      "l1_score": 0.4263,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Placebo",
+      "e": "http://dbpedia.org/resource/Placebo_(band)",
+      "label": 1,
+      "l1_score": 0.4667,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/罗志军",
+      "e": "http://dbpedia.org/resource/Luo_Zhijun",
+      "label": 1,
+      "l1_score": 0.4375,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/傑伊·卡尼",
+      "e": "http://dbpedia.org/resource/Jay_Rockefeller",
+      "label": 0,
+      "l1_score": 0.252,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/黃昆輝",
+      "e": "http://dbpedia.org/resource/Huang_Shin-chieh",
+      "label": 0,
+      "l1_score": 0.2695,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/黎平县",
+      "e": "http://dbpedia.org/resource/Liping_County",
+      "label": 1,
+      "l1_score": 0.4331,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/法赫德國王國際體育場",
+      "e": "http://dbpedia.org/resource/King_Fahd_International_Stadium",
+      "label": 1,
+      "l1_score": 0.4917,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/LIFE_(YUI單曲)",
+      "e": "http://dbpedia.org/resource/Life_(Yui_song)",
+      "label": 1,
+      "l1_score": 0.4633,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/維也納國際機場",
+      "e": "http://dbpedia.org/resource/Vienna_International_Airport",
+      "label": 1,
+      "l1_score": 0.4741,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/讓·迪貝利",
+      "e": "http://dbpedia.org/resource/Jean_Tiberi",
+      "label": 1,
+      "l1_score": 0.4482,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/大人物樂團",
+      "e": "http://dbpedia.org/resource/Mr._Big_(American_band)",
+      "label": 1,
+      "l1_score": 0.4286,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/白賴仁·派列斯基",
+      "e": "http://dbpedia.org/resource/Bai_Jiajun",
+      "label": 0,
+      "l1_score": 0.2933,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/让-巴蒂斯特_(维莱尔伯爵)",
+      "e": "http://dbpedia.org/resource/Jean-Baptiste_de_Villèle",
+      "label": 1,
+      "l1_score": 0.4797,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/傑拉德·古拉尼",
+      "e": "http://dbpedia.org/resource/Gerald_Guralnik",
+      "label": 1,
+      "l1_score": 0.4661,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/埃登·麦克格迪",
+      "e": "http://dbpedia.org/resource/Eden_Arena",
+      "label": 0,
+      "l1_score": 0.2525,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/埃德蒙·伦道夫",
+      "e": "http://dbpedia.org/resource/Edmund_Ho",
+      "label": 0,
+      "l1_score": 0.325,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/傅政华",
+      "e": "http://dbpedia.org/resource/Fu_Kun-chi",
+      "label": 0,
+      "l1_score": 0.245,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/OS_X",
+      "e": "http://dbpedia.org/resource/OS_X_El_Capitan",
+      "label": 0,
+      "l1_score": 0.4292,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约翰·伯考_(英国)",
+      "e": "http://dbpedia.org/resource/John_de_Robeck",
+      "label": 0,
+      "l1_score": 0.2537,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/LOVE_(濱崎步專輯)",
+      "e": "http://dbpedia.org/resource/Love_(Destiny)",
+      "label": 0,
+      "l1_score": 0.2773,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/乔瓦尼·兰萨",
+      "e": "http://dbpedia.org/resource/Giovanni_Lanza",
+      "label": 1,
+      "l1_score": 0.4881,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/阿迪尔·查尔查尼",
+      "e": "http://dbpedia.org/resource/Adil_Çarçani",
+      "label": 1,
+      "l1_score": 0.4875,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/阿波罗8号",
+      "e": "http://dbpedia.org/resource/Apollo_8",
+      "label": 1,
+      "l1_score": 0.43,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/吉恩·沃爾夫",
+      "e": "http://dbpedia.org/resource/Jean-Éric_Vergne",
+      "label": 0,
+      "l1_score": 0.2506,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约翰·亚当斯",
+      "e": "http://dbpedia.org/resource/John_Boehner",
+      "label": 0,
+      "l1_score": 0.2761,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/雷·馬古斯",
+      "e": "http://dbpedia.org/resource/Ray_Huang",
+      "label": 0,
+      "l1_score": 0.2552,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/弘益大學",
+      "e": "http://dbpedia.org/resource/Hongik_University",
+      "label": 1,
+      "l1_score": 0.4449,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/安德烈亚斯·魏曼",
+      "e": "http://dbpedia.org/resource/Andrew_Davies_(footballer)",
+      "label": 0,
+      "l1_score": 0.3409,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/格羅寧根足球會",
+      "e": "http://dbpedia.org/resource/FC_Groningen",
+      "label": 1,
+      "l1_score": 0.4552,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/披耶帕凤·丰派育哈色纳",
+      "e": "http://dbpedia.org/resource/Philip,_Duke_of_Parma",
+      "label": 0,
+      "l1_score": 0.2333,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/埃娃·科帕奇",
+      "e": "http://dbpedia.org/resource/Eva_Braun",
+      "label": 0,
+      "l1_score": 0.2777,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/蓋瑞·貝克",
+      "e": "http://dbpedia.org/resource/Gary_Hooper",
+      "label": 0,
+      "l1_score": 0.2896,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/约翰·凯尔",
+      "e": "http://dbpedia.org/resource/John_Keats",
+      "label": 0,
+      "l1_score": 0.3754,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/墨西哥总统",
+      "e": "http://dbpedia.org/resource/Mexican_Revolution",
+      "label": 0,
+      "l1_score": 0.3067,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/沈阳奥林匹克体育中心",
+      "e": "http://dbpedia.org/resource/Shenyang_Olympic_Sports_Center_Stadium",
+      "label": 1,
+      "l1_score": 0.4633,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/理查德·门特·约翰逊",
+      "e": "http://dbpedia.org/resource/Richard_Graves_MacDonnell",
+      "label": 0,
+      "l1_score": 0.3375,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/蒂姆·克魯爾",
+      "e": "http://dbpedia.org/resource/Tim_Krul",
+      "label": 1,
+      "l1_score": 0.4271,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/许政",
+      "e": "http://dbpedia.org/resource/Xu_Zheng_(actor)",
+      "label": 0,
+      "l1_score": 0.3808,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/叶剑英",
+      "e": "http://dbpedia.org/resource/Ye_Jianying",
+      "label": 1,
+      "l1_score": 0.4861,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/香港浸會大學",
+      "e": "http://dbpedia.org/resource/Hong_Kong_Baptist_University",
+      "label": 1,
+      "l1_score": 0.4875,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/托马斯·潘恩",
+      "e": "http://dbpedia.org/resource/Thomas_Aquinas",
+      "label": 0,
+      "l1_score": 0.2793,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/尤里·米哈伊洛维奇·卢日科夫",
+      "e": "http://dbpedia.org/resource/Yuri_Andropov",
+      "label": 0,
+      "l1_score": 0.2646,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/唐飛",
+      "e": "http://dbpedia.org/resource/Tang_dynasty",
+      "label": 0,
+      "l1_score": 0.2319,
+      "l2_raw": "ERROR: HTTP 400",
+      "l2_prediction": -1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/少女已過，熟女未滿",
+      "e": "http://dbpedia.org/resource/I'm_Not_a_Girl,_Not_Yet_a_Woman",
+      "label": 1,
+      "l1_score": 0.4353,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/赵正永",
+      "e": "http://dbpedia.org/resource/Zhao_Zhengyong",
+      "label": 1,
+      "l1_score": 0.46,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/张玉宁_(1997年出生)",
+      "e": "http://dbpedia.org/resource/Zhang_Yuning_(footballer,_born_1997)",
+      "label": 1,
+      "l1_score": 0.4925,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/谢菲尔德联足球俱乐部",
+      "e": "http://dbpedia.org/resource/Sheffield_United_F.C.",
+      "label": 1,
+      "l1_score": 0.4947,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/地区党",
+      "e": "http://dbpedia.org/resource/Party_of_Regions",
+      "label": 1,
+      "l1_score": 0.4765,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/费利佩五世",
+      "e": "http://dbpedia.org/resource/Felipe_Nasr",
+      "label": 0,
+      "l1_score": 0.322,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/大卫·干路尼",
+      "e": "http://dbpedia.org/resource/David_Connolly",
+      "label": 1,
+      "l1_score": 0.4423,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/李國能",
+      "e": "http://dbpedia.org/resource/Li_Kai",
+      "label": 0,
+      "l1_score": 0.2424,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/英属宾夕法尼亚省",
+      "e": "http://dbpedia.org/resource/British_Hong_Kong",
+      "label": 0,
+      "l1_score": 0.3023,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/傑克·布萊克",
+      "e": "http://dbpedia.org/resource/Jack_Black",
+      "label": 1,
+      "l1_score": 0.4365,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/赫尔曼·范龙佩",
+      "e": "http://dbpedia.org/resource/Hercules_Robinson,_1st_Baron_Rosmead",
+      "label": 0,
+      "l1_score": 0.2333,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Feel_my_mind",
+      "e": "http://dbpedia.org/resource/Feel_My_Soul_(song)",
+      "label": 0,
+      "l1_score": 0.3128,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/博胡斯拉夫·索博特卡",
+      "e": "http://dbpedia.org/resource/Bohuslav_Sobotka",
+      "label": 1,
+      "l1_score": 0.4583,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/輿石東",
+      "e": "http://dbpedia.org/resource/Yu_Shyi-kun",
+      "label": 0,
+      "l1_score": 0.3133,
+      "l2_raw": "ERROR: HTTP 400",
+      "l2_prediction": -1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/老傣文",
+      "e": "http://dbpedia.org/resource/Old_Church_Slavonic",
+      "label": 0,
+      "l1_score": 0.2936,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/迈克尔·切尔托夫",
+      "e": "http://dbpedia.org/resource/Michael_David_Thomas",
+      "label": 0,
+      "l1_score": 0.2475,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/威廉·本廷克，第四代波特蘭公爵",
+      "e": "http://dbpedia.org/resource/William_Chan",
+      "label": 0,
+      "l1_score": 0.24,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/開普殖民地",
+      "e": "http://dbpedia.org/resource/Cape_Colony",
+      "label": 1,
+      "l1_score": 0.4892,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/郭靖",
+      "e": "http://dbpedia.org/resource/Guo_Chunquan",
+      "label": 0,
+      "l1_score": 0.2833,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/曾少宗",
+      "e": "http://dbpedia.org/resource/Zeng_Peiyan",
+      "label": 0,
+      "l1_score": 0.274,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/方大同",
+      "e": "http://dbpedia.org/resource/Khalil_Fong",
+      "label": 1,
+      "l1_score": 0.46,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/西班牙君主列表",
+      "e": "http://dbpedia.org/resource/List_of_Spanish_monarchs",
+      "label": 1,
+      "l1_score": 0.4375,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/保羅·瓦哈格",
+      "e": "http://dbpedia.org/resource/Paul_Hamilton_(politician)",
+      "label": 0,
+      "l1_score": 0.2846,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/馬烏雷加托_(阿斯圖里亞斯)",
+      "e": "http://dbpedia.org/resource/Mauregatus_of_Asturias",
+      "label": 1,
+      "l1_score": 0.4325,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/贝尔格莱德球馆",
+      "e": "http://dbpedia.org/resource/Kombank_Arena",
+      "label": 1,
+      "l1_score": 0.4244,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/微软工作室",
+      "e": "http://dbpedia.org/resource/Microsoft_Mobile",
+      "label": 0,
+      "l1_score": 0.3233,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Veronica_(电视频道)",
+      "e": "http://dbpedia.org/resource/Veronica_TV",
+      "label": 1,
+      "l1_score": 0.4858,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/吉米·弗洛伊德·哈塞尔巴因克",
+      "e": "http://dbpedia.org/resource/Jimmy_Bullard",
+      "label": 0,
+      "l1_score": 0.3007,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/左營區",
+      "e": "http://dbpedia.org/resource/Left_4_Dead",
+      "label": 0,
+      "l1_score": 0.2376,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/赫尔城足球俱乐部",
+      "e": "http://dbpedia.org/resource/Hull_City_A.F.C.",
+      "label": 1,
+      "l1_score": 0.4269,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/郭可盈",
+      "e": "http://dbpedia.org/resource/Guo_Moruo",
+      "label": 0,
+      "l1_score": 0.2458,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/温州葆隆足球俱乐部",
+      "e": "http://dbpedia.org/resource/Wenzhou",
+      "label": 0,
+      "l1_score": 0.25,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/生活大爆炸_(第四季)",
+      "e": "http://dbpedia.org/resource/The_Big_Bang_Theory_(season_4)",
+      "label": 1,
+      "l1_score": 0.4186,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/保祿五世",
+      "e": "http://dbpedia.org/resource/Pope_Paul_V",
+      "label": 1,
+      "l1_score": 0.4565,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/NVIDIA_GeForce_9",
+      "e": "http://dbpedia.org/resource/GeForce_9_series",
+      "label": 1,
+      "l1_score": 0.4625,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/马希连·国柏",
+      "e": "http://dbpedia.org/resource/Ma_Lik",
+      "label": 0,
+      "l1_score": 0.2428,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/瑪姬·吉倫荷",
+      "e": "http://dbpedia.org/resource/Maggie_Gyllenhaal",
+      "label": 1,
+      "l1_score": 0.4367,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/马修·李奇微",
+      "e": "http://dbpedia.org/resource/Matthew_Lowton",
+      "label": 0,
+      "l1_score": 0.2417,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/天津市",
+      "e": "http://dbpedia.org/resource/Tianjin",
+      "label": 1,
+      "l1_score": 0.4972,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/威廉·尤斯蒂斯",
+      "e": "http://dbpedia.org/resource/William_Faulkner",
+      "label": 0,
+      "l1_score": 0.3,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/利偉倫",
+      "e": "http://dbpedia.org/resource/Li_Changchun",
+      "label": 0,
+      "l1_score": 0.2492,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/奧本_(紐約州)",
+      "e": "http://dbpedia.org/resource/Auburn_University",
+      "label": 0,
+      "l1_score": 0.2539,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/雅克·沙邦-戴尔马",
+      "e": "http://dbpedia.org/resource/Jacques_Chaban-Delmas",
+      "label": 1,
+      "l1_score": 0.4388,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/埃德蒙·伯克",
+      "e": "http://dbpedia.org/resource/Edmund_Barton",
+      "label": 0,
+      "l1_score": 0.2335,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/哈里王子",
+      "e": "http://dbpedia.org/resource/Prince_Jaime,_Count_of_Bardi",
+      "label": 0,
+      "l1_score": 0.2742,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/楚德湖",
+      "e": "http://dbpedia.org/resource/Lake_Tanganyika",
+      "label": 0,
+      "l1_score": 0.2833,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Apache许可证",
+      "e": "http://dbpedia.org/resource/Apache_Software_Foundation",
+      "label": 0,
+      "l1_score": 0.275,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/韦斯卡",
+      "e": "http://dbpedia.org/resource/Huesca",
+      "label": 1,
+      "l1_score": 0.4907,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/周强",
+      "e": "http://dbpedia.org/resource/Zhou_Benshun",
+      "label": 0,
+      "l1_score": 0.2971,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/共和黨_(法國)",
+      "e": "http://dbpedia.org/resource/Republican_Party_(United_States)",
+      "label": 0,
+      "l1_score": 0.2762,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/安東尼奧·科斯塔",
+      "e": "http://dbpedia.org/resource/António_Costa",
+      "label": 1,
+      "l1_score": 0.4792,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/温州葆隆足球俱乐部",
+      "e": "http://dbpedia.org/resource/Wenzhou",
+      "label": 0,
+      "l1_score": 0.25,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/何厚鏵",
+      "e": "http://dbpedia.org/resource/He_Guoqiang",
+      "label": 0,
+      "l1_score": 0.2577,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Windows_Mobile",
+      "e": "http://dbpedia.org/resource/Windows_95",
+      "label": 0,
+      "l1_score": 0.3372,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/豪斯医生",
+      "e": "http://dbpedia.org/resource/House_(TV_series)",
+      "label": 1,
+      "l1_score": 0.4833,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/教宗福禄",
+      "e": "http://dbpedia.org/resource/Pope_Leo_X",
+      "label": 0,
+      "l1_score": 0.2475,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/徐太志",
+      "e": "http://dbpedia.org/resource/Xu_Caihou",
+      "label": 0,
+      "l1_score": 0.2911,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/图姆帕体育场",
+      "e": "http://dbpedia.org/resource/Toumba_Stadium",
+      "label": 1,
+      "l1_score": 0.4667,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/普魯士王國",
+      "e": "http://dbpedia.org/resource/Kingdom_of_Bavaria",
+      "label": 0,
+      "l1_score": 0.4526,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/颶風吉爾伯特",
+      "e": "http://dbpedia.org/resource/Hurricane_Gustav",
+      "label": 0,
+      "l1_score": 0.4611,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/胡安·卡洛斯一世",
+      "e": "http://dbpedia.org/resource/Juan_Carlos_I_of_Spain",
+      "label": 1,
+      "l1_score": 0.4645,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/華家堡足球會",
+      "e": "http://dbpedia.org/resource/Workable_FC",
+      "label": 1,
+      "l1_score": 0.4222,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/赫爾河畔京士頓",
+      "e": "http://dbpedia.org/resource/Hull_City_A.F.C.",
+      "label": 0,
+      "l1_score": 0.2358,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/摩尔甘·德·桑克蒂斯",
+      "e": "http://dbpedia.org/resource/Morgan_De_Sanctis",
+      "label": 1,
+      "l1_score": 0.4941,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/康諾的瑪嘉烈公主",
+      "e": "http://dbpedia.org/resource/Princess_Margaret_of_Connaught",
+      "label": 1,
+      "l1_score": 0.4625,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/泰语",
+      "e": "http://dbpedia.org/resource/Thai_alphabet",
+      "label": 0,
+      "l1_score": 0.325,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/如果你找到Amy",
+      "e": "http://dbpedia.org/resource/IF_Elfsborg",
+      "label": 0,
+      "l1_score": 0.2364,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Gee_(專輯)",
+      "e": "http://dbpedia.org/resource/Gee_(Girls'_Generation_song)",
+      "label": 0,
+      "l1_score": 0.3024,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/吉林省",
+      "e": "http://dbpedia.org/resource/Jilin",
+      "label": 1,
+      "l1_score": 0.4539,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/可汗學院",
+      "e": "http://dbpedia.org/resource/Khan_Academy",
+      "label": 1,
+      "l1_score": 0.4646,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/埃米尔·拉胡德",
+      "e": "http://dbpedia.org/resource/Émile_Lahoud",
+      "label": 1,
+      "l1_score": 0.4375,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/尼古拉·阿内尔卡",
+      "e": "http://dbpedia.org/resource/Nicholas_of_Cusa",
+      "label": 0,
+      "l1_score": 0.2469,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/乔纳森·比亚比亚尼",
+      "e": "http://dbpedia.org/resource/Jon_Kwang-ik",
+      "label": 0,
+      "l1_score": 0.2536,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Bell_206",
+      "e": "http://dbpedia.org/resource/Bell_206",
+      "label": 1,
+      "l1_score": 0.4967,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Surface_Pro_3",
+      "e": "http://dbpedia.org/resource/Surface_Pro_4",
+      "label": 0,
+      "l1_score": 0.4066,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/中国人民解放军",
+      "e": "http://dbpedia.org/resource/People's_Liberation_Army",
+      "label": 1,
+      "l1_score": 0.4917,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/英格蘭女子足球代表隊",
+      "e": "http://dbpedia.org/resource/England_national_under-21_football_team",
+      "label": 0,
+      "l1_score": 0.2331,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/丹麦的乔治王子",
+      "e": "http://dbpedia.org/resource/Princess_Antoinette,_Baroness_of_Massy",
+      "label": 0,
+      "l1_score": 0.2421,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/詹姆斯·布魯斯，第八代額爾金伯爵",
+      "e": "http://dbpedia.org/resource/James_Bruce,_8th_Earl_of_Elgin",
+      "label": 1,
+      "l1_score": 0.4506,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/老钱达尔勒·易卜拉辛帕夏",
+      "e": "http://dbpedia.org/resource/Çandarlı_Ibrahim_Pasha_the_Elder",
+      "label": 1,
+      "l1_score": 0.4937,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/Android_Lollipop",
+      "e": "http://dbpedia.org/resource/Android_Wear",
+      "label": 0,
+      "l1_score": 0.3788,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/HTC_One_(M7)",
+      "e": "http://dbpedia.org/resource/HTC_First",
+      "label": 0,
+      "l1_score": 0.3237,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/萨格勒布足球俱乐部",
+      "e": "http://dbpedia.org/resource/NK_Zagreb",
+      "label": 1,
+      "l1_score": 0.4833,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/上海绿地申花足球俱乐部",
+      "e": "http://dbpedia.org/resource/Shanghai_Greenland_Shenhua_F.C.",
+      "label": 1,
+      "l1_score": 0.4565,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/比爾·奈",
+      "e": "http://dbpedia.org/resource/Bill_Richardson",
+      "label": 0,
+      "l1_score": 0.2878,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/老钱达尔勒·易卜拉辛帕夏",
+      "e": "http://dbpedia.org/resource/Old_Uyghur_alphabet",
+      "label": 0,
+      "l1_score": 0.246,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/安德留斯·库比柳斯",
+      "e": "http://dbpedia.org/resource/Andrew_Holness",
+      "label": 0,
+      "l1_score": 0.2705,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/真爱如血_(第二季)",
+      "e": "http://dbpedia.org/resource/True_Blood_(season_2)",
+      "label": 1,
+      "l1_score": 0.4958,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/橫濱站",
+      "e": "http://dbpedia.org/resource/Yokohama_Station",
+      "label": 1,
+      "l1_score": 0.43,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/南錫體育會",
+      "e": "http://dbpedia.org/resource/AS_Nancy",
+      "label": 1,
+      "l1_score": 0.418,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/巴列卡诺闪电",
+      "e": "http://dbpedia.org/resource/Valencia_CF_Mestalla",
+      "label": 0,
+      "l1_score": 0.3,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/索伯車隊",
+      "e": "http://dbpedia.org/resource/Sauber",
+      "label": 1,
+      "l1_score": 0.499,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/丹尼尔·阿尔维斯",
+      "e": "http://dbpedia.org/resource/Danilo_Soares",
+      "label": 0,
+      "l1_score": 0.2725,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/奧斯卡·克萊因",
+      "e": "http://dbpedia.org/resource/Oskar_Klein",
+      "label": 1,
+      "l1_score": 0.4369,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/巴什基尔语",
+      "e": "http://dbpedia.org/resource/Bashkir_language",
+      "label": 1,
+      "l1_score": 0.4846,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/加利福尼亚州参议院",
+      "e": "http://dbpedia.org/resource/California_State_Senate",
+      "label": 1,
+      "l1_score": 0.4227,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/東因帕爾縣",
+      "e": "http://dbpedia.org/resource/Imphal_East_district",
+      "label": 1,
+      "l1_score": 0.4348,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/ACTION",
+      "e": "http://dbpedia.org/resource/Action_(B'z_album)",
+      "label": 1,
+      "l1_score": 0.4325,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/社会民主党_(丹麦)",
+      "e": "http://dbpedia.org/resource/Social_Democrats_(Denmark)",
+      "label": 1,
+      "l1_score": 0.4985,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/根德公爵",
+      "e": "http://dbpedia.org/resource/Duke_University",
+      "label": 0,
+      "l1_score": 0.2592,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/詹姆斯·格思里",
+      "e": "http://dbpedia.org/resource/James_Guthrie_(Kentucky)",
+      "label": 1,
+      "l1_score": 0.4778,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/克里西·海特",
+      "e": "http://dbpedia.org/resource/Cliff_Richard",
+      "label": 0,
+      "l1_score": 0.2486,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/自由民主党_(日本)",
+      "e": "http://dbpedia.org/resource/Liberal_Party_of_Australia",
+      "label": 0,
+      "l1_score": 0.2326,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/塞琉古一世",
+      "e": "http://dbpedia.org/resource/Seleucus_I_Nicator",
+      "label": 1,
+      "l1_score": 0.4404,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/杨程",
+      "e": "http://dbpedia.org/resource/Yang_Chaosheng",
+      "label": 0,
+      "l1_score": 0.3947,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/拉帕爾馬島",
+      "e": "http://dbpedia.org/resource/La_Palma",
+      "label": 1,
+      "l1_score": 0.4205,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/萊昂足球會",
+      "e": "http://dbpedia.org/resource/Club_León",
+      "label": 1,
+      "l1_score": 0.4917,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/玛丽·阿德莱德郡主_(剑桥)",
+      "e": "http://dbpedia.org/resource/Princess_Mary_Adelaide_of_Cambridge",
+      "label": 1,
+      "l1_score": 0.439,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/弗里德里希·京特尔_(施瓦茨堡亲王)",
+      "e": "http://dbpedia.org/resource/Friedrich_Günther,_Prince_of_Schwarzburg",
+      "label": 1,
+      "l1_score": 0.4554,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/越南共产党中央委员会总书记",
+      "e": "http://dbpedia.org/resource/General_Secretary_of_the_Communist_Party_of_China",
+      "label": 0,
+      "l1_score": 0.4635,
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
+    },
+    {
+      "z": "http://zh.dbpedia.org/resource/坦桑尼亚",
+      "e": "http://dbpedia.org/resource/Tanzania",
+      "label": 1,
+      "l1_score": 0.4787,
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
+    }
+  ]
+}

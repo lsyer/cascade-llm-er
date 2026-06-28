@@ -1,0 +1,45 @@
+{
+  "dataset": "DBP15K ZH-EN",
+  "total_pairs": 4000,
+  "positive_pairs": 2000,
+  "negative_pairs": 2000,
+  "l1": {
+    "intercepted": 3192,
+    "escalated": 808,
+    "interception_rate": 0.798,
+    "accuracy": 0.7829,
+    "tp": 601,
+    "fp": 4,
+    "tn": 1898,
+    "fn": 689,
+    "merge_precision": 0.9934
+  },
+  "signals": {
+    "name_similarity": {
+      "pos_mean": 0.4332,
+      "neg_mean": 0.0744
+    },
+    "attr_overlap": {
+      "pos_mean": 0.3551,
+      "neg_mean": 0.0718
+    },
+    "degree_similarity": {
+      "pos_mean": 0.627,
+      "neg_mean": 0.5194
+    },
+    "uri_similarity": {
+      "pos_mean": 0.0554,
+      "neg_mean": 0.0062
+    }
+  },
+  "weights": {
+    "name_similarity": 0.4,
+    "attr_overlap": 0.35,
+    "degree_similarity": 0.15,
+    "uri_similarity": 0.1
+  },
+  "thresholds": {
+    "merge": 0.5,
+    "reject": 0.3
+  }
+}

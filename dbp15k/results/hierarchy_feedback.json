@@ -1,0 +1,199 @@
+{
+  "dataset": "DBP15K ZH-EN",
+  "total_pairs": 4000,
+  "feature_names": [
+    "name_overlap",
+    "name_exact",
+    "name_contains",
+    "attr_overlap",
+    "attr_count_diff",
+    "degree_ratio",
+    "degree_diff",
+    "zh_degree",
+    "en_degree",
+    "uri_overlap",
+    "zh_attr_count",
+    "en_attr_count",
+    "shared_attr_ratio",
+    "l1_score"
+  ],
+  "level0_fixed": {
+    "accuracy": 0.7771500313873195,
+    "interception": 0.7965,
+    "tp": 578,
+    "fp": 4,
+    "tn": 1898,
+    "fn": 706,
+    "escalated": 814
+  },
+  "level1_unified_lr": {
+    "fold_results": [
+      {
+        "fold": 1,
+        "train_size": 3200,
+        "test_size": 800,
+        "accuracy": 0.8782,
+        "interception": 0.9237,
+        "tp": 348,
+        "fp": 41,
+        "tn": 301,
+        "fn": 49,
+        "escalated": 61
+      },
+      {
+        "fold": 2,
+        "train_size": 3200,
+        "test_size": 800,
+        "accuracy": 0.8868,
+        "interception": 0.9163,
+        "tp": 336,
+        "fp": 43,
+        "tn": 314,
+        "fn": 40,
+        "escalated": 67
+      },
+      {
+        "fold": 3,
+        "train_size": 3200,
+        "test_size": 800,
+        "accuracy": 0.8687,
+        "interception": 0.9237,
+        "tp": 322,
+        "fp": 52,
+        "tn": 320,
+        "fn": 45,
+        "escalated": 61
+      },
+      {
+        "fold": 4,
+        "train_size": 3200,
+        "test_size": 800,
+        "accuracy": 0.892,
+        "interception": 0.9025,
+        "tp": 329,
+        "fp": 38,
+        "tn": 315,
+        "fn": 40,
+        "escalated": 78
+      },
+      {
+        "fold": 5,
+        "train_size": 3200,
+        "test_size": 800,
+        "accuracy": 0.8652,
+        "interception": 0.9275,
+        "tp": 309,
+        "fp": 49,
+        "tn": 333,
+        "fn": 51,
+        "escalated": 58
+      }
+    ],
+    "avg_accuracy": 0.8782,
+    "avg_interception": 0.9187
+  },
+  "feedback_convergence": [
+    {
+      "round": 0,
+      "feedback_samples": 0,
+      "accuracy": 0.7772,
+      "interception": 0.7965,
+      "escalation": 0.2035
+    },
+    {
+      "round": 1,
+      "feedback_samples": 800,
+      "accuracy": 0.8688,
+      "interception": 0.9053,
+      "escalation": 0.0947
+    },
+    {
+      "round": 2,
+      "feedback_samples": 1600,
+      "accuracy": 0.871,
+      "interception": 0.9171,
+      "escalation": 0.0829
+    },
+    {
+      "round": 3,
+      "feedback_samples": 2400,
+      "accuracy": 0.8761,
+      "interception": 0.9131,
+      "escalation": 0.0869
+    },
+    {
+      "round": 4,
+      "feedback_samples": 3200,
+      "accuracy": 0.8652,
+      "interception": 0.9275,
+      "escalation": 0.0725
+    },
+    {
+      "round": 5,
+      "feedback_samples": 4000,
+      "accuracy": 0.8782,
+      "interception": 0.9197,
+      "escalation": 0.0803
+    }
+  ],
+  "feature_importance": [
+    [
+      "attr_overlap",
+      3.272
+    ],
+    [
+      "name_overlap",
+      2.8496
+    ],
+    [
+      "shared_attr_ratio",
+      2.5785
+    ],
+    [
+      "name_exact",
+      2.0529
+    ],
+    [
+      "name_contains",
+      1.4665
+    ],
+    [
+      "uri_overlap",
+      -0.9939
+    ],
+    [
+      "degree_ratio",
+      -0.6392
+    ],
+    [
+      "degree_diff",
+      -0.128
+    ],
+    [
+      "attr_count_diff",
+      -0.0371
+    ],
+    [
+      "en_attr_count",
+      0.0261
+    ],
+    [
+      "zh_degree",
+      0.0237
+    ],
+    [
+      "zh_attr_count",
+      0.0117
+    ],
+    [
+      "en_degree",
+      0.0024
+    ]
+  ],
+  "pipeline_estimate": {
+    "l2_accuracy": 1.0,
+    "fixed_pipeline": 0.8225,
+    "adaptive_pipeline": 0.888,
+    "llm_cost_reduction": 0.6054
+  }
+}

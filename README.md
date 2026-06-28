@@ -141,6 +141,52 @@ python code/per_type_feature_importance.py
 python code/cross_model_validation.py
 ```
 
+## DBP15K Cross-Domain Validation
+
+The `dbp15k/` directory contains code, data, and results for the DBP15K (ZH-EN) cross-domain validation experiment (Section 6.6 in the paper).
+
+### Structure
+
+```
+dbp15k/
+├── code/
+│   ├── 01_l1_fixed_weight.py     # L1 fixed-weight scoring (Table XV, Level 0)
+│   ├── 02_l2_glm52.py            # L2 GLM-5.2 evaluation on 200 escalated pairs
+│   └── 03_hierarchy_feedback.py  # L1+feedback hierarchy (Level 0→1, pipeline estimate)
+├── data/
+│   ├── gold_alignment_zh_en.tsv  # 15,000 gold-standard alignment pairs (DBP15K)
+│   ├── zh_labels.tsv             # Chinese DBpedia entity labels + translations
+│   └── en_labels.tsv             # English DBpedia entity labels
+└── results/
+    ├── l1_fixed_weight.json      # L1: 78.7% accuracy, 79.8% interception
+    ├── l2_glm52.json             # L2: 100% accuracy (200/200, 0 errors)
+    └── hierarchy_feedback.json   # L1+feedback: 78.7%→87.7%, pipeline 82.2%→88.8%
+```
+
+### Reproduce
+
+```bash
+# 1. L1 fixed-weight (no API needed)
+python dbp15k/code/01_l1_fixed_weight.py
+
+# 2. L2 GLM-5.2 (requires GLM API key)
+export GLM_API_KEY=<your_key>
+python dbp15k/code/02_l2_glm52.py
+
+# 3. Hierarchy + pipeline estimate
+python dbp15k/code/03_hierarchy_feedback.py
+```
+
+### DBP15K Results
+
+| Strategy | L1 Acc. | Intercept | Pipeline | LLM Cost |
+|----------|---------|-----------|----------|----------|
+| Fixed L1 (Level 0) | 78.7% | 79.8% | 82.2% | 20.2% |
+| Unified LR (Level 1) | **87.7%** | **91.6%** | **88.8%** | 8.4% |
+| L2 only (GLM-5.2) | — | 0% | 100.0% | 100% |
+
+Raw data source: [JAPE/DBP15K](https://github.com/nju-websoft/JAPE) (ISWC 2017).
+
 ## Requirements
 
 - Python 3.11+
