@@ -1,0 +1,44 @@
+{
+  "top_features": [
+    [
+      "name_exact",
+      0.7389
+    ],
+    [
+      "fld_occupation_match",
+      0.68
+    ],
+    [
+      "name_similarity",
+      0.5085
+    ],
+    [
+      "property_conflict_rate",
+      -0.4665
+    ],
+    [
+      "fld_description_conflict",
+      0.4659
+    ],
+    [
+      "fld_occupation_conflict",
+      0.4428
+    ],
+    [
+      "fld_equip_type_match",
+      0.4148
+    ],
+    [
+      "fld_loc_type_match",
+      0.3277
+    ],
+    [
+      "fld_location_name_match",
+      0.2668
+    ],
+    [
+      "fld_org_name_match",
+      0.2427
+    ]
+  ]
+}

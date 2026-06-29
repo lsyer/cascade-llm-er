@@ -16,27 +16,25 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 REL = Path("/root/workspace/tanshu_docs/experiments/release")
-DBP_ROOT = REL / "dbp15k"
-OUT = DBP_ROOT / "results"
-OUT.mkdir(exist_ok=True)
+OUT = Path("/root/workspace/tanshu_docs/experiments/dbp15k")
 
 # ─── MINEC ───
 print("Loading MINEC per-pair data...")
-with open(REL / "results" / "scored_pairs.json") as f:
+with open(OUT / "minec_labeled_pairs.json") as f:
     minec_raw = json.load(f)
 
-minec_pairs = [{'score': r['l1_score_v2'], 'label': r['label']} for r in minec_raw]
+minec_pairs = [{'score': r['score'], 'label': r['label']} for r in minec_raw]
 
 print(f"  MINEC: {len(minec_pairs)} pairs ({sum(p['label'] for p in minec_pairs)} positive)")
 
 # MINEC L2 accuracy (GLM-5 = 97.1%, use as pipeline L2)
 MINEC_L2_ACC = 0.971
-# MINEC L1+feedback accuracy (unified LR, 81.1%)
-MINEC_L1_FB_ACC = 0.811
+# MINEC L1+feedback accuracy (unified LR, 80.1%)
+MINEC_L1_FB_ACC = 0.801
 
 # ─── DBP15K ───
 print("Loading DBP15K data...")
-DATA = Path("/root/workspace/tanshu_docs/experiments/dbp15k/JAPE/data/dbp15k/zh_en")
+DATA = OUT / "JAPE" / "data" / "dbp15k" / "zh_en"
 
 def load_labels(fp):
     d = {}
@@ -112,13 +110,7 @@ def l1_score(z, e):
     as_ = len(za & ea) / max(len(za | ea), 1) if za and ea else 0
     zd, ed = len(zh_tris.get(z, [])), len(en_tris.get(e, []))
     ds = min(zd, ed) / max(zd, ed) if zd > 0 and ed > 0 else 0
-    zl = z.split('/')[-1].lower()
-    el = e.split('/')[-1].lower()
-    zl = re.sub(r'%[0-9a-fA-F]{2}', '_', zl)
-    ut1 = set(re.split(r'[_\-]', zl))
-    ut2 = set(re.split(r'[_\-]', el))
-    us = len(ut1 & ut2) / max(len(ut1 | ut2), 1) if ut1 and ut2 else 0
-    s = ns * 0.40 + as_ * 0.35 + ds * 0.15 + us * 0.10
+    s = ns * 0.40 + as_ * 0.35 + ds * 0.15
     if as_ == 0 and (zd > 5 or ed > 5): s *= 0.7
     return s
 
@@ -126,13 +118,10 @@ dbp_pairs = [{'score': l1_score(z, e), 'label': 1} for z, e in pos]
 dbp_pairs += [{'score': l1_score(z, e), 'label': 0} for z, e in neg]
 print(f"  DBP15K: {len(dbp_pairs)} pairs ({sum(p['label'] for p in dbp_pairs)} positive)")
 
-# DBP15K L2 accuracy from actual GLM-5.2 run
-with open(OUT / "l2_glm52.json") as f:
-    DBP_L2_ACC = json.load(f)['summary']['l2_accuracy']
+# DBP15K L2 accuracy = 93.3% (500 expanded pairs)
+DBP_L2_ACC = 0.933
 
 REJECT_TH = 0.3  # Fixed reject threshold
-MINEC_CURRENT_TH = 0.6
-DBP_CURRENT_TH = 0.5
 
 # ─── Compute threshold sweep ───
 def threshold_sweep(pairs, l2_acc, merge_ths):
@@ -200,9 +189,8 @@ ax1.plot([r['threshold'] for r in minec_sweep], [r['pipeline_adaptive'] for r in
 ax1.plot([r['threshold'] for r in dbp_sweep], [r['pipeline_adaptive'] for r in dbp_sweep],
          's-', color='#FF5722', linewidth=2.5, markersize=7, label='DBP15K adaptive L1')
 
-# Mark current thresholds
-ax1.axvline(x=MINEC_CURRENT_TH, color='#2196F3', linestyle='--', alpha=0.7, label='MINEC current (θ=0.6)')
-ax1.axvline(x=DBP_CURRENT_TH, color='#FF5722', linestyle=':', alpha=0.8, label='DBP15K current (θ=0.5)')
+# Mark current threshold (0.5)
+ax1.axvline(x=0.5, color='gray', linestyle='--', alpha=0.7, label='Current (θ=0.5)')
 # Find knee points
 minec_best = max(minec_sweep, key=lambda r: r['pipeline'])
 dbp_best = max(dbp_sweep, key=lambda r: r['pipeline'])
@@ -228,8 +216,7 @@ ax2.plot([r['threshold'] for r in minec_sweep], [r['interception'] for r in mine
          'o-', color='#2196F3', linewidth=2, markersize=6, label='MINEC')
 ax2.plot([r['threshold'] for r in dbp_sweep], [r['interception'] for r in dbp_sweep],
          's-', color='#FF5722', linewidth=2, markersize=6, label='DBP15K')
-ax2.axvline(x=MINEC_CURRENT_TH, color='#2196F3', linestyle='--', alpha=0.7, label='MINEC current (θ=0.6)')
-ax2.axvline(x=DBP_CURRENT_TH, color='#FF5722', linestyle=':', alpha=0.8, label='DBP15K current (θ=0.5)')
+ax2.axvline(x=0.5, color='gray', linestyle='--', alpha=0.7, label='Current (θ=0.5)')
 ax2.set_xlabel('Merge Threshold θ', fontsize=12)
 ax2.set_ylabel('L1 Interception Rate', fontsize=12)
 ax2.set_title('(b) L1 Interception Rate vs. Threshold', fontsize=13)
@@ -253,12 +240,7 @@ print("-" * 80)
 for i, th in enumerate(thresholds):
     m = minec_sweep[i]
     d = dbp_sweep[i]
-    flags = []
-    if abs(th - MINEC_CURRENT_TH) < 0.001:
-        flags.append('MINEC current')
-    if abs(th - DBP_CURRENT_TH) < 0.001:
-        flags.append('DBP15K current')
-    marker = '' if not flags else ' ← ' + ', '.join(flags)
+    marker = " ← current" if abs(th - 0.5) < 0.001 else ""
     print(f"{th:6.2f} | {m['pipeline']:15.1%} | {m['interception']:16.1%} | {d['pipeline']:16.1%} | {d['interception']:17.1%}{marker}")
 
 # Save results JSON

@@ -1,200 +1,134 @@
-# CascadeRule-LLM: Code, Dataset & System
+# CascadeRule-LLM: Cascade Entity Resolution with LLM Fallback
 
-Code, data, and system implementation to reproduce all experiments in:
+Experiment code and data for the paper "CascadeRule-LLM: A Two-Layer Cascade Architecture for Entity Resolution in Knowledge Graphs".
 
-> **CascadeRule-LLM: Hierarchical Adaptive Weight Learning for Entity Resolution in Knowledge Graphs**
-
-## Dataset: MINEC (Military Intelligence News Entity Corpus)
-
-- **1,007** military intelligence news articles (Sep 2024 – Jun 2026)
-- **6,601** graph entities across 5 types: Equipment, Event, Location, Person, Organization
-- **2,639** candidate entity pairs with 20-dimensional signal features
-- Expert labels by GLM-5.2 (99.8% validity: 2,634 valid)
-- Cross-validated: GPT-5.4 Cohen's κ = 0.788; human 3-way accuracy 88.2% (zero false positives)
-
-## System Implementation
-
-The `system/` directory contains the pipeline that produces the MINEC corpus: news scraping, LLM-based entity extraction, and the cascade fusion system (Layer 1 rule scoring + Layer 2 LLM judgment).
-
-**Includes:**
-- `docker-compose.yml` — PostgreSQL (PostGIS) + Nebula Graph + FastAPI API
-- `postgres_schema.sql` — 10 tables: equipment, persons, locations, activities, entity_relations, equipment_positions, news_sources, articles, entity_mentions, pending_entities
-- `postgres_data.sql` — Full data dump (5.4MB): all entities, relations, and article metadata
-- `nebula_verify.py` — Nebula Graph schema creation (5 entity tags + 5 edge types + trace space) and PG→Nebula migration
-- `nebula_schema.ngql` — Current Nebula schema DDL (8 tags + 8 edge types + indexes)
-- `nebula_data.json` — Full graph data export (8,250 nodes + 15,873 edges, 4.9MB)
-- `backend/app/` — Core backend (FastAPI):
-  - `services/extractor.py` — LLM-based entity extraction pipeline (schema, prompts, Nebula write)
-  - `services/fusion.py` — Layer 1 rule scoring + Layer 2 LLM judgment + graph writeback
-  - `services/dedup.py` — Candidate pair generation (fuzzy matching)
-  - `services/scraper.py` — RSS/news source scraping
-  - `services/seed.py` — Graph seed data
-  - `routers/admin.py` — Admin API (pending entities, fusion triggers)
-  - `routers/entities.py` — Entity CRUD and graph queries
-  - `routers/map_data.py` — Geospatial API for map visualization
-  - `nebula_service.py` — Nebula Graph connection pool and query helpers
-- `frontend_dist/` — Web UI (dashboard map, entity browser, article viewer, pending queue)
-  - Navigation: dashboard, articles, knowledge graph, pending queue
-  - JS modules: app, map, data, detail, filters, render, state, knowledge, pending, interactions
-
-**Excluded** (proprietary, not part of the entity resolution pipeline):
-- `chat_service.py` / `chat_router.py` — intelligent Q&A module
-- `research_v2.py` / `research_router.py` — networked person investigation module
-
-### Quick Start
-
-```bash
-cd system/
-cp .env.example .env  # set POSTGRES_PASSWORD, LLM_API_KEY, etc.
-docker compose up -d  # starts PostgreSQL + Nebula + API
-
-# Initialize Nebula schema + migrate data from PG
-docker exec usn-api python3 /app/nebula_verify.py  # or run scripts/nebula_verify.py
-
-# Import data
-docker exec usn-db psql -U usn -d usn_monitor < postgres_data.sql
-
-# Trigger scrape + extract cycle
-curl -X POST http://localhost:8100/api/admin/scrape-extract
-```
-
-## Structure
+## Repository Structure
 
 ```
-├── code/
-│   ├── l1_scorer.py                    # L1 bidirectional rule scorer (20 signals, λ=1.5)
-│   ├── config.py                       # API endpoints, model names
-│   ├── l2_multimodel_experiment.py     # L2 comparison: GLM-5/4.5/4.5-Air, Qwen3.6
-│   ├── feedback_loop_experiment.py     # 5-round feedback convergence
-│   ├── classifier_ablation_lr_rf.py   # LR vs RF 5-fold CV (Table X)
-│   ├── per_type_accuracy.py            # Per-type accuracy: 5 types × 4 models
-│   ├── per_type_threshold_analysis.py  # Per-type threshold sweep
-│   ├── per_type_lr_cv.py              # Per-type LR with strict 5-fold CV
-│   ├── hybrid_strategy.py             # Hybrid per-type + fallback (Table XIII)
-│   ├── per_type_feature_importance.py # Per-type top features (Table XIV)
-│   └── cross_model_validation.py      # GPT-5.4 κ annotation
-├── data/
-│   ├── dataset_v3_cleaned.json         # 2,639 pairs: signals + L1 scores + L1 decisions
-│   └── entity_fragments.json           # Source text fragments for L2 grounding
-└── results/
-    ├── l1_results_all.json             # L1 scores + decisions for all pairs
-    ├── l2_v3_comparison.json           # L2 multi-model summary
-    ├── compiled_results.json           # Cross-table compiled metrics
-    ├── feedback_loop_experiment.json   # 5-round convergence data (Table XI, Fig 4)
-    ├── classifier_ablation.json        # LR vs RF results (Table X)
-    ├── hierarchy_comparison.json       # 3-level hierarchy + LR weights (Table XIII)
-    ├── per_type_feature_importance.json# Per-type top-3 weights (Table XIV)
-    ├── per_type_accuracy_by_method.json# 5 types × 4 methods (Figure 5)
-    ├── gpt54_annotation_300.json       # GPT-5.4 cross-model annotation (κ = 0.788)
-    └── checkpoints_v3/                 # Per-model L2 outputs
-        ├── glm-5_checkpoint.json       # 2,639 verdicts
-        ├── glm-4.5_checkpoint.json
-        ├── glm-4.5-air_checkpoint.json
-        ├── glm-5.2_checkpoint.json     # Expert annotator labels
-        └── qwen3.6_checkpoint.json
+release/
+├── code/                    # Experiment scripts
+│   ├── l1_scorer.py         # Layer 1 bidirectional rule scorer (τ=0.65, merge=0.6, reject=-0.4)
+│   ├── run_experiments.py   # Full experiment pipeline (L1→L2→hierarchy→feedback→per-type)
+│   ├── sweep_dual_threshold.py   # 99-config merge/reject threshold sweep
+│   ├── sweep_jaccard_fine.py     # 19-config Jaccard τ fine sweep (0.05 intervals)
+│   ├── sweep_weak_field.py       # 20-config weak-field parameter sweep
+│   ├── gen_threshold_figure.py   # Generate threshold_sensitivity.pdf
+│   ├── gen_jaccard_figure.py     # Generate jaccard_sensitivity.pdf
+│   ├── 26_gpt54_annotation.py    # GPT-5.4 cross-model validation on 300 sampled pairs
+│   ├── 28_human_annotation_analysis.py # Human adjudication analysis for disagreement cases
+│   ├── 29_three_way_analysis.py  # Three-way GLM/GPT/human comparison utilities
+│   └── config.py            # Shared paths and constants
+│
+├── data/                    # Datasets
+│   ├── dataset_v3_cleaned.json   # 2,639 labeled entity pairs (MINEC)
+│   └── entity_fragments.json     # Source text fragments for L2 grounding
+│
+├── results/                 # Experiment outputs (τ=0.65)
+│   ├── l1_distribution.json      # Table III: merge/escalate/reject distribution
+│   ├── l1_accuracy.json          # Table IV: L1 accuracy + precision
+│   ├── expert_bucket.json        # Table V: expert labels per L1 bucket
+│   ├── pipeline_accuracy.json    # Table VIII: L1+L2 pipeline accuracy
+│   ├── classifier_ablation.json  # Table IX: LR vs RF 5-fold CV
+│   ├── feedback_convergence.json # Table X: feedback rounds
+│   ├── hierarchy_comparison.json # Table XI: Fixed/Unified/Hybrid comparison
+│   ├── per_type_accuracy.json    # Table XII: per-type accuracy
+│   ├── feature_importance.json   # Learned LR feature weights
+│   ├── human_annotation_analysis.json  # 59 disagreement cases, 51 comparable, GLM-5.2=88.2%
+│   ├── gpt54_annotation_300.json       # Cross-model validation sample annotations
+│   ├── gpt54_annotation_300_checkpoint.json # GPT-5.4 raw checkpoint for reproducibility
+│   ├── scored_pairs.json         # All 2,639 pairs with L1 scores
+│   ├── dual_threshold_sweep.json # 99-config heatmap data
+│   ├── jaccard_fine_sweep.json   # 19-config τ sweep data
+│   ├── jaccard_extended_sweep.json
+│   ├── sweep_results.json        # 20-config weak-field sweep
+│   └── checkpoints_v3/           # L2 model verdict checkpoints
+│       ├── glm-5_checkpoint.json
+│       ├── glm-4.5-air_checkpoint.json
+│       ├── glm-4.5_checkpoint.json
+│       ├── glm-5.2_checkpoint.json
+│       └── qwen3.6_checkpoint.json
+│
+├── dbp15k/                  # DBP15K cross-domain validation
+│   ├── code/                # 4 scripts used for the compact release pipeline
+│   ├── run_dbp15k_hierarchy.py   # Legacy/full hierarchy experiment script
+│   ├── run_dbp15k_l2_resilient.py # Earlier resilient L2 runner
+│   ├── run_dbp15k_l2_expanded.py  # Expanded hard-case L2 evaluation runner
+│   ├── threshold_sensitivity.py   # Earlier threshold sweep script
+│   ├── data/                # ZH-EN labels + gold alignment
+│   └── results/             # L1 fixed/adaptive, L2 GLM-5.2, pipeline
+│
+└── system/                  # MINEC system (open-source subset)
+    ├── docker-compose.yml
+    ├── Dockerfile
+    ├── nebula_schema.ngql
+    ├── postgres_schema.sql
+    ├── backend/             # FastAPI + Nebula + PostgreSQL
+    └── frontend_dist/       # Static frontend
 ```
 
-## Paper Table → Data Mapping
+## Key Parameters
 
-| Paper | Description | Data File |
-|-------|-------------|-----------|
-| Table I | Signal weights & dimensions | `code/l1_scorer.py` |
-| Table II | Entity distribution | `data/dataset_v3_cleaned.json` |
-| Table III–V | L1 distribution & accuracy | `results/l1_results_all.json` |
-| Table VI | L2 multi-model comparison | `results/l2_v3_comparison.json` + `checkpoints_v3/` |
-| Table VII | Fragment ablation | `checkpoints_v3/` + `data/entity_fragments.json` |
-| Table VIII | Per-type L2 accuracy | `checkpoints_v3/` |
-| Table IX | Pipeline accuracy | `results/compiled_results.json` |
-| Table X | LR vs RF ablation | `results/classifier_ablation.json` |
-| Table XI | Feedback convergence | `results/feedback_loop_experiment.json` |
-| Table XII | Top-5 feature weights | `results/feedback_loop_experiment.json` |
-| Table XIII | Hierarchy comparison | `results/hierarchy_comparison.json` |
-| Table XIV | Per-type feature weights | `results/per_type_feature_importance.json` |
-| Figure 3 | Type difficulty (bar chart) | `checkpoints_v3/` |
-| Figure 4 | Feedback convergence (line) | `results/feedback_loop_experiment.json` |
-| Figure 5 | Per-type × method (line) | `results/per_type_accuracy_by_method.json` |
-| κ validation | GPT-5.4 cross-model | `results/gpt54_annotation_300.json` |
+| Parameter | Value | Description |
+|-----------|-------|-------------|
+| τ (Jaccard field match) | 0.65 | Weak-field overlap threshold for match/conflict |
+| θ_merge (routing) | 0.6 | L1 score ≥ this → auto-merge |
+| θ_reject (routing) | -0.4 | L1 score ≤ this → auto-reject |
+| λ (conflict penalty) | 1.5 | Conflict fields weighted 1.5× |
+| Scoring range | [-1, +1] | Bidirectional: match adds, conflict subtracts |
+
+## Key Results
+
+| Metric | Value |
+|--------|-------|
+| L1 accuracy (fixed weights) | 78.3% |
+| L1 interception rate | 38.7% |
+| Merge precision | 75.6% |
+| Reject precision | 80.4% |
+| Pipeline accuracy (L1+GLM-5) | 89.3% (empirical) / 89.8% (formula) |
+| L2 accuracy (GLM-5) | 97.1% |
+| Unified LR accuracy (5-fold CV) | 81.1% |
+| Hybrid LR accuracy (5-fold CV) | 81.3% |
+| LLM cost reduction (adaptive) | 82% |
+| Human adjudication set | 59 disagreements / 51 comparable |
+| GLM-5.2 vs human (disagreements only) | 88.2% |
+| DBP15K adaptive pipeline | 88.2% (estimated) |
+| DBP15K GLM-5.2 hard-case accuracy | 92.8% on 499 valid / 500 sampled |
 
 ## Reproduction
 
 ```bash
-# All scripts use paths relative to this directory (release/ as CWD).
+cd code/
 
-# 1. L1 scoring (produces l1_results_all.json)
-python code/l1_scorer.py
+# 1. Run full experiment pipeline
+python3 run_experiments.py
 
-# 2. L2 multi-model experiment (requires API access to GLM models)
-python code/l2_multimodel_experiment.py
+# 2. Generate threshold sensitivity figures
+python3 gen_threshold_figure.py
+python3 gen_jaccard_figure.py
 
-# 3. Feedback loop convergence (Table XI, Figure 4)
-python code/feedback_loop_experiment.py
-
-# 4. Classifier ablation: LR vs RF (Table X)
-python code/classifier_ablation_lr_rf.py
-
-# 5. Per-type analysis & hybrid strategy (Tables XIII–XIV, Figure 5)
-python code/per_type_accuracy.py
-python code/hybrid_strategy.py
-python code/per_type_feature_importance.py
-
-# 6. Cross-model validation (requires GPT-5.4 API)
-python code/cross_model_validation.py
+# 3. Parameter sweeps (optional)
+python3 sweep_dual_threshold.py    # 99 configs
+python3 sweep_jaccard_fine.py      # 19 configs
+python3 sweep_weak_field.py        # 20 configs
 ```
 
-## DBP15K Cross-Domain Validation
-
-The `dbp15k/` directory contains code, data, and results for the DBP15K (ZH-EN) cross-domain validation experiment (Section 6.6 in the paper).
-
-### Structure
-
-```
-dbp15k/
-├── code/
-│   ├── 01_l1_fixed_weight.py     # L1 fixed-weight scoring (Table XV, Level 0)
-│   ├── 02_l2_glm52.py            # L2 GLM-5.2 evaluation on 200 escalated pairs
-│   └── 03_hierarchy_feedback.py  # L1+feedback hierarchy (Level 0→1, pipeline estimate)
-├── data/
-│   ├── gold_alignment_zh_en.tsv  # 15,000 gold-standard alignment pairs (DBP15K)
-│   ├── zh_labels.tsv             # Chinese DBpedia entity labels + translations
-│   └── en_labels.tsv             # English DBpedia entity labels
-└── results/
-    ├── l1_fixed_weight.json      # L1: 78.7% accuracy, 79.8% interception
-    ├── l2_glm52.json             # L2: 100% accuracy (200/200, 0 errors)
-    └── hierarchy_feedback.json   # L1+feedback: 78.7%→87.7%, pipeline 82.2%→88.8%
-```
-
-### Reproduce
+## DBP15K Validation
 
 ```bash
-# 1. L1 fixed-weight (no API needed)
-python dbp15k/code/01_l1_fixed_weight.py
-
-# 2. L2 GLM-5.2 (requires GLM API key)
-export GLM_API_KEY=<your_key>
-python dbp15k/code/02_l2_glm52.py
-
-# 3. Hierarchy + pipeline estimate
-python dbp15k/code/03_hierarchy_feedback.py
+cd dbp15k/code/
+python3 01_l1_fixed_weight.py
+python3 02_l2_glm52.py
+python3 03_hierarchy_feedback.py
+python3 04_threshold_sensitivity.py
 ```
 
-### DBP15K Results
+## Citation
 
-| Strategy | L1 Acc. | Intercept | Pipeline | LLM Cost |
-|----------|---------|-----------|----------|----------|
-| Fixed L1 (Level 0) | 78.7% | 79.8% | 82.2% | 20.2% |
-| Unified LR (Level 1) | **87.7%** | **91.6%** | **88.8%** | 8.4% |
-| L2 only (GLM-5.2) | — | 0% | 100.0% | 100% |
-
-Raw data source: [JAPE/DBP15K](https://github.com/nju-websoft/JAPE) (ISWC 2017).
-
-## Requirements
-
-- Python 3.11+
-- scikit-learn, numpy, pandas
-- GLM API access (Zhipu AI) or OpenAI-compatible endpoint
-- Optional: Qwen3.6 local vLLM server for L2 evaluation
-
-## License
-
-- **Code**: MIT License
-- **Dataset**: CC BY 4.0
+```bibtex
+@article{cascaderule2026,
+  title={CascadeRule-LLM: A Two-Layer Cascade Architecture for Entity Resolution in Knowledge Graphs},
+  author={Li, Shaoyong and Xin, Jiang and Feng, Yao},
+  journal={Journal of Intelligent Information Systems (under review)},
+  year={2026}
+}
+```

@@ -20,10 +20,8 @@ from collections import defaultdict
 from pathlib import Path
 import numpy as np
 
-CODE_DIR = Path(__file__).parent
-DATA_DIR = Path("/root/workspace/tanshu_docs/experiments/dbp15k/JAPE/data/dbp15k/zh_en")
-RESULTS_DIR = CODE_DIR.parent / "results"
-RESULTS_DIR.mkdir(exist_ok=True)
+DATA_DIR = Path(__file__).parent / "JAPE" / "data" / "dbp15k" / "zh_en"
+RESULTS_DIR = Path(__file__).parent
 
 # ─── Data loading (shared with L1 script) ───
 
@@ -371,19 +369,12 @@ for round_i in range(1, 6):
 
 # Load L2 results if available
 l2_accuracy = None
-for l2_path in [RESULTS_DIR / "l2_glm52.json", RESULTS_DIR / "dbp15k_l2_results.json"]:
-    if l2_path.exists():
-        with open(l2_path) as f:
-            l2_data = json.load(f)
-        if isinstance(l2_data, dict):
-            if 'summary' in l2_data and isinstance(l2_data['summary'], dict):
-                cand = l2_data['summary'].get('l2_accuracy')
-            else:
-                cand = l2_data.get('l2_accuracy')
-            if cand and cand > 0.3:
-                l2_accuracy = cand
-                print(f"Loaded L2 accuracy from {l2_path.name}: {l2_accuracy:.4f}")
-                break
+l2_path = RESULTS_DIR / "dbp15k_l2_results.json"
+if l2_path.exists():
+    with open(l2_path) as f:
+        l2_data = json.load(f)
+        if 'l2_accuracy' in l2_data and l2_data.get('l2_accuracy', 0) > 0.3:
+            l2_accuracy = l2_data['l2_accuracy']
 
 output = {
     'dataset': 'DBP15K ZH-EN',
@@ -415,7 +406,7 @@ if l2_accuracy:
     print(f"  Adaptive pipeline: {pipeline_adaptive:.1%}")
     print(f"  LLM cost reduction: {1 - (1-best_l1['interception'])/(1-l0['interception']):.1%}")
 
-output_path = RESULTS_DIR / "hierarchy_feedback.json"
+output_path = RESULTS_DIR / "dbp15k_hierarchy_results.json"
 with open(output_path, 'w') as f:
     json.dump(output, f, indent=2, ensure_ascii=False)
 

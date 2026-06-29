@@ -1,20 +1,20 @@
 {
   "summary": {
-    "l2_accuracy": 0.9331983805668016,
-    "l2_errors": 6,
+    "l2_accuracy": 0.9278557114228457,
+    "l2_errors": 1,
     "total_pairs": 500,
-    "valid_pairs": 494,
+    "valid_pairs": 499,
     "positive_pairs": 250,
-    "negative_pairs": 244,
+    "negative_pairs": 249,
     "tp": 240,
-    "fp": 23,
-    "tn": 221,
+    "fp": 26,
+    "tn": 223,
     "fn": 10,
     "positive_accuracy": 0.96,
-    "negative_accuracy": 0.9057377049180327,
-    "precision": 0.9125475285171103,
+    "negative_accuracy": 0.8955823293172691,
+    "precision": 0.9022556390977443,
     "recall": 0.96,
-    "f1": 0.9356725146198831,
+    "f1": 0.9302325581395348,
     "sampling_strategy": "all_negatives + hardest_positives (by L1 score)",
     "model": "glm-5.2"
   },
@@ -72,8 +72,8 @@
       "e": "http://dbpedia.org/resource/Bai_Jiajun",
       "label": 0,
       "l1_score": 0.2933,
-      "l2_raw": "ERROR: The read operation timed out",
-      "l2_prediction": -1
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
     },
     {
       "z": "http://zh.dbpedia.org/resource/前衛金屬",
@@ -424,8 +424,8 @@
       "e": "http://dbpedia.org/resource/Huang_Kuo-chang",
       "label": 0,
       "l1_score": 0.245,
-      "l2_raw": "ERROR: The read operation timed out",
-      "l2_prediction": -1
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
     },
     {
       "z": "http://zh.dbpedia.org/resource/亨利·诺利斯·罗素",
@@ -1992,7 +1992,7 @@
       "e": "http://dbpedia.org/resource/Ministry_of_Culture_of_the_People's_Republic_of_China",
       "label": 0,
       "l1_score": 0.3625,
-      "l2_raw": "ERROR: HTTP 400",
+      "l2_raw": "FILTERED",
       "l2_prediction": -1
     },
     {
@@ -2328,8 +2328,8 @@
       "e": "http://dbpedia.org/resource/Cheng_Jei-cheng",
       "label": 0,
       "l1_score": 0.3095,
-      "l2_raw": "ERROR: HTTP 400",
-      "l2_prediction": -1
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
     },
     {
       "z": "http://zh.dbpedia.org/resource/海倫·道格拉斯",
@@ -3128,8 +3128,8 @@
       "e": "http://dbpedia.org/resource/Tang_dynasty",
       "label": 0,
       "l1_score": 0.2319,
-      "l2_raw": "ERROR: HTTP 400",
-      "l2_prediction": -1
+      "l2_raw": "DIFFERENT",
+      "l2_prediction": 0
     },
     {
       "z": "http://zh.dbpedia.org/resource/少女已過，熟女未滿",
@@ -3240,8 +3240,8 @@
       "e": "http://dbpedia.org/resource/Yu_Shyi-kun",
       "label": 0,
       "l1_score": 0.3133,
-      "l2_raw": "ERROR: HTTP 400",
-      "l2_prediction": -1
+      "l2_raw": "MATCH",
+      "l2_prediction": 1
     },
     {
       "z": "http://zh.dbpedia.org/resource/老傣文",

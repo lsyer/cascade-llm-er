@@ -1,0 +1,13 @@
+{
+  "l1_accuracy": 78.3,
+  "intercepted": 1021,
+  "interception_rate": 38.7,
+  "merge_precision": 75.6,
+  "reject_precision": 80.4,
+  "merge_total": 464,
+  "reject_total": 557,
+  "merge_correct": 351,
+  "reject_correct": 448,
+  "false_merge": 113,
+  "false_reject": 109
+}

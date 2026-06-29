@@ -1,87 +1,72 @@
 {
-  "experiment": "Three-Level Hierarchical Strategy Comparison (Table XIII)",
-  "levels": {
-    "level_0_fixed": {
-      "L1_acc": 65.8,
-      "interception": 39.6,
-      "pipeline_empirical": 84.4
-    },
-    "level_1_unified_lr": {
-      "L1_acc": 80.0,
-      "interception": 74.3,
-      "pipeline": 84.4,
-      "L2_calls": 25.7
-    },
-    "level_2_hybrid_lr": {
-      "L1_acc": 83.0,
-      "interception": 64.3,
-      "pipeline": 89.0,
-      "L2_calls": 35.7,
-      "min_samples": 50
-    }
+  "fixed": {
+    "l1_acc": 78.3,
+    "intercept": 38.7,
+    "pipeline": 89.8,
+    "l2_calls": 61.3
   },
-  "unified_lr_weights": {
-    "name_match": 0.0,
-    "region_match": 0.0,
-    "coordinate_match": 0.0,
-    "organization_match": 0.0,
-    "timeline_match": 0.0,
-    "model_match": 0.0,
-    "participant_match": 0.0,
-    "name_conflict": 0.0,
-    "organization_conflict": 0.0,
-    "timeline_conflict": 0.0,
-    "model_conflict": 0.0,
-    "match_count": 0.0,
-    "conflict_count": 0.0,
-    "unknowns": 0.0,
-    "prop_overlap_rate": 0.0,
-    "type_consistency": 0.0,
-    "near_perfect_flag": 0.0,
-    "industry_match": 0.0,
-    "time_match": 0.0,
-    "coords_match_admin": 0.0
+  "unified": {
+    "l1_acc": 81.1,
+    "intercept": 88.7,
+    "pipeline": 82.9,
+    "l2_calls": 11.3
   },
-  "per_type_weights": {
-    "unknown": {
-      "n_pairs": 2634,
-      "top3_features": [
-        [
-          "name_match",
-          0.0
-        ],
-        [
-          "region_match",
-          0.0
-        ],
-        [
-          "coordinate_match",
-          0.0
-        ]
-      ],
-      "all_weights": {
-        "name_match": 0.0,
-        "region_match": 0.0,
-        "coordinate_match": 0.0,
-        "organization_match": 0.0,
-        "timeline_match": 0.0,
-        "model_match": 0.0,
-        "participant_match": 0.0,
-        "name_conflict": 0.0,
-        "organization_conflict": 0.0,
-        "timeline_conflict": 0.0,
-        "model_conflict": 0.0,
-        "match_count": 0.0,
-        "conflict_count": 0.0,
-        "unknowns": 0.0,
-        "prop_overlap_rate": 0.0,
-        "type_consistency": 0.0,
-        "near_perfect_flag": 0.0,
-        "industry_match": 0.0,
-        "time_match": 0.0,
-        "coords_match_admin": 0.0
-      }
-    }
+  "hybrid": {
+    "l1_acc": 81.3,
+    "intercept": 90.1,
+    "pipeline": 82.9,
+    "l2_calls": 9.9
   },
-  "conclusion": "Hybrid (min_samples=50) achieves best pipeline accuracy (89.0%), +4.6pp over fixed/unified."
+  "feature_names": [
+    "fld_aliases_conflict",
+    "fld_aliases_match",
+    "fld_category_conflict",
+    "fld_category_match",
+    "fld_coordinates_conflict",
+    "fld_coordinates_match",
+    "fld_description_conflict",
+    "fld_description_match",
+    "fld_equip_type_conflict",
+    "fld_equip_type_match",
+    "fld_event_type_conflict",
+    "fld_event_type_match",
+    "fld_home_location_conflict",
+    "fld_home_location_match",
+    "fld_industry_conflict",
+    "fld_industry_match",
+    "fld_latest_reported_at_conflict",
+    "fld_latest_reported_at_match",
+    "fld_loc_type_conflict",
+    "fld_loc_type_match",
+    "fld_location_name_conflict",
+    "fld_location_name_match",
+    "fld_name_conflict",
+    "fld_name_match",
+    "fld_occupation_conflict",
+    "fld_occupation_match",
+    "fld_org_name_conflict",
+    "fld_org_name_match",
+    "fld_org_type_conflict",
+    "fld_org_type_match",
+    "fld_region_conflict",
+    "fld_region_match",
+    "fld_start_date_conflict",
+    "fld_start_date_match",
+    "fld_state_conflict",
+    "fld_state_match",
+    "n_effective_fields",
+    "name_containment",
+    "name_exact",
+    "name_similarity",
+    "property_conflict_rate",
+    "property_overlap_rate"
+  ],
+  "n_features": 42,
+  "per_type_sample_counts": {
+    "equipment": 547,
+    "event": 981,
+    "location": 853,
+    "organization": 138,
+    "person": 120
+  }
 }

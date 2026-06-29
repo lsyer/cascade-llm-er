@@ -1,0 +1,20 @@
+{
+  "merge": {
+    "total": 464,
+    "same": 351,
+    "different": 113,
+    "same_pct": 75.6
+  },
+  "escalate": {
+    "total": 1618,
+    "same": 792,
+    "different": 826,
+    "same_pct": 48.9
+  },
+  "reject": {
+    "total": 557,
+    "same": 109,
+    "different": 448,
+    "same_pct": 19.6
+  }
+}

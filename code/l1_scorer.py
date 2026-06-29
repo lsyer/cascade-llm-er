@@ -1,371 +1,185 @@
 #!/usr/bin/env python3
 """
-l1_scorer.py — Layer 1 Bidirectional Rule Scorer
-Implements the scoring formula from tanshu-graph-design-v1.6 §4.2.
+l1_scorer.py — Layer 1 Bidirectional Rule Scorer (universal property overlap + strong/weak field tiers)
 
-Three-valued logic per signal:
-  match    → +weight
+DESIGN CHANGE from v1:
+  v1: 5 entity types × 4 hand-picked signals with fixed weights
+  v2: Universal property overlap across ALL non-noise fields + name bonus + hard conflicts
+
+v2 philosophy:
+  - Don't guess which fields matter. Let all non-empty attributes participate equally.
+  - Weight learning (LR) will discover which fields matter per type.
+  - Name matching is a universal bonus (exact/containment/Jaccard).
+  - Hard conflicts are rare explicit rules (gender, cross-domain equipment).
+
+Three-valued logic per field:
+  match    → +weight  (where weight = 1/N_effective_fields)
   conflict → -weight × λ  (λ=1.5, asymmetric penalty)
-  unknown  → 0             (missing data is neutral, NOT penalized)
-
-Hard conflicts short-circuit to score=-1.0
-Near-perfect signals (weight 0.9-1.0) can trigger immediate merge
+  unknown  → 0             (missing → neutral)
 
 Threshold routing:
   score >= 0.5  → merge
-  score <= -0.3 → new entity (different)
-  -0.3 < score < 0.5 → uncertain → escalate to L2
+  score <= -0.3 → reject
+  -0.3 < score < 0.5 → escalate to L2
 """
 
 import re
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Optional
 
 # ============================================================
-# Signal Definitions (code constants, per design doc GD §4.2)
+# Configuration
+# ============================================================
+
+PENALTY_FACTOR = 1.5
+MERGE_THRESHOLD = 0.6
+REJECT_THRESHOLD = -0.4
+
+# Field comparison params (locked from sweep experiments)
+FIELD_MATCH_THRESHOLD = 0.65   # Jaccard ≥ 0.65 for weak fields → match (from fine sweep)
+LOW_OVERLAP_ACTION = 'conflict'  # low overlap on weak fields → conflict (not unknown)
+
+# System metadata fields — excluded from scoring (not entity attributes)
+EXCLUDE_FIELDS = {
+    'created_at', 'updated_at', 'confidence', 'labels',
+    'vid', 'id', 'source_pk',
+}
+
+# ============================================================
+# Data Structures
 # ============================================================
 
 @dataclass
-class SignalResult:
-    result: str  # 'match' | 'conflict' | 'unknown'
+class FieldResult:
+    result: str   # 'match' | 'conflict' | 'unknown'
     detail: str = ''
 
 @dataclass
-class Signal:
-    name: str
-    weight: float
-    evaluator: callable  # (props_a, props_b) -> SignalResult
+class ScoreResult:
+    score: float
+    decision: str  # 'merge' | 'reject' | 'escalate'
+    detail: str
 
-# ---- Helper functions for attribute comparison ----
+# ============================================================
+# Helper Functions
+# ============================================================
 
 def _get(props: dict, key: str) -> str:
-    """Get a property value, cleaned and lowercased."""
     v = props.get(key, '') or ''
     return str(v).strip().lower()
 
+def _has_value(props: dict, key: str) -> bool:
+    v = props.get(key, '')
+    return bool(v and str(v).strip())
+
 def _name_similarity(name_a: str, name_b: str) -> float:
-    """Jaccard similarity on word sets."""
     wa = set(name_a.lower().split())
     wb = set(name_b.lower().split())
     if not wa or not wb:
         return 0.0
     return len(wa & wb) / len(wa | wb)
 
-def _is_containment(short: str, long: str) -> bool:
-    """Check if one name is contained within the other."""
-    short = short.lower().strip()
-    long = long.lower().strip()
-    if not short or not long:
+def _is_containment(a: str, b: str) -> bool:
+    a = a.lower().strip()
+    b = b.lower().strip()
+    if not a or not b:
         return False
-    return short in long or long in short
+    return a in b or b in a
 
-# ---- Person signals ----
+def _get_effective_fields(props_a: dict, props_b: dict) -> list[str]:
+    """Get fields that have values in at least one entity, excluding noise."""
+    all_fields = set()
+    for k in list(props_a.keys()) + list(props_b.keys()):
+        if k in EXCLUDE_FIELDS:
+            continue
+        all_fields.add(k)
+    
+    effective = []
+    for f in sorted(all_fields):
+        if _has_value(props_a, f) or _has_value(props_b, f):
+            effective.append(f)
+    return effective
 
-def sig_person_timeline(props_a, props_b):
-    """Timeline: compare created_at/updated_at periods."""
-    ca = _get(props_a, 'created_at')[:10]  # date part
-    cb = _get(props_b, 'created_at')[:10]
-    if not ca or not cb:
-        return SignalResult('unknown')
-    # If created within 90 days → likely same entity
-    if ca == cb:
-        return SignalResult('match', f'same date: {ca}')
-    # Simple: same year → match (in news context, same entity references cluster)
-    if ca[:4] == cb[:4]:
-        return SignalResult('match', f'same year: {ca[:4]}')
-    return SignalResult('conflict', f'different years: {ca} vs {cb}')
-
-def sig_person_location(props_a, props_b):
-    """Location: compare org_name as location proxy."""
-    la = _get(props_a, 'org_name')
-    lb = _get(props_b, 'org_name')
-    if not la or not lb:
-        return SignalResult('unknown')
-    if la == lb:
-        return SignalResult('match', f'same org: {la}')
-    # Check containment (e.g., "US Navy" vs "U.S. Navy")
-    if _is_containment(la, lb):
-        return SignalResult('match', f'contained: {la} ~ {lb}')
-    return SignalResult('conflict', f'different org: {la} vs {lb}')
-
-def sig_person_org(props_a, props_b):
-    """Organization: same as location but use occupation field."""
-    oa = _get(props_a, 'occupation')
-    ob = _get(props_b, 'occupation')
-    if not oa or not ob:
-        return SignalResult('unknown')
-    if oa == ob:
-        return SignalResult('match', f'same occupation: {oa}')
-    if _is_containment(oa, ob):
-        return SignalResult('match')
-    return SignalResult('conflict', f'different occupation: {oa} vs {ob}')
-
-def sig_person_social(props_a, props_b):
-    """Social circle: use description/labels overlap."""
-    da = set(_get(props_a, 'description').split())
-    db = set(_get(props_b, 'description').split())
-    if not da or not db:
-        return SignalResult('unknown')
-    overlap = len(da & db)
-    if overlap >= 2:
-        return SignalResult('match', f'overlap: {overlap} words')
-    if overlap == 0:
-        return SignalResult('conflict')
-    return SignalResult('unknown')
-
-# Person signals with weights (GD §4.2)
-PERSON_SIGNALS = [
-    Signal('timeline', 0.30, sig_person_timeline),
-    Signal('location', 0.25, sig_person_location),
-    Signal('org', 0.25, sig_person_org),
-    Signal('social', 0.20, sig_person_social),
-]
-
-# ---- Equipment signals ----
-
-def sig_equip_model(props_a, props_b):
-    """Model/type match."""
-    ma = _get(props_a, 'equip_type') or _get(props_a, 'name')
-    mb = _get(props_b, 'equip_type') or _get(props_b, 'name')
-    if not ma or not mb:
-        return SignalResult('unknown')
-    sim = _name_similarity(ma, mb)
-    if sim >= 0.5 or ma == mb:
-        return SignalResult('match', f'model sim={sim:.2f}')
-    if _is_containment(ma, mb):
-        return SignalResult('match', f'containment')
-    if sim < 0.2:
-        return SignalResult('conflict', f'low sim={sim:.2f}')
-    return SignalResult('unknown')
-
-def sig_equip_deploy(props_a, props_b):
-    """Deployment location."""
-    la = _get(props_a, 'home_location')
-    lb = _get(props_b, 'home_location')
-    if not la or not lb:
-        return SignalResult('unknown')
-    if la == lb or _is_containment(la, lb):
-        return SignalResult('match')
-    return SignalResult('conflict')
-
-def sig_equip_affil(props_a, props_b):
-    """Affiliation/parent unit."""
-    pa = _get(props_a, 'parent_unit')
-    pb = _get(props_b, 'parent_unit')
-    if not pa or not pb:
-        return SignalResult('unknown')
-    if pa == pb or _is_containment(pa, pb):
-        return SignalResult('match')
-    return SignalResult('conflict')
-
-def sig_equip_params(props_a, props_b):
-    """Technical parameters: category + state."""
-    ca = _get(props_a, 'category')
-    cb = _get(props_b, 'category')
-    if not ca or not cb:
-        return SignalResult('unknown')
-    if ca == cb:
-        return SignalResult('match')
-    return SignalResult('conflict')
-
-EQUIPMENT_SIGNALS = [
-    Signal('model', 0.40, sig_equip_model),
-    Signal('deploy', 0.25, sig_equip_deploy),
-    Signal('affiliation', 0.20, sig_equip_affil),
-    Signal('params', 0.15, sig_equip_params),
-]
-
-# ---- Location signals ----
-
-def sig_loc_region(props_a, props_b):
-    """Region match."""
-    ra = _get(props_a, 'region')
-    rb = _get(props_b, 'region')
-    if not ra or not rb:
-        return SignalResult('unknown')
-    if ra == rb:
-        return SignalResult('match', f'same region: {ra}')
-    return SignalResult('conflict', f'{ra} vs {rb}')
-
-def sig_loc_type(props_a, props_b):
-    """Location type."""
-    ta = _get(props_a, 'loc_type')
-    tb = _get(props_b, 'loc_type')
-    if not ta or not tb:
-        return SignalResult('unknown')
-    if ta == tb:
-        return SignalResult('match')
-    return SignalResult('conflict')
-
-def sig_loc_name(props_a, props_b):
-    """Name containment (e.g., Norfolk vs Naval Station Norfolk)."""
-    na = _get(props_a, 'name')
-    nb = _get(props_b, 'name')
-    if not na or not nb:
-        return SignalResult('unknown')
-    if na == nb:
-        return SignalResult('match', f'exact: {na}')
-    if _is_containment(na, nb):
-        return SignalResult('match', f'containment: {na} ~ {nb}')
-    sim = _name_similarity(na, nb)
-    if sim >= 0.5:
-        return SignalResult('match', f'sim={sim:.2f}')
-    if sim < 0.15:
-        return SignalResult('conflict', f'sim={sim:.2f}')
-    return SignalResult('unknown')
-
-def sig_loc_coords(props_a, props_b):
-    """Coordinates match."""
-    ca = _get(props_a, 'coordinates')
-    cb = _get(props_b, 'coordinates')
-    if not ca or not cb:
-        return SignalResult('unknown')
-    if ca == cb:
-        return SignalResult('match', f'same coords')
-    return SignalResult('conflict')
-
-LOCATION_SIGNALS = [
-    Signal('region', 0.35, sig_loc_region),
-    Signal('admin', 0.30, sig_loc_type),
-    Signal('name', 0.20, sig_loc_name),
-    Signal('coords', 0.15, sig_loc_coords),
-]
-
-# ---- Event signals ----
-
-def sig_event_time(props_a, props_b):
-    """Time match."""
-    ta = _get(props_a, 'occurred_at') or _get(props_a, 'start_date')
-    tb = _get(props_b, 'occurred_at') or _get(props_b, 'start_date')
-    if not ta or not tb:
-        return SignalResult('unknown')
-    if ta[:4] == tb[:4]:  # same year
-        return SignalResult('match', f'same year: {ta[:4]}')
-    return SignalResult('conflict', f'{ta} vs {tb}')
-
-def sig_event_loc(props_a, props_b):
-    """Location match."""
-    la = _get(props_a, 'location_name')
-    lb = _get(props_b, 'location_name')
-    if not la or not lb:
-        return SignalResult('unknown')
-    if la == lb or _is_containment(la, lb):
-        return SignalResult('match')
-    return SignalResult('conflict')
-
-def sig_event_type(props_a, props_b):
-    """Event type match."""
-    ta = _get(props_a, 'event_type')
-    tb = _get(props_b, 'event_type')
-    if not ta or not tb:
-        return SignalResult('unknown')
-    if ta == tb:
-        return SignalResult('match')
-    return SignalResult('conflict')
-
-def sig_event_name(props_a, props_b):
-    """Name similarity."""
-    na = _get(props_a, 'name')
-    nb = _get(props_b, 'name')
-    if not na or not nb:
-        return SignalResult('unknown')
-    if na == nb:
-        return SignalResult('match', 'exact')
-    if _is_containment(na, nb):
-        return SignalResult('match', 'containment')
-    sim = _name_similarity(na, nb)
-    if sim >= 0.4:
-        return SignalResult('match', f'sim={sim:.2f}')
-    if sim < 0.15:
-        return SignalResult('conflict')
-    return SignalResult('unknown')
-
-EVENT_SIGNALS = [
-    Signal('time', 0.35, sig_event_time),
-    Signal('location', 0.30, sig_event_loc),
-    Signal('participants', 0.20, sig_event_name),  # name as proxy
-    Signal('type', 0.15, sig_event_type),
-]
-
-# ---- Organization signals (GD §4.2: hierarchy 0.30 + region 0.25 + timeline 0.25 + industry 0.20) ----
-
-def sig_org_hierarchy(props_a, props_b):
-    """Hierarchy/org_type match — same type of organization."""
-    ta = _get(props_a, 'org_type')
-    tb = _get(props_b, 'org_type')
-    if not ta or not tb:
-        return SignalResult('unknown')
-    if ta == tb:
-        return SignalResult('match', f'same org_type: {ta}')
-    return SignalResult('conflict', f'{ta} vs {tb}')
-
-def sig_org_region(props_a, props_b):
-    """Region/country match."""
-    ra = _get(props_a, 'region')
-    rb = _get(props_b, 'region')
-    if not ra or not rb:
-        return SignalResult('unknown')
-    if ra == rb or _is_containment(ra, rb):
-        return SignalResult('match')
-    return SignalResult('conflict', f'{ra} vs {rb}')
-
-def sig_org_timeline(props_a, props_b):
-    """Timeline: compare created_at."""
-    ca = _get(props_a, 'created_at')[:10]
-    cb = _get(props_b, 'created_at')[:10]
-    if not ca or not cb:
-        return SignalResult('unknown')
-    if ca[:4] == cb[:4]:
-        return SignalResult('match', f'same year: {ca[:4]}')
-    return SignalResult('conflict', f'{ca} vs {cb}')
-
-def sig_org_industry(props_a, props_b):
-    """Industry/business scope match."""
-    ia = _get(props_a, 'industry')
-    ib = _get(props_b, 'industry')
-    if not ia or not ib:
-        return SignalResult('unknown')
-    if ia == ib:
-        return SignalResult('match', f'same industry: {ia}')
-    return SignalResult('conflict', f'{ia} vs {ib}')
-
-ORGANIZATION_SIGNALS = [
-    Signal('org_type', 0.30, sig_org_hierarchy),
-    Signal('region', 0.25, sig_org_region),
-    Signal('timeline', 0.25, sig_org_timeline),
-    Signal('industry', 0.20, sig_org_industry),
-]
-
-# ---- Signal map ----
-SIGNAL_MAP = {
-    'person': PERSON_SIGNALS,
-    'equipment': EQUIPMENT_SIGNALS,
-    'location': LOCATION_SIGNALS,
-    'event': EVENT_SIGNALS,
-    'organization': ORGANIZATION_SIGNALS,
+# Field consistency tiers:
+#   STRONG — exact-match fields (different value = conflict)
+#   WEAK   — descriptive fields (match only if overlap high; low overlap = unknown, never conflict)
+#             Also applies to free-text fields that may express same concept differently
+STRONG_FIELDS = {
+    'equip_type', 'category', 'state', 'loc_type', 'event_type', 'org_type',
+    'region', 'coordinates', 'start_date', 'occurred_at', 'end_date',
+    'home_location', 'latest_reported_at', 'gender', 'nationality', 'industry',
 }
+WEAK_FIELDS = {
+    'name', 'aliases', 'description', 'location_name', 'org_name', 'occupation',
+}
+# Default: unknown field → treat as WEAK (safe: don't penalize unfamiliar descriptive fields)
+
+FIELD_TIER = {}
+for f in STRONG_FIELDS:
+    FIELD_TIER[f] = 'strong'
+for f in WEAK_FIELDS:
+    FIELD_TIER[f] = 'weak'
+
+
+def _compare_field(field: str, props_a: dict, props_b: dict) -> FieldResult:
+    """Compare a single field between two entities using three-valued logic.
+    
+    Strong fields: exact match → match; different → conflict (clear disagreement)
+    Weak fields:   high overlap → match; low overlap → unknown (no penalty)
+    """
+    va = _get(props_a, field)
+    vb = _get(props_b, field)
+    
+    # Both missing → unknown
+    if not va and not vb:
+        return FieldResult('unknown')
+    
+    # One missing → unknown
+    if not va or not vb:
+        return FieldResult('unknown')
+    
+    # Exact match (all tiers)
+    if va == vb:
+        return FieldResult('match', f'exact: {va[:40]}')
+    
+    # Containment (all tiers — one is substring of other)
+    if _is_containment(va, vb):
+        return FieldResult('match', f'containment: {va[:20]} ~ {vb[:20]}')
+    
+    tier = FIELD_TIER.get(field, 'weak')  # default weak for unknown fields
+    
+    if tier == 'strong':
+        # Strong consistency: different values = conflict
+        return FieldResult('conflict', f'{va[:20]} vs {vb[:20]}')
+    else:
+        # Weak consistency: Jaccard check with locked params
+        sim = _name_similarity(va, vb)
+        if sim >= FIELD_MATCH_THRESHOLD:
+            return FieldResult('match', f'sim={sim:.2f}')
+        # Low overlap → conflict (not unknown), per sweep experiments
+        return FieldResult('conflict', f'low_sim={sim:.2f}')
 
 # ============================================================
-# Hard Conflicts (GD §4.2)
+# Hard Conflicts (type-specific, rare)
 # ============================================================
 
-def has_hard_conflict(props_a, props_b, entity_type):
+def _has_hard_conflict(props_a: dict, props_b: dict, entity_type: str) -> bool:
     """Check for hard conflicts that short-circuit to score=-1."""
-    # Person: gender conflict
+    
+    # Person: gender conflict (only if both have values)
     if entity_type == 'person':
         ga = _get(props_a, 'gender')
         gb = _get(props_b, 'gender')
         if ga and gb and ga != gb:
             return True
     
-    # Equipment: different category entirely (e.g., aircraft vs ship)
+    # Equipment: cross-domain conflict (aircraft vs ship)
     if entity_type == 'equipment':
         ca = _get(props_a, 'equip_type')
         cb = _get(props_b, 'equip_type')
         if ca and cb and ca != cb:
-            # Check if fundamentally different
-            aircraft_kw = ['aircraft', 'plane', 'helicopter', 'fighter', 'bomber']
-            ship_kw = ['ship', 'carrier', 'destroyer', 'frigate', 'submarine']
+            aircraft_kw = ['aircraft', 'plane', 'helicopter', 'fighter', 'bomber', 'drone']
+            ship_kw = ['ship', 'carrier', 'destroyer', 'frigate', 'submarine', 'vessel']
             ca_ac = any(k in ca for k in aircraft_kw)
             cb_ac = any(k in cb for k in aircraft_kw)
             ca_sh = any(k in ca for k in ship_kw)
@@ -376,71 +190,60 @@ def has_hard_conflict(props_a, props_b, entity_type):
     return False
 
 # ============================================================
-# Near-Perfect Signals (GD §4.2)
+# Core Scoring Function
 # ============================================================
 
-def check_near_perfect(props_a, props_b, entity_type):
-    """Check for near-perfect signals that trigger immediate merge."""
-    # Equipment: exact name match with same equip_type
-    if entity_type == 'equipment':
-        na = _get(props_a, 'name')
-        nb = _get(props_b, 'name')
-        ca = _get(props_a, 'equip_type')
-        cb = _get(props_b, 'equip_type')
-        if na and nb and na == nb and ca and cb and ca == cb:
-            return True
-    
-    return False
-
-# ============================================================
-# Core Scoring Function (GD §4.1.1)
-# ============================================================
-
-def l1_score(props_a, props_b, entity_type, 
-             penalty_factor=1.5,
-             merge_threshold=0.5,
-             reject_threshold=-0.3,
-             enable_hard_conflict=True,
-             enable_near_perfect=True):
+def l1_score(props_a: dict, props_b: dict, entity_type: str,
+             penalty_factor: float = PENALTY_FACTOR,
+             merge_threshold: float = MERGE_THRESHOLD,
+             reject_threshold: float = REJECT_THRESHOLD) -> ScoreResult:
     """
-    Compute Layer 1 bidirectional score.
+    Compute Layer 1 bidirectional score using universal property overlap.
     
-    Returns: (score, decision, details)
-      decision: 'merge' | 'reject' | 'escalate'
+    Returns: ScoreResult(score, decision, detail)
     """
     if props_a is None or props_b is None:
-        return (0.0, 'escalate', 'missing properties')
-    
-    signals = SIGNAL_MAP.get(entity_type, [])
-    if not signals:
-        return (0.0, 'escalate', f'no signals for type {entity_type}')
-    
-    # Near-perfect signal check
-    if enable_near_perfect and check_near_perfect(props_a, props_b, entity_type):
-        return (1.0, 'merge', 'near-perfect signal')
+        return ScoreResult(0.0, 'escalate', 'missing properties')
     
     # Hard conflict check
-    if enable_hard_conflict and has_hard_conflict(props_a, props_b, entity_type):
-        return (-1.0, 'reject', 'hard conflict')
+    if _has_hard_conflict(props_a, props_b, entity_type):
+        return ScoreResult(-1.0, 'reject', 'hard conflict')
+    
+    # Get effective fields (excluding noise, requiring at least one value)
+    fields = _get_effective_fields(props_a, props_b)
+    if not fields:
+        return ScoreResult(0.0, 'escalate', 'no effective fields')
+    
+    n_strong = sum(1 for f in fields if FIELD_TIER.get(f, 'weak') == 'strong')
+    n_weak = len(fields) - n_strong
+    n = len(fields)
+    
+    # Equal weight (wwf=1.0, locked from sweep experiments)
+    weight = 1.0 / n
+    weight_strong = weight
+    weight_weak = weight
     
     # Score accumulation
     score = 0.0
-    details = []
     match_count = 0
     conflict_count = 0
     unknown_count = 0
+    details = []
     
-    for signal in signals:
-        result = signal.evaluator(props_a, props_b)
+    for field in fields:
+        result = _compare_field(field, props_a, props_b)
+        tier = FIELD_TIER.get(field, 'weak')
+        w = weight_strong if tier == 'strong' else weight_weak
+        
         if result.result == 'match':
-            score += signal.weight
+            score += w
             match_count += 1
         elif result.result == 'conflict':
-            score -= signal.weight * penalty_factor
+            score -= w * penalty_factor
             conflict_count += 1
         else:
             unknown_count += 1
-        details.append(f'{signal.name}={result.result}({result.detail})')
+        details.append(f'{field}={result.result}')
     
     # Clamp
     score = max(-1.0, min(1.0, score))
@@ -453,43 +256,42 @@ def l1_score(props_a, props_b, entity_type,
     else:
         decision = 'escalate'
     
-    detail_str = f'matches={match_count} conflicts={conflict_count} unknowns={unknown_count}; ' + ', '.join(details)
+    detail_str = f'fields={n} matches={match_count} conflicts={conflict_count} unknowns={unknown_count}; ' + ', '.join(details)
     
-    return (score, decision, detail_str)
+    return ScoreResult(score, decision, detail_str)
 
 
-# ============================================================
-# Wrapper: also check name match as implicit signal
-# ============================================================
-
-def l1_score_with_name(name_a, name_b, props_a, props_b, entity_type, **kwargs):
-    """Score including a name-match signal as bonus."""
-    score, decision, details = l1_score(props_a, props_b, entity_type, **kwargs)
+def l1_score_with_name(name_a: str, name_b: str, props_a: dict, props_b: dict,
+                       entity_type: str, **kwargs) -> tuple:
+    """
+    Score including name-match bonus applied after property scoring.
+    Returns (score, decision, detail) tuple for backward compatibility.
+    """
+    result = l1_score(props_a, props_b, entity_type, **kwargs)
     
-    # If decision is already determined by hard conflict / near-perfect, keep it
-    if decision in ('merge', 'reject') and abs(score) >= 0.9:
-        return score, decision, details
+    # If hard conflict already determined → keep it
+    if result.decision == 'reject' and result.score <= -0.9:
+        return result.score, result.decision, result.detail
+    
+    score = result.score
     
     # Add name match bonus
     if name_a and name_b:
         na = name_a.lower().strip()
         nb = name_b.lower().strip()
         if na == nb:
-            # Exact name match: strong signal, add 0.3
             score = max(-1.0, min(1.0, score + 0.3))
-            details += f'; name_exact_match(+0.3)'
+            score = max(-1.0, min(1.0, score))
         elif _is_containment(na, nb):
             score = max(-1.0, min(1.0, score + 0.2))
-            details += f'; name_containment(+0.2)'
         else:
             sim = _name_similarity(na, nb)
             if sim >= 0.5:
                 score = max(-1.0, min(1.0, score + 0.15))
-                details += f'; name_similar(+0.15, sim={sim:.2f})'
     
-    # Re-route after name adjustment
-    merge_threshold = kwargs.get('merge_threshold', 0.5)
-    reject_threshold = kwargs.get('reject_threshold', -0.3)
+    # Re-route
+    merge_threshold = kwargs.get('merge_threshold', MERGE_THRESHOLD)
+    reject_threshold = kwargs.get('reject_threshold', REJECT_THRESHOLD)
     if score >= merge_threshold:
         decision = 'merge'
     elif score <= reject_threshold:
@@ -497,14 +299,71 @@ def l1_score_with_name(name_a, name_b, props_a, props_b, entity_type, **kwargs):
     else:
         decision = 'escalate'
     
-    return score, decision, details
+    return score, decision, result.detail
+
+
+# ============================================================
+# Feature Extraction (for LR training in Level 1/2)
+# ============================================================
+
+def extract_features(props_a: dict, props_b: dict, entity_type: str,
+                     name_a: str = '', name_b: str = '') -> dict:
+    """
+    Extract feature vector for LR training.
+    Returns dict of feature_name → value.
+    """
+    features = {}
+    
+    fields = _get_effective_fields(props_a, props_b)
+    
+    if not fields:
+        features['property_overlap_rate'] = 0.0
+        features['property_conflict_rate'] = 0.0
+        features['n_effective_fields'] = 0
+        features['name_similarity'] = 0.0
+        return features
+    
+    n = len(fields)
+    matches = 0
+    conflicts = 0
+    
+    for field in fields:
+        result = _compare_field(field, props_a, props_b)
+        if result.result == 'match':
+            matches += 1
+        elif result.result == 'conflict':
+            conflicts += 1
+        
+        # Per-field feature (binary)
+        features[f'fld_{field}_match'] = 1 if result.result == 'match' else 0
+        features[f'fld_{field}_conflict'] = 1 if result.result == 'conflict' else 0
+    
+    features['property_overlap_rate'] = matches / n
+    features['property_conflict_rate'] = conflicts / n
+    features['n_effective_fields'] = n
+    
+    # Name similarity
+    features['name_similarity'] = _name_similarity(name_a or _get(props_a, 'name'),
+                                                    name_b or _get(props_b, 'name'))
+    features['name_exact'] = 1 if name_a and name_b and name_a.lower().strip() == name_b.lower().strip() else 0
+    features['name_containment'] = 1 if _is_containment(name_a or '', name_b or '') else 0
+    
+    return features
 
 
 if __name__ == '__main__':
-    # Quick self-test
-    props1 = {'name': 'Capt. Paul Lorence', 'org_name': 'U.S. Air Force', 'created_at': '2026-05-07'}
-    props2 = {'name': 'Paul Lorence', 'org_name': '', 'created_at': '2026-05-07'}
-    score, dec, det = l1_score_with_name('Capt. Paul Lorence', 'Paul Lorence', props1, props2, 'person')
+    # Self-test
+    props1 = {'name': 'Capt. Paul Lorence', 'org_name': 'U.S. Air Force', 'occupation': 'pilot', 'equip_type': ''}
+    props2 = {'name': 'Paul Lorence', 'org_name': 'U.S. Air Force', 'occupation': 'pilot'}
+    
+    score, decision, detail = l1_score_with_name('Capt. Paul Lorence', 'Paul Lorence', props1, props2, 'person')
     print(f"Test: Capt. Paul Lorence vs Paul Lorence")
-    print(f"  score={score:.3f}, decision={dec}")
-    print(f"  details: {det}")
+    print(f"  score={score:.3f}, decision={decision}")
+    print(f"  detail: {detail}")
+    
+    print()
+    props3 = {'name': 'F-35', 'equip_type': 'fighter', 'category': 'aircraft'}
+    props4 = {'name': 'USS Reagan', 'equip_type': 'carrier', 'category': 'ship'}
+    score, decision, detail = l1_score_with_name('F-35', 'USS Reagan', props3, props4, 'equipment')
+    print(f"Test: F-35 vs USS Reagan (hard conflict)")
+    print(f"  score={score:.3f}, decision={decision}")

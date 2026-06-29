@@ -1,0 +1,488 @@
+{
+  "summary": {
+    "total": 59,
+    "comparable": 51,
+    "discarded": 8,
+    "glm_accuracy": "45/51 (88.2%)",
+    "gpt_accuracy": "2/51 (3.9%)",
+    "on_disagreements": {
+      "glm_right": 45,
+      "gpt_right": 2,
+      "total": 51
+    }
+  },
+  "details": [
+    {
+      "pair_id": "p_2638",
+      "type": "person",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_831",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_431",
+      "type": "equipment",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1101",
+      "type": "event",
+      "status": "disambig",
+      "glm": "same",
+      "gpt": "different",
+      "human": "different"
+    },
+    {
+      "pair_id": "p_1568",
+      "type": "event",
+      "status": "merged",
+      "glm": "different",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_804",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_334",
+      "type": "event",
+      "status": "merged",
+      "glm": "different",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1534",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1473",
+      "type": "event",
+      "status": "discarded",
+      "glm": "same",
+      "gpt": "different",
+      "human": "discard"
+    },
+    {
+      "pair_id": "p_875",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_2619",
+      "type": "person",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1911",
+      "type": "location",
+      "status": "discarded",
+      "glm": "same",
+      "gpt": "different",
+      "human": "discard"
+    },
+    {
+      "pair_id": "p_1572",
+      "type": "event",
+      "status": "discarded",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "discard"
+    },
+    {
+      "pair_id": "p_1346",
+      "type": "event",
+      "status": "discarded",
+      "glm": "same",
+      "gpt": "different",
+      "human": "discard"
+    },
+    {
+      "pair_id": "p_1114",
+      "type": "event",
+      "status": "merged",
+      "glm": "different",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_881",
+      "type": "event",
+      "status": "discarded",
+      "glm": "same",
+      "gpt": "different",
+      "human": "discard"
+    },
+    {
+      "pair_id": "p_1306",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1028",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_915",
+      "type": "organization",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1047",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_482",
+      "type": "equipment",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_2217",
+      "type": "location",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1798",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_748",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_2097",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1549",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1345",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1277",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1751",
+      "type": "organization",
+      "status": "discarded",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "discard"
+    },
+    {
+      "pair_id": "p_840",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1294",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1652",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1547",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1867",
+      "type": "location",
+      "status": "discarded",
+      "glm": "same",
+      "gpt": "different",
+      "human": "discard"
+    },
+    {
+      "pair_id": "p_1033",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_266",
+      "type": "equipment",
+      "status": "merged",
+      "glm": "different",
+      "gpt": "same",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_2603",
+      "type": "person",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_954",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1158",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_894",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_399",
+      "type": "person",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1783",
+      "type": "organization",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1469",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1667",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_589",
+      "type": "equipment",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_768",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_2232",
+      "type": "location",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_395",
+      "type": "location",
+      "status": "merged",
+      "glm": "different",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_985",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_892",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1660",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1570",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1186",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_908",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_2098",
+      "type": "event",
+      "status": "discarded",
+      "glm": "different",
+      "gpt": "unknown",
+      "human": "discard"
+    },
+    {
+      "pair_id": "p_282",
+      "type": "equipment",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1671",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_1026",
+      "type": "event",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "different",
+      "human": "same"
+    },
+    {
+      "pair_id": "p_2555",
+      "type": "person",
+      "status": "merged",
+      "glm": "same",
+      "gpt": "unknown",
+      "human": "same"
+    }
+  ]
+}

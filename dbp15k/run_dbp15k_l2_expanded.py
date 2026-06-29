@@ -180,8 +180,6 @@ def call_glm(prompt, retries=5):
                 wait = 60 * (attempt + 1)
                 print(f"    429, waiting {wait}s (attempt {attempt+1}/{retries})", flush=True)
                 time.sleep(wait)
-            elif e.code == 400:
-                return "FILTERED"
             else:
                 return f"ERROR: HTTP {e.code}"
         except Exception as e:
