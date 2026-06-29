@@ -235,5 +235,25 @@
   ],
   "minec_l2_accuracy": 0.971,
   "dbp15k_l2_accuracy": 0.9331983805668016,
-  "reject_threshold": 0.3
+  "reject_threshold": 0.3,
+  "provenance": {
+    "note": "Curve values are raw threshold-sweep outputs. The final paper reports rounded values in text. The sweep script uses DBP15K curve estimation; the expanded hard-case L2 evaluation is stored separately in l2_glm52.json.",
+    "dbp15k_curve_l2_accuracy_used_in_script": 0.9331983805668016,
+    "dbp15k_expanded_hardcase_l2_accuracy": 0.9278557114228457,
+    "dbp15k_current_threshold": 0.5,
+    "paper_reported_points": {
+      "theta_0.5": {
+        "adaptive_pipeline_reported": "88.9%",
+        "interception_reported": "79.2%",
+        "raw_adaptive_pipeline": 0.8887,
+        "raw_interception": 0.7925
+      },
+      "theta_0.9": {
+        "adaptive_pipeline_reported": "89.7%",
+        "interception_reported": "63.6%",
+        "raw_adaptive_pipeline": 0.8974,
+        "raw_interception": 0.6365
+      }
+    }
+  }
 }

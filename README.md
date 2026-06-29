@@ -91,8 +91,18 @@ release/
 | LLM cost reduction (adaptive) | 82% |
 | Human adjudication set | 59 disagreements / 51 comparable |
 | GLM-5.2 vs human (disagreements only) | 88.2% |
-| DBP15K adaptive pipeline | 88.2% (estimated) |
+| DBP15K fixed L1 (paper-reported) | 77.9% acc / 79.5% intercept / 81.1% pipeline / 20.5% LLM cost |
+| DBP15K adaptive L1 (paper-reported) | 87.7% acc / 91.3% intercept / 88.2% pipeline / 8.7% LLM cost |
 | DBP15K GLM-5.2 hard-case accuracy | 92.8% on 499 valid / 500 sampled |
+
+## Data Integrity
+
+The two primary files under `data/` are byte-identical to the originals in `experiments/data/`:
+
+- `dataset_v3_cleaned.json`
+- `entity_fragments.json`
+
+See `PROVENANCE.md` for SHA256 checksums and for the distinction between raw DBP15K outputs and final paper-reported summaries.
 
 ## Reproduction
 

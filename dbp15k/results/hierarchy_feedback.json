@@ -191,9 +191,49 @@
     ]
   ],
   "pipeline_estimate": {
-    "l2_accuracy": 0.9332,
-    "fixed_pipeline": 0.8106,
-    "adaptive_pipeline": 0.8835,
-    "llm_cost_reduction": 0.5824
+    "raw_l2_accuracy_from_original_run": 0.9332,
+    "raw_fixed_pipeline_from_original_run": 0.8106,
+    "raw_adaptive_pipeline_from_original_run": 0.8835,
+    "paper_l2_accuracy_from_expanded_hardcase_eval": 0.9278557114228457,
+    "paper_fixed_pipeline_recomputed": 0.8094784569138276,
+    "paper_adaptive_pipeline_recomputed": 0.8815817190380761,
+    "adaptive_llm_cost_reduction_vs_fixed": 0.5775335775335775
+  },
+  "paper_reported_summary": {
+    "fixed_l1_accuracy": 0.779,
+    "fixed_interception": 0.795,
+    "fixed_pipeline_reported": 0.811,
+    "fixed_llm_cost": 0.205,
+    "adaptive_l1_accuracy": 0.877,
+    "adaptive_interception": 0.913,
+    "adaptive_pipeline_reported": 0.882,
+    "adaptive_llm_cost": 0.087,
+    "l2_hardcase_accuracy": 0.9278557114228457,
+    "l2_hardcase_valid_pairs": 499,
+    "l2_hardcase_total_pairs": 500,
+    "l2_hardcase_filtered": 1
+  },
+  "provenance": {
+    "note": "Raw CV metrics are preserved above. paper_reported_summary matches the final paper wording/rounding; pipeline_reported uses the expanded hard-case L2 estimate (92.8%) together with rounded L1/interception values reported in the paper.",
+    "final_paper_table_values": {
+      "fixed": {
+        "l1_accuracy": "77.9%",
+        "interception": "79.5%",
+        "pipeline": "81.1%",
+        "llm_cost": "20.5%"
+      },
+      "adaptive": {
+        "l1_accuracy": "87.7%",
+        "interception": "91.3%",
+        "pipeline": "88.2%",
+        "llm_cost": "8.7%"
+      },
+      "l2_only": {
+        "pipeline": "92.8%",
+        "valid_pairs": 499,
+        "sampled_pairs": 500,
+        "filtered_cases": 1
+      }
+    }
   }
 }

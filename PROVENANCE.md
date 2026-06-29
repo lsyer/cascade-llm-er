@@ -1,0 +1,63 @@
+# Release Data Provenance
+
+## `data/` integrity
+
+The two primary MINEC dataset files in `release/data/` are byte-identical to the originals in `experiments/data/`.
+
+- `dataset_v3_cleaned.json`
+  - SHA256: `a3a37cb72ca62375ec33a70a76962e64e35896837cc6a0b2749e2c90af2241d5`
+- `entity_fragments.json`
+  - SHA256: `4a42e042d9865a8b4cc64b2784d57b777eac171ea8d70ff47adc722b4edd0541`
+
+## MINEC results
+
+The files under `results/` are the primary raw outputs used in the paper for the MINEC corpus.
+
+Important interpretation notes:
+- `feedback_convergence.json` is a **cross-validation-based simulation**, not a count of live analyst feedback.
+- `human_annotation_analysis.json` is the **human adjudication** artifact for the 59 GLM/GPT disagreement cases.
+
+## DBP15K results
+
+DBP15K uses three complementary result artifacts:
+
+1. `dbp15k/results/hierarchy_feedback.json`
+   - Raw fixed-L1 and adaptive-L1 cross-validation outputs.
+   - Now includes `paper_reported_summary` for the final paper wording/rounding.
+
+2. `dbp15k/results/l2_glm52.json`
+   - Expanded hard-case L2 evaluation.
+   - Final verified summary:
+     - 500 sampled
+     - 499 valid
+     - 1 filtered case
+     - accuracy = 92.8%
+     - precision = 90.2%
+     - recall = 96.0%
+     - F1 = 93.0%
+
+3. `dbp15k/results/threshold_sensitivity.json`
+   - Raw threshold-sweep curve data.
+   - Now includes `provenance.paper_reported_points` matching the rounded values cited in the paper.
+
+## Final paper-reported DBP15K values
+
+These are the values the paper reports in text/tables:
+
+- Fixed L1: 77.9% accuracy / 79.5% interception / 81.1% estimated pipeline / 20.5% LLM cost
+- Adaptive L1: 87.7% accuracy / 91.3% interception / 88.2% estimated pipeline / 8.7% LLM cost
+- L2 only (expanded hard-case sample): 92.8% on 499 valid / 500 sampled, with 1 filtered case excluded
+- Threshold sensitivity text:
+  - θ=0.5: adaptive pipeline 88.9%, interception 79.2%
+  - θ=0.9: adaptive pipeline 89.7%, interception 63.6%
+
+## Why some DBP15K raw files differ slightly
+
+The release preserves raw outputs from different evaluation steps:
+- hierarchy/adaptive CV output,
+- expanded hard-case L2 rerun,
+- threshold-sweep curve generation.
+
+The final paper combines them with explicit rounding and notes. The release therefore keeps both:
+- raw script outputs, and
+- paper-reported summaries/provenance fields.
