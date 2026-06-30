@@ -25,12 +25,9 @@ window.switchView = async function(view) {
   const pageArticles = document.getElementById('page-articles');
   const pageKnowledge = document.getElementById('page-knowledge');
   const pagePending = document.getElementById('page-pending');
-  const pageResearch = document.getElementById('page-research');
 
   pageKnowledge.style.display = 'none';
   pagePending.style.display = 'none';
-  if (pageResearch) pageResearch.style.display = 'none';
-  if (window.chatHide) window.chatHide();
 
   if (view === 'dashboard') {
     appEl.style.display = '';
@@ -55,25 +52,6 @@ window.switchView = async function(view) {
     pageArticles.style.display = 'none';
     pagePending.style.display = '';
     if (window.kbLoadPending) window.kbLoadPending();
-  } else if (view === 'research') {
-    appEl.style.display = 'none';
-    if (toolbar) toolbar.style.display = 'none';
-    if (legend) legend.style.display = 'none';
-    pageArticles.style.display = 'none';
-    pageKnowledge.style.display = 'none';
-    pagePending.style.display = 'none';
-    pageResearch.style.display = '';
-    if (window.chatHide) window.chatHide();
-    if (window.researchInit) window.researchInit();
-  } else if (view === 'chat') {
-    appEl.style.display = 'none';
-    if (toolbar) toolbar.style.display = 'none';
-    if (legend) legend.style.display = 'none';
-    pageArticles.style.display = 'none';
-    pageKnowledge.style.display = 'none';
-    pagePending.style.display = 'none';
-    pageResearch.style.display = 'none';
-    if (window.chatShow) window.chatShow();
   } else {
     appEl.style.display = 'none';
     if (toolbar) toolbar.style.display = 'none';
