@@ -1,4 +1,4 @@
-"""全量融合消歧服务 — 从 Nebula 取所有实体，计算相似度，写入 PG 暂存队列"""
+"""全量融合消歧服务 — 从 Nebula 取所有实体，使用经 MINEC 验证的 L1 scorer 计算相似度，写入 PG 暂存队列"""
 from __future__ import annotations
 
 import os
@@ -6,6 +6,14 @@ import json
 import logging
 import httpx
 from datetime import datetime
+
+# 使用经离线实验验证的生产级 L1 scorer
+from app.services.l1_scorer import (
+    l1_score_with_name as _l1_score_fn,
+    MERGE_THRESHOLD as L1_MERGE,
+    REJECT_THRESHOLD as L1_REJECT,
+)
+from app.services.l2_judge import l2_judge as _l2_judge_fn
 
 log = logging.getLogger("usn.fusion")
 
@@ -172,51 +180,23 @@ def _attribute_match(props_a: dict, props_b: dict, fields: list[tuple[str, float
 
 
 def compute_similarity(entity_type: str, ent_a: dict, ent_b: dict,
-                       props_a: dict, props_b: dict) -> float:
-    """Compute weighted similarity score for a pair of entities."""
-    score = 0.0
+                       props_a: dict, props_b: dict) -> tuple[float, str]:
+    """使用经 MINEC 验证的 universal property overlap scorer 计算相似度。
 
-    name_a = ent_a["name"]
-    name_b = ent_b["name"]
-    aliases_a = ent_a["aliases"]
-    aliases_b = ent_b["aliases"]
+    返回 (score, decision):
+      score ∈ [-1.0, +1.0]
+      decision: 'merge' | 'reject' | 'escalate'
+        merge   → score ≥ 0.6
+        reject  → score ≤ -0.4
+        escalate → 中间区间
+    """
+    name_a = ent_a.get("name", "")
+    name_b = ent_b.get("name", "")
 
-    # Common: name match + alias cross
-    score += _name_contains_score(name_a, name_b) * 0.25
-    score += _alias_cross_score(aliases_a, name_a, aliases_b, name_b)
-
-    if entity_type == "equipment":
-        score += _designation_match(props_a, props_b)
-        score += _attribute_match(props_a, props_b, [
-            ("category", 0.15),
-            ("equip_type", 0.10),
-        ])
-        # If exact designation match in "name" field (hull number), boost
-        name_field_a = (props_a.get("name") or "").strip()
-        name_field_b = (props_b.get("name") or "").strip()
-        if name_field_a and name_field_b and name_field_a.lower() == name_field_b.lower():
-            score += 0.40  # designation match is strongest
-
-    elif entity_type == "person":
-        score += _attribute_match(props_a, props_b, [
-            ("org_name", 0.30),
-            ("occupation", 0.15),
-        ])
-
-    elif entity_type == "location":
-        score += _attribute_match(props_a, props_b, [
-            ("region", 0.25),
-            ("loc_type", 0.20),
-        ])
-
-    elif entity_type == "activity":
-        score += _attribute_match(props_a, props_b, [
-            ("start_date", 0.30),
-            ("location_name", 0.25),
-            ("event_type", 0.15),
-        ])
-
-    return min(score, 1.0)
+    score, decision, detail = _l1_score_fn(
+        name_a, name_b, props_a, props_b, entity_type,
+    )
+    return score, decision
 
 
 # ─── Quick pre-filter ───

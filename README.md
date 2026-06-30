@@ -1,13 +1,20 @@
 # CascadeRule-LLM: Cascade Entity Resolution with LLM Fallback
 
-Experiment code and data for the paper "CascadeRule-LLM: A Two-Layer Cascade Architecture for Entity Resolution in Knowledge Graphs".
+Experiment code and data for the paper "CascadeRule-LLM: A Two-Layer Cascade Architecture for Entity Resolution in Knowledge Graphs". This `release/` directory is the authoritative paper artifact under `experiments/`: figures, tables, code, and the open-source system snapshot should be interpreted from here rather than from historical exploratory scripts in sibling folders.
 
 ## Repository Structure
+
+## Authority Boundary
+
+- `release/` is the paper-facing, reproducible artifact and should be treated as the authoritative snapshot for experiments, results, and the open-source system subset.
+- `experiments/code/` contains historical exploratory scripts accumulated during iterative development. It is retained for auditability, not as the normative release interface.
+- `release/system/` is synchronized from the current DEV source for the components that matter to the paper-facing feedback and adaptive-L1 pipeline.
+- `release/verification/` contains regression/self-check scripts for maintainers. These are validation helpers, not part of the paper's primary result-generation pipeline.
 
 ```
 release/
 ├── code/                    # Experiment scripts
-│   ├── l1_scorer.py         # Layer 1 bidirectional rule scorer (τ=0.65, merge=0.6, reject=-0.4)
+│   ├── l1_scorer.py         # Layer 1 scorer used by the release experiments; dynamic field expansion, globally aligned feature space
 │   ├── run_experiments.py   # Full experiment pipeline (L1→L2→hierarchy→feedback→per-type)
 │   ├── sweep_dual_threshold.py   # 99-config merge/reject threshold sweep
 │   ├── sweep_jaccard_fine.py     # 19-config Jaccard τ fine sweep (0.05 intervals)
@@ -57,6 +64,9 @@ release/
 │   ├── data/                # ZH-EN labels + gold alignment
 │   └── results/             # L1 fixed/adaptive, L2 GLM-5.2, pipeline
 │
+├── verification/            # Non-paper regression/self-check scripts for the release snapshot
+│   └── test_cascaderule_llm.py
+│
 └── system/                  # MINEC system (open-source subset)
     ├── docker-compose.yml
     ├── Dockerfile
@@ -66,13 +76,22 @@ release/
     └── frontend_dist/       # Static frontend
 ```
 
-## Key Parameters
+## Feature-Space Note
+
+`extract_features()` does not emit a pre-hardcoded static 20-dimensional vector. It dynamically expands field-level and aggregate signals from the effective properties of each entity pair, then aligns them through a shared `feature_names` list during training. In the current MINEC unified-LR experiment, the resulting aligned feature space contains 20 dimensions. Hybrid LR uses per-type training subsets and per-type thresholds over this same aligned global feature space rather than a separately hand-defined dimensionality for each type.
+
+## Threshold Semantics
+
+- **Fixed L1** uses the bidirectional rule score scale `[-1,+1]` with fixed routing thresholds `0.6 / -0.4`.
+- **Unified LR / Hybrid LR** use probability space `[0,1]`. Their `theta_merge` and `theta_reject` are not copies of `0.6 / -0.4`; they are automatically tuned on training data via `select_thresholds` after logistic-regression training.
+
+## Fixed L1 Parameters
 
 | Parameter | Value | Description |
 |-----------|-------|-------------|
 | τ (Jaccard field match) | 0.65 | Weak-field overlap threshold for match/conflict |
-| θ_merge (routing) | 0.6 | L1 score ≥ this → auto-merge |
-| θ_reject (routing) | -0.4 | L1 score ≤ this → auto-reject |
+| θ_merge (routing, Fixed L1) | 0.6 | Rule score ≥ this → auto-merge |
+| θ_reject (routing, Fixed L1) | -0.4 | Rule score ≤ this → auto-reject |
 | λ (conflict penalty) | 1.5 | Conflict fields weighted 1.5× |
 | Scoring range | [-1, +1] | Bidirectional: match adds, conflict subtracts |
 

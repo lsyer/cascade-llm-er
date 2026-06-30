@@ -748,6 +748,7 @@ async def fusion_analyze(db: AsyncSession = Depends(get_db)):
     from app.services.fusion import (
         fetch_all_entities, fetch_entity_props, compute_similarity,
         _quick_related, _tag_for_type, llm_judge_pairs, merge_entities,
+        L1_MERGE, L1_REJECT,
     )
 
     nb = get_nebula()
@@ -805,36 +806,35 @@ async def fusion_analyze(db: AsyncSession = Depends(get_db)):
         for a, b in candidates:
             props_a = props_cache[a["vid"]]
             props_b = props_cache[b["vid"]]
-            sim = compute_similarity(entity_type, a, b, props_a, props_b)
+            sim, decision = compute_similarity(entity_type, a, b, props_a, props_b)
 
-            if sim < 0.3:
-                diff_count += 1
-                continue
-
-            total_pairs += 1
-
-            # L1: auto-merge high confidence
-            if sim >= 0.85:
+            # L1 路由：merge/reject/escalate
+            if decision == 'merge' or sim >= L1_MERGE:
                 raw_data = {
                     "props_a": {k: v for k, v in (props_a or {}).items() if v},
                     "props_b": {k: v for k, v in (props_b or {}).items() if v},
                 }
                 await db.execute(text("""
                     INSERT INTO pending_entities (entity_type, vid_a, vid_b, name_a, name_b, similarity, raw_data, status, llm_verdict, resolved_at)
-                    VALUES (:etype, :vid_a, :vid_b, :name_a, :name_b, :sim, :raw_data, 'merged', 'auto_merge', NOW())
+                    VALUES (:etype, :vid_a, :vid_b, :name_a, :name_b, :sim, :raw_data, 'merged', 'l1_auto_merge', NOW())
                 """), {
                     "etype": entity_type, "vid_a": a["vid"], "vid_b": b["vid"],
-                    "name_a": a["name"], "name_b": b["name"], "sim": sim,
+                    "name_a": a["name"], "name_b": b["name"], "sim": round(sim, 4),
                     "raw_data": _json.dumps(raw_data, ensure_ascii=False),
                 })
                 merge_count += 1
                 continue
 
-            # L2: LLM judge the middle ground (0.4 ~ 0.85)
+            if decision == 'reject' or sim <= L1_REJECT:
+                diff_count += 1
+                continue
+
+            # 灰色区间：送 LLM 批量判断
+            total_pairs += 1
             llm_batch.append({
                 "vid_a": a["vid"], "vid_b": b["vid"],
                 "name_a": a["name"], "name_b": b["name"],
-                "similarity": sim,
+                "similarity": round(sim, 4),
                 "props_a": {k: v for k, v in (props_a or {}).items() if v},
                 "props_b": {k: v for k, v in (props_b or {}).items() if v},
             })
@@ -1113,7 +1113,13 @@ async def fusion_execute(db: AsyncSession = Depends(get_db)):
                     total_disambig += 1
 
     await db.commit()
-    log.info(f"[Fusion/Execute] Done: {total_merged} merged, {total_disambig} disambiguated, {total_errors} errors")
+
+    # NOTE: LLM batch results are NOT human-confirmed yet — they go through
+    # human review before entering the feedback training loop.
+    # The retrain trigger is in resolve_pending_entity (manual resolution),
+    # not here. LLM batch is a pre-filtering step, not ground truth.
+    log.info(f"[Fusion/Execute] Done: {total_merged} merged, {total_disambig} disambiguated, {total_errors} errors "
+             f"(pending human confirmation for feedback)")
 
     return {
         "status": "ok",
@@ -1365,17 +1371,32 @@ async def resolve_pending_entity(
         await db.execute(text("""
             UPDATE pending_entities
             SET status = 'merged', resolved_vid = :vid, resolved_at = NOW(),
-                notes = 'manual merge'
+                notes = 'manual merge', resolved_by = 'admin'
             WHERE id = :id
         """), {"vid": target_vid, "id": pending_id})
 
         await db.commit()
+
+        # Trigger feedback loop retraining check
+        try:
+            from app.services.feedback import maybe_retrain_async
+            from app.services.feedback import count_new_resolved_since_last_train
+            n_new = await db.run_sync(count_new_resolved_since_last_train)
+            if n_new >= 50:
+                retrain_result = await db.run_sync(
+                    lambda sync_db: maybe_retrain_async(sync_db)
+                )
+                if retrain_result.get('trained'):
+                    log.info(f"[Feedback] Retrained after resolve: {retrain_result.get('message')}")
+        except Exception as e:
+            log.warning(f"[Feedback] Retrain check failed (non-fatal): {e}")
+
         return {"status": "ok", "action": "merge", "kept": target_vid, "removed": remove_vid}
 
     elif body.action == "discard":
         await db.execute(text("""
             UPDATE pending_entities
-            SET status = 'discarded', resolved_at = NOW(), notes = 'manual discard'
+            SET status = 'discarded', resolved_at = NOW(), notes = 'manual discard', resolved_by = 'admin'
             WHERE id = :id
         """), {"id": pending_id})
         await db.commit()
@@ -1385,10 +1406,25 @@ async def resolve_pending_entity(
         # Both entities are independent — mark as disambiguated
         await db.execute(text("""
             UPDATE pending_entities
-            SET status = 'disambig', resolved_at = NOW(), notes = 'manual disambiguate: both entities are independent'
+            SET status = 'disambig', resolved_at = NOW(), notes = 'manual disambiguate: both entities are independent', resolved_by = 'admin'
             WHERE id = :id
         """), {"id": pending_id})
         await db.commit()
+
+        # Trigger feedback loop retraining check
+        try:
+            from app.services.feedback import maybe_retrain_async
+            from app.services.feedback import count_new_resolved_since_last_train
+            n_new = await db.run_sync(count_new_resolved_since_last_train)
+            if n_new >= 50:
+                retrain_result = await db.run_sync(
+                    lambda sync_db: maybe_retrain_async(sync_db)
+                )
+                if retrain_result.get('trained'):
+                    log.info(f"[Feedback] Retrained after resolve: {retrain_result.get('message')}")
+        except Exception as e:
+            log.warning(f"[Feedback] Retrain check failed (non-fatal): {e}")
+
         return {"status": "ok", "action": "keep", "message": "Both entities marked as independent"}
 
     return {"status": "error", "message": f"Unknown action: {body.action}"}

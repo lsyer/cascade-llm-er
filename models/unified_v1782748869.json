@@ -1,0 +1,20 @@
+{
+  "version": "unified_v1782748869",
+  "model_type": "unified",
+  "entity_type": null,
+  "trained_at": "2026-06-29T16:01:09.201940",
+  "n_samples": 60,
+  "n_features": 20,
+  "accuracy": 1.0,
+  "merge_precision": 1.0,
+  "intercept_rate": 1.0,
+  "theta_merge": 0.5,
+  "theta_reject": 0.05,
+  "top_features": {
+    "property_overlap_rate": 0.4807,
+    "fld_name_conflict": -0.4807,
+    "fld_name_match": 0.4807,
+    "name_containment": 0.4807,
+    "name_exact": 0.4807
+  }
+}

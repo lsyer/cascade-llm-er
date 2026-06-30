@@ -149,8 +149,11 @@ def _nb_rows(nql: str, space: str = "usn_main") -> list[dict]:
         row = {}
         for j, key in enumerate(keys):
             val = r.row_values(i)[j]
+            if val.is_empty():
+                row[key] = None
+                continue
             try:
-                row[key] = val.as_string() if not val.is_empty() else None
+                row[key] = val.as_string()
             except Exception:
                 try:
                     row[key] = val.as_int()
@@ -158,7 +161,9 @@ def _nb_rows(nql: str, space: str = "usn_main") -> list[dict]:
                     try:
                         row[key] = val.as_double()
                     except Exception:
-                        row[key] = str(val)
+                        # Last resort: check for __NULL__ sentinel
+                        s = str(val)
+                        row[key] = None if '__NULL__' in s else s
         rows.append(row)
     return rows
 
@@ -204,12 +209,16 @@ def _id_from_vid(vid: str) -> str:
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 两层消歧：L1 规则层（双向评分）+ L2 LLM 判断
+# 使用经 MINEC 离线实验验证的生产级模块（l1_scorer.py + l2_judge.py）
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-# L1 评分阈值
-_L1_CONFIRM_SAME = 0.5   # ≥ 此值：确认同一实体
-_L1_CONFIRM_DIFF = -0.3  # ≤ 此值：确认不同实体
-# 中间：不确定 → L2 LLM
+from app.services.l1_scorer import (
+    l1_score_with_name as _l1_score_fn,
+    l1_score_adaptive as _l1_score_adaptive_fn,
+    MERGE_THRESHOLD as _L1_CONFIRM_SAME,
+    REJECT_THRESHOLD as _L1_CONFIRM_DIFF,
+)
+from app.services.l2_judge import l2_judge as _l2_judge_fn
 
 
 def _normalize(s: str) -> str:
@@ -236,161 +245,75 @@ def _l1_exact_match(entity_type: str, field: str, value: str) -> str | None:
 
 
 def _l1_name_candidates(entity_type: str, name: str) -> list[dict]:
-    """L1 规则层：按名称查找候选，返回 [{vid, name, ...}]"""
-    tag = _tag_name(entity_type)
-    nql = f'LOOKUP ON {tag} WHERE {tag}.name == "{_esc(name)}" YIELD id(vertex) AS vid, {tag}.name AS name'
-    rows = _nb_rows(nql)
-    # Nebula 不支持 STRING 类型的 CONTAINS 查询，跳过别名查询
-    return rows
+    """L1 规则层：按名称查找候选，返回 [{vid, name, ...}]
 
-
-def _l1_rule_score(entity_type: str, new_entity: dict, candidate_vid: str) -> float:
-    """L1 双向属性评分
-
-    收集新实体和候选实体的所有可比属性：
-    - 匹配属性 → 正向加分（同一实体的证据）
-    - 矛盾属性 → 负向扣分（不同实体的证据）
-    - 缺失属性 → 不贡献分数（不因信息不足而误判）
-
-    返回值:
-      ≥ _L1_CONFIRM_SAME  → 确认同一实体（跳过 L2）
-      ≤ _L1_CONFIRM_DIFF  → 确认不同实体（直接新建）
-      中间                → 不确定（→ L2 LLM）
+    过滤掉 VID prefix 不匹配的候选——防止跨标签脏数据污染
+    （如 equip_1245 出现在 location 候选里）。
     """
     tag = _tag_name(entity_type)
+    expected_prefix = _vid_prefix(entity_type)
+    nql = f'LOOKUP ON {tag} WHERE {tag}.name == "{_esc(name)}" YIELD id(vertex) AS vid, {tag}.name AS name'
+    rows = _nb_rows(nql)
+    # VID prefix 过滤：equip_* 不应出现在 location 候选里
+    filtered = [r for r in rows if r.get("vid", "").startswith(expected_prefix + "_")]
+    if len(filtered) < len(rows):
+        dropped = [r.get("vid") for r in rows if r not in filtered]
+        log.warning(f"[L1] VID prefix filter dropped {len(rows) - len(filtered)} cross-tag candidates: {dropped}")
+    return filtered
 
-    # 一次性取候选实体所有属性（不再逐字段 FETCH）
+
+def _l1_rule_score(entity_type: str, new_entity: dict, candidate_vid: str) -> tuple:
+    """L1 双向属性评分（使用经离线实验验证的 universal property overlap 算法）
+
+    返回 (score, decision):
+      score ∈ [-1.0, +1.0]
+      decision: 'merge' | 'reject' | 'escalate'
+      merge   → score ≥ 0.6 (跳过 L2)
+      reject  → score ≤ -0.4 (直接新建)
+      escalate → 中间区间 (→ L2 LLM)
+    """
+    tag = _tag_name(entity_type)
+    # 取候选实体完整属性
     field_map = {
-        "equipment": ["name", "equip_type", "category", "state", "parent_unit", "home_location"],
-        "person":    ["name", "occupation", "org_name", "nationality", "aliases"],
-        "location":  ["name", "loc_type", "region", "coordinates"],
-        "activity":  ["name", "event_type", "start_date", "end_date", "location_name"],
+        "equipment": ["name", "equip_type", "category", "state", "parent_unit", "home_location", "aliases"],
+        "person":    ["name", "occupation", "org_name", "nationality", "gender", "aliases"],
+        "location":  ["name", "loc_type", "region", "coordinates", "aliases"],
+        "activity":  ["name", "event_type", "start_date", "end_date", "location_name", "aliases"],
         "organization": ["name", "org_type", "region", "industry", "aliases"],
     }
     fields = field_map.get(entity_type, ["name"])
     field_str = ", ".join([f'{tag}.{f} AS {f}' for f in fields])
     rows = _nb_rows(f'FETCH PROP ON {tag} "{candidate_vid}" YIELD {field_str}')
     if not rows:
-        return 0.0
+        return 0.0, 'escalate'
 
     cand = rows[0]
-    score = 0.0
-
-    if entity_type == "equipment":
-        # category — 强信号
-        new_cat = _normalize(new_entity.get("category", ""))
-        cand_cat = _normalize(cand.get("category", ""))
-        if new_cat and cand_cat:
-            if new_cat == cand_cat:
-                score += 0.3
-            else:
-                score -= 0.5  # 不同类别 = 不同装备
-
-        # equip_type
-        new_type = _normalize(new_entity.get("equipment_type", ""))
-        cand_type = _normalize(cand.get("equip_type", ""))
-        if new_type and cand_type:
-            if new_type == cand_type:
-                score += 0.2
-            else:
-                score -= 0.3
-
-        # state/status
-        new_status = _normalize(new_entity.get("status", ""))
-        cand_status = _normalize(cand.get("state", ""))
-        if new_status and cand_status:
-            if new_status == cand_status:
-                score += 0.1
-
-    elif entity_type == "person":
-        # 组织/军种 — 最强区分信号
-        new_org = _normalize(new_entity.get("service_branch", ""))
-        cand_org = _normalize(cand.get("org_name", ""))
-        if new_org and cand_org:
-            if new_org == cand_org:
-                score += 0.4
-            else:
-                score -= 0.4  # 同名+不同组织 = 可能不同人
-
-        # 职务/军衔
-        new_pos = _normalize(new_entity.get("position", ""))
-        cand_pos = _normalize(cand.get("occupation", ""))
-        if new_pos and cand_pos:
-            if new_pos == cand_pos:
-                score += 0.2
-            else:
-                score -= 0.15
-
-        # 国籍
-        new_nat = _normalize(new_entity.get("nationality", ""))
-        cand_nat = _normalize(cand.get("nationality", ""))
-        if new_nat and cand_nat:
-            if new_nat == cand_nat:
-                score += 0.1
-            else:
-                score -= 0.3  # 不同国籍 = 不同人
-
-    elif entity_type == "location":
-        # region — 最强区分信号
-        new_region = _normalize(new_entity.get("region", ""))
-        cand_region = _normalize(cand.get("region", ""))
-        if new_region and cand_region:
-            if new_region == cand_region:
-                score += 0.4
-            else:
-                score -= 0.5  # 同名但不同 region = 不同地方
-
-        # loc_type
-        new_type = _normalize(new_entity.get("location_type", ""))
-        cand_type = _normalize(cand.get("loc_type", ""))
-        if new_type and cand_type:
-            if new_type == cand_type:
-                score += 0.1
-            else:
-                score -= 0.2
-
-    elif entity_type == "activity":
-        # 地区 — 最强区分信号（同名演习在不同地区 = 不同事件）
-        new_region = _normalize(new_entity.get("region", ""))
-        cand_loc = _normalize(cand.get("location_name", ""))
-        if new_region and cand_loc:
-            if new_region == cand_loc:
-                score += 0.3
-            else:
-                score -= 0.4
-
-        # 时间
-        new_start = str(new_entity.get("start_date", "") or "")
-        cand_start = str(cand.get("start_date", "") or "")
-        if new_start and cand_start:
-            if new_start == cand_start:
-                score += 0.3
-            elif _years_close(new_start, cand_start, 1):
-                score += 0.1
-            else:
-                score -= 0.4  # 时间差大 = 不同事件
-
-        # event_type
-        new_type = _normalize(new_entity.get("activity_type", ""))
-        cand_type = _normalize(cand.get("event_type", ""))
-        if new_type and cand_type:
-            if new_type == cand_type:
-                score += 0.1
-
-    return score
+    # 提取候选实体名称
+    cand_name = cand.get("name", "")
+    # 使用 adaptive scorer：先查 learned model，无则用 fixed L1
+    result = _l1_score_adaptive_fn(
+        new_entity, cand, entity_type,
+        name_a=new_entity.get("name", ""), name_b=cand_name,
+    )
+    score = result.score
+    decision = result.decision
+    return score, decision
 
 
 def _disambig_entity(entity_type: str, name: str, designation: str = None,
                      extra: dict = None,
-                     article_title: str = "", article_excerpt: str = "") -> str | None:
+                     article_title: str = "", article_excerpt: str = "",
+                     db_conn=None) -> str | None:
     """两层消歧，返回匹配的 VID 或 None（新建）
 
     L1 规则层：双向属性评分 → 三态判断
-      确认同一 → 直接用已有 VID
-      确认不同 → 直接新建（返回 None）
-      不确定   → L2 LLM 判断
-    L2 LLM 层：调用 LLM → 不确定的写 pending 等人工
+      merge (score ≥ 0.6)  → 直接用已有 VID
+      reject (score ≤ -0.4) → 直接新建（返回 None）
+      escalate             → L2 LLM 判断
+    L2 LLM 层：带源文本片段的语义判断 → 不确定的写 pending 等人工
     """
+    extra = extra or {}
+
     # L1: designation 精确匹配（equipment 特有）
     if designation:
         vid = _l1_exact_match(entity_type, "name", designation)
@@ -402,47 +325,104 @@ def _disambig_entity(entity_type: str, name: str, designation: str = None,
     if not candidates:
         return None  # 无同名实体，直接新建
 
-    # 对每个候选双向评分
+    # 对每个候选双向评分（使用新 universal overlap scorer）
     scored = []
     for c in candidates:
-        s = _l1_rule_score(entity_type, extra or {}, c["vid"])
-        scored.append((c, s))
+        s, decision = _l1_rule_score(entity_type, extra, c["vid"])
+        scored.append((c, s, decision))
     scored.sort(key=lambda x: x[1], reverse=True)
 
-    best_cand, best_score = scored[0]
+    best_cand, best_score, best_decision = scored[0]
 
-    if len(candidates) == 1:
-        # 唯一候选：无明确矛盾就接受（同名+不矛盾 ≈ 同一实体）
-        if best_score >= _L1_CONFIRM_DIFF:
-            return best_cand["vid"]
-        # 有矛盾 → fall through 到 L2
-    else:
-        # 多个候选
-        if best_score >= _L1_CONFIRM_SAME:
-            log.info(f"[Disambig L1] '{name}' → {best_cand['vid']} (score={best_score:.2f}, confirmed same)")
-            return best_cand["vid"]
-        if best_score <= _L1_CONFIRM_DIFF:
-            log.info(f"[Disambig L1] '{name}' → new (best_score={best_score:.2f}, confirmed different)")
-            return None
-        # 多候选 + 无矛盾（score >= 0）→ 同名同类型无矛盾直接合并，不送 L2
-        if best_score >= 0.0:
-            log.info(f"[Disambig L1] '{name}' → {best_cand['vid']} (score={best_score:.2f}, same name no conflict)")
-            return best_cand["vid"]
+    # L1 路由
+    if best_decision == 'merge' or best_score >= _L1_CONFIRM_SAME:
+        log.info(f"[Disambig L1] '{name}' → {best_cand['vid']} "
+                 f"(score={best_score:.2f}, merge)")
+        return best_cand["vid"]
+    if best_decision == 'reject' or best_score <= _L1_CONFIRM_DIFF:
+        log.info(f"[Disambig L1] '{name}' → new "
+                 f"(score={best_score:.2f}, reject)")
+        return None
+
+    # 唯一候选 + 灰色区间：保守策略，仍送 L2
+    # （旧代码此处会直接接受，但这违反了 precision priority 原则）
 
     # L1 不确定 → L2 LLM 判断
-    log.info(f"[Disambig] L1 uncertain for '{name}' (best_score={best_score:.2f}, {len(scored)} candidates) → L2")
-    match_vid = _l2_llm_disambiguate(entity_type, name, extra,
-                                      [c for c, _ in scored],
-                                      article_title, article_excerpt)
+    log.info(f"[Disambig] L1 uncertain for '{name}' "
+             f"(score={best_score:.2f}, {len(scored)} candidates) → L2")
+
+    # 准备候选属性列表给 L2
+    tag = _tag_name(entity_type)
+    l2_candidates = []
+    for c, s, d in scored:
+        vid = c["vid"]
+        props_rows = _nb_rows(f'FETCH PROP ON {tag} "{vid}" YIELD properties(vertex) AS props')
+        cand_props = {}
+        if props_rows and "props" in props_rows[0]:
+            raw = props_rows[0]["props"]
+            if isinstance(raw, str):
+                try:
+                    import json as _json
+                    cand_props = _json.loads(raw)
+                except Exception:
+                    cand_props = {}
+            elif isinstance(raw, dict):
+                cand_props = raw
+        # 取候选关联实体
+        related = _nb_rows(
+            f'GO FROM "{vid}" OVER employ, locate, social BIDIRECT '
+            f'YIELD employ._dst AS employ_dst, locate._dst AS locate_dst, social._dst AS social_dst'
+        )
+        related_names = []
+        if related:
+            seen = set()
+            for row in related:
+                for k in ("employ_dst", "locate_dst", "social_dst"):
+                    dst_vid = row.get(k, "")
+                    if dst_vid and dst_vid not in seen:
+                        seen.add(dst_vid)
+                        dst_tag = "person" if k == "social_dst" else (
+                            "organization" if k == "employ_dst" else "location")
+                        dst_rows = _nb_rows(f'FETCH PROP ON {dst_tag} "{dst_vid}" YIELD {dst_tag}.name AS name')
+                        if dst_rows:
+                            related_names.append(f"{dst_tag}:{dst_rows[0].get('name', '?')}")
+        if related_names:
+            cand_props["_related"] = ", ".join(related_names[:5])
+
+        l2_candidates.append({
+            "vid": vid,
+            "name": c.get("name", ""),
+            "props": cand_props,
+        })
+
+    # 调用 L2 judge（带源文本片段提取 + 人工 few-shot）
+    l2_result = _l2_judge_fn(
+        entity_type=entity_type,
+        name_new=name,
+        props_new=extra,
+        candidates=l2_candidates,
+        article_title=article_title,
+        article_excerpt=article_excerpt,
+        entity_vid_new="",  # 抽取时模式，新实体尚未写入图
+        db_conn=db_conn,  # 传入 DB 连接以获取人工 few-shot 样本
+    )
+
+    match_vid = l2_result.get('match_vid')
+    is_uncertain = l2_result.get('is_uncertain', False)
+
     if match_vid:
         return match_vid
-    # L2 LLM 不确定 — 记录候选对，后续写入 pending 等人工处理
-    _l2_uncertain.append({
-        "entity_type": entity_type,
-        "name": name,
-        "candidates": [{"vid": c["vid"], "name": c.get("name", "")} for c, _ in scored],
-    })
-    log.info(f"[Disambig] L2 uncertain for '{name}' with {len(scored)} candidates, creating new")
+
+    # L2 不确定 — 记录候选对，后续写入 pending 等人工处理
+    if is_uncertain:
+        _l2_uncertain.append({
+            "entity_type": entity_type,
+            "name": name,
+            "candidates": [{"vid": c["vid"], "name": c.get("name", "")} for c, _, _ in scored],
+            "source": "l2_uncertain",
+        })
+    log.info(f"[Disambig] L2 result for '{name}': "
+             f"{'uncertain' if is_uncertain else 'different'}, creating new")
     return None
 
 
@@ -778,7 +758,8 @@ async def _do_extract(db: AsyncSession) -> int:
                 counts = {k: len(v) for k, v in result.items() if isinstance(v, list)}
                 log.info(f"[Extractor] Found: {counts}")
                 save_result = save_to_nebula(article["id"], article["title"], result,
-                                 article_excerpt=(article.get("content") or "")[:500])
+                                 article_excerpt=(article.get("content") or "")[:500],
+                                 db_conn=db)
                 uncertain_pairs = save_result.get("uncertain_pairs", []) if isinstance(save_result, dict) else save_result
                 location_rels = save_result.get("location_rels", []) if isinstance(save_result, dict) else []
                 # L2 不确定的候选对 → PG pending_entities
@@ -954,7 +935,7 @@ async def _call_llm(prompt: str) -> dict | None:
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 def save_to_nebula(article_id: int, article_title: str, entities: dict,
-                 article_excerpt: str = "") -> list[dict]:
+                 article_excerpt: str = "", db_conn=None) -> list[dict]:
     """将抽取结果写入 Nebula Graph（主图 + 溯源图），返回 L2 不确定的候选对列表"""
     global _l2_uncertain
     _l2_uncertain = []  # 重置累积器
@@ -975,7 +956,7 @@ def save_to_nebula(article_id: int, article_title: str, entities: dict,
             continue
 
         vid = _disambig_entity("equipment", name, desig, eq,
-                                 article_title=article_title, article_excerpt=article_excerpt)
+                                 article_title=article_title, article_excerpt=article_excerpt, db_conn=db_conn)
         if vid:
             _update_aliases("equipment", vid, eq.get("aliases", []))
         else:
@@ -1010,7 +991,7 @@ def save_to_nebula(article_id: int, article_title: str, entities: dict,
             "rank": p.get("rank", ""),
             "position": p.get("position", ""),
             "service_branch": p.get("service_branch", ""),
-        }, article_title=article_title, article_excerpt=article_excerpt)
+        }, article_title=article_title, article_excerpt=article_excerpt, db_conn=db_conn)
         if vid:
             _update_aliases("person", vid, p.get("aliases", []))
         else:
@@ -1045,7 +1026,7 @@ def save_to_nebula(article_id: int, article_title: str, entities: dict,
 
         vid = _disambig_entity("location", name, extra={
             "region": loc.get("region", ""),
-        }, article_title=article_title, article_excerpt=article_excerpt)
+        }, article_title=article_title, article_excerpt=article_excerpt, db_conn=db_conn)
         if not vid:
             new_id = _next_id("location")
             vid = f"loc_{new_id}"
@@ -1073,7 +1054,7 @@ def save_to_nebula(article_id: int, article_title: str, entities: dict,
         vid = _disambig_entity("organization", name, extra={
             "org_type": org.get("org_type", ""),
             "region": org.get("country", ""),
-        }, article_title=article_title, article_excerpt=article_excerpt)
+        }, article_title=article_title, article_excerpt=article_excerpt, db_conn=db_conn)
         if vid:
             _update_aliases("organization", vid, org.get("aliases", []))
         else:
@@ -1114,7 +1095,7 @@ def save_to_nebula(article_id: int, article_title: str, entities: dict,
         vid = _disambig_entity("activity", name, extra={
             "region": act.get("region", ""),
             "start_date": start_date,
-        }, article_title=article_title, article_excerpt=article_excerpt)
+        }, article_title=article_title, article_excerpt=article_excerpt, db_conn=db_conn)
         if not vid:
             new_id = _next_id("activity")
             vid = f"event_{new_id}"
