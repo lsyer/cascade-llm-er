@@ -7,53 +7,66 @@ Experiment code and data for the paper "CascadeRule-LLM: A Two-Layer Cascade Arc
 ## Authority Boundary
 
 - `release/` is the paper-facing, reproducible artifact and should be treated as the authoritative snapshot for experiments, results, and the open-source system subset.
-- `experiments/code/` contains historical exploratory scripts accumulated during iterative development. It is retained for auditability, not as the normative release interface.
+- `legacy_workspace/` contains historical exploratory scripts and results accumulated during iterative development. It is retained for auditability, not as the normative release interface.
 - `release/system/` is synchronized from the current DEV source for the components that matter to the paper-facing feedback and adaptive-L1 pipeline.
 - `release/verification/` contains regression/self-check scripts for maintainers. These are validation helpers, not part of the paper's primary result-generation pipeline.
 
 ```
 release/
-├── code/                    # Experiment scripts
-│   ├── l1_scorer.py         # Layer 1 scorer used by the release experiments; dynamic field expansion, globally aligned feature space
-│   ├── run_experiments.py   # Full experiment pipeline (L1→L2→hierarchy→feedback→per-type)
-│   ├── sweep_dual_threshold.py   # 99-config merge/reject threshold sweep
-│   ├── sweep_jaccard_fine.py     # 19-config Jaccard τ fine sweep (0.05 intervals)
-│   ├── sweep_weak_field.py       # 20-config weak-field parameter sweep
-│   ├── gen_threshold_figure.py   # Generate threshold_sensitivity.pdf
-│   ├── gen_jaccard_figure.py     # Generate jaccard_sensitivity.pdf
+├── code/                    # Current canonical experiment scripts
+│   ├── l1_scorer.py         # Layer 1 scorer used by the current release experiments
+│   ├── run_experiments.py   # Core rerun pipeline on unified/corrected MINEC ground truth
+│   ├── generate_threshold_frontier.py # Threshold-objective ablation + Pareto frontier generation
+│   ├── generate_threshold_sensitivity.py # MINEC dual-threshold sensitivity figure generator
+│   ├── generate_jaccard_sensitivity.py   # MINEC Jaccard-threshold sensitivity figure generator
 │   ├── 26_gpt54_annotation.py    # GPT-5.4 cross-model validation on 300 sampled pairs
 │   ├── 28_human_annotation_analysis.py # Human adjudication analysis for disagreement cases
 │   ├── 29_three_way_analysis.py  # Three-way GLM/GPT/human comparison utilities
+│   ├── 30_claude_opus_probe.py   # Early Claude probe on sampled disagreements
+│   ├── 31_reannotate_glm52_canonical.py # GLM-5.2 canonical re-annotation
+│   ├── 32_annotate_claude_opus_canonical.py # Claude canonical re-annotation
 │   └── config.py            # Shared paths and constants
 │
 ├── data/                    # Datasets
-│   ├── dataset_v3_cleaned.json   # 2,639 labeled entity pairs (MINEC)
-│   └── entity_fragments.json     # Source text fragments for L2 grounding
+│   ├── dataset_v3_cleaned.json   # 2,639 candidate pairs (MINEC)
+│   ├── entity_fragments.json     # Source text fragments for L2 grounding
+│   ├── minec_ground_truth_v2.json # Current corrected ground truth with manual review merged in
+│   ├── minec_ground_truth_v1.json # Earlier consolidated version retained for auditability
+│   ├── minec_disagreements_v1.json
+│   └── minec_data_gap_candidates_v1.json # Suspected extraction/source sparsity audit list
 │
-├── results/                 # Experiment outputs (τ=0.65)
-│   ├── l1_distribution.json      # Table III: merge/escalate/reject distribution
-│   ├── l1_accuracy.json          # Table IV: L1 accuracy + precision
-│   ├── expert_bucket.json        # Table V: expert labels per L1 bucket
-│   ├── pipeline_accuracy.json    # Table VIII: L1+L2 pipeline accuracy
-│   ├── classifier_ablation.json  # Table IX: LR vs RF 5-fold CV
-│   ├── feedback_convergence.json # Table X: feedback rounds
-│   ├── hierarchy_comparison.json # Table XI: Fixed/Unified/Hybrid comparison
-│   ├── per_type_accuracy.json    # Table XII: per-type accuracy
-│   ├── feature_importance.json   # Learned LR feature weights
-│   ├── human_annotation_analysis.json  # 59 disagreement cases, 51 comparable, GLM-5.2=88.2%
-│   ├── gpt54_annotation_300.json       # Cross-model validation sample annotations
-│   ├── gpt54_annotation_300_checkpoint.json # GPT-5.4 raw checkpoint for reproducibility
-│   ├── scored_pairs.json         # All 2,639 pairs with L1 scores
-│   ├── dual_threshold_sweep.json # 99-config heatmap data
-│   ├── jaccard_fine_sweep.json   # 19-config τ sweep data
-│   ├── jaccard_extended_sweep.json
-│   ├── sweep_results.json        # 20-config weak-field sweep
-│   └── checkpoints_v3/           # L2 model verdict checkpoints
+├── results/                 # Current canonical experiment outputs
+│   ├── l1_distribution.json
+│   ├── l1_accuracy.json
+│   ├── expert_bucket.json
+│   ├── pipeline_accuracy_empirical.json
+│   ├── classifier_ablation.json
+│   ├── feedback_convergence.json
+│   ├── per_type_accuracy.json
+│   ├── feature_importance.json
+│   ├── scored_pairs.json
+│   ├── threshold_objective_ablation.json   # Main current paper evidence
+│   ├── threshold_frontier.json             # Cost–accuracy frontier / Pareto view
+│   ├── human_annotation_analysis.json
+│   ├── gpt54_annotation_300.json
+│   ├── gpt54_annotation_300_checkpoint.json
+│   ├── glm52_canonical_annotation.json
+│   ├── glm52_canonical_checkpoint.json
+│   ├── claude_opus_canonical_annotation.json
+│   ├── claude_opus_canonical_checkpoint.json
+│   ├── claude_opus_probe_50.json
+│   └── checkpoints_v3/           # L2 model verdict checkpoints still used by current reruns
 │       ├── glm-5_checkpoint.json
 │       ├── glm-4.5-air_checkpoint.json
 │       ├── glm-4.5_checkpoint.json
 │       ├── glm-5.2_checkpoint.json
 │       └── qwen3.6_checkpoint.json
+│
+├── legacy/                  # Superseded scripts/results kept temporarily for auditability
+│   ├── code/
+│   │   ├── gen_jaccard_figure.py   # Historical paper-asset generator (superseded)
+│   │   └── sweep_jaccard_fine.py   # Historical τ sweep source retained for auditability
+│   └── results/
 │
 ├── dbp15k/                  # DBP15K cross-domain validation
 │   ├── code/                # 4 scripts used for the compact release pipeline
@@ -99,15 +112,20 @@ release/
 
 | Metric | Value |
 |--------|-------|
-| L1 accuracy (fixed weights) | 78.3% |
-| L1 interception rate | 38.7% |
-| Merge precision | 75.6% |
-| Reject precision | 80.4% |
-| Pipeline accuracy (L1+GLM-5) | 89.3% (empirical) / 89.8% (formula) |
-| L2 accuracy (GLM-5) | 97.1% |
-| Unified LR accuracy (5-fold CV) | 81.1% |
-| Hybrid LR accuracy (5-fold CV) | 81.3% |
-| LLM cost reduction (adaptive) | 82% |
+| L1 accuracy (fixed weights) | 79.3% |
+| L1 interception rate | 38.6% |
+| Merge precision | 82.9% |
+| Reject precision | 76.4% |
+| Fixed pipeline accuracy (strict / resolved) | 85.8% / 86.9% |
+| Unified legacy strict pipeline | 81.6% |
+| Hybrid legacy strict pipeline | 81.6% |
+| Unified normalized strict pipeline | 86.7% |
+| Hybrid normalized strict pipeline | 86.8% |
+| Unified pipeline-aware strict pipeline | 91.0% |
+| Hybrid pipeline-aware strict pipeline | 90.5% |
+| Unified matched-fixed | 86.2% strict @ 74.5% interception |
+| Hybrid matched-fixed | 86.1% strict @ 67.4% interception |
+| GLM-5 strict L2 accuracy within fixed pipeline escalations | 91.8% |
 | Human adjudication set | 59 disagreements / 51 comparable |
 | GLM-5.2 vs human (disagreements only) | 88.2% |
 | DBP15K fixed L1 (paper-reported) | 77.9% acc / 79.5% intercept / 81.1% pipeline / 20.5% LLM cost |
@@ -116,7 +134,7 @@ release/
 
 ## Data Integrity
 
-The two primary files under `data/` are byte-identical to the originals in `experiments/data/`:
+The two primary files under `data/` are byte-identical to the originals in `experiments/data/` (the shared top-level working copy):
 
 - `dataset_v3_cleaned.json`
 - `entity_fragments.json`
@@ -128,17 +146,15 @@ See `PROVENANCE.md` for SHA256 checksums and for the distinction between raw DBP
 ```bash
 cd code/
 
-# 1. Run full experiment pipeline
+# Canonical MINEC rerun on the corrected ground truth
 python3 run_experiments.py
 
-# 2. Generate threshold sensitivity figures
-python3 gen_threshold_figure.py
-python3 gen_jaccard_figure.py
+# Threshold-objective ablation and frontier generation
+python3 generate_threshold_frontier.py
 
-# 3. Parameter sweeps (optional)
-python3 sweep_dual_threshold.py    # 99 configs
-python3 sweep_jaccard_fine.py      # 19 configs
-python3 sweep_weak_field.py        # 20 configs
+# Paper figures generated from the authoritative release results
+python3 generate_threshold_sensitivity.py
+python3 generate_jaccard_sensitivity.py
 ```
 
 ## DBP15K Validation

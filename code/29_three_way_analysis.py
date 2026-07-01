@@ -24,7 +24,7 @@ cur.execute("""
 rows = cur.fetchall()
 
 # Load GPT-5.4 annotation for reference
-with open("/root/workspace/tanshu_docs/experiments/results/gpt54_annotation_300.json") as f:
+with open("/root/workspace/tanshu_docs/experiments/release/results/gpt54_annotation_300.json") as f:
     gpt54 = json.load(f)
 
 results = []
@@ -131,7 +131,7 @@ output = {
     },
     "details": results,
 }
-with open("/root/workspace/tanshu_docs/experiments/results/human_annotation_analysis.json", "w") as f:
+with open("/root/workspace/tanshu_docs/experiments/release/results/human_annotation_analysis.json", "w") as f:
     json.dump(output, f, indent=2, ensure_ascii=False)
 
 cur.close()

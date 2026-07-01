@@ -1,0 +1,302 @@
+{
+  "p_2638": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "person"
+  },
+  "p_469": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "different",
+    "type": "equipment"
+  },
+  "p_105": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "location"
+  },
+  "p_1144": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "event"
+  },
+  "p_1021": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "event"
+  },
+  "p_931": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "event"
+  },
+  "p_586": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "equipment"
+  },
+  "p_432": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "different",
+    "type": "equipment"
+  },
+  "p_2252": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "location"
+  },
+  "p_366": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "equipment"
+  },
+  "p_2437": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "location"
+  },
+  "p_1746": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "location"
+  },
+  "p_133": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "organization"
+  },
+  "p_125": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "location"
+  },
+  "p_396": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "location"
+  },
+  "p_912": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "event"
+  },
+  "p_969": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "event"
+  },
+  "p_2087": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "location"
+  },
+  "p_2484": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "location"
+  },
+  "p_111": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "location"
+  },
+  "p_2317": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "location"
+  },
+  "p_831": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "event"
+  },
+  "p_2251": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "location"
+  },
+  "p_1736": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "location"
+  },
+  "p_919": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "event"
+  },
+  "p_1857": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "location"
+  },
+  "p_2432": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "location"
+  },
+  "p_1157": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "event"
+  },
+  "p_28": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "equipment"
+  },
+  "p_670": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "equipment"
+  },
+  "p_1749": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "location"
+  },
+  "p_1411": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "event"
+  },
+  "p_1156": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "event"
+  },
+  "p_653": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "equipment"
+  },
+  "p_898": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "event"
+  },
+  "p_1396": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "event"
+  },
+  "p_431": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "same",
+    "type": "equipment"
+  },
+  "p_392": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "equipment"
+  },
+  "p_1574": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "different",
+    "type": "event"
+  },
+  "p_409": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "equipment"
+  },
+  "p_1488": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "event"
+  },
+  "p_1426": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "event"
+  },
+  "p_2491": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "location"
+  },
+  "p_1101": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "event"
+  },
+  "p_181": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "organization"
+  },
+  "p_1899": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "location"
+  },
+  "p_2214": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "same",
+    "type": "location"
+  },
+  "p_524": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "equipment"
+  },
+  "p_1568": {
+    "verdict": "same",
+    "raw": "same",
+    "glm_label": "different",
+    "type": "event"
+  },
+  "p_330": {
+    "verdict": "different",
+    "raw": "different",
+    "glm_label": "different",
+    "type": "equipment"
+  }
+}

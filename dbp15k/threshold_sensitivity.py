@@ -189,8 +189,11 @@ ax1.plot([r['threshold'] for r in minec_sweep], [r['pipeline_adaptive'] for r in
 ax1.plot([r['threshold'] for r in dbp_sweep], [r['pipeline_adaptive'] for r in dbp_sweep],
          's-', color='#FF5722', linewidth=2.5, markersize=7, label='DBP15K adaptive L1')
 
-# Mark current threshold (0.5)
-ax1.axvline(x=0.5, color='gray', linestyle='--', alpha=0.7, label='Current (θ=0.5)')
+# Mark deployed thresholds separately for the two corpora
+ax1.axvline(x=0.6, color='#2196F3', linestyle='--', alpha=0.5, linewidth=1.2)
+ax1.axvline(x=0.5, color='#FF5722', linestyle='--', alpha=0.5, linewidth=1.2)
+ax1.text(0.605, 0.995, 'MINEC θ=0.6', color='#2196F3', fontsize=8, rotation=90, va='top')
+ax1.text(0.505, 0.985, 'DBP15K θ=0.5', color='#FF5722', fontsize=8, rotation=90, va='top')
 # Find knee points
 minec_best = max(minec_sweep, key=lambda r: r['pipeline'])
 dbp_best = max(dbp_sweep, key=lambda r: r['pipeline'])
@@ -216,7 +219,8 @@ ax2.plot([r['threshold'] for r in minec_sweep], [r['interception'] for r in mine
          'o-', color='#2196F3', linewidth=2, markersize=6, label='MINEC')
 ax2.plot([r['threshold'] for r in dbp_sweep], [r['interception'] for r in dbp_sweep],
          's-', color='#FF5722', linewidth=2, markersize=6, label='DBP15K')
-ax2.axvline(x=0.5, color='gray', linestyle='--', alpha=0.7, label='Current (θ=0.5)')
+ax2.axvline(x=0.6, color='#2196F3', linestyle='--', alpha=0.5, linewidth=1.2)
+ax2.axvline(x=0.5, color='#FF5722', linestyle='--', alpha=0.5, linewidth=1.2)
 ax2.set_xlabel('Merge Threshold θ', fontsize=12)
 ax2.set_ylabel('L1 Interception Rate', fontsize=12)
 ax2.set_title('(b) L1 Interception Rate vs. Threshold', fontsize=13)

@@ -3,155 +3,155 @@
   "features": [
     [
       "name_exact",
-      0.7389
+      0.7405
     ],
     [
       "fld_occupation_match",
-      0.68
-    ],
-    [
-      "name_similarity",
-      0.5085
+      0.6624
     ],
     [
       "property_conflict_rate",
-      -0.4665
-    ],
-    [
-      "fld_description_conflict",
-      0.4659
-    ],
-    [
-      "fld_occupation_conflict",
-      0.4428
+      -0.5627
     ],
     [
       "fld_equip_type_match",
-      0.4148
+      0.5304
     ],
     [
-      "fld_loc_type_match",
-      0.3277
+      "fld_description_conflict",
+      0.5108
     ],
     [
-      "fld_location_name_match",
-      0.2668
+      "name_similarity",
+      0.4272
     ],
     [
-      "fld_org_name_match",
-      0.2427
-    ],
-    [
-      "fld_name_conflict",
-      -0.2304
-    ],
-    [
-      "fld_name_match",
-      0.2304
+      "fld_occupation_conflict",
+      0.4131
     ],
     [
       "fld_start_date_conflict",
-      -0.221
-    ],
-    [
-      "fld_start_date_match",
-      0.2109
-    ],
-    [
-      "fld_category_conflict",
-      0.1921
-    ],
-    [
-      "fld_org_name_conflict",
-      0.1853
-    ],
-    [
-      "fld_equip_type_conflict",
-      0.179
-    ],
-    [
-      "fld_coordinates_match",
-      0.1708
-    ],
-    [
-      "fld_industry_match",
-      -0.1505
-    ],
-    [
-      "fld_aliases_match",
-      0.1416
+      -0.3858
     ],
     [
       "fld_event_type_match",
-      0.1202
+      0.3366
+    ],
+    [
+      "fld_location_name_match",
+      0.3155
+    ],
+    [
+      "fld_org_name_conflict",
+      0.2965
+    ],
+    [
+      "fld_name_conflict",
+      -0.2646
+    ],
+    [
+      "fld_name_match",
+      0.2646
+    ],
+    [
+      "fld_org_name_match",
+      0.233
+    ],
+    [
+      "fld_loc_type_match",
+      0.2128
+    ],
+    [
+      "fld_equip_type_conflict",
+      0.1784
+    ],
+    [
+      "fld_start_date_match",
+      0.1775
+    ],
+    [
+      "fld_aliases_match",
+      0.1742
+    ],
+    [
+      "fld_coordinates_match",
+      0.1622
+    ],
+    [
+      "fld_category_conflict",
+      0.1558
     ],
     [
       "fld_org_type_match",
-      0.1064
+      0.0962
     ],
     [
-      "property_overlap_rate",
-      0.0869
+      "fld_description_match",
+      -0.0954
     ],
     [
       "fld_category_match",
-      0.0865
-    ],
-    [
-      "fld_location_name_conflict",
-      0.082
-    ],
-    [
-      "name_containment",
-      -0.0801
+      0.0882
     ],
     [
       "fld_event_type_conflict",
       -0.0783
     ],
     [
-      "fld_region_match",
-      -0.0767
-    ],
-    [
-      "n_effective_fields",
-      0.0697
-    ],
-    [
-      "fld_description_match",
-      -0.0614
-    ],
-    [
-      "fld_home_location_conflict",
-      -0.0611
-    ],
-    [
-      "fld_latest_reported_at_conflict",
-      -0.0611
-    ],
-    [
-      "fld_region_conflict",
-      -0.0395
+      "fld_state_match",
+      0.0695
     ],
     [
       "fld_aliases_conflict",
-      0.0393
+      0.0685
     ],
     [
-      "fld_state_match",
-      0.0319
+      "fld_home_location_conflict",
+      -0.0644
+    ],
+    [
+      "fld_latest_reported_at_conflict",
+      -0.0644
+    ],
+    [
+      "fld_location_name_conflict",
+      0.0642
+    ],
+    [
+      "fld_region_match",
+      -0.0599
+    ],
+    [
+      "fld_industry_match",
+      -0.0508
+    ],
+    [
+      "n_effective_fields",
+      0.0492
     ],
     [
       "fld_coordinates_conflict",
-      -0.0226
-    ],
-    [
-      "fld_state_conflict",
-      -0.0202
+      0.0352
     ],
     [
       "fld_loc_type_conflict",
-      0.0142
+      -0.0346
+    ],
+    [
+      "fld_state_conflict",
+      -0.014
+    ],
+    [
+      "name_containment",
+      -0.0133
+    ],
+    [
+      "fld_region_conflict",
+      0.0111
+    ],
+    [
+      "property_overlap_rate",
+      -0.0092
     ],
     [
       "fld_home_location_match",

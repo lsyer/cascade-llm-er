@@ -1,0 +1,255 @@
+{
+  "fixed": {
+    "method": "fixed",
+    "total_pairs": 2591,
+    "resolved_pairs": 2558,
+    "unresolved_pairs": 33,
+    "accuracy_on_resolved_pct": 86.9,
+    "strict_accuracy_pct": 85.8,
+    "l1_decided": 1000,
+    "l1_correct": 793,
+    "l1_accuracy_pct": 79.3,
+    "l2_used": 1591,
+    "l2_correct": 1430,
+    "l2_accuracy_pct": 91.8,
+    "unresolved_by_type": {
+      "equipment": 14,
+      "event": 11,
+      "location": 8
+    },
+    "unresolved_examples": [
+      {
+        "pair_id": "p_297",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_298",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_363",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_410",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_435",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_437",
+        "type": "equipment",
+        "gold": "different",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_488",
+        "type": "equipment",
+        "gold": "different",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_494",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_499",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_578",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_580",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_624",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_625",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_726",
+        "type": "equipment",
+        "gold": "different",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_766",
+        "type": "event",
+        "gold": "different",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_850",
+        "type": "event",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_964",
+        "type": "event",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_1049",
+        "type": "event",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_1056",
+        "type": "event",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_1127",
+        "type": "event",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      }
+    ]
+  },
+  "unified": {
+    "method": "unified",
+    "total_pairs": 2591,
+    "resolved_pairs": 2586,
+    "unresolved_pairs": 5,
+    "accuracy_on_resolved_pct": 81.7,
+    "strict_accuracy_pct": 81.6,
+    "l1_decided": 2322,
+    "l1_correct": 1886,
+    "l1_accuracy_pct": 81.2,
+    "l2_used": 269,
+    "l2_correct": 228,
+    "l2_accuracy_pct": 86.4,
+    "unresolved_by_type": {
+      "equipment": 4,
+      "event": 1
+    },
+    "unresolved_examples": [
+      {
+        "pair_id": "p_363",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_410",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_578",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_625",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_1165",
+        "type": "event",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      }
+    ]
+  },
+  "hybrid": {
+    "method": "hybrid",
+    "total_pairs": 2591,
+    "resolved_pairs": 2584,
+    "unresolved_pairs": 7,
+    "accuracy_on_resolved_pct": 81.8,
+    "strict_accuracy_pct": 81.6,
+    "l1_decided": 2320,
+    "l1_correct": 1886,
+    "l1_accuracy_pct": 81.3,
+    "l2_used": 271,
+    "l2_correct": 227,
+    "l2_accuracy_pct": 86.0,
+    "unresolved_by_type": {
+      "equipment": 7
+    },
+    "unresolved_examples": [
+      {
+        "pair_id": "p_435",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_437",
+        "type": "equipment",
+        "gold": "different",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_523",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_580",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_619",
+        "type": "equipment",
+        "gold": "different",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_625",
+        "type": "equipment",
+        "gold": "same",
+        "l2_verdict": "unknown"
+      },
+      {
+        "pair_id": "p_726",
+        "type": "equipment",
+        "gold": "different",
+        "l2_verdict": "unknown"
+      }
+    ]
+  },
+  "note": "strict_accuracy counts unresolved L2 verdicts in the denominator; accuracy_on_resolved excludes unresolved L2 cases from the denominator"
+}

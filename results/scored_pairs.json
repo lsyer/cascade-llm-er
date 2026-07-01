@@ -37,7 +37,7 @@
     "name_b": "Virginia-class submarine",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.024999999999999994,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -1831,7 +1831,7 @@
     "name_b": "Aegis combat system",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.3500000000000002,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -1951,7 +1951,7 @@
     "name_b": "Arleigh Burke-class Flight III destroyer",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.14999999999999994,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -2063,7 +2063,7 @@
     "name_b": "MH-60R Sea Hawk",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.24999999999999997,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -3973,7 +3973,7 @@
     "name_b": "MH-60R/S Sea Hawk",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.275,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -4848,54 +4848,6 @@
     }
   },
   {
-    "pair_id": "p_175",
-    "vid_a": "equip_1387",
-    "vid_b": "event_2150",
-    "name_a": "Operation Epic Fury",
-    "name_b": "Operation Epic Fury",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 1,
-    "l1_score_v2": 0.6333333333333333,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 0.3333333333333333,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 3,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_176",
-    "vid_a": "equip_1387",
-    "vid_b": "loc_802",
-    "name_a": "Operation Epic Fury",
-    "name_b": "Operation Epic Fury",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 1,
-    "l1_score_v2": 1.0,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 1.0,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 1,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
     "pair_id": "p_177",
     "vid_a": "equip_1388",
     "vid_b": "equip_1705",
@@ -5087,7 +5039,7 @@
     "name_b": "F-35A Lightning II",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.24999999999999997,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -5854,50 +5806,6 @@
     }
   },
   {
-    "pair_id": "p_212",
-    "vid_a": "equip_1453",
-    "vid_b": "loc_1110",
-    "name_a": "Navy",
-    "name_b": "Navy",
-    "type_a": "organization",
-    "type_b": "organization",
-    "label": 1,
-    "l1_score_v2": 1.0,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 1.0,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 1,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_213",
-    "vid_a": "equip_1453",
-    "vid_b": "loc_1151",
-    "name_a": "Navy",
-    "name_b": "Royal New Zealand Navy (RNZN)",
-    "type_a": "organization",
-    "type_b": "organization",
-    "label": 0,
-    "l1_score_v2": 1.0,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 1.0,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 1,
-      "name_similarity": 0.2,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
     "pair_id": "p_214",
     "vid_a": "equip_1453",
     "vid_b": "loc_458",
@@ -5937,50 +5845,6 @@
       "property_conflict_rate": 0.0,
       "n_effective_fields": 1,
       "name_similarity": 0.3333333333333333,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_216",
-    "vid_a": "equip_1453",
-    "vid_b": "loc_472",
-    "name_a": "Navy",
-    "name_b": "Royal Navy",
-    "type_a": "organization",
-    "type_b": "organization",
-    "label": 0,
-    "l1_score_v2": 1.0,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 1.0,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 1,
-      "name_similarity": 0.5,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_217",
-    "vid_a": "equip_1453",
-    "vid_b": "loc_919",
-    "name_a": "Navy",
-    "name_b": "Norwegian Navy",
-    "type_a": "organization",
-    "type_b": "organization",
-    "label": 0,
-    "l1_score_v2": 1.0,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 1.0,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 1,
-      "name_similarity": 0.5,
       "name_exact": 0,
       "name_containment": 1
     }
@@ -6063,7 +5927,7 @@
     "name_b": "U.S. Navy blockade in the Strait of Hormuz",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.45,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -6079,96 +5943,6 @@
       "property_conflict_rate": 0.0,
       "n_effective_fields": 4,
       "name_similarity": 0.375,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_222",
-    "vid_a": "equip_1473",
-    "vid_b": "event_1998",
-    "name_a": "U.S. Navy blockade",
-    "name_b": "U.S. Navy blockade",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 1,
-    "l1_score_v2": 0.5,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.2,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 5,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_223",
-    "vid_a": "equip_1473",
-    "vid_b": "event_200",
-    "name_a": "U.S. Navy blockade",
-    "name_b": "U.S. Navy blockade",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": 0.5,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.2,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 5,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_224",
-    "vid_a": "equip_1473",
-    "vid_b": "event_2363",
-    "name_a": "U.S. Navy blockade",
-    "name_b": "U.S. Navy blockade in Strait of Hormuz",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": 0.4,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.2,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 5,
-      "name_similarity": 0.42857142857142855,
       "name_exact": 0,
       "name_containment": 1
     }
@@ -6299,7 +6073,7 @@
     "name_b": "F/A-18E Super Hornet",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.275,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -6327,7 +6101,7 @@
     "name_b": "F/A-18E/F Super Hornet",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.24999999999999997,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -6793,7 +6567,7 @@
     "name_b": "P-8A Poseidon",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": -1.0,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -6823,7 +6597,7 @@
     "name_b": "P-8A Poseidon MRA1",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 1.0,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -6993,7 +6767,7 @@
     "name_b": "Carrier Strike Group 12",
     "type_a": "organization",
     "type_b": "organization",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.7333333333333333,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -7119,7 +6893,7 @@
     "name_b": "KC-130J Super Hercules",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.8,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -7209,7 +6983,7 @@
     "name_b": "Carrier Strike Group 12",
     "type_a": "organization",
     "type_b": "organization",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.7333333333333333,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -7325,7 +7099,7 @@
     "name_b": "Virginia-class submarine",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.4000000000000002,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -7355,7 +7129,7 @@
     "name_b": "Virginia-class submarines",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.675,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -7625,7 +7399,7 @@
     "name_b": "P-8A Poseidon",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": -1.0,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -8207,7 +7981,7 @@
     "name_b": "SM-3 Block IA",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -8237,7 +8011,7 @@
     "name_b": "SM-3 interceptor",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -5.551115123125783e-17,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -8591,7 +8365,7 @@
     "name_b": "MH-60R/S Sea Hawk",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.8,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -8621,7 +8395,7 @@
     "name_b": "MH-60R/S Seahawk",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 1.0,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -8922,28 +8696,6 @@
     }
   },
   {
-    "pair_id": "p_325",
-    "vid_a": "equip_1706",
-    "vid_b": "equip_1150",
-    "name_a": "missile launch sites",
-    "name_b": "missile sites",
-    "type_a": "location",
-    "type_b": "location",
-    "label": 1,
-    "l1_score_v2": 1.0,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 1.0,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 1,
-      "name_similarity": 0.6666666666666666,
-      "name_exact": 0,
-      "name_containment": 0
-    }
-  },
-  {
     "pair_id": "p_326",
     "vid_a": "equip_1716",
     "vid_b": "equip_1732",
@@ -8981,7 +8733,7 @@
     "name_b": "STARLINK terminal",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.5000000000000002,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -9183,7 +8935,7 @@
     "name_b": "US blockade enforcement",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5333333333333333,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -9199,34 +8951,6 @@
       "name_similarity": 0.6666666666666666,
       "name_exact": 0,
       "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_335",
-    "vid_a": "equip_1755",
-    "vid_b": "event_361",
-    "name_a": "US blockade",
-    "name_b": "US naval blockade",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": 0.4,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 0.25,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 4,
-      "name_similarity": 0.6666666666666666,
-      "name_exact": 0,
-      "name_containment": 0
     }
   },
   {
@@ -9429,7 +9153,7 @@
     "name_b": "Gripen C/D",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.8,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -9961,7 +9685,7 @@
     "name_b": "KSS-III submarine",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.09999999999999998,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -10043,7 +9767,7 @@
     "name_b": "Aegis Baseline 10 Combat System",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -11095,7 +10819,7 @@
     "name_b": "W88 Alt 370",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 1.0,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -11271,7 +10995,7 @@
     "name_b": "F/A-18E Super Hornet",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.1,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -11329,7 +11053,7 @@
     "name_b": "F/A-18F Super Hornet",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.05000000000000007,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -11477,7 +11201,7 @@
     "name_b": "F-35B/C",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.8,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -11651,7 +11375,7 @@
     "name_b": "Beechcraft King Air planes",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.3,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -11765,7 +11489,7 @@
     "name_b": "F/A-18 E/F Superhornet",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.8,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -11881,7 +11605,7 @@
     "name_b": "F/A-18C/D Hornets",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 1.0,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -11909,7 +11633,7 @@
     "name_b": "F/A-18A/B Hornets",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.575,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -11937,7 +11661,7 @@
     "name_b": "F/A-18A Hornet",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 1.0,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -11967,7 +11691,7 @@
     "name_b": "F/A-18D Hornet",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -12025,7 +11749,7 @@
     "name_b": "F/A-18E/F Super Hornet",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": 0.5,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -12381,7 +12105,7 @@
     "name_b": "REMUS 600 UUV",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.46666666666666673,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -13171,7 +12895,7 @@
     "name_b": "Shahed-136 drone",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -13189,36 +12913,6 @@
       "property_conflict_rate": 0.2,
       "n_effective_fields": 5,
       "name_similarity": 0.0,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_478",
-    "vid_a": "equip_2323",
-    "vid_b": "equip_2779",
-    "name_a": "Shahed",
-    "name_b": "Shahed Danesh drone",
-    "type_a": "equipment",
-    "type_b": "equipment",
-    "label": 0,
-    "l1_score_v2": 0.5,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_aliases_match": 0,
-      "fld_aliases_conflict": 0,
-      "fld_category_match": 0,
-      "fld_category_conflict": 1,
-      "fld_equip_type_match": 1,
-      "fld_equip_type_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_state_match": 1,
-      "fld_state_conflict": 0,
-      "property_overlap_rate": 0.6,
-      "property_conflict_rate": 0.2,
-      "n_effective_fields": 5,
-      "name_similarity": 0.3333333333333333,
       "name_exact": 0,
       "name_containment": 1
     }
@@ -13641,7 +13335,7 @@
     "name_b": "Barracuda autonomous air vehicle",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -13671,7 +13365,7 @@
     "name_b": "YFQ-44A",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.3000000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -13817,7 +13511,7 @@
     "name_b": "Boeing 747-8i",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.575,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -13935,7 +13629,7 @@
     "name_b": "GARC Block 1",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.20000000000000007,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -14521,7 +14215,7 @@
     "name_b": "P-8A Poseidon MRA1",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.95,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -14639,7 +14333,7 @@
     "name_b": "Merlin Mk 2",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.575,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -14697,7 +14391,7 @@
     "name_b": "Merlin Mk2",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -15133,7 +14827,7 @@
     "name_b": "Kh-35E",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -15156,32 +14850,6 @@
     }
   },
   {
-    "pair_id": "p_546",
-    "vid_a": "equip_2742",
-    "vid_b": "equip_523",
-    "name_a": "Integrated Platform Control System",
-    "name_b": "Integrated Platform Management System (IPMS)",
-    "type_a": "equipment",
-    "type_b": "equipment",
-    "label": 0,
-    "l1_score_v2": -0.5166666666666667,
-    "l1_decision_v2": "reject",
-    "features_v2": {
-      "fld_category_match": 0,
-      "fld_category_conflict": 1,
-      "fld_equip_type_match": 1,
-      "fld_equip_type_conflict": 0,
-      "fld_name_match": 0,
-      "fld_name_conflict": 1,
-      "property_overlap_rate": 0.3333333333333333,
-      "property_conflict_rate": 0.6666666666666666,
-      "n_effective_fields": 3,
-      "name_similarity": 0.5,
-      "name_exact": 0,
-      "name_containment": 0
-    }
-  },
-  {
     "pair_id": "p_547",
     "vid_a": "equip_2744",
     "vid_b": "equip_932",
@@ -15189,7 +14857,7 @@
     "name_b": "Arleigh Burke-class guided-missile destroyer",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.05000000000000007,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -15247,7 +14915,7 @@
     "name_b": "RC-135W Rivet Joint",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.3500000000000002,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -15305,7 +14973,7 @@
     "name_b": "Shahed drone",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.44999999999999996,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -15835,7 +15503,7 @@
     "name_b": "F/A-18E/F Super Hornet",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.05000000000000007,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -15895,7 +15563,7 @@
     "name_b": "F-35C Lightning II",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.575,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -15923,7 +15591,7 @@
     "name_b": "F-35 \"Adir\"",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.8,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -16011,7 +15679,7 @@
     "name_b": "F-35C Joint Strike Fighter",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.95,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -16039,7 +15707,7 @@
     "name_b": "F-35A",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.575,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -16067,7 +15735,7 @@
     "name_b": "F-35B",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.575,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -16095,7 +15763,7 @@
     "name_b": "F-35B Lightning II",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.575,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -16123,7 +15791,7 @@
     "name_b": "F-35B/C",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.3,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -16153,7 +15821,7 @@
     "name_b": "F-35A Lightning II",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -16991,7 +16659,7 @@
     "name_b": "Arleigh Burke-class Flight III",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.8,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -17051,7 +16719,7 @@
     "name_b": "Arleigh Burke-class Flight III destroyer",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.8,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -17317,7 +16985,7 @@
     "name_b": "USS Enterprise (CVN-65)",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": 0.5,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -17577,7 +17245,7 @@
     "name_b": "F-15IA",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.95,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -17635,7 +17303,7 @@
     "name_b": "F-16D Viper",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -17723,7 +17391,7 @@
     "name_b": "RC-135W Rivet Joint",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -5.551115123125783e-17,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -17772,36 +17440,6 @@
       "n_effective_fields": 5,
       "name_similarity": 0.0,
       "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_636",
-    "vid_a": "equip_584",
-    "vid_b": "event_141",
-    "name_a": "Balikatan exercises",
-    "name_b": "Balikatan exercises",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": 0.5,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.2,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 5,
-      "name_similarity": 1.0,
-      "name_exact": 1,
       "name_containment": 1
     }
   },
@@ -17929,7 +17567,7 @@
     "name_b": "Su-30 MKI",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.8,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -18413,7 +18051,7 @@
     "name_b": "F/A-18F Super Hornet",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.3500000000000002,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -18621,7 +18259,7 @@
     "name_b": "Aerosonde UAS",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.05000000000000007,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -18651,7 +18289,7 @@
     "name_b": "SH-3 Sea King",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.24999999999999997,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -18857,7 +18495,7 @@
     "name_b": "Virginia-class submarine",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.5000000000000002,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -19007,7 +18645,7 @@
     "name_b": "Sting Ray torpedo",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.31666666666666665,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -19463,7 +19101,7 @@
     "name_b": "Patriot surface-to-air missile system",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.2500000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -19641,7 +19279,7 @@
     "name_b": "Virginia class",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": 0.39999999999999997,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -19965,7 +19603,7 @@
     "name_b": "Advanced Precision Kill Weapon System II (APKWS II)",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -1.0,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -20911,7 +20549,7 @@
     "name_b": "Blockade of the Strait of Hormuz",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.19999999999999996,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -20941,7 +20579,7 @@
     "name_b": "Blockade of Iranian tankers",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.19999999999999996,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -21121,7 +20759,7 @@
     "name_b": "Iranian ports and coastal areas",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.45,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -21322,32 +20960,6 @@
     }
   },
   {
-    "pair_id": "p_758",
-    "vid_a": "event_108",
-    "vid_b": "equip_584",
-    "name_a": "Balikatan",
-    "name_b": "Balikatan exercises",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": 0.5333333333333333,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.3333333333333333,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 3,
-      "name_similarity": 0.5,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
     "pair_id": "p_759",
     "vid_a": "event_108",
     "vid_b": "event_141",
@@ -21468,32 +21080,6 @@
     }
   },
   {
-    "pair_id": "p_763",
-    "vid_a": "event_108",
-    "vid_b": "loc_202",
-    "name_a": "Balikatan",
-    "name_b": "Balikatan",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": 0.6333333333333333,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.3333333333333333,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 3,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
     "pair_id": "p_764",
     "vid_a": "event_1083",
     "vid_b": "event_1632",
@@ -21561,7 +21147,7 @@
     "name_b": "Carrier Qualification Training",
     "type_a": "event",
     "type_b": "event",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": -0.05000000000000007,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -21711,7 +21297,7 @@
     "name_b": "Blockade of Iranian tankers",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -1.0,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -21771,7 +21357,7 @@
     "name_b": "Strikes on Iranian Targets",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.09999999999999992,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -21919,7 +21505,7 @@
     "name_b": "Gunfighter Skies Air Show crash",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.19999999999999996,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -22899,7 +22485,7 @@
     "name_b": "Iran War Operations",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.05000000000000007,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -23049,7 +22635,7 @@
     "name_b": "main laundry room fire",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.3,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -23169,7 +22755,7 @@
     "name_b": "U.S.-Israeli war with Iran",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.24999999999999997,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -23261,7 +22847,7 @@
     "name_b": "USS Gerald R. Ford Fire Incident",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.3,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -23379,7 +22965,7 @@
     "name_b": "USS Gerald R. Ford near-loss incident",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.5166666666666667,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -23776,36 +23362,6 @@
     }
   },
   {
-    "pair_id": "p_841",
-    "vid_a": "event_1209",
-    "vid_b": "equip_1681",
-    "name_a": "Fire on board",
-    "name_b": "fire on carrier",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": -0.15000000000000005,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 0,
-      "fld_name_conflict": 1,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.0,
-      "property_conflict_rate": 0.2,
-      "n_effective_fields": 5,
-      "name_similarity": 0.5,
-      "name_exact": 0,
-      "name_containment": 0
-    }
-  },
-  {
     "pair_id": "p_842",
     "vid_a": "event_1212",
     "vid_b": "event_1584",
@@ -24143,7 +23699,7 @@
     "name_b": "Self-Defense Strikes on Iranian Radar & C2 Sites",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -5.551115123125783e-17,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -24203,7 +23759,7 @@
     "name_b": "Self-defense strikes on Iranian radar/drone sites",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -24293,7 +23849,7 @@
     "name_b": "US strikes on Iran",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.44999999999999996,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -24623,7 +24179,7 @@
     "name_b": "blockade of the Gulf of Oman",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.19999999999999996,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -24863,7 +24419,7 @@
     "name_b": "USS Gerald R. Ford deployment 2025-2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.3500000000000002,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -25521,7 +25077,7 @@
     "name_b": "Golden Fleet initiative",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.2500000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -25637,7 +25193,7 @@
     "name_b": "strikes on Iranian targets",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.09999999999999992,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -25714,32 +25270,6 @@
       "property_overlap_rate": 0.0,
       "property_conflict_rate": 0.4,
       "n_effective_fields": 5,
-      "name_similarity": 0.5,
-      "name_exact": 0,
-      "name_containment": 0
-    }
-  },
-  {
-    "pair_id": "p_906",
-    "vid_a": "event_1314",
-    "vid_b": "equip_1563",
-    "name_a": "US blockade enforcement",
-    "name_b": "US enforcement of a maritime blockade",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 1,
-    "l1_score_v2": -0.35,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 0,
-      "fld_name_conflict": 1,
-      "property_overlap_rate": 0.0,
-      "property_conflict_rate": 0.3333333333333333,
-      "n_effective_fields": 3,
       "name_similarity": 0.5,
       "name_exact": 0,
       "name_containment": 0
@@ -26725,7 +26255,7 @@
     "name_b": "Southern Seas 2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.3,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -26755,7 +26285,7 @@
     "name_b": "Southern Seas 2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.3,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -26785,7 +26315,7 @@
     "name_b": "Southern Seas 2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.3,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -26815,7 +26345,7 @@
     "name_b": "Southern Seas 26",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.325,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -26843,7 +26373,7 @@
     "name_b": "Southern Seas 2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.325,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -26871,7 +26401,7 @@
     "name_b": "Southern Seas 2026 deployment",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.36666666666666664,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -26897,7 +26427,7 @@
     "name_b": "Southern Seas 2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.3,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -26927,7 +26457,7 @@
     "name_b": "Southern Seas 2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.3,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -27279,7 +26809,7 @@
     "name_b": "Arctic Sentry 2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.5000000000000002,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -27399,7 +26929,7 @@
     "name_b": "Israel's war with Iran",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.04999999999999996,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -27877,7 +27407,7 @@
     "name_b": "USS Ford deployment return",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.2500000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -28429,7 +27959,7 @@
     "name_b": "Iran War Operations",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.3000000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -28459,7 +27989,7 @@
     "name_b": "Israel's war with Iran",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.04999999999999996,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -28909,7 +28439,7 @@
     "name_b": "Canadian Patrol Submarine Project Bid",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.9,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -29383,7 +28913,7 @@
     "name_b": "Iwo Jima deployment completion",
     "type_a": "event",
     "type_b": "event",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": -0.2500000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -29591,7 +29121,7 @@
     "name_b": "Blockade of Iranian tankers",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.5500000000000002,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -29707,7 +29237,7 @@
     "name_b": "Carrier qualification training",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.09999999999999992,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -29737,7 +29267,7 @@
     "name_b": "Carrier Qualification Training",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.04999999999999999,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -29823,7 +29353,7 @@
     "name_b": "One Big Beautiful Bill Act",
     "type_a": "event",
     "type_b": "event",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": -0.20000000000000007,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -29909,7 +29439,7 @@
     "name_b": "Operations Southern Spear",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.2500000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -30083,7 +29613,7 @@
     "name_b": "USS Gerald R. Ford deployment",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.2500000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -30141,7 +29671,7 @@
     "name_b": "USS Gerald R. Ford deployment",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.2500000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -30963,7 +30493,7 @@
     "name_b": "attacks on Iranian targets",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.3,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -30993,7 +30523,7 @@
     "name_b": "maritime key terrain seizure operations",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.05000000000000007,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -31023,7 +30553,7 @@
     "name_b": "maritime key terrain seizure operations",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.05000000000000007,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -31399,7 +30929,7 @@
     "name_b": "Fiscal Year 2027 defense policy bill",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -1.0,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -31427,7 +30957,7 @@
     "name_b": "USS Ford Planned Maintenance",
     "type_a": "event",
     "type_b": "event",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": -1.0,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -31813,7 +31343,7 @@
     "name_b": "USS Gerald R. Ford near-loss incident",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.2500000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -32165,7 +31695,7 @@
     "name_b": "U.S. Strikes on Iranian Military Facilities",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -32195,7 +31725,7 @@
     "name_b": "Operations Southern Spear",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.2500000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -32366,36 +31896,6 @@
     }
   },
   {
-    "pair_id": "p_1133",
-    "vid_a": "event_1892",
-    "vid_b": "event_2309",
-    "name_a": "FY2027 NDAA markup",
-    "name_b": "FY2027 NDAA markup",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 1,
-    "l1_score_v2": 0.39999999999999997,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 1,
-      "fld_event_type_match": 1,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.4,
-      "property_conflict_rate": 0.2,
-      "n_effective_fields": 5,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
     "pair_id": "p_1134",
     "vid_a": "event_1896",
     "vid_b": "event_373",
@@ -32403,7 +31903,7 @@
     "name_b": "Golden Fleet promise",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.9000000000000001,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -32675,7 +32175,7 @@
     "name_b": "USS Gerald R. Ford near-loss incident",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.275,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -33181,7 +32681,7 @@
     "name_b": "Carrier Qualification training",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.20000000000000012,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -33331,7 +32831,7 @@
     "name_b": "Freedom of navigation in the Strait of Hormuz",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.325,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -33406,34 +32906,6 @@
       "property_overlap_rate": 0.4,
       "property_conflict_rate": 0.6,
       "n_effective_fields": 5,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_1168",
-    "vid_a": "event_1934",
-    "vid_b": "event_282",
-    "name_a": "Carrier Strike Group deployment",
-    "name_b": "carrier strike group deployment",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": 0.425,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 1,
-      "fld_event_type_match": 1,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 0.5,
-      "property_conflict_rate": 0.25,
-      "n_effective_fields": 4,
       "name_similarity": 1.0,
       "name_exact": 1,
       "name_containment": 1
@@ -33625,7 +33097,7 @@
     "name_b": "Keel laying ceremony for first ship",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -33745,7 +33217,7 @@
     "name_b": "US strikes on Iranian military sites",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -34064,36 +33536,6 @@
     }
   },
   {
-    "pair_id": "p_1190",
-    "vid_a": "event_1967",
-    "vid_b": "loc_1123",
-    "name_a": "Rim of the Pacific",
-    "name_b": "Rim of the Pacific",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 1,
-    "l1_score_v2": 0.5,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.2,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 5,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
     "pair_id": "p_1191",
     "vid_a": "event_1969",
     "vid_b": "event_2281",
@@ -34249,7 +33691,7 @@
     "name_b": "Strikes on Iranian Targets",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.04999999999999999,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -34305,7 +33747,7 @@
     "name_b": "Strikes on Iranian military facilities",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -34474,36 +33916,6 @@
     }
   },
   {
-    "pair_id": "p_1204",
-    "vid_a": "event_1998",
-    "vid_b": "equip_1473",
-    "name_a": "U.S. Navy blockade",
-    "name_b": "U.S. Navy blockade",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 1,
-    "l1_score_v2": 0.5,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.2,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 5,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
     "pair_id": "p_1205",
     "vid_a": "event_1998",
     "vid_b": "event_1301",
@@ -34541,7 +33953,7 @@
     "name_b": "U.S. Navy blockade in the Strait of Hormuz",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -5.551115123125783e-17,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -34651,36 +34063,6 @@
       "name_similarity": 0.5,
       "name_exact": 0,
       "name_containment": 0
-    }
-  },
-  {
-    "pair_id": "p_1210",
-    "vid_a": "event_200",
-    "vid_b": "equip_1473",
-    "name_a": "U.S. Navy blockade",
-    "name_b": "U.S. Navy blockade",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": 0.5,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.2,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 5,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
     }
   },
   {
@@ -34991,7 +34373,7 @@
     "name_b": "AH-64 Apache downing and rescue",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.14999999999999994,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -35109,7 +34491,7 @@
     "name_b": "Iwo Jima deployment completion",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.2500000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -35374,36 +34756,6 @@
     }
   },
   {
-    "pair_id": "p_1234",
-    "vid_a": "event_2050",
-    "vid_b": "event_1860",
-    "name_a": "USS Gerald R. Ford near-loss incident",
-    "name_b": "USS Gerald R. Ford yangını",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": -0.2500000000000001,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 1,
-      "fld_event_type_match": 1,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 0,
-      "fld_name_conflict": 1,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.2,
-      "property_conflict_rate": 0.4,
-      "n_effective_fields": 5,
-      "name_similarity": 0.5714285714285714,
-      "name_exact": 0,
-      "name_containment": 0
-    }
-  },
-  {
     "pair_id": "p_1235",
     "vid_a": "event_2066",
     "vid_b": "event_2129",
@@ -35501,7 +34853,7 @@
     "name_b": "Retaliatory Strikes on Iran May 7",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -5.551115123125783e-17,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -35619,7 +34971,7 @@
     "name_b": "U.S. strikes on Iran",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.05000000000000007,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -35919,7 +35271,7 @@
     "name_b": "Extended Range Attack Munition (ERAM) Program",
     "type_a": "event",
     "type_b": "event",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": -0.575,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -36178,58 +35530,6 @@
     }
   },
   {
-    "pair_id": "p_1261",
-    "vid_a": "event_2150",
-    "vid_b": "equip_1387",
-    "name_a": "Operation Epic Fury",
-    "name_b": "Operation Epic Fury",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 1,
-    "l1_score_v2": 0.6333333333333333,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 0.3333333333333333,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 3,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_1262",
-    "vid_a": "event_2150",
-    "vid_b": "loc_802",
-    "name_a": "Operation Epic Fury",
-    "name_b": "Operation Epic Fury",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 1,
-    "l1_score_v2": 0.6333333333333333,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 0.3333333333333333,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 3,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
     "pair_id": "p_1263",
     "vid_a": "event_2162",
     "vid_b": "event_1395",
@@ -36385,7 +35685,7 @@
     "name_b": "Eurosatory 2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.3,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -36415,7 +35715,7 @@
     "name_b": "Eurosatory 2026 defense show",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.20000000000000007,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -36433,36 +35733,6 @@
       "property_conflict_rate": 0.4,
       "n_effective_fields": 5,
       "name_similarity": 0.25,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_1270",
-    "vid_a": "event_2165",
-    "vid_b": "event_2312",
-    "name_a": "Eurosatory",
-    "name_b": "Eurosatory 2026 defense trade fair",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": 0.3,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 1,
-      "fld_event_type_match": 1,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.4,
-      "property_conflict_rate": 0.2,
-      "n_effective_fields": 5,
-      "name_similarity": 0.2,
       "name_exact": 0,
       "name_containment": 1
     }
@@ -36503,7 +35773,7 @@
     "name_b": "Eurosatory 2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5333333333333333,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -37151,7 +36421,7 @@
     "name_b": "Southern Seas 2026 deployment",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.325,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -37449,7 +36719,7 @@
     "name_b": "USS Gerald R. Ford deployment",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.5500000000000002,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -38424,64 +37694,6 @@
     }
   },
   {
-    "pair_id": "p_1337",
-    "vid_a": "event_2299",
-    "vid_b": "equip_1473",
-    "name_a": "U.S. naval blockade",
-    "name_b": "U.S. Navy blockade",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": -0.225,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 0,
-      "fld_name_conflict": 1,
-      "property_overlap_rate": 0.0,
-      "property_conflict_rate": 0.25,
-      "n_effective_fields": 4,
-      "name_similarity": 0.5,
-      "name_exact": 0,
-      "name_containment": 0
-    }
-  },
-  {
-    "pair_id": "p_1338",
-    "vid_a": "event_2299",
-    "vid_b": "event_1488",
-    "name_a": "U.S. naval blockade",
-    "name_b": "U.S. Naval Blockade of Iran",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 1,
-    "l1_score_v2": -5.551115123125783e-17,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 1,
-      "fld_event_type_match": 1,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 1,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.4,
-      "property_conflict_rate": 0.4,
-      "n_effective_fields": 5,
-      "name_similarity": 0.6,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
     "pair_id": "p_1339",
     "vid_a": "event_2299",
     "vid_b": "event_1998",
@@ -38489,7 +37701,7 @@
     "name_b": "U.S. Navy blockade",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.5500000000000002,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -38519,7 +37731,7 @@
     "name_b": "U.S. Navy blockade",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.5500000000000002,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -38937,7 +38149,7 @@
     "name_b": "Operation Firecrest",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.20000000000000012,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -39109,7 +38321,7 @@
     "name_b": "U.S. Navy blockade in the Strait of Hormuz",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.44999999999999996,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -39169,7 +38381,7 @@
     "name_b": "Ukraine Defence Contact Group meeting",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -1.0,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -39257,7 +38469,7 @@
     "name_b": "U.S. military posture in the Middle East",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.1,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -39375,7 +38587,7 @@
     "name_b": "Spring Patrol",
     "type_a": "event",
     "type_b": "event",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": -0.3500000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -39525,7 +38737,7 @@
     "name_b": "USS Gerald R. Ford transit",
     "type_a": "event",
     "type_b": "event",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": -0.43333333333333335,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -40086,34 +39298,6 @@
     }
   },
   {
-    "pair_id": "p_1393",
-    "vid_a": "event_282",
-    "vid_b": "event_1934",
-    "name_a": "carrier strike group deployment",
-    "name_b": "Carrier Strike Group deployment",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": 0.425,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 1,
-      "fld_event_type_match": 1,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 0.5,
-      "property_conflict_rate": 0.25,
-      "n_effective_fields": 4,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
     "pair_id": "p_1394",
     "vid_a": "event_296",
     "vid_b": "equip_1837",
@@ -40387,7 +39571,7 @@
     "name_b": "Iwo Jima ARG Deployment",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.05000000000000007,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -40417,7 +39601,7 @@
     "name_b": "Iwo Jima ARG deployment",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.05000000000000007,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -41463,7 +40647,7 @@
     "name_b": "Operation Epic Fury",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.35,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -41489,7 +40673,7 @@
     "name_b": "Operation Epic Fury",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.5166666666666667,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -42231,7 +41415,7 @@
     "name_b": "Exchange of fire between U.S. and Iran",
     "type_a": "event",
     "type_b": "event",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": -0.5000000000000002,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -42591,7 +41775,7 @@
     "name_b": "Venezuela Operation",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.1,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -42675,7 +41859,7 @@
     "name_b": "Multinational Strait of Hormuz security operation",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.1,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -43169,7 +42353,7 @@
     "name_b": "Gerald R. Ford CSG Red Sea deployment 2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.5500000000000002,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -44031,7 +43215,7 @@
     "name_b": "Capture of Nicolás Maduro",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.5500000000000002,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -44076,32 +43260,6 @@
       "property_overlap_rate": 0.5,
       "property_conflict_rate": 0.0,
       "n_effective_fields": 4,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_1529",
-    "vid_a": "event_689",
-    "vid_b": "event_690",
-    "name_a": "Fire Containment",
-    "name_b": "Fire containment",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 1,
-    "l1_score_v2": 0.4666666666666666,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 1,
-      "fld_event_type_match": 1,
-      "fld_event_type_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 0.6666666666666666,
-      "property_conflict_rate": 0.3333333333333333,
-      "n_effective_fields": 3,
       "name_similarity": 1.0,
       "name_exact": 1,
       "name_containment": 1
@@ -44533,7 +43691,7 @@
     "name_b": "USS Gerald R. Ford deployment 2025-2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.3000000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -44889,7 +44047,7 @@
     "name_b": "USS Gerald R. Ford deployment",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.3500000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -45099,7 +44257,7 @@
     "name_b": "USS Gerald R. Ford deployment 2025-2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.14999999999999994,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -45247,7 +44405,7 @@
     "name_b": "Iran operations",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.7500000000000001,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -45277,7 +44435,7 @@
     "name_b": "Iran War Operations",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.5500000000000002,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -45455,7 +44613,7 @@
     "name_b": "USS Gerald R. Ford Fire Incident",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.14999999999999994,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -45817,7 +44975,7 @@
     "name_b": "USS Gerald R. Ford deployment 2025-2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.14999999999999994,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -45877,7 +45035,7 @@
     "name_b": "Venezuela Operation",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.725,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -46113,7 +45271,7 @@
     "name_b": "Gunfighter Skies Air Show",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.9000000000000001,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -46497,7 +45655,7 @@
     "name_b": "Blockade of Iranian tankers",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -5.551115123125783e-17,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -46555,7 +45713,7 @@
     "name_b": "Gunfighter Skies Air Show crash",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -5.551115123125783e-17,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -46900,36 +46058,6 @@
       "n_effective_fields": 5,
       "name_similarity": 0.6666666666666666,
       "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_1624",
-    "vid_a": "event_820",
-    "vid_b": "loc_803",
-    "name_a": "SOF Week",
-    "name_b": "SOF Week",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 1,
-    "l1_score_v2": 0.5,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.2,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 5,
-      "name_similarity": 1.0,
-      "name_exact": 1,
       "name_containment": 1
     }
   },
@@ -47387,7 +46515,7 @@
     "name_b": "counter-drug efforts",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.36666666666666664,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -50534,28 +49662,6 @@
     }
   },
   {
-    "pair_id": "p_1751",
-    "vid_a": "loc_1110",
-    "vid_b": "equip_1453",
-    "name_a": "Navy",
-    "name_b": "Navy",
-    "type_a": "organization",
-    "type_b": "organization",
-    "label": 1,
-    "l1_score_v2": 1.0,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 1.0,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 1,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
     "pair_id": "p_1752",
     "vid_a": "loc_1110",
     "vid_b": "equip_1694",
@@ -50718,72 +49824,6 @@
     }
   },
   {
-    "pair_id": "p_1759",
-    "vid_a": "loc_1110",
-    "vid_b": "loc_471",
-    "name_a": "Navy",
-    "name_b": "Royal Australian Navy",
-    "type_a": "organization",
-    "type_b": "organization",
-    "label": 0,
-    "l1_score_v2": 1.0,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 1.0,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 1,
-      "name_similarity": 0.3333333333333333,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_1760",
-    "vid_a": "loc_1110",
-    "vid_b": "loc_472",
-    "name_a": "Navy",
-    "name_b": "Royal Navy",
-    "type_a": "organization",
-    "type_b": "organization",
-    "label": 0,
-    "l1_score_v2": 1.0,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 1.0,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 1,
-      "name_similarity": 0.5,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_1761",
-    "vid_a": "loc_1110",
-    "vid_b": "loc_919",
-    "name_a": "Navy",
-    "name_b": "Norwegian Navy",
-    "type_a": "organization",
-    "type_b": "organization",
-    "label": 0,
-    "l1_score_v2": 1.0,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 1.0,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 1,
-      "name_similarity": 0.5,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
     "pair_id": "p_1762",
     "vid_a": "loc_1110",
     "vid_b": "person_813",
@@ -50888,66 +49928,6 @@
     }
   },
   {
-    "pair_id": "p_1766",
-    "vid_a": "loc_1123",
-    "vid_b": "event_1967",
-    "name_a": "Rim of the Pacific",
-    "name_b": "Rim of the Pacific",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 1,
-    "l1_score_v2": 0.5,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.2,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 5,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_1767",
-    "vid_a": "loc_1123",
-    "vid_b": "event_2039",
-    "name_a": "Rim of the Pacific",
-    "name_b": "Rim of the Pacific Exercise 2026",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": 0.4,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.2,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 5,
-      "name_similarity": 0.6666666666666666,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
     "pair_id": "p_1768",
     "vid_a": "loc_1123",
     "vid_b": "event_2162",
@@ -50955,7 +49935,7 @@
     "name_b": "Rim of the Pacific (RimPac) 2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.4,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -50986,36 +49966,6 @@
     "type_a": "event",
     "type_b": "event",
     "label": 1,
-    "l1_score_v2": 0.4,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.2,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 5,
-      "name_similarity": 0.8,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_1770",
-    "vid_a": "loc_1123",
-    "vid_b": "event_611",
-    "name_a": "Rim of the Pacific",
-    "name_b": "Rim of the Pacific 2026",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
     "l1_score_v2": 0.4,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -51501,7 +50451,7 @@
     "name_b": "Korean Peninsula",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.675,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -51837,7 +50787,7 @@
     "name_b": "Shangri-La Dialogue 2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.4,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -51854,28 +50804,6 @@
       "property_overlap_rate": 0.2,
       "property_conflict_rate": 0.0,
       "n_effective_fields": 5,
-      "name_similarity": 0.3333333333333333,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_1801",
-    "vid_a": "loc_1224",
-    "vid_b": "loc_400",
-    "name_a": "Shangri-La",
-    "name_b": "Shangri-La Dialogue 2026",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": 1.0,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 1.0,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 1,
       "name_similarity": 0.3333333333333333,
       "name_exact": 0,
       "name_containment": 1
@@ -52821,7 +51749,7 @@
     "name_b": "Washington, D.C.",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.7,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -53069,7 +51997,7 @@
     "name_b": "Pacific Ocean",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.04999999999999999,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -55117,7 +54045,7 @@
     "name_b": "Souda Bay Naval Base",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.5000000000000002,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -55589,7 +54517,7 @@
     "name_b": "Yokosuka, Japan",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.3,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -56405,7 +55333,7 @@
     "name_b": "Mayport, Fla.",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.3,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -56433,7 +55361,7 @@
     "name_b": "ILA Berlin Airshow 2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.4,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -59950,84 +58878,6 @@
     }
   },
   {
-    "pair_id": "p_2094",
-    "vid_a": "loc_202",
-    "vid_b": "equip_584",
-    "name_a": "Balikatan",
-    "name_b": "Balikatan exercises",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 1,
-    "l1_score_v2": 1.0,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 1.0,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 1,
-      "name_similarity": 0.5,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_2095",
-    "vid_a": "loc_202",
-    "vid_b": "event_108",
-    "name_a": "Balikatan",
-    "name_b": "Balikatan",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": 0.6333333333333333,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.3333333333333333,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 3,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_2096",
-    "vid_a": "loc_202",
-    "vid_b": "event_141",
-    "name_a": "Balikatan",
-    "name_b": "Balikatan exercises",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": 0.4,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.2,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 5,
-      "name_similarity": 0.5,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
     "pair_id": "p_2097",
     "vid_a": "loc_202",
     "vid_b": "event_1613",
@@ -60056,36 +58906,6 @@
     }
   },
   {
-    "pair_id": "p_2098",
-    "vid_a": "loc_202",
-    "vid_b": "event_2205",
-    "name_a": "Balikatan",
-    "name_b": "Balikatan 23",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 0,
-    "l1_score_v2": 0.4,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.2,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 5,
-      "name_similarity": 0.5,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
     "pair_id": "p_2099",
     "vid_a": "loc_202",
     "vid_b": "event_32",
@@ -60093,7 +58913,7 @@
     "name_b": "Balikatan 2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.4,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -62119,7 +60939,7 @@
     "name_b": "Guam",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.04999999999999999,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -63417,7 +62237,7 @@
     "name_b": "Esquimalt Harbor",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.7,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -66147,7 +64967,7 @@
     "name_b": "Baltic Sea",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.07500000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -66227,50 +65047,6 @@
       "property_conflict_rate": 0.0,
       "n_effective_fields": 6,
       "name_similarity": 0.2,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_2324",
-    "vid_a": "loc_643",
-    "vid_b": "equip_1453",
-    "name_a": "Indian Navy",
-    "name_b": "Navy",
-    "type_a": "organization",
-    "type_b": "organization",
-    "label": 0,
-    "l1_score_v2": 1.0,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 1.0,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 1,
-      "name_similarity": 0.5,
-      "name_exact": 0,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_2325",
-    "vid_a": "loc_643",
-    "vid_b": "loc_1110",
-    "name_a": "Indian Navy",
-    "name_b": "Navy",
-    "type_a": "organization",
-    "type_b": "organization",
-    "label": 0,
-    "l1_score_v2": 1.0,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 1.0,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 1,
-      "name_similarity": 0.5,
       "name_exact": 0,
       "name_containment": 1
     }
@@ -66837,7 +65613,7 @@
     "name_b": "Batan Island",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.675,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -67031,7 +65807,7 @@
     "name_b": "Western Palawan",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.6,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -67796,58 +66572,6 @@
     }
   },
   {
-    "pair_id": "p_2380",
-    "vid_a": "loc_802",
-    "vid_b": "equip_1387",
-    "name_a": "Operation Epic Fury",
-    "name_b": "Operation Epic Fury",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 1,
-    "l1_score_v2": 1.0,
-    "l1_decision_v2": "merge",
-    "features_v2": {
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "property_overlap_rate": 1.0,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 1,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
-    "pair_id": "p_2381",
-    "vid_a": "loc_803",
-    "vid_b": "event_820",
-    "name_a": "SOF Week",
-    "name_b": "SOF Week",
-    "type_a": "event",
-    "type_b": "event",
-    "label": 1,
-    "l1_score_v2": 0.5,
-    "l1_decision_v2": "escalate",
-    "features_v2": {
-      "fld_description_match": 0,
-      "fld_description_conflict": 0,
-      "fld_event_type_match": 0,
-      "fld_event_type_conflict": 0,
-      "fld_location_name_match": 0,
-      "fld_location_name_conflict": 0,
-      "fld_name_match": 1,
-      "fld_name_conflict": 0,
-      "fld_start_date_match": 0,
-      "fld_start_date_conflict": 0,
-      "property_overlap_rate": 0.2,
-      "property_conflict_rate": 0.0,
-      "n_effective_fields": 5,
-      "name_similarity": 1.0,
-      "name_exact": 1,
-      "name_containment": 1
-    }
-  },
-  {
     "pair_id": "p_2382",
     "vid_a": "loc_803",
     "vid_b": "event_871",
@@ -67855,7 +66579,7 @@
     "name_b": "SOF Week 2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.5333333333333333,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -67987,7 +66711,7 @@
     "name_b": "Groton, Connecticut",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.07500000000000001,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -68149,7 +66873,7 @@
     "name_b": "Methil yard",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.7,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -69367,7 +68091,7 @@
     "name_b": "Souda Bay Naval Base",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.5000000000000002,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -69481,7 +68205,7 @@
     "name_b": "Souda Bay Naval Base",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -0.5000000000000002,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -71229,7 +69953,7 @@
     "name_b": "Naval Base Kitsap-Bangor",
     "type_a": "location",
     "type_b": "location",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.45,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -73501,7 +72225,7 @@
     "name_b": "Mark Kelly",
     "type_a": "person",
     "type_b": "person",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.6333333333333333,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -74121,7 +72845,7 @@
     "name_b": "Maj. Gen. George Rowell IV",
     "type_a": "person",
     "type_b": "person",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -1.0,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -74745,7 +73469,7 @@
     "name_b": "Mark Kelly",
     "type_a": "person",
     "type_b": "person",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.1333333333333333,
     "l1_decision_v2": "escalate",
     "features_v2": {

@@ -1,21 +1,21 @@
 {
   "fixed": {
-    "l1_acc": 78.3,
-    "intercept": 38.7,
-    "pipeline": 89.8,
-    "l2_calls": 61.3
+    "l1_acc": 79.3,
+    "intercept": 38.6,
+    "pipeline": 90.2,
+    "l2_calls": 61.4
   },
   "unified": {
-    "l1_acc": 81.1,
-    "intercept": 88.7,
+    "l1_acc": 81.2,
+    "intercept": 89.6,
     "pipeline": 82.9,
-    "l2_calls": 11.3
+    "l2_calls": 10.4
   },
   "hybrid": {
-    "l1_acc": 81.3,
-    "intercept": 90.1,
-    "pipeline": 82.9,
-    "l2_calls": 9.9
+    "l1_acc": 81.7,
+    "intercept": 88.5,
+    "pipeline": 83.5,
+    "l2_calls": 11.5
   },
   "feature_names": [
     "fld_aliases_conflict",
@@ -63,10 +63,10 @@
   ],
   "n_features": 42,
   "per_type_sample_counts": {
-    "equipment": 547,
-    "event": 981,
-    "location": 853,
-    "organization": 138,
+    "equipment": 545,
+    "event": 946,
+    "location": 852,
+    "organization": 128,
     "person": 120
   }
 }

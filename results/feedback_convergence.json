@@ -2,18 +2,18 @@
   {
     "round": 0,
     "feedback": 0,
-    "l1_acc": 78.3,
-    "interception": 38.7,
-    "l2_esc": 61.3,
-    "pipeline": 89.8
+    "l1_acc": 79.3,
+    "interception": 38.6,
+    "l2_esc": 61.4,
+    "pipeline": 90.2
   },
   {
     "round": 1,
-    "feedback": 1319,
-    "l1_acc": 80.6,
-    "interception": 89.2,
-    "l2_esc": 10.8,
-    "pipeline": 82.4,
+    "feedback": 1295,
+    "l1_acc": 80.9,
+    "interception": 89.5,
+    "l2_esc": 10.5,
+    "pipeline": 82.6,
     "thresholds": {
       "merge": 0.55,
       "reject": 0.4
@@ -21,11 +21,11 @@
   },
   {
     "round": 2,
-    "feedback": 1758,
+    "feedback": 1726,
     "l1_acc": 81.2,
-    "interception": 88.4,
-    "l2_esc": 11.6,
-    "pipeline": 83.1,
+    "interception": 89.8,
+    "l2_esc": 10.2,
+    "pipeline": 82.8,
     "thresholds": {
       "merge": 0.55,
       "reject": 0.4
@@ -33,11 +33,11 @@
   },
   {
     "round": 3,
-    "feedback": 1977,
-    "l1_acc": 81.2,
-    "interception": 88.1,
-    "l2_esc": 11.9,
-    "pipeline": 83.1,
+    "feedback": 1941,
+    "l1_acc": 81.1,
+    "interception": 89.3,
+    "l2_esc": 10.7,
+    "pipeline": 82.8,
     "thresholds": {
       "merge": 0.55,
       "reject": 0.4
@@ -45,10 +45,10 @@
   },
   {
     "round": 4,
-    "feedback": 2108,
-    "l1_acc": 81.1,
-    "interception": 88.7,
-    "l2_esc": 11.3,
+    "feedback": 2072,
+    "l1_acc": 81.2,
+    "interception": 89.6,
+    "l2_esc": 10.4,
     "pipeline": 82.9,
     "thresholds": {
       "merge": 0.55,

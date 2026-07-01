@@ -26,7 +26,7 @@ rows = cur.fetchall()
 col_names = [desc[0] for desc in cur.description]
 
 # Load GPT-5.4 annotation results for cross-reference
-with open("/root/workspace/tanshu_docs/experiments/results/gpt54_annotation_300.json") as f:
+with open("/root/workspace/tanshu_docs/experiments/release/results/gpt54_annotation_300.json") as f:
     gpt54 = json.load(f)
 
 results = []
@@ -157,7 +157,7 @@ for r in discarded[:5]:
     print(f"  id={r['id']} {r['type']} | {str(r['name_a'])[:25]} vs {str(r['name_b'])[:25]}")
 
 # Save results
-output_path = "/root/workspace/tanshu_docs/experiments/results/human_annotation_analysis.json"
+output_path = "/root/workspace/tanshu_docs/experiments/release/results/human_annotation_analysis.json"
 with open(output_path, "w") as f:
     json.dump({
         "summary": {
