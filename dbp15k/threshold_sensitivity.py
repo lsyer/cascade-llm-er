@@ -9,14 +9,15 @@ Data sources:
 """
 import json, re, random, math
 from collections import defaultdict
+import os
 from pathlib import Path
 import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-REL = Path("/root/workspace/tanshu_docs/experiments/release")
-OUT = Path("/root/workspace/tanshu_docs/experiments/dbp15k")
+REL = Path(__file__).resolve().parents[1]
+OUT = Path(__file__).resolve().parent
 
 # ─── MINEC ───
 print("Loading MINEC per-pair data...")
@@ -27,10 +28,10 @@ minec_pairs = [{'score': r['score'], 'label': r['label']} for r in minec_raw]
 
 print(f"  MINEC: {len(minec_pairs)} pairs ({sum(p['label'] for p in minec_pairs)} positive)")
 
-# MINEC L2 accuracy (GLM-5 = 97.1%, use as pipeline L2)
-MINEC_L2_ACC = 0.971
+# MINEC L2 accuracy (GLM-5-Turbo strict on 2591 scored pairs)
+MINEC_L2_ACC = 0.916
 # MINEC L1+feedback accuracy (unified LR, 80.1%)
-MINEC_L1_FB_ACC = 0.801
+MINEC_L1_FB_ACC = 0.812
 
 # ─── DBP15K ───
 print("Loading DBP15K data...")
@@ -118,8 +119,8 @@ dbp_pairs = [{'score': l1_score(z, e), 'label': 1} for z, e in pos]
 dbp_pairs += [{'score': l1_score(z, e), 'label': 0} for z, e in neg]
 print(f"  DBP15K: {len(dbp_pairs)} pairs ({sum(p['label'] for p in dbp_pairs)} positive)")
 
-# DBP15K L2 accuracy = 93.3% (500 expanded pairs)
-DBP_L2_ACC = 0.933
+# DBP15K L2 accuracy = 92.8% (500 expanded hard cases for pipeline estimation)
+DBP_L2_ACC = 0.928
 
 REJECT_TH = 0.3  # Fixed reject threshold
 

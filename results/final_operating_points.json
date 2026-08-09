@@ -1,0 +1,133 @@
+{
+  "grid_step": 0.01,
+  "selection_rule": "L1 accuracy maximized on full OOF, interception>=10%",
+  "pure_l2_ceiling": 91.66,
+  "Fixed L1": {
+    "merge_t": 0.74,
+    "reject_t": -1.0,
+    "l1_accuracy": 86.3,
+    "interception": 19.2,
+    "pipeline_empirical": 90.16,
+    "llm_cost": 80.8,
+    "top5": [
+      {
+        "mt": 0.74,
+        "rt": -1.0,
+        "intercept": 19.220378232342725,
+        "acc": 86.34538152610442
+      },
+      {
+        "mt": 0.74,
+        "rt": -0.99,
+        "intercept": 19.220378232342725,
+        "acc": 86.34538152610442
+      },
+      {
+        "mt": 0.74,
+        "rt": -0.98,
+        "intercept": 19.220378232342725,
+        "acc": 86.34538152610442
+      },
+      {
+        "mt": 0.74,
+        "rt": -0.97,
+        "intercept": 19.220378232342725,
+        "acc": 86.34538152610442
+      },
+      {
+        "mt": 0.74,
+        "rt": -0.96,
+        "intercept": 19.220378232342725,
+        "acc": 86.34538152610442
+      }
+    ]
+  },
+  "Unified LR": {
+    "merge_t": 0.98,
+    "reject_t": 0.05,
+    "l1_accuracy": 97.0,
+    "interception": 10.3,
+    "pipeline_empirical": 91.55,
+    "llm_cost": 89.7,
+    "top5": [
+      {
+        "mt": 0.98,
+        "rt": 0.05,
+        "intercept": 10.266306445387881,
+        "acc": 96.99248120300751
+      },
+      {
+        "mt": 0.97,
+        "rt": 0.04,
+        "intercept": 10.652257815515245,
+        "acc": 96.73913043478261
+      },
+      {
+        "mt": 0.97,
+        "rt": 0.05,
+        "intercept": 12.157468159011966,
+        "acc": 96.5079365079365
+      },
+      {
+        "mt": 0.99,
+        "rt": 0.07,
+        "intercept": 10.266306445387881,
+        "acc": 96.2406015037594
+      },
+      {
+        "mt": 0.89,
+        "rt": 0.04,
+        "intercept": 24.314936318023932,
+        "acc": 95.55555555555556
+      }
+    ]
+  },
+  "Random Forest": {
+    "merge_t": 1.0,
+    "reject_t": 0.0,
+    "l1_accuracy": 95.5,
+    "interception": 29.0,
+    "pipeline_empirical": 91.05,
+    "llm_cost": 71.0,
+    "top5": [
+      {
+        "mt": 1.0,
+        "rt": 0.0,
+        "intercept": 28.984947896565032,
+        "acc": 95.47270306258322
+      },
+      {
+        "mt": 1.0,
+        "rt": 0.01,
+        "intercept": 30.45156310304902,
+        "acc": 94.80354879594424
+      },
+      {
+        "mt": 0.99,
+        "rt": 0.0,
+        "intercept": 32.767271323813205,
+        "acc": 94.58186101295641
+      },
+      {
+        "mt": 1.0,
+        "rt": 0.02,
+        "intercept": 32.342724816673105,
+        "acc": 94.5107398568019
+      },
+      {
+        "mt": 0.98,
+        "rt": 0.0,
+        "intercept": 34.61983790042454,
+        "acc": 94.31438127090301
+      }
+    ]
+  },
+  "Pure L2": {
+    "merge_t": null,
+    "reject_t": null,
+    "l1_accuracy": null,
+    "interception": 0,
+    "pipeline_empirical": 91.66,
+    "llm_cost": 100
+  }
+}

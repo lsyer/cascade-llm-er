@@ -1,0 +1,2963 @@
+{
+  "pure_l2_acc_resolved": 91.66,
+  "pure_l2_acc_strict": 91.66,
+  "n_pairs": 2591,
+  "fixed_results": [
+    {
+      "merge_t": 0.4,
+      "reject_t": -0.5,
+      "interception": 48.6,
+      "l1_accuracy": 80.9,
+      "pipeline_empirical": 86.34,
+      "l2_cost_pct": 51.4
+    },
+    {
+      "merge_t": 0.4,
+      "reject_t": -0.45,
+      "interception": 49.1,
+      "l1_accuracy": 80.7,
+      "pipeline_empirical": 86.22,
+      "l2_cost_pct": 50.9
+    },
+    {
+      "merge_t": 0.4,
+      "reject_t": -0.4,
+      "interception": 50.0,
+      "l1_accuracy": 80.3,
+      "pipeline_empirical": 85.95,
+      "l2_cost_pct": 50.0
+    },
+    {
+      "merge_t": 0.4,
+      "reject_t": -0.35,
+      "interception": 53.5,
+      "l1_accuracy": 77.5,
+      "pipeline_empirical": 84.02,
+      "l2_cost_pct": 46.5
+    },
+    {
+      "merge_t": 0.4,
+      "reject_t": -0.3,
+      "interception": 58.5,
+      "l1_accuracy": 76.5,
+      "pipeline_empirical": 82.52,
+      "l2_cost_pct": 41.5
+    },
+    {
+      "merge_t": 0.4,
+      "reject_t": -0.25,
+      "interception": 63.1,
+      "l1_accuracy": 76.1,
+      "pipeline_empirical": 81.86,
+      "l2_cost_pct": 36.9
+    },
+    {
+      "merge_t": 0.4,
+      "reject_t": -0.2,
+      "interception": 66.3,
+      "l1_accuracy": 75.7,
+      "pipeline_empirical": 80.97,
+      "l2_cost_pct": 33.7
+    },
+    {
+      "merge_t": 0.4,
+      "reject_t": -0.15,
+      "interception": 66.7,
+      "l1_accuracy": 75.5,
+      "pipeline_empirical": 80.74,
+      "l2_cost_pct": 33.3
+    },
+    {
+      "merge_t": 0.4,
+      "reject_t": -0.1,
+      "interception": 67.7,
+      "l1_accuracy": 75.4,
+      "pipeline_empirical": 80.47,
+      "l2_cost_pct": 32.3
+    },
+    {
+      "merge_t": 0.4,
+      "reject_t": -0.05,
+      "interception": 70.2,
+      "l1_accuracy": 75.0,
+      "pipeline_empirical": 79.7,
+      "l2_cost_pct": 29.8
+    },
+    {
+      "merge_t": 0.45,
+      "reject_t": -0.5,
+      "interception": 46.0,
+      "l1_accuracy": 80.4,
+      "pipeline_empirical": 86.3,
+      "l2_cost_pct": 54.0
+    },
+    {
+      "merge_t": 0.45,
+      "reject_t": -0.45,
+      "interception": 46.4,
+      "l1_accuracy": 80.2,
+      "pipeline_empirical": 86.18,
+      "l2_cost_pct": 53.6
+    },
+    {
+      "merge_t": 0.45,
+      "reject_t": -0.4,
+      "interception": 47.4,
+      "l1_accuracy": 79.9,
+      "pipeline_empirical": 85.91,
+      "l2_cost_pct": 52.6
+    },
+    {
+      "merge_t": 0.45,
+      "reject_t": -0.35,
+      "interception": 50.8,
+      "l1_accuracy": 76.9,
+      "pipeline_empirical": 83.98,
+      "l2_cost_pct": 49.2
+    },
+    {
+      "merge_t": 0.45,
+      "reject_t": -0.3,
+      "interception": 55.8,
+      "l1_accuracy": 76.0,
+      "pipeline_empirical": 82.48,
+      "l2_cost_pct": 44.2
+    },
+    {
+      "merge_t": 0.45,
+      "reject_t": -0.25,
+      "interception": 60.4,
+      "l1_accuracy": 75.6,
+      "pipeline_empirical": 81.82,
+      "l2_cost_pct": 39.6
+    },
+    {
+      "merge_t": 0.45,
+      "reject_t": -0.2,
+      "interception": 63.6,
+      "l1_accuracy": 75.2,
+      "pipeline_empirical": 80.93,
+      "l2_cost_pct": 36.4
+    },
+    {
+      "merge_t": 0.45,
+      "reject_t": -0.15,
+      "interception": 64.0,
+      "l1_accuracy": 75.0,
+      "pipeline_empirical": 80.7,
+      "l2_cost_pct": 36.0
+    },
+    {
+      "merge_t": 0.45,
+      "reject_t": -0.1,
+      "interception": 65.0,
+      "l1_accuracy": 74.9,
+      "pipeline_empirical": 80.43,
+      "l2_cost_pct": 35.0
+    },
+    {
+      "merge_t": 0.45,
+      "reject_t": -0.05,
+      "interception": 67.6,
+      "l1_accuracy": 74.5,
+      "pipeline_empirical": 79.66,
+      "l2_cost_pct": 32.4
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": -0.5,
+      "interception": 44.0,
+      "l1_accuracy": 80.6,
+      "pipeline_empirical": 86.65,
+      "l2_cost_pct": 56.0
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": -0.45,
+      "interception": 44.5,
+      "l1_accuracy": 80.4,
+      "pipeline_empirical": 86.53,
+      "l2_cost_pct": 55.5
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": -0.4,
+      "interception": 45.4,
+      "l1_accuracy": 80.0,
+      "pipeline_empirical": 86.26,
+      "l2_cost_pct": 54.6
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": -0.35,
+      "interception": 48.8,
+      "l1_accuracy": 76.9,
+      "pipeline_empirical": 84.33,
+      "l2_cost_pct": 51.2
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": -0.3,
+      "interception": 53.9,
+      "l1_accuracy": 75.9,
+      "pipeline_empirical": 82.83,
+      "l2_cost_pct": 46.1
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": -0.25,
+      "interception": 58.5,
+      "l1_accuracy": 75.6,
+      "pipeline_empirical": 82.17,
+      "l2_cost_pct": 41.5
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": -0.2,
+      "interception": 61.7,
+      "l1_accuracy": 75.2,
+      "pipeline_empirical": 81.28,
+      "l2_cost_pct": 38.3
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": -0.15,
+      "interception": 62.1,
+      "l1_accuracy": 74.9,
+      "pipeline_empirical": 81.05,
+      "l2_cost_pct": 37.9
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": -0.1,
+      "interception": 63.0,
+      "l1_accuracy": 74.8,
+      "pipeline_empirical": 80.78,
+      "l2_cost_pct": 37.0
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": -0.05,
+      "interception": 65.6,
+      "l1_accuracy": 74.4,
+      "pipeline_empirical": 80.01,
+      "l2_cost_pct": 34.4
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": -0.5,
+      "interception": 39.4,
+      "l1_accuracy": 80.4,
+      "pipeline_empirical": 86.76,
+      "l2_cost_pct": 60.6
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": -0.45,
+      "interception": 39.9,
+      "l1_accuracy": 80.2,
+      "pipeline_empirical": 86.65,
+      "l2_cost_pct": 60.1
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": -0.4,
+      "interception": 40.8,
+      "l1_accuracy": 79.8,
+      "pipeline_empirical": 86.38,
+      "l2_cost_pct": 59.2
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": -0.35,
+      "interception": 44.3,
+      "l1_accuracy": 76.4,
+      "pipeline_empirical": 84.45,
+      "l2_cost_pct": 55.7
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": -0.3,
+      "interception": 49.3,
+      "l1_accuracy": 75.4,
+      "pipeline_empirical": 82.94,
+      "l2_cost_pct": 50.7
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": -0.25,
+      "interception": 53.9,
+      "l1_accuracy": 75.0,
+      "pipeline_empirical": 82.28,
+      "l2_cost_pct": 46.1
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": -0.2,
+      "interception": 57.1,
+      "l1_accuracy": 74.6,
+      "pipeline_empirical": 81.4,
+      "l2_cost_pct": 42.9
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": -0.15,
+      "interception": 57.5,
+      "l1_accuracy": 74.4,
+      "pipeline_empirical": 81.17,
+      "l2_cost_pct": 42.5
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": -0.1,
+      "interception": 58.5,
+      "l1_accuracy": 74.3,
+      "pipeline_empirical": 80.9,
+      "l2_cost_pct": 41.5
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": -0.05,
+      "interception": 61.1,
+      "l1_accuracy": 73.8,
+      "pipeline_empirical": 80.12,
+      "l2_cost_pct": 38.9
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": -0.5,
+      "interception": 37.2,
+      "l1_accuracy": 80.0,
+      "pipeline_empirical": 86.76,
+      "l2_cost_pct": 62.8
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": -0.45,
+      "interception": 37.7,
+      "l1_accuracy": 79.7,
+      "pipeline_empirical": 86.65,
+      "l2_cost_pct": 62.3
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": -0.4,
+      "interception": 38.6,
+      "l1_accuracy": 79.3,
+      "pipeline_empirical": 86.38,
+      "l2_cost_pct": 61.4
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": -0.35,
+      "interception": 42.0,
+      "l1_accuracy": 75.8,
+      "pipeline_empirical": 84.45,
+      "l2_cost_pct": 58.0
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": -0.3,
+      "interception": 47.1,
+      "l1_accuracy": 74.8,
+      "pipeline_empirical": 82.94,
+      "l2_cost_pct": 52.9
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": -0.25,
+      "interception": 51.7,
+      "l1_accuracy": 74.5,
+      "pipeline_empirical": 82.28,
+      "l2_cost_pct": 48.3
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": -0.2,
+      "interception": 54.9,
+      "l1_accuracy": 74.1,
+      "pipeline_empirical": 81.4,
+      "l2_cost_pct": 45.1
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": -0.15,
+      "interception": 55.3,
+      "l1_accuracy": 73.8,
+      "pipeline_empirical": 81.17,
+      "l2_cost_pct": 44.7
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": -0.1,
+      "interception": 56.2,
+      "l1_accuracy": 73.7,
+      "pipeline_empirical": 80.9,
+      "l2_cost_pct": 43.8
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": -0.05,
+      "interception": 58.8,
+      "l1_accuracy": 73.3,
+      "pipeline_empirical": 80.12,
+      "l2_cost_pct": 41.2
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": -0.5,
+      "interception": 35.5,
+      "l1_accuracy": 79.5,
+      "pipeline_empirical": 86.84,
+      "l2_cost_pct": 64.5
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": -0.45,
+      "interception": 35.9,
+      "l1_accuracy": 79.3,
+      "pipeline_empirical": 86.72,
+      "l2_cost_pct": 64.1
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": -0.4,
+      "interception": 36.9,
+      "l1_accuracy": 78.8,
+      "pipeline_empirical": 86.45,
+      "l2_cost_pct": 63.1
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": -0.35,
+      "interception": 40.3,
+      "l1_accuracy": 75.2,
+      "pipeline_empirical": 84.52,
+      "l2_cost_pct": 59.7
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": -0.3,
+      "interception": 45.3,
+      "l1_accuracy": 74.2,
+      "pipeline_empirical": 83.02,
+      "l2_cost_pct": 54.7
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": -0.25,
+      "interception": 49.9,
+      "l1_accuracy": 74.0,
+      "pipeline_empirical": 82.36,
+      "l2_cost_pct": 50.1
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": -0.2,
+      "interception": 53.1,
+      "l1_accuracy": 73.6,
+      "pipeline_empirical": 81.47,
+      "l2_cost_pct": 46.9
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": -0.15,
+      "interception": 53.5,
+      "l1_accuracy": 73.3,
+      "pipeline_empirical": 81.24,
+      "l2_cost_pct": 46.5
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": -0.1,
+      "interception": 54.5,
+      "l1_accuracy": 73.2,
+      "pipeline_empirical": 80.97,
+      "l2_cost_pct": 45.5
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": -0.05,
+      "interception": 57.1,
+      "l1_accuracy": 72.8,
+      "pipeline_empirical": 80.2,
+      "l2_cost_pct": 42.9
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": -0.5,
+      "interception": 33.7,
+      "l1_accuracy": 78.7,
+      "pipeline_empirical": 86.88,
+      "l2_cost_pct": 66.3
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": -0.45,
+      "interception": 34.2,
+      "l1_accuracy": 78.4,
+      "pipeline_empirical": 86.76,
+      "l2_cost_pct": 65.8
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": -0.4,
+      "interception": 35.1,
+      "l1_accuracy": 78.0,
+      "pipeline_empirical": 86.49,
+      "l2_cost_pct": 64.9
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": -0.35,
+      "interception": 38.5,
+      "l1_accuracy": 74.2,
+      "pipeline_empirical": 84.56,
+      "l2_cost_pct": 61.5
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": -0.3,
+      "interception": 43.6,
+      "l1_accuracy": 73.3,
+      "pipeline_empirical": 83.06,
+      "l2_cost_pct": 56.4
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": -0.25,
+      "interception": 48.2,
+      "l1_accuracy": 73.2,
+      "pipeline_empirical": 82.4,
+      "l2_cost_pct": 51.8
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": -0.2,
+      "interception": 51.4,
+      "l1_accuracy": 72.8,
+      "pipeline_empirical": 81.51,
+      "l2_cost_pct": 48.6
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": -0.15,
+      "interception": 51.8,
+      "l1_accuracy": 72.6,
+      "pipeline_empirical": 81.28,
+      "l2_cost_pct": 48.2
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": -0.1,
+      "interception": 52.7,
+      "l1_accuracy": 72.5,
+      "pipeline_empirical": 81.01,
+      "l2_cost_pct": 47.3
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": -0.05,
+      "interception": 55.3,
+      "l1_accuracy": 72.1,
+      "pipeline_empirical": 80.24,
+      "l2_cost_pct": 44.7
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": -0.5,
+      "interception": 31.1,
+      "l1_accuracy": 80.2,
+      "pipeline_empirical": 87.77,
+      "l2_cost_pct": 68.9
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": -0.45,
+      "interception": 31.6,
+      "l1_accuracy": 79.9,
+      "pipeline_empirical": 87.65,
+      "l2_cost_pct": 68.4
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": -0.4,
+      "interception": 32.5,
+      "l1_accuracy": 79.4,
+      "pipeline_empirical": 87.38,
+      "l2_cost_pct": 67.5
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": -0.35,
+      "interception": 36.0,
+      "l1_accuracy": 75.2,
+      "pipeline_empirical": 85.45,
+      "l2_cost_pct": 64.0
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": -0.3,
+      "interception": 41.0,
+      "l1_accuracy": 74.1,
+      "pipeline_empirical": 83.94,
+      "l2_cost_pct": 59.0
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": -0.25,
+      "interception": 45.6,
+      "l1_accuracy": 73.9,
+      "pipeline_empirical": 83.29,
+      "l2_cost_pct": 54.4
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": -0.2,
+      "interception": 48.8,
+      "l1_accuracy": 73.4,
+      "pipeline_empirical": 82.4,
+      "l2_cost_pct": 51.2
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": -0.15,
+      "interception": 49.2,
+      "l1_accuracy": 73.2,
+      "pipeline_empirical": 82.17,
+      "l2_cost_pct": 50.8
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": -0.1,
+      "interception": 50.2,
+      "l1_accuracy": 73.1,
+      "pipeline_empirical": 81.9,
+      "l2_cost_pct": 49.8
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": -0.05,
+      "interception": 52.8,
+      "l1_accuracy": 72.6,
+      "pipeline_empirical": 81.13,
+      "l2_cost_pct": 47.2
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": -0.5,
+      "interception": 30.9,
+      "l1_accuracy": 80.0,
+      "pipeline_empirical": 87.73,
+      "l2_cost_pct": 69.1
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": -0.45,
+      "interception": 31.3,
+      "l1_accuracy": 79.7,
+      "pipeline_empirical": 87.61,
+      "l2_cost_pct": 68.7
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": -0.4,
+      "interception": 32.3,
+      "l1_accuracy": 79.2,
+      "pipeline_empirical": 87.34,
+      "l2_cost_pct": 67.7
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": -0.35,
+      "interception": 35.7,
+      "l1_accuracy": 75.0,
+      "pipeline_empirical": 85.41,
+      "l2_cost_pct": 64.3
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": -0.3,
+      "interception": 40.8,
+      "l1_accuracy": 74.0,
+      "pipeline_empirical": 83.91,
+      "l2_cost_pct": 59.2
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": -0.25,
+      "interception": 45.3,
+      "l1_accuracy": 73.7,
+      "pipeline_empirical": 83.25,
+      "l2_cost_pct": 54.7
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": -0.2,
+      "interception": 48.6,
+      "l1_accuracy": 73.3,
+      "pipeline_empirical": 82.36,
+      "l2_cost_pct": 51.4
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": -0.15,
+      "interception": 48.9,
+      "l1_accuracy": 73.0,
+      "pipeline_empirical": 82.13,
+      "l2_cost_pct": 51.1
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": -0.1,
+      "interception": 49.9,
+      "l1_accuracy": 72.9,
+      "pipeline_empirical": 81.86,
+      "l2_cost_pct": 50.1
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": -0.05,
+      "interception": 52.5,
+      "l1_accuracy": 72.5,
+      "pipeline_empirical": 81.09,
+      "l2_cost_pct": 47.5
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": -0.5,
+      "interception": 28.1,
+      "l1_accuracy": 79.0,
+      "pipeline_empirical": 87.65,
+      "l2_cost_pct": 71.9
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": -0.45,
+      "interception": 28.6,
+      "l1_accuracy": 78.6,
+      "pipeline_empirical": 87.53,
+      "l2_cost_pct": 71.4
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": -0.4,
+      "interception": 29.5,
+      "l1_accuracy": 78.1,
+      "pipeline_empirical": 87.26,
+      "l2_cost_pct": 70.5
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": -0.35,
+      "interception": 32.9,
+      "l1_accuracy": 73.7,
+      "pipeline_empirical": 85.33,
+      "l2_cost_pct": 67.1
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": -0.3,
+      "interception": 38.0,
+      "l1_accuracy": 72.8,
+      "pipeline_empirical": 83.83,
+      "l2_cost_pct": 62.0
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": -0.25,
+      "interception": 42.6,
+      "l1_accuracy": 72.6,
+      "pipeline_empirical": 83.17,
+      "l2_cost_pct": 57.4
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": -0.2,
+      "interception": 45.8,
+      "l1_accuracy": 72.3,
+      "pipeline_empirical": 82.28,
+      "l2_cost_pct": 54.2
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": -0.15,
+      "interception": 46.2,
+      "l1_accuracy": 72.0,
+      "pipeline_empirical": 82.05,
+      "l2_cost_pct": 53.8
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": -0.1,
+      "interception": 47.1,
+      "l1_accuracy": 71.9,
+      "pipeline_empirical": 81.78,
+      "l2_cost_pct": 52.9
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": -0.05,
+      "interception": 49.7,
+      "l1_accuracy": 71.5,
+      "pipeline_empirical": 81.01,
+      "l2_cost_pct": 50.3
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": -0.5,
+      "interception": 27.4,
+      "l1_accuracy": 79.2,
+      "pipeline_empirical": 87.84,
+      "l2_cost_pct": 72.6
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": -0.45,
+      "interception": 27.9,
+      "l1_accuracy": 78.8,
+      "pipeline_empirical": 87.73,
+      "l2_cost_pct": 72.1
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": -0.4,
+      "interception": 28.8,
+      "l1_accuracy": 78.3,
+      "pipeline_empirical": 87.46,
+      "l2_cost_pct": 71.2
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": -0.35,
+      "interception": 32.3,
+      "l1_accuracy": 73.8,
+      "pipeline_empirical": 85.53,
+      "l2_cost_pct": 67.7
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": -0.3,
+      "interception": 37.3,
+      "l1_accuracy": 72.8,
+      "pipeline_empirical": 84.02,
+      "l2_cost_pct": 62.7
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": -0.25,
+      "interception": 41.9,
+      "l1_accuracy": 72.7,
+      "pipeline_empirical": 83.37,
+      "l2_cost_pct": 58.1
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": -0.2,
+      "interception": 45.1,
+      "l1_accuracy": 72.3,
+      "pipeline_empirical": 82.48,
+      "l2_cost_pct": 54.9
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": -0.15,
+      "interception": 45.5,
+      "l1_accuracy": 72.0,
+      "pipeline_empirical": 82.25,
+      "l2_cost_pct": 54.5
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": -0.1,
+      "interception": 46.5,
+      "l1_accuracy": 71.9,
+      "pipeline_empirical": 81.98,
+      "l2_cost_pct": 53.5
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": -0.05,
+      "interception": 49.1,
+      "l1_accuracy": 71.5,
+      "pipeline_empirical": 81.2,
+      "l2_cost_pct": 50.9
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": -0.5,
+      "interception": 27.2,
+      "l1_accuracy": 79.0,
+      "pipeline_empirical": 87.8,
+      "l2_cost_pct": 72.8
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": -0.45,
+      "interception": 27.6,
+      "l1_accuracy": 78.6,
+      "pipeline_empirical": 87.69,
+      "l2_cost_pct": 72.4
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": -0.4,
+      "interception": 28.6,
+      "l1_accuracy": 78.1,
+      "pipeline_empirical": 87.42,
+      "l2_cost_pct": 71.4
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": -0.35,
+      "interception": 32.0,
+      "l1_accuracy": 73.6,
+      "pipeline_empirical": 85.49,
+      "l2_cost_pct": 68.0
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": -0.3,
+      "interception": 37.1,
+      "l1_accuracy": 72.6,
+      "pipeline_empirical": 83.98,
+      "l2_cost_pct": 62.9
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": -0.25,
+      "interception": 41.6,
+      "l1_accuracy": 72.5,
+      "pipeline_empirical": 83.33,
+      "l2_cost_pct": 58.4
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": -0.2,
+      "interception": 44.8,
+      "l1_accuracy": 72.1,
+      "pipeline_empirical": 82.44,
+      "l2_cost_pct": 55.2
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": -0.15,
+      "interception": 45.2,
+      "l1_accuracy": 71.8,
+      "pipeline_empirical": 82.21,
+      "l2_cost_pct": 54.8
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": -0.1,
+      "interception": 46.2,
+      "l1_accuracy": 71.8,
+      "pipeline_empirical": 81.94,
+      "l2_cost_pct": 53.8
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": -0.05,
+      "interception": 48.8,
+      "l1_accuracy": 71.4,
+      "pipeline_empirical": 81.17,
+      "l2_cost_pct": 51.2
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": -0.5,
+      "interception": 25.2,
+      "l1_accuracy": 77.9,
+      "pipeline_empirical": 87.84,
+      "l2_cost_pct": 74.8
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": -0.45,
+      "interception": 25.7,
+      "l1_accuracy": 77.6,
+      "pipeline_empirical": 87.73,
+      "l2_cost_pct": 74.3
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": -0.4,
+      "interception": 26.6,
+      "l1_accuracy": 77.1,
+      "pipeline_empirical": 87.46,
+      "l2_cost_pct": 73.4
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": -0.35,
+      "interception": 30.0,
+      "l1_accuracy": 72.4,
+      "pipeline_empirical": 85.53,
+      "l2_cost_pct": 70.0
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": -0.3,
+      "interception": 35.1,
+      "l1_accuracy": 71.5,
+      "pipeline_empirical": 84.02,
+      "l2_cost_pct": 64.9
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": -0.25,
+      "interception": 39.7,
+      "l1_accuracy": 71.5,
+      "pipeline_empirical": 83.37,
+      "l2_cost_pct": 60.3
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": -0.2,
+      "interception": 42.9,
+      "l1_accuracy": 71.2,
+      "pipeline_empirical": 82.48,
+      "l2_cost_pct": 57.1
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": -0.15,
+      "interception": 43.3,
+      "l1_accuracy": 70.9,
+      "pipeline_empirical": 82.25,
+      "l2_cost_pct": 56.7
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": -0.1,
+      "interception": 44.2,
+      "l1_accuracy": 70.9,
+      "pipeline_empirical": 81.98,
+      "l2_cost_pct": 55.8
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": -0.05,
+      "interception": 46.8,
+      "l1_accuracy": 70.5,
+      "pipeline_empirical": 81.2,
+      "l2_cost_pct": 53.2
+    }
+  ],
+  "lr_results": [
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.0,
+      "interception": 49.6,
+      "l1_accuracy": 82.7,
+      "pipeline_empirical": 87.34,
+      "l2_cost_pct": 50.4
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.05,
+      "interception": 53.8,
+      "l1_accuracy": 83.8,
+      "pipeline_empirical": 87.34,
+      "l2_cost_pct": 46.2
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.1,
+      "interception": 60.6,
+      "l1_accuracy": 84.2,
+      "pipeline_empirical": 86.72,
+      "l2_cost_pct": 39.4
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.15,
+      "interception": 71.1,
+      "l1_accuracy": 84.9,
+      "pipeline_empirical": 85.99,
+      "l2_cost_pct": 28.9
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.2,
+      "interception": 76.6,
+      "l1_accuracy": 84.7,
+      "pipeline_empirical": 85.33,
+      "l2_cost_pct": 23.4
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.25,
+      "interception": 80.3,
+      "l1_accuracy": 84.1,
+      "pipeline_empirical": 84.6,
+      "l2_cost_pct": 19.7
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.3,
+      "interception": 83.8,
+      "l1_accuracy": 83.0,
+      "pipeline_empirical": 83.44,
+      "l2_cost_pct": 16.2
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.35,
+      "interception": 87.4,
+      "l1_accuracy": 82.0,
+      "pipeline_empirical": 82.44,
+      "l2_cost_pct": 12.6
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.4,
+      "interception": 92.5,
+      "l1_accuracy": 80.3,
+      "pipeline_empirical": 80.59,
+      "l2_cost_pct": 7.5
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.45,
+      "interception": 97.2,
+      "l1_accuracy": 79.1,
+      "pipeline_empirical": 79.31,
+      "l2_cost_pct": 2.8
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.0,
+      "interception": 46.7,
+      "l1_accuracy": 84.6,
+      "pipeline_empirical": 88.27,
+      "l2_cost_pct": 53.3
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.05,
+      "interception": 50.9,
+      "l1_accuracy": 85.7,
+      "pipeline_empirical": 88.27,
+      "l2_cost_pct": 49.1
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.1,
+      "interception": 57.7,
+      "l1_accuracy": 85.8,
+      "pipeline_empirical": 87.65,
+      "l2_cost_pct": 42.3
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.15,
+      "interception": 68.2,
+      "l1_accuracy": 86.3,
+      "pipeline_empirical": 86.92,
+      "l2_cost_pct": 31.8
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.2,
+      "interception": 73.7,
+      "l1_accuracy": 86.0,
+      "pipeline_empirical": 86.26,
+      "l2_cost_pct": 26.3
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.25,
+      "interception": 77.4,
+      "l1_accuracy": 85.3,
+      "pipeline_empirical": 85.53,
+      "l2_cost_pct": 22.6
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.3,
+      "interception": 80.9,
+      "l1_accuracy": 84.1,
+      "pipeline_empirical": 84.37,
+      "l2_cost_pct": 19.1
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.35,
+      "interception": 84.5,
+      "l1_accuracy": 83.1,
+      "pipeline_empirical": 83.37,
+      "l2_cost_pct": 15.5
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.4,
+      "interception": 89.6,
+      "l1_accuracy": 81.2,
+      "pipeline_empirical": 81.51,
+      "l2_cost_pct": 10.4
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.45,
+      "interception": 94.3,
+      "l1_accuracy": 79.9,
+      "pipeline_empirical": 80.24,
+      "l2_cost_pct": 5.7
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.5,
+      "interception": 97.1,
+      "l1_accuracy": 79.1,
+      "pipeline_empirical": 79.24,
+      "l2_cost_pct": 2.9
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.0,
+      "interception": 43.7,
+      "l1_accuracy": 86.3,
+      "pipeline_empirical": 89.04,
+      "l2_cost_pct": 56.3
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.05,
+      "interception": 47.9,
+      "l1_accuracy": 87.3,
+      "pipeline_empirical": 89.04,
+      "l2_cost_pct": 52.1
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.1,
+      "interception": 54.8,
+      "l1_accuracy": 87.3,
+      "pipeline_empirical": 88.42,
+      "l2_cost_pct": 45.2
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.15,
+      "interception": 65.2,
+      "l1_accuracy": 87.5,
+      "pipeline_empirical": 87.69,
+      "l2_cost_pct": 34.8
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.2,
+      "interception": 70.7,
+      "l1_accuracy": 87.1,
+      "pipeline_empirical": 87.03,
+      "l2_cost_pct": 29.3
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.25,
+      "interception": 74.5,
+      "l1_accuracy": 86.3,
+      "pipeline_empirical": 86.3,
+      "l2_cost_pct": 25.5
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.3,
+      "interception": 78.0,
+      "l1_accuracy": 85.0,
+      "pipeline_empirical": 85.14,
+      "l2_cost_pct": 22.0
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.35,
+      "interception": 81.6,
+      "l1_accuracy": 83.9,
+      "pipeline_empirical": 84.14,
+      "l2_cost_pct": 18.4
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.4,
+      "interception": 86.7,
+      "l1_accuracy": 82.0,
+      "pipeline_empirical": 82.28,
+      "l2_cost_pct": 13.3
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.45,
+      "interception": 91.4,
+      "l1_accuracy": 80.6,
+      "pipeline_empirical": 81.01,
+      "l2_cost_pct": 8.6
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.5,
+      "interception": 94.2,
+      "l1_accuracy": 79.7,
+      "pipeline_empirical": 80.01,
+      "l2_cost_pct": 5.8
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.0,
+      "interception": 40.8,
+      "l1_accuracy": 87.6,
+      "pipeline_empirical": 89.42,
+      "l2_cost_pct": 59.2
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.05,
+      "interception": 45.0,
+      "l1_accuracy": 88.5,
+      "pipeline_empirical": 89.42,
+      "l2_cost_pct": 55.0
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.1,
+      "interception": 51.9,
+      "l1_accuracy": 88.3,
+      "pipeline_empirical": 88.81,
+      "l2_cost_pct": 48.1
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.15,
+      "interception": 62.3,
+      "l1_accuracy": 88.4,
+      "pipeline_empirical": 88.07,
+      "l2_cost_pct": 37.7
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.2,
+      "interception": 67.9,
+      "l1_accuracy": 87.9,
+      "pipeline_empirical": 87.42,
+      "l2_cost_pct": 32.1
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.25,
+      "interception": 71.6,
+      "l1_accuracy": 87.1,
+      "pipeline_empirical": 86.68,
+      "l2_cost_pct": 28.4
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.3,
+      "interception": 75.1,
+      "l1_accuracy": 85.7,
+      "pipeline_empirical": 85.53,
+      "l2_cost_pct": 24.9
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.35,
+      "interception": 78.7,
+      "l1_accuracy": 84.5,
+      "pipeline_empirical": 84.52,
+      "l2_cost_pct": 21.3
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.4,
+      "interception": 83.8,
+      "l1_accuracy": 82.5,
+      "pipeline_empirical": 82.67,
+      "l2_cost_pct": 16.2
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.45,
+      "interception": 88.5,
+      "l1_accuracy": 81.0,
+      "pipeline_empirical": 81.4,
+      "l2_cost_pct": 11.5
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.5,
+      "interception": 91.3,
+      "l1_accuracy": 80.1,
+      "pipeline_empirical": 80.39,
+      "l2_cost_pct": 8.7
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.0,
+      "interception": 37.9,
+      "l1_accuracy": 89.3,
+      "pipeline_empirical": 90.2,
+      "l2_cost_pct": 62.1
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.05,
+      "interception": 42.1,
+      "l1_accuracy": 90.1,
+      "pipeline_empirical": 90.2,
+      "l2_cost_pct": 57.9
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.1,
+      "interception": 48.9,
+      "l1_accuracy": 89.7,
+      "pipeline_empirical": 89.58,
+      "l2_cost_pct": 51.1
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.15,
+      "interception": 59.4,
+      "l1_accuracy": 89.5,
+      "pipeline_empirical": 88.85,
+      "l2_cost_pct": 40.6
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.2,
+      "interception": 64.9,
+      "l1_accuracy": 88.9,
+      "pipeline_empirical": 88.19,
+      "l2_cost_pct": 35.1
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.25,
+      "interception": 68.6,
+      "l1_accuracy": 88.0,
+      "pipeline_empirical": 87.46,
+      "l2_cost_pct": 31.4
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.3,
+      "interception": 72.1,
+      "l1_accuracy": 86.5,
+      "pipeline_empirical": 86.3,
+      "l2_cost_pct": 27.9
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.35,
+      "interception": 75.7,
+      "l1_accuracy": 85.2,
+      "pipeline_empirical": 85.3,
+      "l2_cost_pct": 24.3
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.4,
+      "interception": 80.8,
+      "l1_accuracy": 83.0,
+      "pipeline_empirical": 83.44,
+      "l2_cost_pct": 19.2
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.45,
+      "interception": 85.5,
+      "l1_accuracy": 81.5,
+      "pipeline_empirical": 82.17,
+      "l2_cost_pct": 14.5
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.5,
+      "interception": 88.3,
+      "l1_accuracy": 80.6,
+      "pipeline_empirical": 81.17,
+      "l2_cost_pct": 11.7
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.0,
+      "interception": 34.3,
+      "l1_accuracy": 90.9,
+      "pipeline_empirical": 90.7,
+      "l2_cost_pct": 65.7
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.05,
+      "interception": 38.5,
+      "l1_accuracy": 91.6,
+      "pipeline_empirical": 90.7,
+      "l2_cost_pct": 61.5
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.1,
+      "interception": 45.4,
+      "l1_accuracy": 90.9,
+      "pipeline_empirical": 90.08,
+      "l2_cost_pct": 54.6
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.15,
+      "interception": 55.8,
+      "l1_accuracy": 90.5,
+      "pipeline_empirical": 89.35,
+      "l2_cost_pct": 44.2
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.2,
+      "interception": 61.3,
+      "l1_accuracy": 89.8,
+      "pipeline_empirical": 88.69,
+      "l2_cost_pct": 38.7
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.25,
+      "interception": 65.1,
+      "l1_accuracy": 88.7,
+      "pipeline_empirical": 87.96,
+      "l2_cost_pct": 34.9
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.3,
+      "interception": 68.5,
+      "l1_accuracy": 87.1,
+      "pipeline_empirical": 86.8,
+      "l2_cost_pct": 31.5
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.35,
+      "interception": 72.2,
+      "l1_accuracy": 85.8,
+      "pipeline_empirical": 85.8,
+      "l2_cost_pct": 27.8
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.4,
+      "interception": 77.3,
+      "l1_accuracy": 83.5,
+      "pipeline_empirical": 83.94,
+      "l2_cost_pct": 22.7
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.45,
+      "interception": 82.0,
+      "l1_accuracy": 81.8,
+      "pipeline_empirical": 82.67,
+      "l2_cost_pct": 18.0
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.5,
+      "interception": 84.8,
+      "l1_accuracy": 80.8,
+      "pipeline_empirical": 81.67,
+      "l2_cost_pct": 15.2
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.0,
+      "interception": 29.9,
+      "l1_accuracy": 92.0,
+      "pipeline_empirical": 90.85,
+      "l2_cost_pct": 70.1
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.05,
+      "interception": 34.1,
+      "l1_accuracy": 92.6,
+      "pipeline_empirical": 90.85,
+      "l2_cost_pct": 65.9
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.1,
+      "interception": 41.0,
+      "l1_accuracy": 91.7,
+      "pipeline_empirical": 90.24,
+      "l2_cost_pct": 59.0
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.15,
+      "interception": 51.4,
+      "l1_accuracy": 91.1,
+      "pipeline_empirical": 89.5,
+      "l2_cost_pct": 48.6
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.2,
+      "interception": 56.9,
+      "l1_accuracy": 90.3,
+      "pipeline_empirical": 88.85,
+      "l2_cost_pct": 43.1
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.25,
+      "interception": 60.7,
+      "l1_accuracy": 89.1,
+      "pipeline_empirical": 88.11,
+      "l2_cost_pct": 39.3
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.3,
+      "interception": 64.1,
+      "l1_accuracy": 87.4,
+      "pipeline_empirical": 86.95,
+      "l2_cost_pct": 35.9
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.35,
+      "interception": 67.8,
+      "l1_accuracy": 85.9,
+      "pipeline_empirical": 85.95,
+      "l2_cost_pct": 32.2
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.4,
+      "interception": 72.9,
+      "l1_accuracy": 83.5,
+      "pipeline_empirical": 84.1,
+      "l2_cost_pct": 27.1
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.45,
+      "interception": 77.6,
+      "l1_accuracy": 81.7,
+      "pipeline_empirical": 82.83,
+      "l2_cost_pct": 22.4
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.5,
+      "interception": 80.4,
+      "l1_accuracy": 80.7,
+      "pipeline_empirical": 81.82,
+      "l2_cost_pct": 19.6
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.0,
+      "interception": 25.9,
+      "l1_accuracy": 94.8,
+      "pipeline_empirical": 91.59,
+      "l2_cost_pct": 74.1
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.05,
+      "interception": 30.1,
+      "l1_accuracy": 95.1,
+      "pipeline_empirical": 91.59,
+      "l2_cost_pct": 69.9
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.1,
+      "interception": 36.9,
+      "l1_accuracy": 93.6,
+      "pipeline_empirical": 90.97,
+      "l2_cost_pct": 63.1
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.15,
+      "interception": 47.4,
+      "l1_accuracy": 92.6,
+      "pipeline_empirical": 90.24,
+      "l2_cost_pct": 52.6
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.2,
+      "interception": 52.9,
+      "l1_accuracy": 91.5,
+      "pipeline_empirical": 89.58,
+      "l2_cost_pct": 47.1
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.25,
+      "interception": 56.6,
+      "l1_accuracy": 90.2,
+      "pipeline_empirical": 88.85,
+      "l2_cost_pct": 43.4
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.3,
+      "interception": 60.1,
+      "l1_accuracy": 88.2,
+      "pipeline_empirical": 87.69,
+      "l2_cost_pct": 39.9
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.35,
+      "interception": 63.7,
+      "l1_accuracy": 86.7,
+      "pipeline_empirical": 86.68,
+      "l2_cost_pct": 36.3
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.4,
+      "interception": 68.8,
+      "l1_accuracy": 84.0,
+      "pipeline_empirical": 84.83,
+      "l2_cost_pct": 31.2
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.45,
+      "interception": 73.5,
+      "l1_accuracy": 82.2,
+      "pipeline_empirical": 83.56,
+      "l2_cost_pct": 26.5
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.5,
+      "interception": 76.3,
+      "l1_accuracy": 81.0,
+      "pipeline_empirical": 82.55,
+      "l2_cost_pct": 23.7
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.0,
+      "interception": 20.3,
+      "l1_accuracy": 95.0,
+      "pipeline_empirical": 91.35,
+      "l2_cost_pct": 79.7
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.05,
+      "interception": 24.5,
+      "l1_accuracy": 95.4,
+      "pipeline_empirical": 91.35,
+      "l2_cost_pct": 75.5
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.1,
+      "interception": 31.3,
+      "l1_accuracy": 93.6,
+      "pipeline_empirical": 90.74,
+      "l2_cost_pct": 68.7
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.15,
+      "interception": 41.8,
+      "l1_accuracy": 92.4,
+      "pipeline_empirical": 90.0,
+      "l2_cost_pct": 58.2
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.2,
+      "interception": 47.3,
+      "l1_accuracy": 91.3,
+      "pipeline_empirical": 89.35,
+      "l2_cost_pct": 52.7
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.25,
+      "interception": 51.0,
+      "l1_accuracy": 89.8,
+      "pipeline_empirical": 88.61,
+      "l2_cost_pct": 49.0
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.3,
+      "interception": 54.5,
+      "l1_accuracy": 87.7,
+      "pipeline_empirical": 87.46,
+      "l2_cost_pct": 45.5
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.35,
+      "interception": 58.1,
+      "l1_accuracy": 86.0,
+      "pipeline_empirical": 86.45,
+      "l2_cost_pct": 41.9
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.4,
+      "interception": 63.2,
+      "l1_accuracy": 83.2,
+      "pipeline_empirical": 84.6,
+      "l2_cost_pct": 36.8
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.45,
+      "interception": 67.9,
+      "l1_accuracy": 81.2,
+      "pipeline_empirical": 83.33,
+      "l2_cost_pct": 32.1
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.5,
+      "interception": 70.7,
+      "l1_accuracy": 80.0,
+      "pipeline_empirical": 82.32,
+      "l2_cost_pct": 29.3
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.0,
+      "interception": 11.4,
+      "l1_accuracy": 94.3,
+      "pipeline_empirical": 91.28,
+      "l2_cost_pct": 88.6
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.05,
+      "interception": 15.6,
+      "l1_accuracy": 95.1,
+      "pipeline_empirical": 91.28,
+      "l2_cost_pct": 84.4
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.1,
+      "interception": 22.5,
+      "l1_accuracy": 92.6,
+      "pipeline_empirical": 90.66,
+      "l2_cost_pct": 77.5
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.15,
+      "interception": 32.9,
+      "l1_accuracy": 91.4,
+      "pipeline_empirical": 89.93,
+      "l2_cost_pct": 67.1
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.2,
+      "interception": 38.4,
+      "l1_accuracy": 90.2,
+      "pipeline_empirical": 89.27,
+      "l2_cost_pct": 61.6
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.25,
+      "interception": 42.2,
+      "l1_accuracy": 88.5,
+      "pipeline_empirical": 88.54,
+      "l2_cost_pct": 57.8
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.3,
+      "interception": 45.7,
+      "l1_accuracy": 86.1,
+      "pipeline_empirical": 87.38,
+      "l2_cost_pct": 54.3
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.35,
+      "interception": 49.3,
+      "l1_accuracy": 84.2,
+      "pipeline_empirical": 86.38,
+      "l2_cost_pct": 50.7
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.4,
+      "interception": 54.4,
+      "l1_accuracy": 81.1,
+      "pipeline_empirical": 84.52,
+      "l2_cost_pct": 45.6
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.45,
+      "interception": 59.1,
+      "l1_accuracy": 79.0,
+      "pipeline_empirical": 83.25,
+      "l2_cost_pct": 40.9
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.5,
+      "interception": 61.9,
+      "l1_accuracy": 77.7,
+      "pipeline_empirical": 82.25,
+      "l2_cost_pct": 38.1
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.05,
+      "interception": 4.2,
+      "l1_accuracy": 97.2,
+      "pipeline_empirical": 91.66,
+      "l2_cost_pct": 95.8
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.1,
+      "interception": 11.1,
+      "l1_accuracy": 90.9,
+      "pipeline_empirical": 91.05,
+      "l2_cost_pct": 88.9
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.15,
+      "interception": 21.5,
+      "l1_accuracy": 89.9,
+      "pipeline_empirical": 90.31,
+      "l2_cost_pct": 78.5
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.2,
+      "interception": 27.0,
+      "l1_accuracy": 88.4,
+      "pipeline_empirical": 89.66,
+      "l2_cost_pct": 73.0
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.25,
+      "interception": 30.8,
+      "l1_accuracy": 86.3,
+      "pipeline_empirical": 88.92,
+      "l2_cost_pct": 69.2
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.3,
+      "interception": 34.2,
+      "l1_accuracy": 83.3,
+      "pipeline_empirical": 87.77,
+      "l2_cost_pct": 65.8
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.35,
+      "interception": 37.9,
+      "l1_accuracy": 81.1,
+      "pipeline_empirical": 86.76,
+      "l2_cost_pct": 62.1
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.4,
+      "interception": 43.0,
+      "l1_accuracy": 77.5,
+      "pipeline_empirical": 84.91,
+      "l2_cost_pct": 57.0
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.45,
+      "interception": 47.7,
+      "l1_accuracy": 75.3,
+      "pipeline_empirical": 83.64,
+      "l2_cost_pct": 52.3
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.5,
+      "interception": 50.4,
+      "l1_accuracy": 74.0,
+      "pipeline_empirical": 82.63,
+      "l2_cost_pct": 49.6
+    }
+  ],
+  "rf_results": [
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.0,
+      "interception": 67.2,
+      "l1_accuracy": 85.4,
+      "pipeline_empirical": 87.03,
+      "l2_cost_pct": 32.8
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.05,
+      "interception": 73.2,
+      "l1_accuracy": 84.9,
+      "pipeline_empirical": 86.26,
+      "l2_cost_pct": 26.8
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.1,
+      "interception": 78.7,
+      "l1_accuracy": 84.8,
+      "pipeline_empirical": 85.6,
+      "l2_cost_pct": 21.3
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.15,
+      "interception": 82.7,
+      "l1_accuracy": 85.1,
+      "pipeline_empirical": 85.41,
+      "l2_cost_pct": 17.3
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.2,
+      "interception": 84.6,
+      "l1_accuracy": 84.9,
+      "pipeline_empirical": 85.14,
+      "l2_cost_pct": 15.4
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.25,
+      "interception": 87.1,
+      "l1_accuracy": 84.2,
+      "pipeline_empirical": 84.56,
+      "l2_cost_pct": 12.9
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.3,
+      "interception": 90.7,
+      "l1_accuracy": 83.2,
+      "pipeline_empirical": 83.6,
+      "l2_cost_pct": 9.3
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.35,
+      "interception": 93.8,
+      "l1_accuracy": 82.5,
+      "pipeline_empirical": 82.67,
+      "l2_cost_pct": 6.2
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.4,
+      "interception": 95.8,
+      "l1_accuracy": 81.7,
+      "pipeline_empirical": 81.94,
+      "l2_cost_pct": 4.2
+    },
+    {
+      "merge_t": 0.5,
+      "reject_t": 0.45,
+      "interception": 97.7,
+      "l1_accuracy": 80.7,
+      "pipeline_empirical": 80.93,
+      "l2_cost_pct": 2.3
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.0,
+      "interception": 65.0,
+      "l1_accuracy": 86.0,
+      "pipeline_empirical": 87.5,
+      "l2_cost_pct": 35.0
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.05,
+      "interception": 71.0,
+      "l1_accuracy": 85.5,
+      "pipeline_empirical": 86.72,
+      "l2_cost_pct": 29.0
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.1,
+      "interception": 76.5,
+      "l1_accuracy": 85.3,
+      "pipeline_empirical": 86.07,
+      "l2_cost_pct": 23.5
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.15,
+      "interception": 80.5,
+      "l1_accuracy": 85.6,
+      "pipeline_empirical": 85.87,
+      "l2_cost_pct": 19.5
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.2,
+      "interception": 82.4,
+      "l1_accuracy": 85.4,
+      "pipeline_empirical": 85.6,
+      "l2_cost_pct": 17.6
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.25,
+      "interception": 84.9,
+      "l1_accuracy": 84.7,
+      "pipeline_empirical": 85.03,
+      "l2_cost_pct": 15.1
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.3,
+      "interception": 88.5,
+      "l1_accuracy": 83.6,
+      "pipeline_empirical": 84.06,
+      "l2_cost_pct": 11.5
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.35,
+      "interception": 91.6,
+      "l1_accuracy": 82.9,
+      "pipeline_empirical": 83.13,
+      "l2_cost_pct": 8.4
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.4,
+      "interception": 93.6,
+      "l1_accuracy": 82.0,
+      "pipeline_empirical": 82.4,
+      "l2_cost_pct": 6.4
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.45,
+      "interception": 95.5,
+      "l1_accuracy": 81.0,
+      "pipeline_empirical": 81.4,
+      "l2_cost_pct": 4.5
+    },
+    {
+      "merge_t": 0.55,
+      "reject_t": 0.5,
+      "interception": 97.8,
+      "l1_accuracy": 80.4,
+      "pipeline_empirical": 80.59,
+      "l2_cost_pct": 2.2
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.0,
+      "interception": 62.9,
+      "l1_accuracy": 87.3,
+      "pipeline_empirical": 88.31,
+      "l2_cost_pct": 37.1
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.05,
+      "interception": 68.9,
+      "l1_accuracy": 86.6,
+      "pipeline_empirical": 87.53,
+      "l2_cost_pct": 31.1
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.1,
+      "interception": 74.4,
+      "l1_accuracy": 86.4,
+      "pipeline_empirical": 86.88,
+      "l2_cost_pct": 25.6
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.15,
+      "interception": 78.3,
+      "l1_accuracy": 86.6,
+      "pipeline_empirical": 86.68,
+      "l2_cost_pct": 21.7
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.2,
+      "interception": 80.2,
+      "l1_accuracy": 86.3,
+      "pipeline_empirical": 86.41,
+      "l2_cost_pct": 19.8
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.25,
+      "interception": 82.8,
+      "l1_accuracy": 85.6,
+      "pipeline_empirical": 85.84,
+      "l2_cost_pct": 17.2
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.3,
+      "interception": 86.4,
+      "l1_accuracy": 84.4,
+      "pipeline_empirical": 84.87,
+      "l2_cost_pct": 13.6
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.35,
+      "interception": 89.5,
+      "l1_accuracy": 83.7,
+      "pipeline_empirical": 83.94,
+      "l2_cost_pct": 10.5
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.4,
+      "interception": 91.4,
+      "l1_accuracy": 82.8,
+      "pipeline_empirical": 83.21,
+      "l2_cost_pct": 8.6
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.45,
+      "interception": 93.4,
+      "l1_accuracy": 81.7,
+      "pipeline_empirical": 82.21,
+      "l2_cost_pct": 6.6
+    },
+    {
+      "merge_t": 0.6,
+      "reject_t": 0.5,
+      "interception": 95.7,
+      "l1_accuracy": 81.1,
+      "pipeline_empirical": 81.4,
+      "l2_cost_pct": 4.3
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.0,
+      "interception": 59.6,
+      "l1_accuracy": 88.3,
+      "pipeline_empirical": 88.69,
+      "l2_cost_pct": 40.4
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.05,
+      "interception": 65.6,
+      "l1_accuracy": 87.5,
+      "pipeline_empirical": 87.92,
+      "l2_cost_pct": 34.4
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.1,
+      "interception": 71.1,
+      "l1_accuracy": 87.1,
+      "pipeline_empirical": 87.26,
+      "l2_cost_pct": 28.9
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.15,
+      "interception": 75.0,
+      "l1_accuracy": 87.3,
+      "pipeline_empirical": 87.07,
+      "l2_cost_pct": 25.0
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.2,
+      "interception": 76.9,
+      "l1_accuracy": 87.1,
+      "pipeline_empirical": 86.8,
+      "l2_cost_pct": 23.1
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.25,
+      "interception": 79.5,
+      "l1_accuracy": 86.3,
+      "pipeline_empirical": 86.22,
+      "l2_cost_pct": 20.5
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.3,
+      "interception": 83.1,
+      "l1_accuracy": 85.0,
+      "pipeline_empirical": 85.26,
+      "l2_cost_pct": 16.9
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.35,
+      "interception": 86.2,
+      "l1_accuracy": 84.2,
+      "pipeline_empirical": 84.33,
+      "l2_cost_pct": 13.8
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.4,
+      "interception": 88.1,
+      "l1_accuracy": 83.3,
+      "pipeline_empirical": 83.6,
+      "l2_cost_pct": 11.9
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.45,
+      "interception": 90.1,
+      "l1_accuracy": 82.2,
+      "pipeline_empirical": 82.59,
+      "l2_cost_pct": 9.9
+    },
+    {
+      "merge_t": 0.65,
+      "reject_t": 0.5,
+      "interception": 92.4,
+      "l1_accuracy": 81.5,
+      "pipeline_empirical": 81.78,
+      "l2_cost_pct": 7.6
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.0,
+      "interception": 56.4,
+      "l1_accuracy": 89.4,
+      "pipeline_empirical": 89.12,
+      "l2_cost_pct": 43.6
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.05,
+      "interception": 62.4,
+      "l1_accuracy": 88.4,
+      "pipeline_empirical": 88.34,
+      "l2_cost_pct": 37.6
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.1,
+      "interception": 67.9,
+      "l1_accuracy": 88.0,
+      "pipeline_empirical": 87.69,
+      "l2_cost_pct": 32.1
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.15,
+      "interception": 71.9,
+      "l1_accuracy": 88.2,
+      "pipeline_empirical": 87.5,
+      "l2_cost_pct": 28.1
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.2,
+      "interception": 73.8,
+      "l1_accuracy": 87.9,
+      "pipeline_empirical": 87.23,
+      "l2_cost_pct": 26.2
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.25,
+      "interception": 76.3,
+      "l1_accuracy": 87.0,
+      "pipeline_empirical": 86.65,
+      "l2_cost_pct": 23.7
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.3,
+      "interception": 79.9,
+      "l1_accuracy": 85.7,
+      "pipeline_empirical": 85.68,
+      "l2_cost_pct": 20.1
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.35,
+      "interception": 83.0,
+      "l1_accuracy": 84.8,
+      "pipeline_empirical": 84.75,
+      "l2_cost_pct": 17.0
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.4,
+      "interception": 84.9,
+      "l1_accuracy": 83.8,
+      "pipeline_empirical": 84.02,
+      "l2_cost_pct": 15.1
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.45,
+      "interception": 86.9,
+      "l1_accuracy": 82.7,
+      "pipeline_empirical": 83.02,
+      "l2_cost_pct": 13.1
+    },
+    {
+      "merge_t": 0.7,
+      "reject_t": 0.5,
+      "interception": 89.2,
+      "l1_accuracy": 82.0,
+      "pipeline_empirical": 82.21,
+      "l2_cost_pct": 10.8
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.0,
+      "interception": 53.7,
+      "l1_accuracy": 90.7,
+      "pipeline_empirical": 89.58,
+      "l2_cost_pct": 46.3
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.05,
+      "interception": 59.7,
+      "l1_accuracy": 89.5,
+      "pipeline_empirical": 88.81,
+      "l2_cost_pct": 40.3
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.1,
+      "interception": 65.2,
+      "l1_accuracy": 89.0,
+      "pipeline_empirical": 88.15,
+      "l2_cost_pct": 34.8
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.15,
+      "interception": 69.2,
+      "l1_accuracy": 89.1,
+      "pipeline_empirical": 87.96,
+      "l2_cost_pct": 30.8
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.2,
+      "interception": 71.1,
+      "l1_accuracy": 88.8,
+      "pipeline_empirical": 87.69,
+      "l2_cost_pct": 28.9
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.25,
+      "interception": 73.7,
+      "l1_accuracy": 87.8,
+      "pipeline_empirical": 87.11,
+      "l2_cost_pct": 26.3
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.3,
+      "interception": 77.3,
+      "l1_accuracy": 86.4,
+      "pipeline_empirical": 86.14,
+      "l2_cost_pct": 22.7
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.35,
+      "interception": 80.4,
+      "l1_accuracy": 85.5,
+      "pipeline_empirical": 85.22,
+      "l2_cost_pct": 19.6
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.4,
+      "interception": 82.3,
+      "l1_accuracy": 84.5,
+      "pipeline_empirical": 84.48,
+      "l2_cost_pct": 17.7
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.45,
+      "interception": 84.3,
+      "l1_accuracy": 83.3,
+      "pipeline_empirical": 83.48,
+      "l2_cost_pct": 15.7
+    },
+    {
+      "merge_t": 0.75,
+      "reject_t": 0.5,
+      "interception": 86.5,
+      "l1_accuracy": 82.6,
+      "pipeline_empirical": 82.67,
+      "l2_cost_pct": 13.5
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.0,
+      "interception": 51.5,
+      "l1_accuracy": 91.5,
+      "pipeline_empirical": 89.89,
+      "l2_cost_pct": 48.5
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.05,
+      "interception": 57.5,
+      "l1_accuracy": 90.3,
+      "pipeline_empirical": 89.12,
+      "l2_cost_pct": 42.5
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.1,
+      "interception": 63.0,
+      "l1_accuracy": 89.6,
+      "pipeline_empirical": 88.46,
+      "l2_cost_pct": 37.0
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.15,
+      "interception": 67.0,
+      "l1_accuracy": 89.7,
+      "pipeline_empirical": 88.27,
+      "l2_cost_pct": 33.0
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.2,
+      "interception": 68.9,
+      "l1_accuracy": 89.3,
+      "pipeline_empirical": 88.0,
+      "l2_cost_pct": 31.1
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.25,
+      "interception": 71.4,
+      "l1_accuracy": 88.4,
+      "pipeline_empirical": 87.42,
+      "l2_cost_pct": 28.6
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.3,
+      "interception": 75.0,
+      "l1_accuracy": 86.9,
+      "pipeline_empirical": 86.45,
+      "l2_cost_pct": 25.0
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.35,
+      "interception": 78.1,
+      "l1_accuracy": 85.9,
+      "pipeline_empirical": 85.53,
+      "l2_cost_pct": 21.9
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.4,
+      "interception": 80.0,
+      "l1_accuracy": 84.9,
+      "pipeline_empirical": 84.79,
+      "l2_cost_pct": 20.0
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.45,
+      "interception": 82.0,
+      "l1_accuracy": 83.6,
+      "pipeline_empirical": 83.79,
+      "l2_cost_pct": 18.0
+    },
+    {
+      "merge_t": 0.8,
+      "reject_t": 0.5,
+      "interception": 84.3,
+      "l1_accuracy": 82.9,
+      "pipeline_empirical": 82.98,
+      "l2_cost_pct": 15.7
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.0,
+      "interception": 48.3,
+      "l1_accuracy": 92.0,
+      "pipeline_empirical": 90.2,
+      "l2_cost_pct": 51.7
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.05,
+      "interception": 54.3,
+      "l1_accuracy": 90.6,
+      "pipeline_empirical": 89.42,
+      "l2_cost_pct": 45.7
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.1,
+      "interception": 59.8,
+      "l1_accuracy": 89.9,
+      "pipeline_empirical": 88.77,
+      "l2_cost_pct": 40.2
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.15,
+      "interception": 63.8,
+      "l1_accuracy": 90.0,
+      "pipeline_empirical": 88.58,
+      "l2_cost_pct": 36.2
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.2,
+      "interception": 65.7,
+      "l1_accuracy": 89.6,
+      "pipeline_empirical": 88.31,
+      "l2_cost_pct": 34.3
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.25,
+      "interception": 68.3,
+      "l1_accuracy": 88.6,
+      "pipeline_empirical": 87.73,
+      "l2_cost_pct": 31.7
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.3,
+      "interception": 71.9,
+      "l1_accuracy": 87.0,
+      "pipeline_empirical": 86.76,
+      "l2_cost_pct": 28.1
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.35,
+      "interception": 75.0,
+      "l1_accuracy": 86.0,
+      "pipeline_empirical": 85.84,
+      "l2_cost_pct": 25.0
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.4,
+      "interception": 76.9,
+      "l1_accuracy": 84.9,
+      "pipeline_empirical": 85.1,
+      "l2_cost_pct": 23.1
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.45,
+      "interception": 78.8,
+      "l1_accuracy": 83.6,
+      "pipeline_empirical": 84.1,
+      "l2_cost_pct": 21.2
+    },
+    {
+      "merge_t": 0.85,
+      "reject_t": 0.5,
+      "interception": 81.1,
+      "l1_accuracy": 82.8,
+      "pipeline_empirical": 83.29,
+      "l2_cost_pct": 18.9
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.0,
+      "interception": 44.1,
+      "l1_accuracy": 92.4,
+      "pipeline_empirical": 90.12,
+      "l2_cost_pct": 55.9
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.05,
+      "interception": 50.1,
+      "l1_accuracy": 90.8,
+      "pipeline_empirical": 89.35,
+      "l2_cost_pct": 49.9
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.1,
+      "interception": 55.6,
+      "l1_accuracy": 90.1,
+      "pipeline_empirical": 88.69,
+      "l2_cost_pct": 44.4
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.15,
+      "interception": 59.6,
+      "l1_accuracy": 90.2,
+      "pipeline_empirical": 88.5,
+      "l2_cost_pct": 40.4
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.2,
+      "interception": 61.5,
+      "l1_accuracy": 89.7,
+      "pipeline_empirical": 88.23,
+      "l2_cost_pct": 38.5
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.25,
+      "interception": 64.1,
+      "l1_accuracy": 88.6,
+      "pipeline_empirical": 87.65,
+      "l2_cost_pct": 35.9
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.3,
+      "interception": 67.7,
+      "l1_accuracy": 86.9,
+      "pipeline_empirical": 86.68,
+      "l2_cost_pct": 32.3
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.35,
+      "interception": 70.7,
+      "l1_accuracy": 85.9,
+      "pipeline_empirical": 85.76,
+      "l2_cost_pct": 29.3
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.4,
+      "interception": 72.7,
+      "l1_accuracy": 84.7,
+      "pipeline_empirical": 85.03,
+      "l2_cost_pct": 27.3
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.45,
+      "interception": 74.6,
+      "l1_accuracy": 83.4,
+      "pipeline_empirical": 84.02,
+      "l2_cost_pct": 25.4
+    },
+    {
+      "merge_t": 0.9,
+      "reject_t": 0.5,
+      "interception": 76.9,
+      "l1_accuracy": 82.5,
+      "pipeline_empirical": 83.21,
+      "l2_cost_pct": 23.1
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.0,
+      "interception": 38.7,
+      "l1_accuracy": 93.1,
+      "pipeline_empirical": 90.35,
+      "l2_cost_pct": 61.3
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.05,
+      "interception": 44.7,
+      "l1_accuracy": 91.3,
+      "pipeline_empirical": 89.58,
+      "l2_cost_pct": 55.3
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.1,
+      "interception": 50.2,
+      "l1_accuracy": 90.4,
+      "pipeline_empirical": 88.92,
+      "l2_cost_pct": 49.8
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.15,
+      "interception": 54.2,
+      "l1_accuracy": 90.5,
+      "pipeline_empirical": 88.73,
+      "l2_cost_pct": 45.8
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.2,
+      "interception": 56.1,
+      "l1_accuracy": 90.0,
+      "pipeline_empirical": 88.46,
+      "l2_cost_pct": 43.9
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.25,
+      "interception": 58.7,
+      "l1_accuracy": 88.8,
+      "pipeline_empirical": 87.88,
+      "l2_cost_pct": 41.3
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.3,
+      "interception": 62.3,
+      "l1_accuracy": 86.9,
+      "pipeline_empirical": 86.92,
+      "l2_cost_pct": 37.7
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.35,
+      "interception": 65.3,
+      "l1_accuracy": 85.8,
+      "pipeline_empirical": 85.99,
+      "l2_cost_pct": 34.7
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.4,
+      "interception": 67.3,
+      "l1_accuracy": 84.5,
+      "pipeline_empirical": 85.26,
+      "l2_cost_pct": 32.7
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.45,
+      "interception": 69.2,
+      "l1_accuracy": 83.1,
+      "pipeline_empirical": 84.25,
+      "l2_cost_pct": 30.8
+    },
+    {
+      "merge_t": 0.95,
+      "reject_t": 0.5,
+      "interception": 71.5,
+      "l1_accuracy": 82.2,
+      "pipeline_empirical": 83.44,
+      "l2_cost_pct": 28.5
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.0,
+      "interception": 14.7,
+      "l1_accuracy": 95.5,
+      "pipeline_empirical": 91.2,
+      "l2_cost_pct": 85.3
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.05,
+      "interception": 20.7,
+      "l1_accuracy": 90.9,
+      "pipeline_empirical": 90.43,
+      "l2_cost_pct": 79.3
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.1,
+      "interception": 26.2,
+      "l1_accuracy": 89.2,
+      "pipeline_empirical": 89.77,
+      "l2_cost_pct": 73.8
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.15,
+      "interception": 30.1,
+      "l1_accuracy": 89.5,
+      "pipeline_empirical": 89.58,
+      "l2_cost_pct": 69.9
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.2,
+      "interception": 32.0,
+      "l1_accuracy": 88.7,
+      "pipeline_empirical": 89.31,
+      "l2_cost_pct": 68.0
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.25,
+      "interception": 34.6,
+      "l1_accuracy": 86.7,
+      "pipeline_empirical": 88.73,
+      "l2_cost_pct": 65.4
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.3,
+      "interception": 38.2,
+      "l1_accuracy": 83.9,
+      "pipeline_empirical": 87.77,
+      "l2_cost_pct": 61.8
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.35,
+      "interception": 41.3,
+      "l1_accuracy": 82.3,
+      "pipeline_empirical": 86.84,
+      "l2_cost_pct": 58.7
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.4,
+      "interception": 43.2,
+      "l1_accuracy": 80.5,
+      "pipeline_empirical": 86.11,
+      "l2_cost_pct": 56.8
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.45,
+      "interception": 45.2,
+      "l1_accuracy": 78.5,
+      "pipeline_empirical": 85.1,
+      "l2_cost_pct": 54.8
+    },
+    {
+      "merge_t": 1.0,
+      "reject_t": 0.5,
+      "interception": 47.5,
+      "l1_accuracy": 77.4,
+      "pipeline_empirical": 84.29,
+      "l2_cost_pct": 52.5
+    }
+  ]
+}

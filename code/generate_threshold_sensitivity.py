@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.colors import LinearSegmentedColormap
 
-BASE = Path('/root/workspace/tanshu_docs/experiments/release')
+BASE = Path(__file__).resolve().parents[1]
 DATA = BASE / 'results' / 'dual_threshold_sweep.json'
 OUT_DIR = BASE / 'results'
 OUT_DIR.mkdir(exist_ok=True)

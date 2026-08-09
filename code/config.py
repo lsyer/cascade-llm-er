@@ -1,7 +1,7 @@
 import os
 
 def load_glm_key():
-    with open('/root/workspace/usn-monitor/.env') as f:
+    with open(os.environ.get('ENV_FILE', '.env')) as f:
         for line in f:
             if line.startswith('LLM_API_KEY='):
                 return line.split('=', 1)[1].strip()

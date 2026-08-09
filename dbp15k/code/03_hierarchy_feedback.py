@@ -17,11 +17,12 @@ Also computes:
 
 import json, random, re, os, sys, math
 from collections import defaultdict
+import os
 from pathlib import Path
 import numpy as np
 
 CODE_DIR = Path(__file__).parent
-DATA_DIR = Path("/root/workspace/tanshu_docs/experiments/dbp15k/JAPE/data/dbp15k/zh_en")
+DATA_DIR = Path(__file__).resolve().parents[2] / "JAPE" / "data" / "dbp15k" / "zh_en"
 RESULTS_DIR = CODE_DIR.parent / "results"
 RESULTS_DIR.mkdir(exist_ok=True)
 

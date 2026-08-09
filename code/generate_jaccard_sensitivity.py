@@ -7,7 +7,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-BASE = Path('/root/workspace/tanshu_docs/experiments/release')
+BASE = Path(__file__).resolve().parents[1]
 DATA = BASE / 'results' / 'jaccard_sensitivity.json'
 OUT_DIR = BASE / 'results'
 OUT_DIR.mkdir(exist_ok=True)

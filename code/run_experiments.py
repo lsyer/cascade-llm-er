@@ -38,7 +38,7 @@ with open(os.path.join(DATA_DIR, 'minec_ground_truth_v2.json')) as f:
     gt = json.load(f)
 gt_map = {r['pair_id']: r for r in gt['records']}
 
-with open(os.path.join(RESULTS_DIR, 'checkpoints_v3', 'glm-5_checkpoint.json')) as f:
+with open(os.path.join(RESULTS_DIR, 'checkpoints_v3', 'glm-5-turbo_checkpoint.json')) as f:
     glm5_ckpt = json.load(f)
 
 # Merge labels from unified ground truth
@@ -592,8 +592,8 @@ h_aligned_stats = empirical_pipeline_stats(hybrid_preds_aligned, fixed_pair_ids,
 h_empirical_stats = empirical_pipeline_stats(hybrid_preds_empirical, fixed_pair_ids, y)
 h_match_fixed_stats = empirical_pipeline_stats(hybrid_preds_match_fixed, fixed_pair_ids, y)
 
-# Pipeline accuracy (using L2 acc = 97.1% from GLM-5)
-L2_ACC = 0.971
+# Pipeline accuracy (using L2 strict acc from GLM-5-Turbo checkpoint)
+L2_ACC = 0.916
 p0 = level0_intercept / 100 * level0_acc / 100 + (1 - level0_intercept / 100) * L2_ACC
 p1 = level1_intercept / 100 * level1_acc / 100 + (1 - level1_intercept / 100) * L2_ACC
 p2 = level2_intercept / 100 * level2_acc / 100 + (1 - level2_intercept / 100) * L2_ACC
@@ -726,7 +726,7 @@ pipeline = {
     'pipeline_fixed': round(p0 * 100, 1),
     'pipeline_unified': round(p1 * 100, 1),
     'pipeline_hybrid': round(p2 * 100, 1),
-    'l2_acc': 97.1,
+    'l2_acc': 91.6,
 }
 print(f"L1 alone: {l1_acc:.1f}%")
 print(f"Pipeline (fixed): {p0*100:.1f}%")

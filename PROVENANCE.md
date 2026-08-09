@@ -2,8 +2,6 @@
 
 ## `data/` integrity
 
-The two primary MINEC dataset files in `release/data/` are byte-identical to the originals in `experiments/data/`.
-
 - `dataset_v3_cleaned.json`
   - SHA256: `a3a37cb72ca62375ec33a70a76962e64e35896837cc6a0b2749e2c90af2241d5`
 - `entity_fragments.json`
@@ -15,8 +13,7 @@ The files under `results/` are the primary raw outputs used in the paper for the
 
 Important interpretation notes:
 - `minec_ground_truth_v2.json` is the current corrected ground-truth file after merging manual review decisions from `experiments/mark.txt`.
-- `minec_ground_truth_v1.json` is retained only as an earlier consolidated artifact for auditability.
-- `minec_data_gap_candidates_v1.json` is a data-quality audit artifact for suspected extraction/source sparsity cases; it is not a ground-truth label file.
+- Earlier consolidated artifacts (`_OBSOLETE_*`) have been moved to `experiments/legacy/results/`.
 - `feedback_convergence.json` is a **cross-validation-based simulation**, not a count of live analyst feedback.
 - `human_annotation_analysis.json` is the **human adjudication** artifact for the 59 GLM/GPT disagreement cases.
 - `jaccard_sensitivity.json` is the release-copied fine-grained MINEC τ-sweep source used by `code/generate_jaccard_sensitivity.py`.
@@ -30,16 +27,16 @@ DBP15K uses three complementary result artifacts:
    - Raw fixed-L1 and adaptive-L1 cross-validation outputs.
    - Now includes `paper_reported_summary` for the final paper wording/rounding.
 
-2. `dbp15k/results/l2_glm52.json`
-   - Expanded hard-case L2 evaluation.
+2. `dbp15k/results/dbp15k_glm5turbo_results.json`
+   - Expanded hard-case L2 evaluation with GLM-5-Turbo.
    - Final verified summary:
-     - 500 sampled
-     - 499 valid
-     - 1 filtered case
-     - accuracy = 92.8%
-     - precision = 90.2%
-     - recall = 96.0%
-     - F1 = 93.0%
+     - 4,876 sampled escalated pairs
+     - 4,843 valid verdicts
+     - 33 format/error cases excluded
+     - accuracy = 95.4%
+     - precision = 96.5%
+     - recall = 87.8%
+     - F1 = 91.9%
 
 3. `dbp15k/results/threshold_sensitivity.json`
    - Raw threshold-sweep curve data.
@@ -52,7 +49,7 @@ These are the values the paper reports in text/tables:
 
 - Fixed L1: 77.9% accuracy / 79.5% interception / 81.1% estimated pipeline / 20.5% LLM cost
 - Adaptive L1: 87.7% accuracy / 91.3% interception / 88.2% estimated pipeline / 8.7% LLM cost
-- L2 only (expanded hard-case sample): 92.8% on 499 valid / 500 sampled, with 1 filtered case excluded
+- L2 only (GLM-5-Turbo expanded hard-case run): 95.4% on 4,843 valid / 4,876 sampled, with 33 format/error cases excluded
 - Threshold sensitivity text:
   - θ=0.5: adaptive pipeline 88.9%, interception 79.2%
   - θ=0.9: adaptive pipeline 89.7%, interception 63.6%

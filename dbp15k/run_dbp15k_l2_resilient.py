@@ -8,6 +8,7 @@ DBP15K L2 GLM-5.2 — resilient version.
 """
 import json, random, time, re, os, urllib.request, urllib.error
 from collections import defaultdict
+import os
 from pathlib import Path
 
 DATA_DIR = Path(__file__).parent / "JAPE" / "data" / "dbp15k" / "zh_en"
@@ -17,7 +18,7 @@ FINAL = RESULTS_DIR / "dbp15k_l2_results.json"
 
 # Load API key
 _env = {}
-with open("/root/.hermes/.env") as f:
+with open(os.environ.get("ENV_FILE", ".env")) as f:
     for line in f:
         if "=" in line:
             k, v = line.strip().split("=", 1)

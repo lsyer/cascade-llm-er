@@ -21,7 +21,7 @@
       "pipeline": 0.6953,
       "merge_precision": 0.7316,
       "escalation": 0.0538,
-      "pipeline_adaptive": 0.8196
+      "pipeline_adaptive": 0.8176
     },
     {
       "threshold": 0.4,
@@ -30,7 +30,7 @@
       "pipeline": 0.701,
       "merge_precision": 0.7396,
       "escalation": 0.0674,
-      "pipeline_adaptive": 0.8218
+      "pipeline_adaptive": 0.819
     },
     {
       "threshold": 0.45,
@@ -39,7 +39,7 @@
       "pipeline": 0.707,
       "merge_precision": 0.739,
       "escalation": 0.0944,
-      "pipeline_adaptive": 0.8261
+      "pipeline_adaptive": 0.8218
     },
     {
       "threshold": 0.5,
@@ -48,7 +48,7 @@
       "pipeline": 0.7142,
       "merge_precision": 0.7419,
       "escalation": 0.122,
-      "pipeline_adaptive": 0.8305
+      "pipeline_adaptive": 0.8247
     },
     {
       "threshold": 0.55,
@@ -57,7 +57,7 @@
       "pipeline": 0.7283,
       "merge_precision": 0.7572,
       "escalation": 0.1705,
-      "pipeline_adaptive": 0.8383
+      "pipeline_adaptive": 0.8297
     },
     {
       "threshold": 0.6,
@@ -66,7 +66,7 @@
       "pipeline": 0.7329,
       "merge_precision": 0.7565,
       "escalation": 0.1929,
-      "pipeline_adaptive": 0.8419
+      "pipeline_adaptive": 0.8321
     },
     {
       "threshold": 0.65,
@@ -75,7 +75,7 @@
       "pipeline": 0.7354,
       "merge_precision": 0.7464,
       "escalation": 0.2118,
-      "pipeline_adaptive": 0.8449
+      "pipeline_adaptive": 0.834
     },
     {
       "threshold": 0.7,
@@ -84,7 +84,7 @@
       "pipeline": 0.7357,
       "merge_precision": 0.7201,
       "escalation": 0.2293,
-      "pipeline_adaptive": 0.8477
+      "pipeline_adaptive": 0.8358
     },
     {
       "threshold": 0.75,
@@ -93,7 +93,7 @@
       "pipeline": 0.7467,
       "merge_precision": 0.7616,
       "escalation": 0.2543,
-      "pipeline_adaptive": 0.8517
+      "pipeline_adaptive": 0.8384
     },
     {
       "threshold": 0.8,
@@ -102,7 +102,7 @@
       "pipeline": 0.747,
       "merge_precision": 0.7593,
       "escalation": 0.2569,
-      "pipeline_adaptive": 0.8521
+      "pipeline_adaptive": 0.8387
     },
     {
       "threshold": 0.85,
@@ -111,7 +111,7 @@
       "pipeline": 0.7523,
       "merge_precision": 0.7534,
       "escalation": 0.2842,
-      "pipeline_adaptive": 0.8565
+      "pipeline_adaptive": 0.8416
     },
     {
       "threshold": 0.9,
@@ -120,7 +120,7 @@
       "pipeline": 0.754,
       "merge_precision": 0.7573,
       "escalation": 0.2906,
-      "pipeline_adaptive": 0.8575
+      "pipeline_adaptive": 0.8422
     }
   ],
   "dbp15k": [
@@ -131,7 +131,7 @@
       "pipeline": 0.8229,
       "merge_precision": 0.9586,
       "escalation": 0.0695,
-      "pipeline_adaptive": 0.8809
+      "pipeline_adaptive": 0.8824
     },
     {
       "threshold": 0.4,
@@ -140,7 +140,7 @@
       "pipeline": 0.8254,
       "merge_precision": 0.975,
       "escalation": 0.1252,
-      "pipeline_adaptive": 0.884
+      "pipeline_adaptive": 0.8867
     },
     {
       "threshold": 0.45,
@@ -149,7 +149,7 @@
       "pipeline": 0.8246,
       "merge_precision": 0.9798,
       "escalation": 0.1675,
-      "pipeline_adaptive": 0.8864
+      "pipeline_adaptive": 0.89
     },
     {
       "threshold": 0.5,
@@ -158,7 +158,7 @@
       "pipeline": 0.8249,
       "merge_precision": 0.9937,
       "escalation": 0.2075,
-      "pipeline_adaptive": 0.8887
+      "pipeline_adaptive": 0.8931
     },
     {
       "threshold": 0.55,
@@ -167,7 +167,7 @@
       "pipeline": 0.8229,
       "merge_precision": 0.994,
       "escalation": 0.2412,
-      "pipeline_adaptive": 0.8906
+      "pipeline_adaptive": 0.8957
     },
     {
       "threshold": 0.6,
@@ -176,7 +176,7 @@
       "pipeline": 0.8214,
       "merge_precision": 1.0,
       "escalation": 0.2752,
-      "pipeline_adaptive": 0.8925
+      "pipeline_adaptive": 0.8983
     },
     {
       "threshold": 0.65,
@@ -185,7 +185,7 @@
       "pipeline": 0.8193,
       "merge_precision": 1.0,
       "escalation": 0.306,
-      "pipeline_adaptive": 0.8942
+      "pipeline_adaptive": 0.9007
     },
     {
       "threshold": 0.7,
@@ -194,7 +194,7 @@
       "pipeline": 0.8181,
       "merge_precision": 1.0,
       "escalation": 0.3235,
-      "pipeline_adaptive": 0.8952
+      "pipeline_adaptive": 0.902
     },
     {
       "threshold": 0.75,
@@ -203,7 +203,7 @@
       "pipeline": 0.8169,
       "merge_precision": 1.0,
       "escalation": 0.3417,
-      "pipeline_adaptive": 0.8962
+      "pipeline_adaptive": 0.9034
     },
     {
       "threshold": 0.8,
@@ -212,7 +212,7 @@
       "pipeline": 0.8162,
       "merge_precision": 1.0,
       "escalation": 0.3532,
-      "pipeline_adaptive": 0.8969
+      "pipeline_adaptive": 0.9043
     },
     {
       "threshold": 0.85,
@@ -221,7 +221,7 @@
       "pipeline": 0.8158,
       "merge_precision": 1.0,
       "escalation": 0.359,
-      "pipeline_adaptive": 0.8972
+      "pipeline_adaptive": 0.9048
     },
     {
       "threshold": 0.9,
@@ -230,11 +230,11 @@
       "pipeline": 0.8155,
       "merge_precision": 1.0,
       "escalation": 0.3635,
-      "pipeline_adaptive": 0.8974
+      "pipeline_adaptive": 0.9051
     }
   ],
-  "minec_l2_accuracy": 0.971,
-  "dbp15k_l2_accuracy": 0.9331983805668016,
+  "minec_l2_accuracy": 0.916,
+  "dbp15k_l2_accuracy": 0.9543671278133388,
   "reject_threshold": 0.3,
   "provenance": {
     "note": "Curve values are raw threshold-sweep outputs. The final paper reports rounded values in text. The sweep script uses DBP15K curve estimation; the expanded hard-case L2 evaluation is stored separately in l2_glm52.json.",

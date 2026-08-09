@@ -1,0 +1,5802 @@
+{
+  "p_1471": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1910": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2645": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2476": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2553": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2542": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2594": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2641": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_862": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2530": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2519": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1422": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2632": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1854": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_731": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1384": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B represent the same real-world entity based on the provided attributes and a judging hint.\nEntity A: Port visit to Lisbon, location: Lisbon, date: 2"
+    }
+  },
+  "p_1791": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_856": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1686": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B are the same real-world entity based on the provided attributes.\nEntity A: Pentagon, coordinates: 38.8719,-77.0563\nEntity B: Pentagon, coordinates:"
+    }
+  },
+  "p_1882": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_925": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1769": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_933": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1619": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2551": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2192": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_945": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2637": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_483": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_149": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2633": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_182": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1070": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_48": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1297": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_498": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1453": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2177": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_319": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2175": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B represent the same real-world entity based on the provided attributes.\nEntity A: Spratly Islands, coordinates: 10.0,114.0\nEntity B: Spratly Islands"
+    }
+  },
+  "p_2657": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2622": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2557": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2056": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_252": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1468": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1351": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_510": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2581": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2127": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2268": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2647": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2198": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_752": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2357": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_694": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1549": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_861": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2585": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1892": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_913": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2561": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2631": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1160": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B represent the same real-world event.\nEntity A:\n- Name: Carrier qualification training\n- Date: 2026-05-28\n- Location: Philippine Sea\n- Description: "
+    }
+  },
+  "p_2185": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2536": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_725": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2568": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2165": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B represent the same real-world entity based on the provided attributes.\nEntity A: Strait of Hormuz, coordinates: 24.3075,56.09\nEntity B: Strait of H"
+    }
+  },
+  "p_369": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2482": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1011": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2147": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1872": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B represent the same real-world entity based on the provided attributes.\nEntity A: Naval Air Station North Island, coordinates: 32.68, -117.21\nEntity"
+    }
+  },
+  "p_2238": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2022": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1792": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_350": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_910": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "unknown",
+      "raw": "ERROR: The read operation timed out"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_787": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1207": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2091": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "unknown",
+      "raw": "ERROR: The read operation timed out"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2587": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_433": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2625": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2445": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B are the same real-world entity based on the provided attributes.\nEntity A: Naval Air Station Jacksonville, coordinates: 30.2187, -81.7019\nEntity B:"
+    }
+  },
+  "p_1205": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_717": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2336": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1185": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2497": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_361": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2378": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "unknown",
+      "raw": "ERROR: The read operation timed out"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_578": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_778": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B represent the same real-world entity.\nEntity A: Gunfighter Skies Air Show, date: 2026-05-17, location: Idaho, description: Air show at Mountain Hom"
+    }
+  },
+  "p_1319": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2642": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1463": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2586": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2013": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2597": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_990": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1863": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B represent the same real-world entity based on the provided attributes.\nEntity A: Naval Base Kitsap, coordinates: 47.56, -122.64\nEntity B: Naval Bas"
+    }
+  },
+  "p_1798": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_423": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1978": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2277": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_379": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2584": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_995": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_549": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "unknown",
+      "raw": "ERROR: The read operation timed out"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2398": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_140": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B are the same real-world entity based on the provided attributes and a specific hint.\nHint: \"Hull number / designation is strongest evidence. Same d"
+    }
+  },
+  "p_410": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_192": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2624": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_923": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1612": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2644": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_78": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1765": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_113": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B are the same real-world entity based on the provided attributes and a specific hint.\nEntity A: MBDA ASTER 15 (missile, surface_to_air)\nEntity B: MB"
+    }
+  },
+  "p_2599": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1230": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1646": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_669": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "unknown",
+      "raw": "ERROR: The read operation timed out"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2563": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_679": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1425": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1432": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_497": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2601": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_581": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2283": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1715": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B are the same real-world entity based on the provided attributes.\nEntity A: Naval Air Station Meridian, coordinates: 32.56, -88.73\nEntity B: Naval A"
+    }
+  },
+  "p_2634": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2654": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_307": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_146": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2547": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2426": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2555": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2354": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B refer to the same real-world entity based on the provided attributes.\nEntity A: Whidbey Island, coordinates: 48,-123\nEntity B: Whidbey Island, coor"
+    }
+  },
+  "p_2614": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_659": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2562": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2247": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2377": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2595": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_231": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_766": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_673": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2253": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_262": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1868": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2610": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1818": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_911": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2538": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_340": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_123": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1009": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1718": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1454": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1024": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_703": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_477": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1645": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_715": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2630": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_83": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2579": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "unknown",
+      "raw": "ERROR: The read operation timed out"
+    },
+    "glm-4.5-air": {
+      "verdict": "unknown",
+      "raw": "ERROR: The read operation timed out"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_135": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2558": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_404": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_43": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B are the same real-world entity based on the provided attributes and a specific hint.\nHint: \"Hull number / designation is strongest evidence. Same d"
+    }
+  },
+  "p_259": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2643": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_958": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_931": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_88": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_786": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2577": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2104": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2211": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B represent the same real-world entity based on the provided attributes.\nEntity A: Souda Bay, coordinates: 35.5, 24.2\nEntity B: Souda Bay, coordinate"
+    }
+  },
+  "p_2615": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1214": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2285": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B are the same real-world entity based on the provided attributes and a specific hint.\nHint: Hull number / designation is strongest evidence. Same de"
+    }
+  },
+  "p_551": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_408": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1600": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B represent the same real-world entity based on the provided attributes and a judging hint.\nEntity A: \"Gunfighter Skies Air Show\", date: 2026-05-17, "
+    }
+  },
+  "p_1787": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_352": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_47": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_406": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1022": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2627": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1684": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B represent the same real-world entity based on the provided attributes.\nEntity A: Guam, coordinates: 13.4443, 144.7937\nEntity B: Guam, coordinates: "
+    }
+  },
+  "p_1887": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2297": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_77": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1354": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2076": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B are the same real-world entity based on the provided attributes.\nEntity A: Methil yard, coordinates: 56.17,-3.02, region: Fife, loc_type: shipyard\n"
+    }
+  },
+  "p_59": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1772": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B represent the same real-world entity based on the provided attributes.\nEntity A: Guam, coordinates: 13.4443, 144.7937\nEntity B: Guam, coordinates: "
+    }
+  },
+  "p_2650": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_586": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_56": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2163": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1957": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_7": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2649": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2588": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2617": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_412": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1691": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "unknown",
+      "raw": "ERROR: The read operation timed out"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1098": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1610": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1693": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2409": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2640": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "unknown",
+      "raw": "ERROR: The read operation timed out"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2605": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2145": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B are the same real-world entity based on the provided attributes.\nEntity A: India (country)\nEntity B: Indiana (state, coordinates: 39.7604,-86.158)\n"
+    }
+  },
+  "p_2552": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2583": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1231": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2173": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1599": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B refer to the same real-world entity.\nEntity A: Gunfighter Skies Air Show, date: 2026-05-17, location: Mountain Home AFB, Idaho.\nEntity B: Gunfighte"
+    }
+  },
+  "p_1690": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B represent the same real-world entity based on the provided attributes.\nEntity A: Newport, Rhode Island, coordinates 41.4901,-71.3128\nEntity B: Newp"
+    }
+  },
+  "p_1533": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_584": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_455": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1020": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_490": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2619": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_628": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2648": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1021": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_511": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2628": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1051": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_366": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1431": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2600": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2556": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1197": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "unknown",
+      "raw": "ERROR: The read operation timed out"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1954": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2565": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_42": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_711": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2611": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2308": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_2544": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2602": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1449": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_122": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_282": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1990": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B represent the same real-world entity based on the provided attributes.\nEntity A: Norfolk, coordinates 36.85, -76.28\nEntity B: Norfolk, Virginia, co"
+    }
+  },
+  "p_1426": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_863": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2604": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_845": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_356": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1682": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B represent the same real-world entity based on the provided attributes.\nEntity A: Guam, coordinates: 13.4443,144.7937\nEntity B: Guam, coordinates: 1"
+    }
+  },
+  "p_270": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B represent the same real-world entity based on the provided attributes.\nEntity A: Strait of Hormuz, no coordinates provided.\nEntity B: Strait of Hor"
+    }
+  },
+  "p_2616": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_682": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1611": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_504": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B are the same real-world entity based on the provided attributes and a specific hint.\nHint: \"Hull number / designation is strongest evidence. Same d"
+    }
+  },
+  "p_1875": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_739": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_142": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B are the same real-world entity based on the provided attributes and a specific hint.\nHint: \"Hull number / designation is strongest evidence. Same d"
+    }
+  },
+  "p_494": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1508": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_662": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2603": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2598": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_966": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2560": {
+    "type": "person",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2545": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2578": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_702": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2572": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1883": {
+    "type": "location",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_349": {
+    "type": "equipment",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_2635": {
+    "type": "person",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_481": {
+    "type": "equipment",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  },
+  "p_1292": {
+    "type": "event",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "same",
+      "raw": "SAME"
+    }
+  },
+  "p_1969": {
+    "type": "location",
+    "gold": "same",
+    "glm-5-turbo": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5-air": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "glm-4.5": {
+      "verdict": "same",
+      "raw": "SAME"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "The user wants to determine if Entity A and Entity B represent the same real-world entity based on the provided attributes.\nEntity A: San Diego, coordinates 32.71,-117.16\nEntity B: San Diego, coordina"
+    }
+  },
+  "p_1500": {
+    "type": "event",
+    "gold": "different",
+    "glm-5-turbo": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5-air": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "glm-4.5": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    },
+    "qwen3.6": {
+      "verdict": "different",
+      "raw": "DIFFERENT"
+    }
+  }
+}

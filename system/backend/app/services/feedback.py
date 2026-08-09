@@ -68,7 +68,7 @@ MIN_MERGE_PRECISION = 0.75
 
 # Model storage directory
 MODEL_DIR = Path(os.getenv("MODEL_DIR",
-                            "/root/workspace/tanshu_docs/experiments/release/models"))
+                            str(Path(__file__).resolve().parents[3] / "models")))
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
 # Supported entity types
@@ -191,7 +191,7 @@ def collect_feedback_pairs(db_conn, since_id: int = 0,
                 props_a = {}
                 props_b = {}
 
-            source = 'human_review' if row[8] == 'l2_uncertain' else 'l2_clear'
+            source = 'human_review'
 
             pairs.append(FeedbackPair(
                 pair_id=pair_id,

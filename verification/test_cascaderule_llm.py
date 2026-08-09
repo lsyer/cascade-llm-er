@@ -21,7 +21,7 @@ import numpy as np
 
 # Add the backend directory to path (parent of 'app' package)
 BACKEND_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                           "system", "backend")
+                           "..", "system", "backend")
 sys.path.insert(0, BACKEND_DIR)
 
 RESULTS = []
@@ -294,7 +294,7 @@ try:
          "hull number" in prompt.lower() or "designation" in prompt.lower())
     test("Prompt contains JSON return instruction",
          "json" in prompt.lower())
-    test("Prompt contains bias-free caution",
+    test("Prompt contains conservative merge caution",
          "caution" in prompt.lower() or "false merge" in prompt.lower())
 
     # Check all 5 type rules exist
@@ -701,8 +701,9 @@ section("14. Anti Self-Reinforcement — LLM Results ≠ Training Data")
 import inspect as _inspect
 from app.services import feedback as _fb_mod
 src = _inspect.getsource(_fb_mod.collect_feedback_pairs)
-test("collect_feedback_pairs has manual% filter in all branches",
-     src.count("notes LIKE 'manual%'") >= 2)  # cursor + sqlalchemy branches
+test("collect_feedback_pairs has manual/human filter in all branches",
+     "notes LIKE 'manual%%'" in src and "notes LIKE 'manual%'" in src
+     and src.count("resolved_by IS NOT NULL") >= 2)  # cursor + sqlalchemy branches
 
 # 14b: Verify count_new_resolved_since_last_train also filters
 src_count = _inspect.getsource(_fb_mod.count_new_resolved_since_last_train)
@@ -711,7 +712,7 @@ test("count_new_resolved filters by manual%",
 
 # 14c: Verify fusion_execute does NOT call maybe_retrain_async
 import re as _re
-_admin_path = "/root/workspace/tanshu_docs/experiments/release/system/backend/app/routers/admin.py"
+_admin_path = str(Path(__file__).resolve().parents[1] / "system" / "backend" / "app" / "routers" / "admin.py")
 with open(_admin_path) as _f:
     _admin_src = _f.read()
 _start = _admin_src.index("async def fusion_execute")

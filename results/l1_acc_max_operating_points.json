@@ -1,0 +1,134 @@
+{
+  "description": "L1-accuracy-maximizing thresholds on FULL OOF probabilities (0.01-step grid), interception >= 10%, ties broken toward higher interception. Pipeline accuracy is strict (unresolved L2 verdicts counted as incorrect, denominator = 2591).",
+  "selection_rule": "Maximize L1 accuracy on full OOF probabilities subject to interception >= 10%; ties broken toward higher interception.",
+  "grid_step": 0.01,
+  "min_interception": 10.0,
+  "n_pairs": 2591,
+  "pure_l2_strict_accuracy": 91.6,
+  "pure_l2_correct": 2373,
+  "pure_l2_unresolved": 6,
+  "LR": {
+    "merge_t": 0.98,
+    "reject_t": 0.05,
+    "l1_accuracy": 97.0,
+    "interception": 10.3,
+    "pipeline_strict": 91.5,
+    "llm_cost": 89.7,
+    "n_decided": 266,
+    "unresolved": 5,
+    "top5": [
+      {
+        "merge_t": 0.98,
+        "reject_t": 0.05,
+        "l1_accuracy": 97.0,
+        "interception": 10.3,
+        "pipeline_strict": 91.5,
+        "llm_cost": 89.7,
+        "n_decided": 266,
+        "unresolved": 5
+      },
+      {
+        "merge_t": 0.97,
+        "reject_t": 0.04,
+        "l1_accuracy": 96.7,
+        "interception": 10.7,
+        "pipeline_strict": 91.4,
+        "llm_cost": 89.3,
+        "n_decided": 276,
+        "unresolved": 5
+      },
+      {
+        "merge_t": 0.97,
+        "reject_t": 0.05,
+        "l1_accuracy": 96.5,
+        "interception": 12.2,
+        "pipeline_strict": 91.4,
+        "llm_cost": 87.8,
+        "n_decided": 315,
+        "unresolved": 5
+      },
+      {
+        "merge_t": 0.99,
+        "reject_t": 0.07,
+        "l1_accuracy": 96.2,
+        "interception": 10.3,
+        "pipeline_strict": 91.4,
+        "llm_cost": 89.7,
+        "n_decided": 266,
+        "unresolved": 6
+      },
+      {
+        "merge_t": 0.89,
+        "reject_t": 0.04,
+        "l1_accuracy": 95.6,
+        "interception": 24.3,
+        "pipeline_strict": 91.4,
+        "llm_cost": 75.7,
+        "n_decided": 630,
+        "unresolved": 5
+      }
+    ]
+  },
+  "RF": {
+    "merge_t": 1.0,
+    "reject_t": 0.0,
+    "l1_accuracy": 95.5,
+    "interception": 29.0,
+    "pipeline_strict": 91.0,
+    "llm_cost": 71.0,
+    "n_decided": 751,
+    "unresolved": 3,
+    "top5": [
+      {
+        "merge_t": 1.0,
+        "reject_t": 0.0,
+        "l1_accuracy": 95.5,
+        "interception": 29.0,
+        "pipeline_strict": 91.0,
+        "llm_cost": 71.0,
+        "n_decided": 751,
+        "unresolved": 3
+      },
+      {
+        "merge_t": 1.0,
+        "reject_t": 0.01,
+        "l1_accuracy": 94.8,
+        "interception": 30.5,
+        "pipeline_strict": 90.9,
+        "llm_cost": 69.5,
+        "n_decided": 789,
+        "unresolved": 3
+      },
+      {
+        "merge_t": 0.99,
+        "reject_t": 0.0,
+        "l1_accuracy": 94.6,
+        "interception": 32.8,
+        "pipeline_strict": 90.9,
+        "llm_cost": 67.2,
+        "n_decided": 849,
+        "unresolved": 2
+      },
+      {
+        "merge_t": 1.0,
+        "reject_t": 0.02,
+        "l1_accuracy": 94.5,
+        "interception": 32.3,
+        "pipeline_strict": 90.8,
+        "llm_cost": 67.7,
+        "n_decided": 838,
+        "unresolved": 2
+      },
+      {
+        "merge_t": 0.98,
+        "reject_t": 0.0,
+        "l1_accuracy": 94.3,
+        "interception": 34.6,
+        "pipeline_strict": 90.7,
+        "llm_cost": 65.4,
+        "n_decided": 897,
+        "unresolved": 2
+      }
+    ]
+  }
+}

@@ -2,18 +2,19 @@
 l2_judge.py — Layer 2 Source-Text-Grounded LLM Judgment
 
 Production implementation of the CascadeRule-LLM Layer 2 semantic judge.
-Validated on MINEC with 4 LLM models (GLM-5: 97.1%, GLM-4.5-Air: 94.4%,
-Qwen3.6: 91.8%, GLM-4.5: 90.7%).
+Validated on MINEC with 4 LLM models (GLM-5-Turbo: 90.7%, Qwen3.6: 89.8%,
+GLM-4.5-Air: 87.7%, GLM-4.5: 83.5%). Strict accuracy on 1,591 escalated pairs.
 
 Key innovations validated by experiments:
   1. Source text fragments — provenance pipeline extracts up to 2 context
      windows (300 chars each) from original articles via trace edges.
-     Achieves 62.6% coverage; contributes +10.5pp accuracy on GLM-5.
+     Achieves 62.6% coverage; contributes +4.1pp accuracy on GLM-5-Turbo.
   2. Type-specific judging rules — 5 domain-specific rule sets guide the
      LLM through the correct reasoning sequence per entity type.
   3. Cleaned attributes — noise fields stripped to reduce prompt confusion.
-  4. Bias-free instructions — no "lean towards DIFFERENT" directive
-     (removed after ablation showed systematic bias).
+  4. Conservative merge policy — instructions favor "different" when evidence
+     is insufficient, reflecting the asymmetric cost of false merges in
+     knowledge-graph construction (false merges are irreversible).
 
 L2 output: exactly 3 outcomes
   1. match (merge)   → return matched VID
@@ -280,7 +281,7 @@ def build_l2_prompt(entity_type: str,
       1. Type-specific judging rules
       2. Cleaned entity attributes (noise stripped)
       3. Source text fragments (when available)
-      4. Bias-free instructions
+      4. Conservative merge instructions (favor "different" when insufficient evidence)
     """
     rules = TYPE_JUDGING_RULES.get(entity_type, "Compare all available attributes.")
 

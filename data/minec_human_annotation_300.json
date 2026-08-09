@@ -1,0 +1,2124 @@
+{
+  "name": "MINEC Human Annotation Set",
+  "description": "300 candidate entity pairs from the MINEC corpus, stratified randomly sampled by entity type, independently labeled by a human expert with access to full entity attributes and source text provenance fragments.",
+  "version": "1.0",
+  "date": "2026-08-09",
+  "total_pairs": 300,
+  "label_distribution": {
+    "same": 151,
+    "different": 149
+  },
+  "type_distribution": {
+    "location": 99,
+    "equipment": 63,
+    "organization": 15,
+    "event": 110,
+    "person": 13
+  },
+  "label_scheme": {
+    "same": "A and B refer to the same real-world entity",
+    "different": "A and B refer to different real-world entities"
+  },
+  "records": [
+    {
+      "pair_id": "p_1",
+      "type": "equipment",
+      "name_a": "Virginia-class attack submarine",
+      "name_b": "Virginia-class submarine",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1019",
+      "type": "event",
+      "name_a": "Commissioning",
+      "name_b": "Commissioning of BAE Jambelí",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1053",
+      "type": "event",
+      "name_a": "Maritime Interception Operations",
+      "name_b": "Maritime interception operations",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1072",
+      "type": "event",
+      "name_a": "Seizure of MT Grinch",
+      "name_b": "Seizure of MT Tagor",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1080",
+      "type": "event",
+      "name_a": "fiscal 2017 National Defense Authorization Act",
+      "name_b": "fiscal 2027 National Defense Authorization bill",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1081",
+      "type": "event",
+      "name_a": "USS Carl Vinson 2024-2025 Deployment",
+      "name_b": "USS Carl Vinson 2025 Deployment",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_109",
+      "type": "location",
+      "name_a": "Naval Station Mayport",
+      "name_b": "Naval Station Norfolk",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1096",
+      "type": "event",
+      "name_a": "Operation Iraqi Freedom",
+      "name_b": "Operation Project Freedom",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_111",
+      "type": "location",
+      "name_a": "Naval Station Mayport",
+      "name_b": "Naval Station Mayport",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1116",
+      "type": "event",
+      "name_a": "USS Ford 11-month deployment",
+      "name_b": "USS Gerald R. Ford deployment",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1122",
+      "type": "event",
+      "name_a": "USS Ford 11-month deployment",
+      "name_b": "USS Ford Deployment",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1134",
+      "type": "event",
+      "name_a": "Golden Fleet initiative",
+      "name_b": "Golden Fleet promise",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1143",
+      "type": "event",
+      "name_a": "USS Gerald R. Ford fire incident",
+      "name_b": "USS Gerald R. Ford near-loss incident",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1145",
+      "type": "event",
+      "name_a": "USS Gerald R. Ford 11-month deployment",
+      "name_b": "USS Gerald R. Ford Fire",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1147",
+      "type": "event",
+      "name_a": "USS Gerald R. Ford 11-month deployment",
+      "name_b": "USS Gerald R. Ford Fire Incident",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1151",
+      "type": "event",
+      "name_a": "USS Gerald R. Ford 11-month deployment",
+      "name_b": "USS Gerald R. Ford near-loss incident",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1155",
+      "type": "event",
+      "name_a": "USS Gerald R. Ford 11-month deployment",
+      "name_b": "USS Gerald R. Ford 2025-2026 Deployment",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_116",
+      "type": "equipment",
+      "name_a": "USS Cleveland (C-19)",
+      "name_b": "USS Cleveland (CL-55)",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1167",
+      "type": "event",
+      "name_a": "Operation Firecrest",
+      "name_b": "Operation Firecrest",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1169",
+      "type": "event",
+      "name_a": "attack on Iran",
+      "name_b": "Attacks on Iran",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1177",
+      "type": "event",
+      "name_a": "Rescue of Apache crew",
+      "name_b": "Rescue of the Apache crew",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1184",
+      "type": "event",
+      "name_a": "Rescue of Apache crew",
+      "name_b": "Rescue of Apache crew",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1189",
+      "type": "event",
+      "name_a": "Rim of the Pacific",
+      "name_b": "Rim of the Pacific 2026",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1196",
+      "type": "event",
+      "name_a": "Strikes on Iran",
+      "name_b": "Strikes on Iranian Targets",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1199",
+      "type": "event",
+      "name_a": "Strikes on Iran",
+      "name_b": "Strikes on Iranian Tomcats",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1212",
+      "type": "event",
+      "name_a": "U.S. Navy blockade",
+      "name_b": "U.S. Navy blockade in the Strait of Hormuz",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1217",
+      "type": "event",
+      "name_a": "USS Minnesota deployment",
+      "name_b": "USS Stout Deployment",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_122",
+      "type": "location",
+      "name_a": "Naval Station Galati",
+      "name_b": "Naval Station Mayport",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1223",
+      "type": "event",
+      "name_a": "Iran conflict",
+      "name_b": "Iran Conflict Operations",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1231",
+      "type": "event",
+      "name_a": "Eurosatory 2026",
+      "name_b": "Eurosatory 2026",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1237",
+      "type": "event",
+      "name_a": "Rescue of Apache crew",
+      "name_b": "Rescue of the Apache crew",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_124",
+      "type": "location",
+      "name_a": "Naval Station Galati",
+      "name_b": "Naval Station Norfolk",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1269",
+      "type": "event",
+      "name_a": "Eurosatory",
+      "name_b": "Eurosatory 2026 defense show",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1273",
+      "type": "event",
+      "name_a": "Phase-2 BMD program",
+      "name_b": "Phase-3 BMD program",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1293",
+      "type": "event",
+      "name_a": "Southern Seas 2026",
+      "name_b": "Southern Seas 26",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1296",
+      "type": "event",
+      "name_a": "Southern Seas 2026",
+      "name_b": "Southern Seas 2026",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1297",
+      "type": "event",
+      "name_a": "U.S. naval blockade of Iran",
+      "name_b": "U.S. Naval Blockade of Iran",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_13",
+      "type": "organization",
+      "name_a": "Strike Fighter Squadron (VFA) 87",
+      "name_b": "Strike Fighter Squadron 87",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1307",
+      "type": "event",
+      "name_a": "USS Ford Deployment",
+      "name_b": "USS Gerald R. Ford 11-month deployment",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1311",
+      "type": "event",
+      "name_a": "USS Ford Deployment",
+      "name_b": "USS Gerald R. Ford deployment 2025-2026",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_132",
+      "type": "organization",
+      "name_a": "Electronic Attack Squadron 129",
+      "name_b": "Electronic Attack Squadron 142",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1328",
+      "type": "event",
+      "name_a": "USS Gerald R. Ford Atlantic deployment",
+      "name_b": "USS Gerald R. Ford fire incident",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1334",
+      "type": "event",
+      "name_a": "Refueling and Complex Overhaul (USS George Washington)",
+      "name_b": "Refueling and Complex Overhaul (USS John C. Stennis)",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1348",
+      "type": "event",
+      "name_a": "War in Afghanistan",
+      "name_b": "War in Ukraine",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_138",
+      "type": "equipment",
+      "name_a": "E-2D",
+      "name_b": "E-2D Advanced Hawkeye",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1392",
+      "type": "event",
+      "name_a": "naval blockade of Iran",
+      "name_b": "Naval Blockade of Iran",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_140",
+      "type": "equipment",
+      "name_a": "CMV-22B",
+      "name_b": "CMV-22B Osprey",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1408",
+      "type": "event",
+      "name_a": "Fleet Experimentation (FLEX) 2026",
+      "name_b": "Fleet Experimentation (FLEX) exercise",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1412",
+      "type": "event",
+      "name_a": "Gerald R. Ford CSG deployment 2025-2026",
+      "name_b": "Gerald R. Ford CSG Mediterranean Deployment 2026",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1414",
+      "type": "event",
+      "name_a": "Gerald R. Ford CSG deployment 2025-2026",
+      "name_b": "Gerald R. Ford CSG Deployment 2025-2026",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1416",
+      "type": "event",
+      "name_a": "Boxer ARG deployment to CENTCOM 2026",
+      "name_b": "Boxer ARG Western Pacific deployment 2026",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1421",
+      "type": "event",
+      "name_a": "Freedom of Navigation Operation",
+      "name_b": "Freedom of Navigation Operation",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1432",
+      "type": "event",
+      "name_a": "Fiscal 2027 Defense Department budget request",
+      "name_b": "Fiscal 2027 military construction budget request",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1434",
+      "type": "event",
+      "name_a": "Decommissioning of USS Nimitz",
+      "name_b": "Decommissioning of USS Ohio",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1436",
+      "type": "event",
+      "name_a": "Decommissioning of USS Boise",
+      "name_b": "decommissioning of USS Coral Sea",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1453",
+      "type": "event",
+      "name_a": "Strike",
+      "name_b": "Strikes on Iran",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1471",
+      "type": "event",
+      "name_a": "blockade",
+      "name_b": "blockade of Iranian ports",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1477",
+      "type": "event",
+      "name_a": "US naval blockade of Iran",
+      "name_b": "US naval blockade of Iranian ports",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1487",
+      "type": "event",
+      "name_a": "Golden Dome missile defense program funding",
+      "name_b": "Golden Dome missile defense program funding",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1492",
+      "type": "event",
+      "name_a": "Gerald R. Ford CSG Deployment 2025-2026",
+      "name_b": "Gerald R. Ford CSG deployment 2025-2026",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1493",
+      "type": "event",
+      "name_a": "Gerald R. Ford CSG Deployment 2025-2026",
+      "name_b": "Gerald R. Ford CSG Red Sea deployment 2026",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1494",
+      "type": "event",
+      "name_a": "Gerald R. Ford CSG Deployment 2025-2026",
+      "name_b": "Gerald R. Ford CSG Deployment 2025-2026",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1518",
+      "type": "event",
+      "name_a": "Strait of Hormuz Blockade",
+      "name_b": "Strait of Hormuz multinational mission",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1520",
+      "type": "event",
+      "name_a": "Golden Dome initiative",
+      "name_b": "Golden Fleet initiative",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_153",
+      "type": "organization",
+      "name_a": "Carrier Air Wing (CVW) 8",
+      "name_b": "Carrier Air Wing 17",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1551",
+      "type": "event",
+      "name_a": "record-breaking 326-day deployment",
+      "name_b": "Record-breaking 326-day deployment",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1567",
+      "type": "event",
+      "name_a": "Ceasefire",
+      "name_b": "Ceasefire in Iran conflict",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1574",
+      "type": "event",
+      "name_a": "USS Ford Fire Incident",
+      "name_b": "USS Ford laundry room fire",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1575",
+      "type": "event",
+      "name_a": "USS Ford Fire Incident",
+      "name_b": "USS Gerald R. Ford Fire Incident",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1625",
+      "type": "event",
+      "name_a": "Precision strike",
+      "name_b": "Precision Strike Package (PSP) integration",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1629",
+      "type": "event",
+      "name_a": "USS George Washington annual patrol",
+      "name_b": "USS George Washington Spring Patrol 2026",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_163",
+      "type": "organization",
+      "name_a": "Strike Fighter Squadron (VFA) 213",
+      "name_b": "Strike Fighter Squadron (VFA) 87",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1639",
+      "type": "event",
+      "name_a": "destroying Iranian small boats",
+      "name_b": "destroying of six Iranian small boats",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1640",
+      "type": "event",
+      "name_a": "counter-drug",
+      "name_b": "counter-drug efforts",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1645",
+      "type": "event",
+      "name_a": "Southern Seas 2026",
+      "name_b": "Southern Seas 2026",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1652",
+      "type": "event",
+      "name_a": "US-Israeli war against Iran",
+      "name_b": "US-Israeli War on Iran",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1654",
+      "type": "event",
+      "name_a": "attack on Cuba",
+      "name_b": "attack on Venezuela",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1663",
+      "type": "event",
+      "name_a": "Gunfighter Skies Air Show",
+      "name_b": "Gunfighter Skies Air Show",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1666",
+      "type": "event",
+      "name_a": "Dynamic Mongoose",
+      "name_b": "Dynamic Mongoose 2026",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1670",
+      "type": "event",
+      "name_a": "Southern Seas 2026",
+      "name_b": "Southern Seas 26",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1672",
+      "type": "event",
+      "name_a": "U.S. blockade",
+      "name_b": "U.S. Navy blockade",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1689",
+      "type": "location",
+      "name_a": "Newport",
+      "name_b": "Newport News Shipyard",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1691",
+      "type": "location",
+      "name_a": "Newport",
+      "name_b": "Newport News Shipbuilding Dry Dock 12",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1698",
+      "type": "location",
+      "name_a": "Naval Air Station Kingsville",
+      "name_b": "Naval Air Station North Island",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1699",
+      "type": "location",
+      "name_a": "Naval Air Station Kingsville",
+      "name_b": "Naval Air Station North Island",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1707",
+      "type": "location",
+      "name_a": "Naval Air Station Kingsville",
+      "name_b": "Naval Air Station North Island",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1712",
+      "type": "location",
+      "name_a": "Naval Air Station Meridian",
+      "name_b": "Naval Air Station Whidbey Island",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1713",
+      "type": "location",
+      "name_a": "Naval Air Station Meridian",
+      "name_b": "Naval Air Station Patuxent River",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1717",
+      "type": "location",
+      "name_a": "Naval Air Station Meridian",
+      "name_b": "Naval Air Station North Island",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1721",
+      "type": "location",
+      "name_a": "Henderson",
+      "name_b": "Henderson Shipyard",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1722",
+      "type": "location",
+      "name_a": "Naval Base Kitsap-Bangor",
+      "name_b": "Naval Base Kitsap-Bremerton",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1732",
+      "type": "location",
+      "name_a": "Naval Air Station Fallon",
+      "name_b": "Naval Air Station Whidbey Island",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1745",
+      "type": "location",
+      "name_a": "Naval Air Station Key West",
+      "name_b": "Naval Air Station Lemoore",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1778",
+      "type": "location",
+      "name_a": "RAF",
+      "name_b": "RAF Marham",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1796",
+      "type": "location",
+      "name_a": "Norwegian Sea",
+      "name_b": "Norwegian Sea",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1804",
+      "type": "location",
+      "name_a": "Mediterranean Sea",
+      "name_b": "Mediterranean Sea",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1807",
+      "type": "location",
+      "name_a": "Naval Station Mayport",
+      "name_b": "Naval Station Norfolk",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1808",
+      "type": "location",
+      "name_a": "Naval Station Mayport",
+      "name_b": "Naval Station Norfolk",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1816",
+      "type": "location",
+      "name_a": "Atlantic",
+      "name_b": "Atlantic Ocean",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1837",
+      "type": "location",
+      "name_a": "Washington",
+      "name_b": "Washington Navy Yard",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1844",
+      "type": "location",
+      "name_a": "Yokosuka Naval Base",
+      "name_b": "Yulin Naval Base",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1855",
+      "type": "location",
+      "name_a": "Mobile",
+      "name_b": "Mobile, Alabama",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1861",
+      "type": "location",
+      "name_a": "Gulf of Finland",
+      "name_b": "Gulf of Mexico",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1864",
+      "type": "location",
+      "name_a": "Naval Base Kitsap",
+      "name_b": "Naval Base Kitsap-Bremerton",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1866",
+      "type": "location",
+      "name_a": "Naval Base Kitsap",
+      "name_b": "Naval Base Kitsap",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1869",
+      "type": "location",
+      "name_a": "Northern Luzon",
+      "name_b": "Northern Luzon",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1874",
+      "type": "location",
+      "name_a": "Naval Air Station North Island",
+      "name_b": "Naval Air Station Whidbey Island",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1879",
+      "type": "location",
+      "name_a": "Naval Air Station North Island",
+      "name_b": "Naval Air Station North Island",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1891",
+      "type": "location",
+      "name_a": "U.S. 3rd Fleet area of operations",
+      "name_b": "U.S. 7th Fleet area of operations",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1911",
+      "type": "location",
+      "name_a": "Caribbean",
+      "name_b": "Caribbean Basin",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1914",
+      "type": "location",
+      "name_a": "Indian Head",
+      "name_b": "Indian Head, Maryland",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1922",
+      "type": "location",
+      "name_a": "Souda Bay",
+      "name_b": "Souda Bay",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1925",
+      "type": "location",
+      "name_a": "Souda Bay",
+      "name_b": "Souda Bay Naval Base",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_193",
+      "type": "equipment",
+      "name_a": "RIM-116 Rolling Airframe Missile",
+      "name_b": "Rolling Airframe Missile Launcher",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1937",
+      "type": "location",
+      "name_a": "Yokosuka",
+      "name_b": "Yokosuka, Japan",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1941",
+      "type": "location",
+      "name_a": "Naval Station Norfolk",
+      "name_b": "Naval Station Norfolk",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1988",
+      "type": "location",
+      "name_a": "Norfolk",
+      "name_b": "Norfolk",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_1992",
+      "type": "location",
+      "name_a": "Norfolk",
+      "name_b": "Norfolk Naval Station",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_1996",
+      "type": "location",
+      "name_a": "Beijing",
+      "name_b": "Beijing",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2007",
+      "type": "location",
+      "name_a": "Naval Air Station North Island",
+      "name_b": "Naval Air Station North Island",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2011",
+      "type": "location",
+      "name_a": "Hawaii",
+      "name_b": "Hawaiian Islands",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2014",
+      "type": "location",
+      "name_a": "Naval Station Norfolk",
+      "name_b": "Naval Station Norfolk Pier 14",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2017",
+      "type": "location",
+      "name_a": "Naval Station Norfolk",
+      "name_b": "Naval Station Rota",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2023",
+      "type": "location",
+      "name_a": "Northern Atlantic",
+      "name_b": "Northern Atlantic Ocean",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2031",
+      "type": "location",
+      "name_a": "Naval Station Norfolk",
+      "name_b": "Naval Station Rota",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2033",
+      "type": "location",
+      "name_a": "Naval Station Norfolk",
+      "name_b": "Naval Station Rota",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2073",
+      "type": "location",
+      "name_a": "Recruit Training Command, San Diego",
+      "name_b": "San Diego",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2076",
+      "type": "location",
+      "name_a": "Methil yard",
+      "name_b": "Methil yard",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_208",
+      "type": "organization",
+      "name_a": "Navy",
+      "name_b": "Navy Marine Mammal Program (MMP) dolphins",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2109",
+      "type": "location",
+      "name_a": "Davis-Monthan Air Force Base",
+      "name_b": "Edwards Air Force Base",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2114",
+      "type": "location",
+      "name_a": "Malaysia",
+      "name_b": "Malaysia (Kuala Lumpur)",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2120",
+      "type": "location",
+      "name_a": "Pascagoula",
+      "name_b": "Pascagoula, Miss.",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2168",
+      "type": "location",
+      "name_a": "Gulf of Aden",
+      "name_b": "Gulf of Finland",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_218",
+      "type": "organization",
+      "name_a": "Navy",
+      "name_b": "Secretary of the Navy",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2194",
+      "type": "organization",
+      "name_a": "Thales",
+      "name_b": "Thales",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2199",
+      "type": "location",
+      "name_a": "Singapore",
+      "name_b": "Singapore Strait",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2202",
+      "type": "location",
+      "name_a": "Naval Base San Diego",
+      "name_b": "Naval Station San Diego",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2211",
+      "type": "location",
+      "name_a": "Souda Bay",
+      "name_b": "Souda Bay",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2218",
+      "type": "location",
+      "name_a": "Guam",
+      "name_b": "Guam",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2232",
+      "type": "location",
+      "name_a": "Northern Luzon",
+      "name_b": "Northern Luzon",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2252",
+      "type": "location",
+      "name_a": "Naval Air Station Oceana",
+      "name_b": "Naval Air Station Sigonella",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2264",
+      "type": "location",
+      "name_a": "U.S.",
+      "name_b": "U.S. Embassy in Greece",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2265",
+      "type": "location",
+      "name_a": "U.S.",
+      "name_b": "U.S. embassy in Singapore",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2277",
+      "type": "location",
+      "name_a": "U.S.",
+      "name_b": "U.S. Naval Academy",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2286",
+      "type": "equipment",
+      "name_a": "USS Zumwalt",
+      "name_b": "USS Zumwalt",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2287",
+      "type": "location",
+      "name_a": "Europe",
+      "name_b": "European Navy",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2289",
+      "type": "organization",
+      "name_a": "Senate",
+      "name_b": "Senate Subcommittee on Emerging Threats and Capabilities",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2295",
+      "type": "location",
+      "name_a": "Creech Air Force Base",
+      "name_b": "Davis-Monthan Air Force Base",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_23",
+      "type": "organization",
+      "name_a": "Electronic Attack Squadron (VAQ) 142",
+      "name_b": "Electronic Attack Squadron 129",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2303",
+      "type": "equipment",
+      "name_a": "Naval Strike Missile",
+      "name_b": "Naval Strike Missile (NSM)",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2308",
+      "type": "location",
+      "name_a": "Odesa",
+      "name_b": "Odesa region",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2318",
+      "type": "location",
+      "name_a": "Baltic",
+      "name_b": "Baltic Sea",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2323",
+      "type": "organization",
+      "name_a": "NATO",
+      "name_b": "Standing NATO Maritime Group One",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2329",
+      "type": "location",
+      "name_a": "Indonesia",
+      "name_b": "Indonesia (Jakarta)",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_233",
+      "type": "equipment",
+      "name_a": "LUCAS",
+      "name_b": "LUCAS Kamikaze Drones",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2333",
+      "type": "location",
+      "name_a": "Whidbey Island",
+      "name_b": "Whidbey Island",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2342",
+      "type": "location",
+      "name_a": "Gulf of America",
+      "name_b": "Gulf of Mexico",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2344",
+      "type": "location",
+      "name_a": "Batan",
+      "name_b": "Batanes Islands Group",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2356",
+      "type": "location",
+      "name_a": "fleet",
+      "name_b": "Fleet Activities Chinhae",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2365",
+      "type": "location",
+      "name_a": "Naval Air Station Jacksonville",
+      "name_b": "Naval Air Station Kingsville",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_237",
+      "type": "equipment",
+      "name_a": "A-10 Thunderbolt II",
+      "name_b": "A-10C Thunderbolt II",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2371",
+      "type": "location",
+      "name_a": "Naval Air Station Jacksonville",
+      "name_b": "Naval Air Station Lemoore",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2378",
+      "type": "location",
+      "name_a": "Naval Air Station Jacksonville",
+      "name_b": "Naval Air Station North Island",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2396",
+      "type": "location",
+      "name_a": "U.S. Central Command Area of Responsibility",
+      "name_b": "U.S. Southern Command area of responsibility",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2400",
+      "type": "location",
+      "name_a": "Miami",
+      "name_b": "Miami Beach",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2402",
+      "type": "event",
+      "name_a": "Vietnam War",
+      "name_b": "Vietnam War deployment",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2406",
+      "type": "location",
+      "name_a": "Naval Station Everett",
+      "name_b": "Naval Station Norfolk",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2418",
+      "type": "location",
+      "name_a": "Naval Station Everett",
+      "name_b": "Naval Station Mayport",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2431",
+      "type": "location",
+      "name_a": "Souda Bay",
+      "name_b": "Souda Bay Naval Base",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2432",
+      "type": "location",
+      "name_a": "Souda Bay",
+      "name_b": "Souda Bay",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2439",
+      "type": "location",
+      "name_a": "Souda Bay",
+      "name_b": "Souda Bay Naval Base",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_244",
+      "type": "equipment",
+      "name_a": "P-8A Poseidon",
+      "name_b": "P-8A Poseidon",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2443",
+      "type": "location",
+      "name_a": "Naval Air Station Jacksonville",
+      "name_b": "Naval Air Station Kingsville",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2444",
+      "type": "location",
+      "name_a": "Naval Air Station Jacksonville",
+      "name_b": "Naval Air Station Meridian",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2456",
+      "type": "location",
+      "name_a": "Naval Air Station Jacksonville",
+      "name_b": "Naval Air Station Jacksonville",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2462",
+      "type": "location",
+      "name_a": "Fleet Activities Yokosuka",
+      "name_b": "Fleet Activities Yokosuka",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2466",
+      "type": "location",
+      "name_a": "Marine Corps Air Station Iwakuni",
+      "name_b": "Marine Corps Air Station Yuma",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_247",
+      "type": "equipment",
+      "name_a": "P-8A Poseidon",
+      "name_b": "P-8A Poseidon",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2488",
+      "type": "location",
+      "name_a": "Naval Air Station North Island",
+      "name_b": "Naval Air Station North Island",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2495",
+      "type": "location",
+      "name_a": "Naval Station Mayport",
+      "name_b": "Naval Station Norfolk",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2502",
+      "type": "location",
+      "name_a": "Naval Station Mayport",
+      "name_b": "Naval Station Rota",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2508",
+      "type": "location",
+      "name_a": "Naval Submarine Base Kings Bay",
+      "name_b": "Naval Submarine Base Kings Bay",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2516",
+      "type": "location",
+      "name_a": "Naval Air Station Jacksonville",
+      "name_b": "Naval Air Station Lemoore",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2521",
+      "type": "location",
+      "name_a": "Naval Air Station Jacksonville",
+      "name_b": "Naval Air Station Sigonella",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2524",
+      "type": "location",
+      "name_a": "Naval Station Everett",
+      "name_b": "Naval Station Mayport",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2527",
+      "type": "location",
+      "name_a": "Naval Station Everett",
+      "name_b": "Naval Station Norfolk",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2531",
+      "type": "location",
+      "name_a": "Naval Station Everett",
+      "name_b": "Naval Station Norfolk",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_2555",
+      "type": "person",
+      "name_a": "Chris Kastner",
+      "name_b": "Chris Kastner",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_256",
+      "type": "organization",
+      "name_a": "Tripoli Amphibious Ready Group",
+      "name_b": "Tripoli Amphibious Ready Group",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2569",
+      "type": "person",
+      "name_a": "President Donald Trump",
+      "name_b": "President Donald Trump",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2572",
+      "type": "person",
+      "name_a": "President Donald Trump",
+      "name_b": "President Donald Trump",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2592",
+      "type": "person",
+      "name_a": "Secretary of Defense Pete Hegseth",
+      "name_b": "Secretary of War Pete Hegseth",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2596",
+      "type": "person",
+      "name_a": "William F. Mahan",
+      "name_b": "William Mahan",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2600",
+      "type": "person",
+      "name_a": "Ahn Gyu-Back",
+      "name_b": "Ahn Gyu-back",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2609",
+      "type": "person",
+      "name_a": "Luke Pollard",
+      "name_b": "Luke Pollard",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2622",
+      "type": "person",
+      "name_a": "Richard Marles",
+      "name_b": "Richard Marles",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2627",
+      "type": "person",
+      "name_a": "John Healey",
+      "name_b": "John Healey",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2629",
+      "type": "person",
+      "name_a": "Richard Marles",
+      "name_b": "Richard Marles",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2631",
+      "type": "person",
+      "name_a": "Richard Marles",
+      "name_b": "Richard Marles",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2638",
+      "type": "person",
+      "name_a": "Mark Kelly",
+      "name_b": "Mark Kelly",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_2656",
+      "type": "person",
+      "name_a": "Eric Smith",
+      "name_b": "Gen. Eric M. Smith",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_280",
+      "type": "location",
+      "name_a": "Ben Gurion Airport",
+      "name_b": "Ben Gurion International Airport",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_285",
+      "type": "equipment",
+      "name_a": "Diamond",
+      "name_b": "DIAMOND",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_286",
+      "type": "equipment",
+      "name_a": "MH-60M",
+      "name_b": "MH-60M Black Hawk",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_290",
+      "type": "equipment",
+      "name_a": "Rezkiy",
+      "name_b": "RFS Rezkiy (343)",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_30",
+      "type": "equipment",
+      "name_a": "Ohio-class",
+      "name_b": "Ohio-class submarine",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_302",
+      "type": "location",
+      "name_a": "Methil yard",
+      "name_b": "Methil yard",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_304",
+      "type": "equipment",
+      "name_a": "MH-60S",
+      "name_b": "MH-60S Knighthawks",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_309",
+      "type": "equipment",
+      "name_a": "MH-60R",
+      "name_b": "MH-60R helicopter",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_311",
+      "type": "equipment",
+      "name_a": "MH-60R",
+      "name_b": "MH-60R/S Sea Hawk",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_313",
+      "type": "equipment",
+      "name_a": "MH-60R",
+      "name_b": "MH-60R Seahawk",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_32",
+      "type": "organization",
+      "name_a": "Strike Fighter Squadron 31",
+      "name_b": "Strike Fighter Squadron 87",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_334",
+      "type": "event",
+      "name_a": "US blockade",
+      "name_b": "US blockade enforcement",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_342",
+      "type": "equipment",
+      "name_a": "Choe Hyon",
+      "name_b": "Choe Hyon (51)",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_35",
+      "type": "organization",
+      "name_a": "Strike Fighter Squadron 213",
+      "name_b": "Strike Fighter Squadron 37",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_36",
+      "type": "organization",
+      "name_a": "Strike Fighter Squadron 213",
+      "name_b": "Strike Fighter Squadron 87",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_371",
+      "type": "equipment",
+      "name_a": "Aegis",
+      "name_b": "Aegis BL9.C3.0 Package",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_389",
+      "type": "equipment",
+      "name_a": "ITS Giovanni Delle Bande Nere",
+      "name_b": "ITS Giovanni delle Bande Nere",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_390",
+      "type": "equipment",
+      "name_a": "ACV",
+      "name_b": "ACV-P",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_402",
+      "type": "equipment",
+      "name_a": "USS Ford",
+      "name_b": "USS Gerald R. Ford",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_412",
+      "type": "equipment",
+      "name_a": "F/A-18 Super Hornet",
+      "name_b": "F/A-18E/F Super Hornet",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_430",
+      "type": "equipment",
+      "name_a": "F/A-18",
+      "name_b": "F/A-18 Hornet",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_435",
+      "type": "equipment",
+      "name_a": "F/A-18",
+      "name_b": "F/A-18D Hornet",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_447",
+      "type": "equipment",
+      "name_a": "Patriot Air and Missile Defense System",
+      "name_b": "Patriot air defense system",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_449",
+      "type": "equipment",
+      "name_a": "REMUS",
+      "name_b": "REMUS 600 UUV",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_451",
+      "type": "equipment",
+      "name_a": "REMUS",
+      "name_b": "REMUS 130",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_452",
+      "type": "equipment",
+      "name_a": "REMUS",
+      "name_b": "REMUS 100",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_454",
+      "type": "equipment",
+      "name_a": "REMUS",
+      "name_b": "REMUS 620",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_460",
+      "type": "organization",
+      "name_a": "Carrier Air Wing 2",
+      "name_b": "Carrier Air Wing 5",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_483",
+      "type": "equipment",
+      "name_a": "AH-64",
+      "name_b": "AH-64 Apache",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_490",
+      "type": "equipment",
+      "name_a": "ROMULUS",
+      "name_b": "ROMULUS Unmanned Surface Vessel",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_507",
+      "type": "equipment",
+      "name_a": "Corsair",
+      "name_b": "Corsair unmanned surface vessel",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_508",
+      "type": "equipment",
+      "name_a": "Apache",
+      "name_b": "Apache attack helicopter",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_516",
+      "type": "equipment",
+      "name_a": "Rattler",
+      "name_b": "Rattler USV",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_517",
+      "type": "equipment",
+      "name_a": "F-22",
+      "name_b": "F-22 Raptor",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_533",
+      "type": "equipment",
+      "name_a": "Odyssey Autonomous Control System",
+      "name_b": "Odyssey Autonomous Control System (ACS)",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_557",
+      "type": "equipment",
+      "name_a": "Mirage",
+      "name_b": "Mirage 2000-5F",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_571",
+      "type": "equipment",
+      "name_a": "F-35",
+      "name_b": "F-35C Lightning II",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_577",
+      "type": "equipment",
+      "name_a": "F-35",
+      "name_b": "F-35B",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_579",
+      "type": "equipment",
+      "name_a": "F-35",
+      "name_b": "F-35B/C",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_58",
+      "type": "equipment",
+      "name_a": "RFS Rezkiy",
+      "name_b": "RFS Rezkiy (343)",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_583",
+      "type": "equipment",
+      "name_a": "USNS John Glenn",
+      "name_b": "USNS John Lenthall",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_594",
+      "type": "equipment",
+      "name_a": "GBU-10 laser-guided bomb",
+      "name_b": "GBU-12 laser-guided bomb",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_598",
+      "type": "equipment",
+      "name_a": "M142 High Mobility Rocket Artillery Systems (HIMARS)",
+      "name_b": "MARS",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_6",
+      "type": "equipment",
+      "name_a": "E/A-18G Growler",
+      "name_b": "E/A-18G Growlers",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_600",
+      "type": "equipment",
+      "name_a": "Future USS Bougainville",
+      "name_b": "Future USS Fallujah",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_622",
+      "type": "equipment",
+      "name_a": "Hellfire missile",
+      "name_b": "Hellfire missiles",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_628",
+      "type": "equipment",
+      "name_a": "F-15",
+      "name_b": "F-15E Strike Eagle",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_635",
+      "type": "equipment",
+      "name_a": "RC-135",
+      "name_b": "RC-135V/W Rivet Joint",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_660",
+      "type": "equipment",
+      "name_a": "AEGIS Combat System",
+      "name_b": "AEGIS System",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_665",
+      "type": "equipment",
+      "name_a": "Aerosonde 4.7 VTOL UAS",
+      "name_b": "Aerosonde® 4.7 VTOL UAS",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_669",
+      "type": "equipment",
+      "name_a": "RFS Petropavlovsk-Kamchatsky",
+      "name_b": "RFS Petropavlovsk-Kamchatsky (B-274)",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_675",
+      "type": "equipment",
+      "name_a": "Virginia-class",
+      "name_b": "Virginia-class submarine",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_696",
+      "type": "equipment",
+      "name_a": "Nimitz class",
+      "name_b": "Nimitz class aircraft carrier",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_701",
+      "type": "equipment",
+      "name_a": "Virginia class",
+      "name_b": "Virginia class",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_707",
+      "type": "equipment",
+      "name_a": "Rolling Airframe Missile",
+      "name_b": "Rolling Airframe Missile Launcher",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_708",
+      "type": "equipment",
+      "name_a": "Rolling Airframe Missile",
+      "name_b": "Rolling Airframe Missile launcher",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_715",
+      "type": "equipment",
+      "name_a": "Marine Air Defense Integrated System",
+      "name_b": "Marine Air Defense Integrated System",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_717",
+      "type": "equipment",
+      "name_a": "USS Roosevelt",
+      "name_b": "USS Theodore Roosevelt",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_734",
+      "type": "event",
+      "name_a": "Operation ORION 26",
+      "name_b": "ORION 26",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_742",
+      "type": "event",
+      "name_a": "blockade",
+      "name_b": "blockade of Iranian ports",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_748",
+      "type": "event",
+      "name_a": "blockade",
+      "name_b": "blockade of the Gulf of Oman",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_75",
+      "type": "equipment",
+      "name_a": "Arleigh Burke-class Destroyer",
+      "name_b": "Arleigh Burke-class guided-missile destroyer",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_761",
+      "type": "event",
+      "name_a": "Balikatan",
+      "name_b": "Balikatan 23",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_781",
+      "type": "event",
+      "name_a": "Gunfighter Skies Air Show",
+      "name_b": "Gunfighter Skies Air Show",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_785",
+      "type": "event",
+      "name_a": "Southern Seas 2026",
+      "name_b": "Southern Seas 26",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_790",
+      "type": "event",
+      "name_a": "Iran blockade",
+      "name_b": "Iran blockade of Strait of Hormuz",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_792",
+      "type": "event",
+      "name_a": "Iran blockade",
+      "name_b": "Iran blockade enforcement",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_795",
+      "type": "event",
+      "name_a": "U.S. military strikes",
+      "name_b": "U.S. Strikes on Iranian Military Facilities",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_799",
+      "type": "event",
+      "name_a": "Mediterraneo Sicuro",
+      "name_b": "Mediterraneo Sicuro",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_802",
+      "type": "event",
+      "name_a": "Iranian attacks",
+      "name_b": "Iranian attacks on U.S. bases",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_807",
+      "type": "event",
+      "name_a": "Mid-air collision",
+      "name_b": "mid-air collision",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_825",
+      "type": "event",
+      "name_a": "USS Gerald R. Ford Fire",
+      "name_b": "USS Gerald R. Ford yangını",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_826",
+      "type": "event",
+      "name_a": "USS Gerald R. Ford Fire",
+      "name_b": "USS Gerald R. Ford fire incident",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_829",
+      "type": "event",
+      "name_a": "capture of Maduro",
+      "name_b": "capture of Nicolás Maduro",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_830",
+      "type": "event",
+      "name_a": "capture of Maduro",
+      "name_b": "Capture of Nicolas Maduro",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_842",
+      "type": "event",
+      "name_a": "Southern Seas 2026",
+      "name_b": "Southern Seas 2026",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_854",
+      "type": "event",
+      "name_a": "Self-Defense Strikes",
+      "name_b": "Self-defense strikes on Qeshm Island",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_866",
+      "type": "event",
+      "name_a": "blockade",
+      "name_b": "Blockade of Iranian tankers",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_874",
+      "type": "event",
+      "name_a": "USS Ford 11-Month Deployment 2025-2026",
+      "name_b": "USS Ford nearly 11-month deployment",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_899",
+      "type": "event",
+      "name_a": "Golden Fleet delivery",
+      "name_b": "Golden Fleet initiative",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_90",
+      "type": "location",
+      "name_a": "Naval Station Norfolk",
+      "name_b": "Naval Station Norfolk",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_901",
+      "type": "event",
+      "name_a": "forward deployment",
+      "name_b": "forward deployment to Middle East",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_920",
+      "type": "event",
+      "name_a": "keel laying",
+      "name_b": "Keel Laying",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_927",
+      "type": "event",
+      "name_a": "commissioning",
+      "name_b": "Commissioning",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_929",
+      "type": "event",
+      "name_a": "commissioning",
+      "name_b": "Commissioning of BAE Jambelí",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_938",
+      "type": "event",
+      "name_a": "Rim of the Pacific drills",
+      "name_b": "Rim of the Pacific Exercise 2026",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_949",
+      "type": "event",
+      "name_a": "Sting Ray Mod 1 Contract Award",
+      "name_b": "Sting Ray Mod 1 contract signing",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_951",
+      "type": "event",
+      "name_a": "Type 88 anti-ship missile live-fire exercise",
+      "name_b": "Type 88 Missile Live-Fire Exercise",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_952",
+      "type": "event",
+      "name_a": "Shangri-La Dialogue",
+      "name_b": "Shangri-La Dialogue security forum",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_958",
+      "type": "event",
+      "name_a": "Dynamic Mongoose 2026",
+      "name_b": "Exercise Dynamic Mongoose 2026",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_963",
+      "type": "event",
+      "name_a": "Iran War",
+      "name_b": "Israel's war with Iran",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_967",
+      "type": "event",
+      "name_a": "USS Gerald R. Ford deployment",
+      "name_b": "USS Gerald R. Ford transit",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_968",
+      "type": "event",
+      "name_a": "USS Gerald R. Ford deployment",
+      "name_b": "USS Gerald R. Ford Fire",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_975",
+      "type": "event",
+      "name_a": "USS Gerald R. Ford deployment",
+      "name_b": "USS Gerald R. Ford deployment",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_976",
+      "type": "event",
+      "name_a": "Maduro Capture Operation",
+      "name_b": "Maduro capture operation",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_981",
+      "type": "event",
+      "name_a": "USS Ford 2025-2026 Deployment",
+      "name_b": "USS Ford nearly 11-month deployment",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_986",
+      "type": "event",
+      "name_a": "USS Ford 2025-2026 Deployment",
+      "name_b": "USS Gerald R. Ford 2025-2026 Deployment",
+      "human_label": "same"
+    },
+    {
+      "pair_id": "p_987",
+      "type": "event",
+      "name_a": "Humanitarian aid mission",
+      "name_b": "humanitarian aid mission",
+      "human_label": "different"
+    },
+    {
+      "pair_id": "p_988",
+      "type": "event",
+      "name_a": "Hormuz mission",
+      "name_b": "Hormuz security mission",
+      "human_label": "same"
+    }
+  ]
+}

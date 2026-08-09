@@ -15,8 +15,9 @@
       "comparable_total": 51
     },
     "label_source_distribution": {
-      "glm52_claude_agree": 2252,
-      "manual_mark_txt": 336,
+      "glm52_claude_agree": 2249,
+      "manual_mark_txt": 331,
+      "human_adjudication_300": 8,
       "human_adjudication": 51
     },
     "derived_from": "minec_ground_truth_v1.json",
@@ -28,8 +29,8 @@
       "same": 232
     },
     "final_label_distribution": {
-      "same": 1402,
-      "different": 1189,
+      "same": 1398,
+      "different": 1193,
       "unknown": 48
     },
     "manual_transition_counts": {
@@ -47,7 +48,24 @@
       "manual labels from experiments/mark.txt override v1 final labels when present",
       "manual unknown is preserved as unknown rather than forced to same/different",
       "use minec_data_gap_candidates_v1 for suspected extraction/source sparsity cases"
-    ]
+    ],
+    "human_adjudication_300": {
+      "date": "2026-08-09",
+      "total_reviewed": 46,
+      "matches_existing_gt": 38,
+      "overrides": 8,
+      "override_pairs": [
+        "p_577",
+        "p_430",
+        "p_701",
+        "p_311",
+        "p_579",
+        "p_247",
+        "p_1493",
+        "p_825"
+      ],
+      "source": "annotation_46_pairs_results.md"
+    }
   },
   "records": [
     {
@@ -3280,9 +3298,9 @@
       "glm52_canonical": "different",
       "claude_opus_canonical": "different",
       "gpt54_subset": "",
-      "human_adjudication": "",
-      "final_label": "different",
-      "label_source": "glm52_claude_agree",
+      "human_adjudication": "same",
+      "final_label": "same",
+      "label_source": "human_adjudication_300",
       "label_confidence": "high"
     },
     {
@@ -4125,10 +4143,10 @@
       "glm52_canonical": "different",
       "claude_opus_canonical": "same",
       "gpt54_subset": "",
-      "human_adjudication": "",
-      "final_label": "same",
-      "label_source": "manual_mark_txt",
-      "label_confidence": "manual",
+      "human_adjudication": "different",
+      "final_label": "different",
+      "label_source": "human_adjudication_300",
+      "label_confidence": "high",
       "manual_review_label": "same",
       "manual_review_section": "2. glm/claude disagreement",
       "previous_final_label": "different"
@@ -5668,10 +5686,10 @@
       "glm52_canonical": "different",
       "claude_opus_canonical": "unknown",
       "gpt54_subset": "",
-      "human_adjudication": "",
-      "final_label": "same",
-      "label_source": "manual_mark_txt",
-      "label_confidence": "manual",
+      "human_adjudication": "different",
+      "final_label": "different",
+      "label_source": "human_adjudication_300",
+      "label_confidence": "high",
       "manual_review_label": "same",
       "manual_review_section": "2. glm/claude disagreement",
       "previous_final_label": "different"
@@ -7676,10 +7694,10 @@
       "glm52_canonical": "different",
       "claude_opus_canonical": "same",
       "gpt54_subset": "",
-      "human_adjudication": "",
-      "final_label": "same",
-      "label_source": "manual_mark_txt",
-      "label_confidence": "manual",
+      "human_adjudication": "different",
+      "final_label": "different",
+      "label_source": "human_adjudication_300",
+      "label_confidence": "high",
       "manual_review_label": "same",
       "manual_review_section": "2. glm/claude disagreement",
       "previous_final_label": "different"
@@ -7708,10 +7726,10 @@
       "glm52_canonical": "different",
       "claude_opus_canonical": "unknown",
       "gpt54_subset": "",
-      "human_adjudication": "",
-      "final_label": "same",
-      "label_source": "manual_mark_txt",
-      "label_confidence": "manual",
+      "human_adjudication": "different",
+      "final_label": "different",
+      "label_source": "human_adjudication_300",
+      "label_confidence": "high",
       "manual_review_label": "same",
       "manual_review_section": "2. glm/claude disagreement",
       "previous_final_label": "different"
@@ -9319,9 +9337,9 @@
       "glm52_canonical": "different",
       "claude_opus_canonical": "different",
       "gpt54_subset": "",
-      "human_adjudication": "",
-      "final_label": "different",
-      "label_source": "glm52_claude_agree",
+      "human_adjudication": "same",
+      "final_label": "same",
+      "label_source": "human_adjudication_300",
       "label_confidence": "high"
     },
     {
@@ -10994,10 +11012,10 @@
       "glm52_canonical": "different",
       "claude_opus_canonical": "same",
       "gpt54_subset": "",
-      "human_adjudication": "",
-      "final_label": "same",
-      "label_source": "manual_mark_txt",
-      "label_confidence": "manual",
+      "human_adjudication": "different",
+      "final_label": "different",
+      "label_source": "human_adjudication_300",
+      "label_confidence": "high",
       "manual_review_label": "same",
       "manual_review_section": "2. glm/claude disagreement",
       "previous_final_label": "different"
@@ -19959,9 +19977,9 @@
       "glm52_canonical": "same",
       "claude_opus_canonical": "same",
       "gpt54_subset": "",
-      "human_adjudication": "",
-      "final_label": "same",
-      "label_source": "glm52_claude_agree",
+      "human_adjudication": "different",
+      "final_label": "different",
+      "label_source": "human_adjudication_300",
       "label_confidence": "high"
     },
     {

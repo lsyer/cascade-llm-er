@@ -1,0 +1,135 @@
+{
+  "summary": {
+    "total_pairs": 290,
+    "models": {
+      "glm-5-turbo": {
+        "with_fragment_accuracy_pct": 92.4,
+        "with_fragment_correct": 268,
+        "with_fragment_unknown": 0,
+        "without_fragment_accuracy_pct": 88.3,
+        "without_fragment_correct": 256,
+        "without_fragment_unknown": 7,
+        "delta_pp": 4.1,
+        "total_pairs": 290,
+        "per_type": {
+          "event": {
+            "n": 73,
+            "with_frag_acc": 87.7,
+            "no_frag_acc": 84.9
+          },
+          "location": {
+            "n": 73,
+            "with_frag_acc": 97.3,
+            "no_frag_acc": 90.4
+          },
+          "person": {
+            "n": 71,
+            "with_frag_acc": 98.6,
+            "no_frag_acc": 93.0
+          },
+          "equipment": {
+            "n": 73,
+            "with_frag_acc": 86.3,
+            "no_frag_acc": 84.9
+          }
+        }
+      },
+      "glm-4.5-air": {
+        "with_fragment_accuracy_pct": 90.3,
+        "with_fragment_correct": 262,
+        "with_fragment_unknown": 0,
+        "without_fragment_accuracy_pct": 88.3,
+        "without_fragment_correct": 256,
+        "without_fragment_unknown": 2,
+        "delta_pp": 2.1,
+        "total_pairs": 290,
+        "per_type": {
+          "event": {
+            "n": 73,
+            "with_frag_acc": 84.9,
+            "no_frag_acc": 86.3
+          },
+          "location": {
+            "n": 73,
+            "with_frag_acc": 97.3,
+            "no_frag_acc": 90.4
+          },
+          "person": {
+            "n": 71,
+            "with_frag_acc": 97.2,
+            "no_frag_acc": 95.8
+          },
+          "equipment": {
+            "n": 73,
+            "with_frag_acc": 82.2,
+            "no_frag_acc": 80.8
+          }
+        }
+      },
+      "glm-4.5": {
+        "with_fragment_accuracy_pct": 86.2,
+        "with_fragment_correct": 250,
+        "with_fragment_unknown": 3,
+        "without_fragment_accuracy_pct": 80.7,
+        "without_fragment_correct": 234,
+        "without_fragment_unknown": 1,
+        "delta_pp": 5.5,
+        "total_pairs": 290,
+        "per_type": {
+          "event": {
+            "n": 73,
+            "with_frag_acc": 75.3,
+            "no_frag_acc": 68.5
+          },
+          "location": {
+            "n": 73,
+            "with_frag_acc": 94.5,
+            "no_frag_acc": 84.9
+          },
+          "person": {
+            "n": 71,
+            "with_frag_acc": 93.0,
+            "no_frag_acc": 87.3
+          },
+          "equipment": {
+            "n": 73,
+            "with_frag_acc": 82.2,
+            "no_frag_acc": 82.2
+          }
+        }
+      },
+      "qwen3.6": {
+        "with_fragment_accuracy_pct": 92.4,
+        "with_fragment_correct": 268,
+        "with_fragment_unknown": 0,
+        "without_fragment_accuracy_pct": 85.9,
+        "without_fragment_correct": 249,
+        "without_fragment_unknown": 0,
+        "delta_pp": 6.6,
+        "total_pairs": 290,
+        "per_type": {
+          "event": {
+            "n": 73,
+            "with_frag_acc": 93.2,
+            "no_frag_acc": 83.6
+          },
+          "location": {
+            "n": 73,
+            "with_frag_acc": 97.3,
+            "no_frag_acc": 80.8
+          },
+          "person": {
+            "n": 71,
+            "with_frag_acc": 94.4,
+            "no_frag_acc": 98.6
+          },
+          "equipment": {
+            "n": 73,
+            "with_frag_acc": 84.9,
+            "no_frag_acc": 80.8
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "l1_only_utility": {
+    "unified": {
+      "l1_decided": 2322,
+      "l1_correct": 1886,
+      "l1_acc_pct": 81.2,
+      "intercept_pct": 89.6,
+      "l2_used": 269,
+      "l2_correct": 226,
+      "unresolved": 0,
+      "strict_pipeline_acc_pct": 81.5
+    },
+    "hybrid": {
+      "l1_decided": 2293,
+      "l1_correct": 1874,
+      "l1_acc_pct": 81.7,
+      "intercept_pct": 88.5,
+      "l2_used": 298,
+      "l2_correct": 251,
+      "unresolved": 0,
+      "strict_pipeline_acc_pct": 82.0
+    }
+  },
+  "l2_model": "GLM-5-Turbo"
+}

@@ -5,10 +5,11 @@ Prioritize harder pairs (higher L1 score = more ambiguous).
 Uses GLM-5.2 with /api/coding/paas/v4 endpoint.
 """
 import json, re, random, time, urllib.request, urllib.error
+import os
 from pathlib import Path
 from collections import Counter
 
-OUT = Path("/root/workspace/tanshu_docs/experiments/dbp15k")
+OUT = Path(__file__).resolve().parent
 DATA = OUT / "JAPE" / "data" / "dbp15k" / "zh_en"
 
 # ─── Load same data as L1 script ───
@@ -122,7 +123,7 @@ print(f"Sampled: {len(sample)} ({sum(p['label'] for p in sample)} pos, {sum(1-p[
 
 # ─── GLM API ───
 _env = {}
-with open("/root/.hermes/.env") as f:
+with open(os.environ.get("ENV_FILE", ".env")) as f:
     for line in f:
         if "=" in line:
             k, v = line.strip().split("=", 1)

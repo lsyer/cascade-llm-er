@@ -9,13 +9,14 @@ Data sources:
 """
 import json, re, random, math
 from collections import defaultdict
+import os
 from pathlib import Path
 import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-REL = Path("/root/workspace/tanshu_docs/experiments/release")
+REL = Path(__file__).resolve().parents[2]
 DBP_ROOT = REL / "dbp15k"
 OUT = DBP_ROOT / "results"
 OUT.mkdir(exist_ok=True)
@@ -29,14 +30,14 @@ minec_pairs = [{'score': r['l1_score_v2'], 'label': r['label']} for r in minec_r
 
 print(f"  MINEC: {len(minec_pairs)} pairs ({sum(p['label'] for p in minec_pairs)} positive)")
 
-# MINEC L2 accuracy (GLM-5 = 97.1%, use as pipeline L2)
-MINEC_L2_ACC = 0.971
+# MINEC L2 accuracy (GLM-5-Turbo strict on 2591 scored pairs)
+MINEC_L2_ACC = 0.916
 # MINEC L1+feedback accuracy (unified LR, 81.1%)
-MINEC_L1_FB_ACC = 0.811
+MINEC_L1_FB_ACC = 0.812
 
 # ─── DBP15K ───
 print("Loading DBP15K data...")
-DATA = Path("/root/workspace/tanshu_docs/experiments/dbp15k/JAPE/data/dbp15k/zh_en")
+DATA = Path(__file__).resolve().parents[1] / "JAPE" / "data" / "dbp15k" / "zh_en"
 
 def load_labels(fp):
     d = {}

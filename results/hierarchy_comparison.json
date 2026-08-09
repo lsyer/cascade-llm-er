@@ -2,19 +2,19 @@
   "fixed": {
     "l1_acc": 79.3,
     "intercept": 38.6,
-    "pipeline": 90.2,
+    "pipeline": 86.9,
     "l2_calls": 61.4
   },
   "unified": {
     "l1_acc": 81.2,
     "intercept": 89.6,
-    "pipeline": 82.9,
+    "pipeline": 82.3,
     "l2_calls": 10.4
   },
   "hybrid": {
     "l1_acc": 81.7,
     "intercept": 88.5,
-    "pipeline": 83.5,
+    "pipeline": 82.9,
     "l2_calls": 11.5
   },
   "feature_names": [
