@@ -12,7 +12,7 @@
 The files under `results/` are the primary raw outputs used in the paper for the MINEC corpus.
 
 Important interpretation notes:
-- `minec_ground_truth_v2.json` is the current corrected ground-truth file after merging manual review decisions from `experiments/mark.txt`.
+- `minec_ground_truth_v2.json` is the current corrected ground-truth file after merging manual review decisions from `experiments/manual_review_336_decisions.txt`.
 - Earlier consolidated artifacts (`_OBSOLETE_*`) have been moved to `experiments/legacy/results/`.
 - `feedback_convergence.json` is a **cross-validation-based simulation**, not a count of live analyst feedback.
 - `human_annotation_analysis.json` is the **human adjudication** artifact for the 59 GLM/GPT disagreement cases.
