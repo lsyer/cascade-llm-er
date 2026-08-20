@@ -22,7 +22,7 @@ from pathlib import Path
 import numpy as np
 
 CODE_DIR = Path(__file__).parent
-DATA_DIR = Path(__file__).resolve().parents[2] / "JAPE" / "data" / "dbp15k" / "zh_en"
+DATA_DIR = Path(__file__).resolve().parents[1] / "JAPE" / "data" / "dbp15k" / "zh_en"
 RESULTS_DIR = CODE_DIR.parent / "results"
 RESULTS_DIR.mkdir(exist_ok=True)
 
@@ -83,7 +83,7 @@ en_triples = load_rel_triples(DATA_DIR / "t_triples")
 
 # ─── Build evaluation set (same as L1 script) ───
 random.seed(42)
-gold_list = list(gold_set)
+gold_list = sorted(gold_set)  # sorted for determinism (set order varies per process)
 pos_sample = random.sample(gold_list, min(2000, len(gold_list)))
 
 zh_uris = list(zh_labels.keys())

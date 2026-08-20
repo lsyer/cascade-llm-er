@@ -29,8 +29,12 @@ minec_pairs = [{'score': r['score'], 'label': r['label']} for r in minec_raw]
 print(f"  MINEC: {len(minec_pairs)} pairs ({sum(p['label'] for p in minec_pairs)} positive)")
 
 # MINEC L2 accuracy (GLM-5-Turbo strict on 2591 scored pairs)
+# Source: results/pipeline_vs_pure_l2.json -> pure_l2_acc_strict = 91.66 (unresolved counted wrong)
+# Verified by code/final_operating_points.py which recomputes it from checkpoints_v3/glm-5-turbo_checkpoint.json
 MINEC_L2_ACC = 0.916
-# MINEC L1+feedback accuracy (unified LR, 80.1%)
+# MINEC L1+feedback accuracy (unified LR)
+# Source: results/l1_only_empirical_turbo.json -> l1_only_utility.unified.l1_acc_pct = 81.2
+# (historical comments in earlier revisions cited 80.1%/81.1%; current canonical value is 81.2)
 MINEC_L1_FB_ACC = 0.812
 
 # ─── DBP15K ───
@@ -77,7 +81,8 @@ en_tris = load_triples(DATA / "t_triples")
 
 # Build eval set (same seed as experiment)
 random.seed(42)
-pos = random.sample(list(gold), 2000)
+# sorted for determinism (set order varies per process via PYTHONHASHSEED)
+pos = random.sample(sorted(gold), 2000)
 zh_uris = list(zh_labels.keys())
 en_uris = list(en_labels.keys())
 idx = defaultdict(list)

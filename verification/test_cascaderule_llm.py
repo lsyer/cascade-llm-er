@@ -712,6 +712,7 @@ test("count_new_resolved filters by manual%",
 
 # 14c: Verify fusion_execute does NOT call maybe_retrain_async
 import re as _re
+from pathlib import Path  # noqa: E402 (used by Section 11 source check below)
 _admin_path = str(Path(__file__).resolve().parents[1] / "system" / "backend" / "app" / "routers" / "admin.py")
 with open(_admin_path) as _f:
     _admin_src = _f.read()

@@ -593,6 +593,10 @@ h_empirical_stats = empirical_pipeline_stats(hybrid_preds_empirical, fixed_pair_
 h_match_fixed_stats = empirical_pipeline_stats(hybrid_preds_match_fixed, fixed_pair_ids, y)
 
 # Pipeline accuracy (using L2 strict acc from GLM-5-Turbo checkpoint)
+# L2_ACC = 0.916 — literal shortcut for: strict accuracy over all 2591 scored pairs, i.e. correct
+# verdicts / 2591 with unresolved verdicts counted as wrong. Recomputed from
+# results/checkpoints_v3/glm-5-turbo_checkpoint.json by code/verify_pipeline_vs_pure_l2.py
+# (pure_l2_acc_strict = 91.66 in results/pipeline_vs_pure_l2.json).
 L2_ACC = 0.916
 p0 = level0_intercept / 100 * level0_acc / 100 + (1 - level0_intercept / 100) * L2_ACC
 p1 = level1_intercept / 100 * level1_acc / 100 + (1 - level1_intercept / 100) * L2_ACC
@@ -726,7 +730,7 @@ pipeline = {
     'pipeline_fixed': round(p0 * 100, 1),
     'pipeline_unified': round(p1 * 100, 1),
     'pipeline_hybrid': round(p2 * 100, 1),
-    'l2_acc': 91.6,
+    'l2_acc': 91.6,  # GLM-5-Turbo strict acc on all 2591 pairs; same value as L2_ACC above, see comment at definition
 }
 print(f"L1 alone: {l1_acc:.1f}%")
 print(f"Pipeline (fixed): {p0*100:.1f}%")

@@ -18,13 +18,13 @@
     "l1_score"
   ],
   "level0_fixed": {
-    "accuracy": 0.7790003143665514,
-    "interception": 0.79525,
-    "tp": 580,
+    "accuracy": 0.7843631778058008,
+    "interception": 0.793,
+    "tp": 590,
     "fp": 4,
     "tn": 1898,
-    "fn": 699,
-    "escalated": 819
+    "fn": 680,
+    "escalated": 828
   },
   "level1_unified_lr": {
     "fold_results": [
@@ -32,208 +32,168 @@
         "fold": 1,
         "train_size": 3200,
         "test_size": 800,
-        "accuracy": 0.8603,
-        "interception": 0.9125,
-        "tp": 327,
-        "fp": 41,
-        "tn": 301,
-        "fn": 61,
-        "escalated": 70
+        "accuracy": 0.8679,
+        "interception": 0.9275,
+        "tp": 337,
+        "fp": 42,
+        "tn": 307,
+        "fn": 56,
+        "escalated": 58
       },
       {
         "fold": 2,
         "train_size": 3200,
         "test_size": 800,
-        "accuracy": 0.8938,
-        "interception": 0.9062,
-        "tp": 338,
-        "fp": 41,
-        "tn": 310,
-        "fn": 36,
-        "escalated": 75
+        "accuracy": 0.8809,
+        "interception": 0.9025,
+        "tp": 318,
+        "fp": 39,
+        "tn": 318,
+        "fn": 47,
+        "escalated": 78
       },
       {
         "fold": 3,
         "train_size": 3200,
         "test_size": 800,
-        "accuracy": 0.8627,
-        "interception": 0.9287,
-        "tp": 320,
+        "accuracy": 0.8826,
+        "interception": 0.9263,
+        "tp": 339,
         "fp": 51,
-        "tn": 321,
-        "fn": 51,
-        "escalated": 57
+        "tn": 315,
+        "fn": 36,
+        "escalated": 59
       },
       {
         "fold": 4,
         "train_size": 3200,
         "test_size": 800,
-        "accuracy": 0.8912,
-        "interception": 0.9075,
-        "tp": 334,
-        "fp": 39,
+        "accuracy": 0.8834,
+        "interception": 0.9113,
+        "tp": 331,
+        "fp": 37,
         "tn": 313,
-        "fn": 40,
-        "escalated": 74
+        "fn": 48,
+        "escalated": 71
       },
       {
         "fold": 5,
         "train_size": 3200,
         "test_size": 800,
-        "accuracy": 0.8781,
-        "interception": 0.9125,
-        "tp": 314,
-        "fp": 48,
-        "tn": 327,
-        "fn": 41,
-        "escalated": 70
+        "accuracy": 0.8742,
+        "interception": 0.9337,
+        "tp": 323,
+        "fp": 50,
+        "tn": 330,
+        "fn": 44,
+        "escalated": 53
       }
     ],
-    "avg_accuracy": 0.8772,
-    "avg_interception": 0.9135
+    "avg_accuracy": 0.8778,
+    "avg_interception": 0.9203
   },
   "feedback_convergence": [
     {
       "round": 0,
       "feedback_samples": 0,
-      "accuracy": 0.779,
-      "interception": 0.7953,
-      "escalation": 0.2047
+      "accuracy": 0.7844,
+      "interception": 0.793,
+      "escalation": 0.207
     },
     {
       "round": 1,
       "feedback_samples": 800,
-      "accuracy": 0.8685,
-      "interception": 0.8956,
-      "escalation": 0.1044
+      "accuracy": 0.8702,
+      "interception": 0.9003,
+      "escalation": 0.0997
     },
     {
       "round": 2,
       "feedback_samples": 1600,
-      "accuracy": 0.8758,
-      "interception": 0.9125,
-      "escalation": 0.0875
+      "accuracy": 0.8756,
+      "interception": 0.9179,
+      "escalation": 0.0821
     },
     {
       "round": 3,
       "feedback_samples": 2400,
-      "accuracy": 0.8819,
-      "interception": 0.9106,
-      "escalation": 0.0894
+      "accuracy": 0.8779,
+      "interception": 0.9213,
+      "escalation": 0.0787
     },
     {
       "round": 4,
       "feedback_samples": 3200,
-      "accuracy": 0.8781,
-      "interception": 0.9125,
-      "escalation": 0.0875
+      "accuracy": 0.8742,
+      "interception": 0.9337,
+      "escalation": 0.0663
     },
     {
       "round": 5,
       "feedback_samples": 4000,
-      "accuracy": 0.8789,
-      "interception": 0.9145,
-      "escalation": 0.0855
+      "accuracy": 0.879,
+      "interception": 0.9217,
+      "escalation": 0.0783
     }
   ],
   "feature_importance": [
     [
       "attr_overlap",
-      3.5587
+      3.7624
     ],
     [
       "name_overlap",
-      3.0013
+      2.8685
     ],
     [
       "shared_attr_ratio",
-      2.3058
+      2.2024
     ],
     [
       "name_exact",
-      1.996
-    ],
-    [
-      "uri_overlap",
-      -1.5462
+      1.9513
     ],
     [
       "name_contains",
-      1.4944
+      1.6293
     ],
     [
-      "degree_ratio",
-      -0.4521
+      "uri_overlap",
+      -0.861
     ],
     [
       "degree_diff",
-      -0.1285
+      -0.0911
+    ],
+    [
+      "degree_ratio",
+      -0.083
     ],
     [
       "attr_count_diff",
-      -0.0282
+      -0.0273
     ],
     [
       "en_attr_count",
-      0.0184
-    ],
-    [
-      "en_degree",
-      0.0176
-    ],
-    [
-      "zh_attr_count",
-      0.0077
+      0.0155
     ],
     [
       "zh_degree",
-      0.0022
+      -0.0083
+    ],
+    [
+      "zh_attr_count",
+      0.0079
+    ],
+    [
+      "en_degree",
+      0.0076
     ]
   ],
   "pipeline_estimate": {
-    "raw_l2_accuracy_from_original_run": 0.9332,
-    "raw_fixed_pipeline_from_original_run": 0.8106,
-    "raw_adaptive_pipeline_from_original_run": 0.8835,
-    "paper_l2_accuracy_from_expanded_hardcase_eval": 0.9278557114228457,
-    "paper_fixed_pipeline_recomputed": 0.8094784569138276,
-    "paper_adaptive_pipeline_recomputed": 0.8815817190380761,
-    "adaptive_llm_cost_reduction_vs_fixed": 0.5775335775335775
-  },
-  "paper_reported_summary": {
-    "fixed_l1_accuracy": 0.779,
-    "fixed_interception": 0.795,
-    "fixed_pipeline_reported": 0.811,
-    "fixed_llm_cost": 0.205,
-    "adaptive_l1_accuracy": 0.877,
-    "adaptive_interception": 0.913,
-    "adaptive_pipeline_reported": 0.882,
-    "adaptive_llm_cost": 0.087,
-    "l2_hardcase_accuracy": 0.9278557114228457,
-    "l2_hardcase_valid_pairs": 499,
-    "l2_hardcase_total_pairs": 500,
-    "l2_hardcase_filtered": 1
-  },
-  "provenance": {
-    "note": "Raw CV metrics are preserved above. paper_reported_summary matches the final paper wording/rounding; pipeline_reported uses the expanded hard-case L2 estimate (92.8%) together with rounded L1/interception values reported in the paper.",
-    "final_paper_table_values": {
-      "fixed": {
-        "l1_accuracy": "77.9%",
-        "interception": "79.5%",
-        "pipeline": "81.1%",
-        "llm_cost": "20.5%"
-      },
-      "adaptive": {
-        "l1_accuracy": "87.7%",
-        "interception": "91.3%",
-        "pipeline": "88.2%",
-        "llm_cost": "8.7%"
-      },
-      "l2_only": {
-        "pipeline": "92.8%",
-        "valid_pairs": 499,
-        "sampled_pairs": 500,
-        "filtered_cases": 1
-      }
-    }
+    "l2_accuracy": 0.9279,
+    "fixed_pipeline": 0.8141,
+    "adaptive_pipeline": 0.8828,
+    "llm_cost_reduction": 0.6217
   }
 }

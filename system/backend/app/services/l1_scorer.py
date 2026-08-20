@@ -503,7 +503,7 @@ from pathlib import Path as _Path
 
 _MODEL_DIR = _Path(_os.getenv(
     "MODEL_DIR",
-    str(Path(__file__).resolve().parents[3] / "models")))
+    str(_Path(__file__).resolve().parents[3] / "models")))
 
 # Cache loaded models to avoid disk I/O on every score call
 _model_cache: dict[str, dict] = {}

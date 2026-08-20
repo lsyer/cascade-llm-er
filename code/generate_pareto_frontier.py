@@ -28,7 +28,10 @@ lr_proba, rf_proba, y = d['lr_proba'], d['rf_proba'], d['y']
 N = len(y)
 print(f"N = {N}")
 
-L2_ACC = 91.6  # GLM-5-Turbo strict accuracy on ALL 2591 pairs (6 unresolved counted as incorrect)
+# GLM-5-Turbo strict accuracy on ALL 2591 pairs (6 unresolved counted as incorrect).
+# Source: results/pipeline_vs_pure_l2.json -> pure_l2_acc_strict = 91.66, recomputed live from
+# results/checkpoints_v3/glm-5-turbo_checkpoint.json by code/verify_pipeline_vs_pure_l2.py.
+L2_ACC = 91.6
 
 # ---- Sweep thresholds for LR/RF ----
 # probability grid: 0.50 to 0.95, step 0.05
