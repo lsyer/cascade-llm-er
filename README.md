@@ -87,7 +87,7 @@ release/
 | Hybrid L1-only utility | 82.0% |
 | Fragment ablation avg delta | +4.6 pp (paired, n=290) |
 | DBP15K L2 accuracy (GLM-5-Turbo) | 95.4% (4,843 valid pairs) |
-| Human annotation subset (300 pairs) | 95.7% (GLM-5-Turbo) / 85.3% (pipeline) |
+| Human annotation subset (300 pairs) | 95.7% (GLM-5-Turbo) / 90.0% (pipeline) |
 
 ## Fixed L1 Parameters
 
