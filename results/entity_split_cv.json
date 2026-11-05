@@ -117,5 +117,11 @@
   "recall_pct": 87.27,
   "f1_pct": 90.98
  },
- "reference_random_split_pipeline_aware_unified": 91.51
+ "reference_random_split_matched_budget": {
+  "accuracy_pct": 91.66,
+  "llm_cost_pct": 69.9,
+  "merge_threshold": 0.85,
+  "reject_threshold": 0.05,
+  "source": "ours_fine_grid_gt2.json (best row with cost <= entity-split cost 73.91%)"
+ }
 }

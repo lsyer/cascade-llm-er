@@ -41,7 +41,7 @@ release/
 │   ├── fragment_rerun_qwen.json      # Fragment ablation, Qwen row (Table 6)
 │   ├── per_type_l2_gt2.json          # Accuracy by entity type (Table 7)
 │   ├── mode3_replay_gt2.json         # Nested pipeline-aware 5-fold replay
-│   ├── entity_split_cv.json          # Entity-disjoint CV (90.7% @ 73.9% cost)
+│   ├── entity_split_cv.json          # Entity-disjoint CV (90.7% @ 73.9% cost; matched-budget reference computed from ours_fine_grid_gt2.json)
 │   ├── qwen_l2_full.json             # Qwen judge on all 2,591 pairs (95.2%)
 │   ├── qwen_cascade_replay.json      # Judge-swap frontier + equal-budget replay
 │   ├── ditto_replay_gt2.json / ditto_oof.npz  # Ditto router
@@ -150,3 +150,6 @@ An independent human annotation set of 300 stratified-random pairs (`data/minec_
   year={2026}
 }
 ```
+
+## Interpretation Notes
+- `entity_split_cv.json` field `reference_random_split_matched_budget` (91.66 @ 69.9%, thresholds 0.85/0.05) is COMPUTED from `ours_fine_grid_gt2.json` (best row with cost <= 73.9%); the old `reference_random_split_pipeline_aware_unified` (91.51) was a GT-v1-era hand-entered constant, now replaced.

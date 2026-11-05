@@ -20,7 +20,10 @@ import json, os, re, itertools
 from collections import defaultdict
 
 BASE = os.path.join(os.path.dirname(__file__), '..')
-ents = json.load(open('/root/workspace/tanshu-specs/experiments/minec_entity_snapshots/entities.json'))
+_SNAP_DIR = os.environ.get('MINEC_ENTITY_SNAPSHOTS',
+                           os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                        '..', '..', 'minec_entity_snapshots'))
+ents = json.load(open(os.path.join(_SNAP_DIR, 'entities.json')))
 ds = json.load(open(os.path.join(BASE, 'data', 'dataset_v3_cleaned.json')))
 gt = json.load(open(os.path.join(BASE, 'data', 'minec_ground_truth_v2.json')))
 gt_map = {r['pair_id']: r for r in gt['records']}

@@ -168,6 +168,21 @@ f1 = 2 * prec * rec / (prec + rec)
 
 overall = replay_stats(preds, np.arange(N))
 per_fold = {f: replay_stats(preds, np.where(fold_of_pair == f)[0]) for f in range(5)}
+# Matched-budget random-split reference: best pipeline-aware unified operating
+# point (fine grid over the random-split full-OOF frontier) whose LLM cost does
+# not exceed this entity-disjoint run's cost. Computed, not hand-entered.
+# Source: results/ours_fine_grid_gt2.json (random-split, GT v2 labels).
+_fg_rows = json.load(open(os.path.join(RES, 'ours_fine_grid_gt2.json')))
+_es_cost = overall['llm_cost_pct']
+_matched = max((r for r in _fg_rows if r['cost'] <= _es_cost),
+               key=lambda r: (r['s'], -r['cost']))
+_matched_ref = {
+    'accuracy_pct': _matched['s'],
+    'llm_cost_pct': _matched['cost'],
+    'merge_threshold': _matched['mt'],
+    'reject_threshold': _matched['rt'],
+    'source': 'ours_fine_grid_gt2.json (best row with cost <= entity-split cost %.2f%%)' % _es_cost,
+}
 out = {
     'protocol': 'entity-disjoint 5-fold CV via connected components (645 comps, largest 35 entities)',
     'fold_pair_counts': fold_pairs,
@@ -176,7 +191,7 @@ out = {
     'per_fold': per_fold,
     'prf1_same_class': {'tp': tp, 'fp': fp, 'tn': tn, 'fn': fn,
                         'precision_pct': round(prec, 2), 'recall_pct': round(rec, 2), 'f1_pct': round(f1, 2)},
-    'reference_random_split_pipeline_aware_unified': 91.51,
+    'reference_random_split_matched_budget': _matched_ref,
 }
 def _san(o):
     if isinstance(o, (np.integer,)): return int(o)
@@ -185,4 +200,4 @@ def _san(o):
 json.dump(out, open(os.path.join(RES, 'entity_split_cv.json'), 'w'), indent=1, ensure_ascii=False, default=_san)
 print("\nOVERALL:", json.dumps(overall))
 print("P/R/F1:", json.dumps(out['prf1_same_class']))
-print("random-split reference: 91.51 strict / P 96.39 / R 87.59")
+print("random-split matched-budget reference:", json.dumps(_matched_ref))

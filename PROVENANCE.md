@@ -70,6 +70,10 @@ The final paper combines them with explicit rounding and notes. The release ther
 - `classifier_operating_points_gt2.json` (`oof_probabilities` field): backs the classifier-ablation table (96.0 / 21.1 / 91.4 reproduced exactly from it).
 Produced by different CV runs; each internally self-consistent. Always reproduce a number from its own matrix.
 
+## Matched-budget entity-split reference
+
+`results/entity_split_cv.json` now carries `reference_random_split_matched_budget` (accuracy 91.66 @ 69.9% cost, thresholds 0.85/0.05), computed by `code/entity_split_cv.py` as the best row of `results/ours_fine_grid_gt2.json` (random-split full-OOF fine grid) with cost <= the entity-disjoint run's 73.9%. It supersedes the hand-entered `reference_random_split_pipeline_aware_unified: 91.51`, a pre-GT-v2 constant with no generating artifact. Verify with `python3 code/verification/audit_consistency.py`.
+
 ## Known-stale fields (kept in place for file integrity)
 
 - `hierarchy_comparison.json` → `fixed.pipeline = 86.8` (pre-strict convention; paper fixed cascade = 86.3 strict from `threshold_selection_experiments.json`).
