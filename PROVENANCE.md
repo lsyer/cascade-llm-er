@@ -63,3 +63,16 @@ The release preserves raw outputs from different evaluation steps:
 The final paper combines them with explicit rounding and notes. The release therefore keeps both:
 - raw script outputs, and
 - paper-reported summaries/provenance fields.
+
+## Two OOF probability matrices (do not mix)
+
+- `oof_probabilities.npz`: backs the equal-budget / frontier replays (779-interception analysis, L1-wins-36/L2-wins-34, budget table, judge-swap frontier).
+- `classifier_operating_points_gt2.json` (`oof_probabilities` field): backs the classifier-ablation table (96.0 / 21.1 / 91.4 reproduced exactly from it).
+Produced by different CV runs; each internally self-consistent. Always reproduce a number from its own matrix.
+
+## Known-stale fields (kept in place for file integrity)
+
+- `hierarchy_comparison.json` → `fixed.pipeline = 86.8` (pre-strict convention; paper fixed cascade = 86.3 strict from `threshold_selection_experiments.json`).
+- `qwen_cascade_replay.json` → `pure_qwen_pct = 95.45` (replay-sample estimate; paper uses 95.2 from `qwen_l2_full.json`).
+- `pipeline_accuracy.json` moved to `deprecated/pipeline_accuracy.stale.json` (86.8, lenient unresolved handling).
+- `pareto_frontier_data_gt2.json` description string corrected to 91.6% (was 90.7% residue).

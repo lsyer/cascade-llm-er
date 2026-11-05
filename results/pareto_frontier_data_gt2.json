@@ -1,5 +1,5 @@
 {
-  "description": "Pareto frontier: L1 accuracy vs interception rate for three L1 strategies. L2 (GLM-5-Turbo) = 90.7% horizontal.",
+  "description": "Pareto frontier: L1 accuracy vs interception rate for three L1 strategies. L2 (GLM-5-Turbo) = 91.6% horizontal.",
   "l2_accuracy": 91.6,
   "lr_all_points": [
     {

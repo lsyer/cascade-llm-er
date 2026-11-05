@@ -27,3 +27,8 @@ GT v2全链统一后的一次性/被取代文件。保留在此仅作溯源，�
 | backup_pre_gt2_rerun/ | GT v2重跑前备份（旧标签存档快照） |
 
 恢复：`mv deprecated/<path> ../<path>`。
+
+## pipeline_accuracy.stale.json (moved 2026-11-05)
+Pre-GT-v2 artifact: `pipeline_fixed=86.8` counts unresolved pairs leniently.
+Paper-final fixed-cascade figure is 86.3 strict (`threshold_selection_experiments.json`).
+Retained for provenance only; do not cite.
