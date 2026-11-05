@@ -1,0 +1,31 @@
+{
+ "protocol": "pairwise cluster metrics over entity pairs sharing a candidate-graph component (2012 entities, 4629 adjudicable pairs)",
+ "gt_same_entity_pairs": 1795,
+ "gt_clusters_ge2": 431,
+ "policies": {
+  "fixed_l1_cascade": {
+   "pairwise_precision_pct": 86.8,
+   "pairwise_recall_pct": 80.3,
+   "pairwise_f1_pct": 83.4,
+   "predicted_same_pairs": 1661,
+   "true_positives": 1442,
+   "predicted_clusters_ge2": 467
+  },
+  "pipeline_aware_lr": {
+   "pairwise_precision_pct": 94.2,
+   "pairwise_recall_pct": 82.3,
+   "pairwise_f1_pct": 87.9,
+   "predicted_same_pairs": 1569,
+   "true_positives": 1478,
+   "predicted_clusters_ge2": 492
+  },
+  "pure_l2": {
+   "pairwise_precision_pct": 99.1,
+   "pairwise_recall_pct": 77.9,
+   "pairwise_f1_pct": 87.3,
+   "predicted_same_pairs": 1411,
+   "true_positives": 1399,
+   "predicted_clusters_ge2": 484
+  }
+ }
+}

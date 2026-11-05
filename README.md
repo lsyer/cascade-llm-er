@@ -152,4 +152,5 @@ An independent human annotation set of 300 stratified-random pairs (`data/minec_
 ```
 
 ## Interpretation Notes
+- `cluster_level_metrics.json`: cluster-level pairwise P/R/F1 (Table in Results, computed by `code/verification/cluster_level_metrics.py`, no LLM calls). Pipeline-aware LR F1 87.9 vs pure-L2 87.3; closure recall 77.9-82.3 vs 65.4 pair completeness.
 - `entity_split_cv.json` field `reference_random_split_matched_budget` (91.66 @ 69.9%, thresholds 0.85/0.05) is COMPUTED from `ours_fine_grid_gt2.json` (best row with cost <= 73.9%); the old `reference_random_split_pipeline_aware_unified` (91.51) was a GT-v1-era hand-entered constant, now replaced.
