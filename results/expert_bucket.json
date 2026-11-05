@@ -1,15 +1,15 @@
 {
   "merge": {
     "total": 444,
-    "same": 368,
-    "different": 76,
-    "same_pct": 82.9
+    "same": 366,
+    "different": 78,
+    "same_pct": 82.4
   },
   "escalate": {
     "total": 1591,
-    "same": 903,
-    "different": 688,
-    "same_pct": 56.8
+    "same": 901,
+    "different": 690,
+    "same_pct": 56.6
   },
   "reject": {
     "total": 556,

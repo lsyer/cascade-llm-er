@@ -1,0 +1,1226 @@
+{
+ "verdicts": {
+  "1": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "event_1240",
+   "vid_b": "event_73",
+   "name_a": "ceasefire",
+   "name_b": "Ceasefire"
+  },
+  "2": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "loc_283",
+   "vid_b": "loc_523",
+   "name_a": "Dry dock",
+   "name_b": "dry dock"
+  },
+  "3": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "event_2065",
+   "vid_b": "event_422",
+   "name_a": "blockade",
+   "name_b": "blockade"
+  },
+  "4": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_78",
+   "vid_b": "equip_897",
+   "name_a": "Virginia-class",
+   "name_b": "Virginia class"
+  },
+  "5": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_227",
+   "vid_b": "equip_884",
+   "name_a": "US navy warship",
+   "name_b": "US Navy warship"
+  },
+  "6": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_1258",
+   "vid_b": "equip_144",
+   "name_a": "Unmanned Underwater Vehicles (UUVs)",
+   "name_b": "unmanned underwater vehicles (UUVs)"
+  },
+  "7": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "event_2299",
+   "vid_b": "event_361",
+   "name_a": "U.S. naval blockade",
+   "name_b": "US naval blockade"
+  },
+  "8": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "event_501",
+   "vid_b": "event_688",
+   "name_a": "combat operations",
+   "name_b": "Combat Operations"
+  },
+  "9": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "loc_1339",
+   "vid_b": "loc_1355",
+   "name_a": "JN shipyard",
+   "name_b": "JN Shipyard"
+  },
+  "10": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "event_1033",
+   "vid_b": "event_1065",
+   "name_a": "Turn back or reroute vessels",
+   "name_b": "turn back or reroute vessels"
+  },
+  "11": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_1817",
+   "vid_b": "equip_724",
+   "name_a": "Constellation class frigate",
+   "name_b": "Constellation-class frigate"
+  },
+  "12": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "event_1488",
+   "vid_b": "event_430",
+   "name_a": "U.S. Naval Blockade of Iran",
+   "name_b": "US naval blockade of Iran"
+  },
+  "13": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_1153",
+   "vid_b": "equip_1944",
+   "name_a": "Nimitz-class aircraft carrier",
+   "name_b": "Nimitz class aircraft carrier"
+  },
+  "14": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "event_712",
+   "vid_b": "event_799",
+   "name_a": "flight operations",
+   "name_b": "Flight operations"
+  },
+  "15": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_576",
+   "vid_b": "equip_908",
+   "name_a": "Arleigh Burke class destroyer",
+   "name_b": "Arleigh Burke-class destroyer"
+  },
+  "16": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "event_1631",
+   "vid_b": "event_2259",
+   "name_a": "sea trials",
+   "name_b": "Sea trials"
+  },
+  "17": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "loc_1395",
+   "vid_b": "loc_1622",
+   "name_a": "Ust Luga",
+   "name_b": "Ust-Luga"
+  },
+  "18": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "event_608",
+   "vid_b": "event_618",
+   "name_a": "U.S. International Naval Review",
+   "name_b": "US International Naval Review"
+  },
+  "19": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_1730",
+   "vid_b": "equip_72",
+   "name_a": "MH-60S Sea Hawk",
+   "name_b": "MH-60S Seahawk"
+  },
+  "20": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_2078",
+   "vid_b": "equip_2693",
+   "name_a": "Sea Hawk",
+   "name_b": "Seahawk"
+  },
+  "21": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_102",
+   "vid_b": "equip_1772",
+   "name_a": "guided-missile destroyers",
+   "name_b": "guided missile destroyers"
+  },
+  "22": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_1898",
+   "vid_b": "equip_2298",
+   "name_a": "Virginia-class submarine",
+   "name_b": "Virginia class submarine"
+  },
+  "23": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_1494",
+   "vid_b": "equip_1576",
+   "name_a": "MH-60R/S Sea Hawk",
+   "name_b": "MH-60R/S Seahawk"
+  },
+  "24": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_1146",
+   "vid_b": "equip_953",
+   "name_a": "ballistic missiles",
+   "name_b": "ballistic missiles"
+  },
+  "25": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_1963",
+   "vid_b": "equip_899",
+   "name_a": "Electromagnetic Railgun",
+   "name_b": "electromagnetic railgun"
+  },
+  "26": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "event_1854",
+   "vid_b": "event_1961",
+   "name_a": "U.S. strikes on Iran",
+   "name_b": "US strikes on Iran"
+  },
+  "27": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "person_506",
+   "vid_b": "person_55",
+   "name_a": "Kim Jong-un",
+   "name_b": "Kim Jong Un"
+  },
+  "28": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_1147",
+   "vid_b": "equip_565",
+   "name_a": "cruise missiles",
+   "name_b": "cruise missiles"
+  },
+  "29": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "event_1019",
+   "vid_b": "event_345",
+   "name_a": "Senate Armed Services Committee hearing",
+   "name_b": "Senate Armed Services Committee hearing"
+  },
+  "30": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_853",
+   "vid_b": "equip_863",
+   "name_a": "mine",
+   "name_b": "Mine"
+  },
+  "31": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_563",
+   "vid_b": "equip_590",
+   "name_a": "M/T Sevda",
+   "name_b": "MT Sevda"
+  },
+  "32": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "event_1208",
+   "vid_b": "event_1789",
+   "name_a": "Deployment",
+   "name_b": "deployment"
+  },
+  "33": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_2142",
+   "vid_b": "equip_2160",
+   "name_a": "Type-095",
+   "name_b": "Type 095"
+  },
+  "34": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_852",
+   "vid_b": "equip_864",
+   "name_a": "drone",
+   "name_b": "Drone"
+  },
+  "35": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_78",
+   "vid_b": "equip_896",
+   "name_a": "Virginia-class",
+   "name_b": "Virginia class"
+  },
+  "36": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "event_1514",
+   "vid_b": "event_29",
+   "name_a": "replenishment at sea",
+   "name_b": "replenishment-at-sea"
+  },
+  "37": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "equip_1506",
+   "vid_b": "equip_2439",
+   "name_a": "Merlin Mk 2",
+   "name_b": "Merlin Mk2"
+  },
+  "38": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "event_1229",
+   "vid_b": "event_501",
+   "name_a": "Combat operations",
+   "name_b": "combat operations"
+  },
+  "39": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "event_1069",
+   "vid_b": "event_346",
+   "name_a": "Trans-Pacific voyage",
+   "name_b": "Trans-Pacific Voyage"
+  },
+  "40": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 1,
+   "vid_a": "event_434",
+   "vid_b": "event_735",
+   "name_a": "US-Israel-Iran War",
+   "name_b": "US/Israel-Iran War"
+  },
+  "41": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 2,
+   "vid_a": "equip_1898",
+   "vid_b": "equip_896",
+   "name_a": "Virginia-class submarine",
+   "name_b": "Virginia class"
+  },
+  "42": {
+   "verdict": "same",
+   "reason": "S2",
+   "cat": 2,
+   "vid_a": "equip_1645",
+   "vid_b": "equip_2171",
+   "name_a": "AN/SPY-6",
+   "name_b": "SPY-6"
+  },
+  "43": {
+   "verdict": "different",
+   "reason": "D3",
+   "cat": 2,
+   "vid_a": "equip_2315",
+   "vid_b": "equip_852",
+   "name_a": "drone capabilities",
+   "name_b": "drone"
+  },
+  "44": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 2,
+   "vid_a": "equip_2159",
+   "vid_b": "equip_99",
+   "name_a": "Virginia class",
+   "name_b": "Virginia-class SSN"
+  },
+  "45": {
+   "verdict": "same",
+   "reason": "S2",
+   "cat": 2,
+   "vid_a": "equip_141",
+   "vid_b": "equip_963",
+   "name_a": "HIMARS",
+   "name_b": "M142 HIMARS"
+  },
+  "46": {
+   "verdict": "different",
+   "reason": "D3",
+   "cat": 2,
+   "vid_a": "equip_2302",
+   "vid_b": "equip_566",
+   "name_a": "Iranian one-way attack drones",
+   "name_b": "drones"
+  },
+  "47": {
+   "verdict": "same",
+   "reason": "S2",
+   "cat": 2,
+   "vid_a": "equip_1981",
+   "vid_b": "equip_938",
+   "name_a": "Medium Unmanned Surface Vessel (MUSV)",
+   "name_b": "MUSV"
+  },
+  "48": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 2,
+   "vid_a": "equip_2073",
+   "vid_b": "equip_2297",
+   "name_a": "Ford-class aircraft carrier",
+   "name_b": "Gerald R. Ford class aircraft carrier"
+  },
+  "49": {
+   "verdict": "different",
+   "reason": "D2",
+   "cat": 2,
+   "vid_a": "equip_1961",
+   "vid_b": "equip_2693",
+   "name_a": "Leidos Sea Hawk",
+   "name_b": "Seahawk"
+  },
+  "50": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 2,
+   "vid_a": "equip_79",
+   "vid_b": "equip_892",
+   "name_a": "Trump-class battleship",
+   "name_b": "Trump class"
+  },
+  "51": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 2,
+   "vid_a": "equip_1107",
+   "vid_b": "equip_2305",
+   "name_a": "F-22 Raptor",
+   "name_b": "Lockheed F-22 Raptor"
+  },
+  "52": {
+   "verdict": "different",
+   "reason": "D1",
+   "cat": 2,
+   "vid_a": "loc_1142",
+   "vid_b": "loc_14",
+   "name_a": "Guam",
+   "name_b": "Naval Base Guam"
+  },
+  "53": {
+   "verdict": "same",
+   "reason": "S2",
+   "cat": 2,
+   "vid_a": "equip_1981",
+   "vid_b": "equip_763",
+   "name_a": "Medium Unmanned Surface Vessel (MUSV)",
+   "name_b": "Medium Unmanned Surface Vessel"
+  },
+  "54": {
+   "verdict": "different",
+   "reason": "D3",
+   "cat": 2,
+   "vid_a": "equip_1288",
+   "vid_b": "equip_759",
+   "name_a": "VLS",
+   "name_b": "Mark 41 VLS"
+  },
+  "55": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 2,
+   "vid_a": "equip_1532",
+   "vid_b": "equip_667",
+   "name_a": "FS Charles de Gaulle",
+   "name_b": "Charles de Gaulle"
+  },
+  "56": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 2,
+   "vid_a": "equip_498",
+   "vid_b": "equip_972",
+   "name_a": "Touska",
+   "name_b": "M/V Touska"
+  },
+  "57": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 2,
+   "vid_a": "equip_1139",
+   "vid_b": "equip_1641",
+   "name_a": "HMS Diamond",
+   "name_b": "Diamond"
+  },
+  "58": {
+   "verdict": "same",
+   "reason": "S2",
+   "cat": 2,
+   "vid_a": "equip_141",
+   "vid_b": "equip_2524",
+   "name_a": "HIMARS",
+   "name_b": "M142 HIMARS"
+  },
+  "59": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 2,
+   "vid_a": "equip_1431",
+   "vid_b": "equip_2403",
+   "name_a": "Dassault Rafale",
+   "name_b": "Rafale"
+  },
+  "60": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 2,
+   "vid_a": "equip_2350",
+   "vid_b": "equip_2683",
+   "name_a": "U.S. Apache helicopter",
+   "name_b": "Apache helicopter"
+  },
+  "61": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 2,
+   "vid_a": "equip_1137",
+   "vid_b": "equip_672",
+   "name_a": "HNLMS Evertsen",
+   "name_b": "Evertsen"
+  },
+  "62": {
+   "verdict": "different",
+   "reason": "D1",
+   "cat": 2,
+   "vid_a": "loc_10",
+   "vid_b": "loc_1503",
+   "name_a": "Fleet Activities Yokosuka",
+   "name_b": "Yokosuka"
+  },
+  "63": {
+   "verdict": "different",
+   "reason": "D3",
+   "cat": 2,
+   "vid_a": "equip_1440",
+   "vid_b": "equip_2162",
+   "name_a": "UUV",
+   "name_b": "UUV concept"
+  },
+  "64": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 2,
+   "vid_a": "equip_184",
+   "vid_b": "equip_2556",
+   "name_a": "MV-75A Cheyenne II",
+   "name_b": "Bell MV-75A Cheyenne II"
+  },
+  "65": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 2,
+   "vid_a": "equip_54",
+   "vid_b": "equip_748",
+   "name_a": "Future USS Bougainville",
+   "name_b": "USS Bougainville"
+  },
+  "66": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 2,
+   "vid_a": "equip_1530",
+   "vid_b": "equip_1958",
+   "name_a": "Marauder",
+   "name_b": "Saronic Marauder"
+  },
+  "67": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 2,
+   "vid_a": "equip_1100",
+   "vid_b": "equip_1325",
+   "name_a": "E/A-18G Growlers",
+   "name_b": "EA-18G"
+  },
+  "68": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 2,
+   "vid_a": "equip_1350",
+   "vid_b": "equip_1907",
+   "name_a": "Poseidon",
+   "name_b": "P-8 Poseidon"
+  },
+  "69": {
+   "verdict": "different",
+   "reason": "D1",
+   "cat": 2,
+   "vid_a": "loc_1024",
+   "vid_b": "loc_14",
+   "name_a": "Guam",
+   "name_b": "Naval Base Guam"
+  },
+  "70": {
+   "verdict": "different",
+   "reason": "D2",
+   "cat": 2,
+   "vid_a": "equip_1961",
+   "vid_b": "equip_2078",
+   "name_a": "Leidos Sea Hawk",
+   "name_b": "Sea Hawk"
+  },
+  "71": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 2,
+   "vid_a": "equip_1813",
+   "vid_b": "equip_892",
+   "name_a": "Trump class battleship",
+   "name_b": "Trump class"
+  },
+  "72": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 2,
+   "vid_a": "equip_1325",
+   "vid_b": "equip_580",
+   "name_a": "EA-18G",
+   "name_b": "EA-18 Growler"
+  },
+  "73": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 2,
+   "vid_a": "equip_2723",
+   "vid_b": "equip_893",
+   "name_a": "Nimitz-class supercarrier",
+   "name_b": "Nimitz class"
+  },
+  "74": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 2,
+   "vid_a": "equip_2381",
+   "vid_b": "equip_2670",
+   "name_a": "Eurodrone",
+   "name_b": "U950 Eurodrone"
+  },
+  "75": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 2,
+   "vid_a": "equip_1153",
+   "vid_b": "equip_893",
+   "name_a": "Nimitz-class aircraft carrier",
+   "name_b": "Nimitz class"
+  },
+  "76": {
+   "verdict": "same",
+   "reason": "S2",
+   "cat": 2,
+   "vid_a": "equip_2482",
+   "vid_b": "equip_794",
+   "name_a": "Unmanned Surface Vehicle (USV)",
+   "name_b": "USV"
+  },
+  "77": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 2,
+   "vid_a": "equip_1656",
+   "vid_b": "equip_2664",
+   "name_a": "Admiral Grigorovich",
+   "name_b": "Russian frigate Admiral Grigorovich"
+  },
+  "78": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 2,
+   "vid_a": "equip_55",
+   "vid_b": "equip_749",
+   "name_a": "Future USS Fallujah",
+   "name_b": "USS Fallujah"
+  },
+  "79": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 2,
+   "vid_a": "equip_2298",
+   "vid_b": "equip_78",
+   "name_a": "Virginia class submarine",
+   "name_b": "Virginia-class"
+  },
+  "80": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 2,
+   "vid_a": "equip_2306",
+   "vid_b": "equip_2491",
+   "name_a": "Northrop B-2",
+   "name_b": "B-2"
+  },
+  "81": {
+   "verdict": "different",
+   "reason": "D2",
+   "cat": 3,
+   "vid_a": "equip_2396",
+   "vid_b": "equip_719",
+   "name_a": "VC-25B",
+   "name_b": "VC-25A"
+  },
+  "82": {
+   "verdict": "same",
+   "reason": "S2",
+   "cat": 3,
+   "vid_a": "equip_2137",
+   "vid_b": "equip_2426",
+   "name_a": "GBU-53/B Small Diameter Bomb II",
+   "name_b": "GBU-53 SDB II"
+  },
+  "83": {
+   "verdict": "same",
+   "reason": "S2",
+   "cat": 3,
+   "vid_a": "equip_1635",
+   "vid_b": "equip_2419",
+   "name_a": "Global Autonomous Reconnaissance Craft",
+   "name_b": "GARC"
+  },
+  "84": {
+   "verdict": "unsure",
+   "reason": "U1",
+   "cat": 3,
+   "vid_a": "equip_1354",
+   "vid_b": "equip_1356",
+   "name_a": "AGM-189A",
+   "name_b": "Barracuda autonomous air vehicle"
+  },
+  "85": {
+   "verdict": "same",
+   "reason": "S4",
+   "cat": 3,
+   "vid_a": "equip_1673",
+   "vid_b": "equip_2134",
+   "name_a": "Navantia UK Seahorse",
+   "name_b": "Seahorse barge"
+  },
+  "86": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 3,
+   "vid_a": "equip_1557",
+   "vid_b": "equip_970",
+   "name_a": "KC-10 Extender",
+   "name_b": "KC-10A Extender"
+  },
+  "87": {
+   "verdict": "same",
+   "reason": "S2",
+   "cat": 3,
+   "vid_a": "equip_1659",
+   "vid_b": "equip_820",
+   "name_a": "ATACMS",
+   "name_b": "Army Tactical Missile System"
+  },
+  "88": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 3,
+   "vid_a": "equip_1616",
+   "vid_b": "equip_2607",
+   "name_a": "Merlin helicopter",
+   "name_b": "Merlin Mk4"
+  },
+  "89": {
+   "verdict": "different",
+   "reason": "D3",
+   "cat": 3,
+   "vid_a": "equip_654",
+   "vid_b": "equip_794",
+   "name_a": "Magura V3",
+   "name_b": "USV"
+  },
+  "90": {
+   "verdict": "different",
+   "reason": "D1",
+   "cat": 3,
+   "vid_a": "equip_1743",
+   "vid_b": "equip_18",
+   "name_a": "Boxer ARG",
+   "name_b": "USS Boxer"
+  },
+  "91": {
+   "verdict": "same",
+   "reason": "S2",
+   "cat": 3,
+   "vid_a": "equip_1029",
+   "vid_b": "equip_2065",
+   "name_a": "Unmanned surface vessels",
+   "name_b": "Autonomous watercraft"
+  },
+  "92": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 3,
+   "vid_a": "equip_506",
+   "vid_b": "equip_535",
+   "name_a": "F-14 Tomcat",
+   "name_b": "F-14D Tomcat"
+  },
+  "93": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 3,
+   "vid_a": "equip_2065",
+   "vid_b": "equip_2533",
+   "name_a": "Autonomous watercraft",
+   "name_b": "U.S. Navy surface drone"
+  },
+  "94": {
+   "verdict": "different",
+   "reason": "D3",
+   "cat": 3,
+   "vid_a": "equip_2065",
+   "vid_b": "equip_654",
+   "name_a": "Autonomous watercraft",
+   "name_b": "Magura V3"
+  },
+  "95": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 3,
+   "vid_a": "equip_1818",
+   "vid_b": "equip_1999",
+   "name_a": "Legend class cutter",
+   "name_b": "USCGC Midgett"
+  },
+  "96": {
+   "verdict": "different",
+   "reason": "D1",
+   "cat": 3,
+   "vid_a": "equip_47",
+   "vid_b": "equip_955",
+   "name_a": "USS Mason",
+   "name_b": "Arleigh Burke class guided missile destroyer"
+  },
+  "97": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 3,
+   "vid_a": "equip_1810",
+   "vid_b": "equip_2720",
+   "name_a": "YFQ-44A",
+   "name_b": "Anduril FQ-44A Fury"
+  },
+  "98": {
+   "verdict": "different",
+   "reason": "D1",
+   "cat": 3,
+   "vid_a": "equip_2227",
+   "vid_b": "equip_53",
+   "name_a": "Zumwalt-class",
+   "name_b": "USS Zumwalt"
+  },
+  "99": {
+   "verdict": "same",
+   "reason": "S2",
+   "cat": 3,
+   "vid_a": "equip_1029",
+   "vid_b": "equip_794",
+   "name_a": "Unmanned surface vessels",
+   "name_b": "USV"
+  },
+  "100": {
+   "verdict": "different",
+   "reason": "D3",
+   "cat": 3,
+   "vid_a": "equip_2217",
+   "vid_b": "equip_566",
+   "name_a": "robot ship",
+   "name_b": "drones"
+  },
+  "101": {
+   "verdict": "same",
+   "reason": "S5",
+   "cat": 3,
+   "vid_a": "equip_1098",
+   "vid_b": "equip_203",
+   "name_a": "F/A-18F",
+   "name_b": "F/A-18 Super Hornet"
+  },
+  "102": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 3,
+   "vid_a": "equip_1098",
+   "vid_b": "equip_433",
+   "name_a": "F/A-18F",
+   "name_b": "F/A-18E Super Hornet"
+  },
+  "103": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 3,
+   "vid_a": "equip_124",
+   "vid_b": "equip_2197",
+   "name_a": "AEGIS System",
+   "name_b": "Aegis missile interceptor"
+  },
+  "104": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 3,
+   "vid_a": "equip_1528",
+   "vid_b": "equip_1741",
+   "name_a": "Carrier Air Wing 17",
+   "name_b": "CVW-17"
+  },
+  "105": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 3,
+   "vid_a": "equip_170",
+   "vid_b": "equip_2582",
+   "name_a": "XQ-58 Valkyrie",
+   "name_b": "Collaborative Combat Aircraft"
+  },
+  "106": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 3,
+   "vid_a": "equip_546",
+   "vid_b": "equip_955",
+   "name_a": "USS Truxtun",
+   "name_b": "Arleigh Burke class guided missile destroyer"
+  },
+  "107": {
+   "verdict": "different",
+   "reason": "D2",
+   "cat": 3,
+   "vid_a": "equip_1354",
+   "vid_b": "equip_2382",
+   "name_a": "AGM-189A",
+   "name_b": "Barracuda"
+  },
+  "108": {
+   "verdict": "different",
+   "reason": "D2",
+   "cat": 3,
+   "vid_a": "equip_1199",
+   "vid_b": "equip_1645",
+   "name_a": "SPY-6 Radar",
+   "name_b": "AN/SPY-6"
+  },
+  "109": {
+   "verdict": "same",
+   "reason": "S2",
+   "cat": 3,
+   "vid_a": "equip_1645",
+   "vid_b": "equip_2172",
+   "name_a": "AN/SPY-6",
+   "name_b": "SPY-6(V)4"
+  },
+  "110": {
+   "verdict": "different",
+   "reason": "D3",
+   "cat": 3,
+   "vid_a": "equip_1824",
+   "vid_b": "equip_759",
+   "name_a": "Mk 41 VLS",
+   "name_b": "Mark 41 VLS"
+  },
+  "111": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 3,
+   "vid_a": "equip_2065",
+   "vid_b": "equip_2482",
+   "name_a": "Autonomous watercraft",
+   "name_b": "Unmanned Surface Vehicle (USV)"
+  },
+  "112": {
+   "verdict": "different",
+   "reason": "D2",
+   "cat": 3,
+   "vid_a": "equip_1361",
+   "vid_b": "equip_1578",
+   "name_a": "Destroyer Squadron (DESRON) 2",
+   "name_b": "Destroyer Squadron Two"
+  },
+  "113": {
+   "verdict": "different",
+   "reason": "D1",
+   "cat": 3,
+   "vid_a": "equip_1331",
+   "vid_b": "equip_1419",
+   "name_a": "Visby-class corvette",
+   "name_b": "HMS Härnösand"
+  },
+  "114": {
+   "verdict": "different",
+   "reason": "D2",
+   "cat": 3,
+   "vid_a": "equip_1718",
+   "vid_b": "equip_2099",
+   "name_a": "Shahed drone",
+   "name_b": "Shahed-series"
+  },
+  "115": {
+   "verdict": "same",
+   "reason": "S2",
+   "cat": 3,
+   "vid_a": "equip_1980",
+   "vid_b": "equip_2391",
+   "name_a": "USS Kearsarge",
+   "name_b": "Wasp-class amphibious assault ship"
+  },
+  "116": {
+   "verdict": "different",
+   "reason": "D1",
+   "cat": 3,
+   "vid_a": "equip_52",
+   "vid_b": "equip_955",
+   "name_a": "USS Rafael Peralta",
+   "name_b": "Arleigh Burke class guided missile destroyer"
+  },
+  "117": {
+   "verdict": "different",
+   "reason": "D2",
+   "cat": 3,
+   "vid_a": "equip_427",
+   "vid_b": "equip_929",
+   "name_a": "NMESIS",
+   "name_b": "Navy-Marine Expeditionary Ship Interdiction System"
+  },
+  "118": {
+   "verdict": "different",
+   "reason": "D3",
+   "cat": 3,
+   "vid_a": "equip_1181",
+   "vid_b": "equip_1202",
+   "name_a": "Arleigh Burke-class Flight III",
+   "name_b": "Arleigh Burke-class Destroyer"
+  },
+  "119": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 3,
+   "vid_a": "equip_1718",
+   "vid_b": "equip_548",
+   "name_a": "Shahed drone",
+   "name_b": "Iranian drone"
+  },
+  "120": {
+   "verdict": "different",
+   "reason": "D3",
+   "cat": 3,
+   "vid_a": "equip_1897",
+   "vid_b": "equip_2166",
+   "name_a": "Mark 58 Compact Rapid Attack Weapon",
+   "name_b": "MK 58 Compact Rapid Attack Weapon"
+  },
+  "121": {
+   "verdict": "same",
+   "reason": "S2",
+   "cat": 3,
+   "vid_a": "equip_2349",
+   "vid_b": "equip_794",
+   "name_a": "Drone boat",
+   "name_b": "USV"
+  },
+  "122": {
+   "verdict": "same",
+   "reason": "S2",
+   "cat": 3,
+   "vid_a": "equip_11",
+   "vid_b": "equip_1202",
+   "name_a": "USS Milius",
+   "name_b": "Arleigh Burke-class Destroyer"
+  },
+  "123": {
+   "verdict": "same",
+   "reason": "S2",
+   "cat": 3,
+   "vid_a": "equip_1288",
+   "vid_b": "equip_1291",
+   "name_a": "VLS",
+   "name_b": "SYLVER A50"
+  },
+  "124": {
+   "verdict": "different",
+   "reason": "D3",
+   "cat": 3,
+   "vid_a": "equip_169",
+   "vid_b": "equip_170",
+   "name_a": "MQ-58 Valkyrie",
+   "name_b": "XQ-58 Valkyrie"
+  },
+  "125": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 3,
+   "vid_a": "equip_2065",
+   "vid_b": "equip_2357",
+   "name_a": "Autonomous watercraft",
+   "name_b": "Saronic Corsair"
+  },
+  "126": {
+   "verdict": "same",
+   "reason": "S5",
+   "cat": 3,
+   "vid_a": "equip_566",
+   "vid_b": "equip_891",
+   "name_a": "drones",
+   "name_b": "unmanned systems"
+  },
+  "127": {
+   "verdict": "same",
+   "reason": "S1",
+   "cat": 3,
+   "vid_a": "equip_11",
+   "vid_b": "equip_576",
+   "name_a": "USS Milius",
+   "name_b": "Arleigh Burke class destroyer"
+  },
+  "128": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 3,
+   "vid_a": "equip_53",
+   "vid_b": "equip_720",
+   "name_a": "USS Zumwalt",
+   "name_b": "Zumwalt-class destroyer"
+  },
+  "129": {
+   "verdict": "same",
+   "reason": "S3",
+   "cat": 3,
+   "vid_a": "equip_2047",
+   "vid_b": "equip_2350",
+   "name_a": "AH-64E Apache",
+   "name_b": "U.S. Apache helicopter"
+  },
+  "130": {
+   "verdict": "different",
+   "reason": "D1",
+   "cat": 3,
+   "vid_a": "equip_2357",
+   "vid_b": "equip_794",
+   "name_a": "Saronic Corsair",
+   "name_b": "USV"
+  }
+ },
+ "cat_stats": {
+  "cat1": {
+   "sampled": 40,
+   "same": 40,
+   "different": 0,
+   "unsure": 0,
+   "rate_pct": 100.0,
+   "wilson_lo_pct": 91.2,
+   "wilson_hi_pct": 100.0,
+   "population": 117
+  },
+  "cat2": {
+   "sampled": 40,
+   "same": 31,
+   "different": 9,
+   "unsure": 0,
+   "rate_pct": 77.5,
+   "wilson_lo_pct": 62.5,
+   "wilson_hi_pct": 87.7,
+   "population": 97
+  },
+  "cat3": {
+   "sampled": 50,
+   "same": 30,
+   "different": 19,
+   "unsure": 1,
+   "rate_pct": 60.0,
+   "wilson_lo_pct": 46.2,
+   "wilson_hi_pct": 72.4,
+   "population": 189
+  }
+ },
+ "alias_missed_estimate": {
+  "point": 305.6,
+  "lo": 254.6,
+  "hi": 338.9,
+  "unsure_excluded_alt": 307.9
+ },
+ "closure_implied_missing": 459,
+ "probe_overlap": 35,
+ "alias_only_pairs": 368,
+ "combined_missed_estimate": {
+  "point": 739.0,
+  "lo": 692.4,
+  "hi": 769.4
+ },
+ "gt_same_blocked": 1398,
+ "pair_completeness_pct": {
+  "point": 65.4,
+  "lo": 64.5,
+  "hi": 66.9
+ }
+}

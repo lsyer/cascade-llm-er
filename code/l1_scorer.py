@@ -18,9 +18,9 @@ Three-valued logic per field:
   unknown  → 0             (missing → neutral)
 
 Threshold routing:
-  score >= 0.5  → merge
-  score <= -0.3 → reject
-  -0.3 < score < 0.5 → escalate to L2
+  score >= 0.6  → merge
+  score <= -0.4 → reject
+  -0.4 < score < 0.6 → escalate to L2
 """
 
 import re

@@ -1,0 +1,42 @@
+{
+  "equipment": {
+    "n_pairs": 545,
+    "fixed_acc": 78.1,
+    "fixed_intercept": 36.9,
+    "unified_acc": 76.0,
+    "hybrid_acc": 74.7,
+    "used_per_type": true
+  },
+  "event": {
+    "n_pairs": 946,
+    "fixed_acc": 79.0,
+    "fixed_intercept": 31.7,
+    "unified_acc": 74.9,
+    "hybrid_acc": 77.3,
+    "used_per_type": true
+  },
+  "location": {
+    "n_pairs": 852,
+    "fixed_acc": 85.1,
+    "fixed_intercept": 41.0,
+    "unified_acc": 87.7,
+    "hybrid_acc": 88.5,
+    "used_per_type": true
+  },
+  "organization": {
+    "n_pairs": 128,
+    "fixed_acc": 71.3,
+    "fixed_intercept": 78.9,
+    "unified_acc": 90.7,
+    "hybrid_acc": 92.5,
+    "used_per_type": true
+  },
+  "person": {
+    "n_pairs": 120,
+    "fixed_acc": 61.2,
+    "fixed_intercept": 40.8,
+    "unified_acc": 93.3,
+    "hybrid_acc": 80.9,
+    "used_per_type": true
+  }
+}

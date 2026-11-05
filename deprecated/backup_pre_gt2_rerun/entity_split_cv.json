@@ -1,0 +1,121 @@
+{
+ "protocol": "entity-disjoint 5-fold CV via connected components (645 comps, largest 35 entities)",
+ "fold_pair_counts": [
+  519,
+  518,
+  518,
+  518,
+  518
+ ],
+ "thresholds_per_fold": [
+  {
+   "fold": 0,
+   "merge_t": 0.85,
+   "reject_t": 0.05
+  },
+  {
+   "fold": 1,
+   "merge_t": 0.8,
+   "reject_t": 0.05
+  },
+  {
+   "fold": 2,
+   "merge_t": 0.85,
+   "reject_t": 0.05
+  },
+  {
+   "fold": 3,
+   "merge_t": 0.95,
+   "reject_t": 0.05
+  },
+  {
+   "fold": 4,
+   "merge_t": 0.8,
+   "reject_t": 0.05
+  }
+ ],
+ "overall": {
+  "n": 2591,
+  "l1_decided": 709,
+  "l1_correct": 651,
+  "l1_acc_pct": 91.82,
+  "intercept_pct": 27.36,
+  "l2_used": 1882,
+  "l2_correct": 1694,
+  "unresolved": 5,
+  "strict_pipeline_acc_pct": 90.51,
+  "llm_cost_pct": 72.64
+ },
+ "per_fold": {
+  "0": {
+   "n": 519,
+   "l1_decided": 124,
+   "l1_correct": 123,
+   "l1_acc_pct": 99.19,
+   "intercept_pct": 23.89,
+   "l2_used": 395,
+   "l2_correct": 358,
+   "unresolved": 2,
+   "strict_pipeline_acc_pct": 92.68,
+   "llm_cost_pct": 76.11
+  },
+  "1": {
+   "n": 518,
+   "l1_decided": 125,
+   "l1_correct": 121,
+   "l1_acc_pct": 96.8,
+   "intercept_pct": 24.13,
+   "l2_used": 393,
+   "l2_correct": 366,
+   "unresolved": 0,
+   "strict_pipeline_acc_pct": 94.02,
+   "llm_cost_pct": 75.87
+  },
+  "2": {
+   "n": 518,
+   "l1_decided": 201,
+   "l1_correct": 182,
+   "l1_acc_pct": 90.55,
+   "intercept_pct": 38.8,
+   "l2_used": 317,
+   "l2_correct": 291,
+   "unresolved": 0,
+   "strict_pipeline_acc_pct": 91.31,
+   "llm_cost_pct": 61.2
+  },
+  "3": {
+   "n": 518,
+   "l1_decided": 62,
+   "l1_correct": 59,
+   "l1_acc_pct": 95.16,
+   "intercept_pct": 11.97,
+   "l2_used": 456,
+   "l2_correct": 392,
+   "unresolved": 3,
+   "strict_pipeline_acc_pct": 87.07,
+   "llm_cost_pct": 88.03
+  },
+  "4": {
+   "n": 518,
+   "l1_decided": 197,
+   "l1_correct": 166,
+   "l1_acc_pct": 84.26,
+   "intercept_pct": 38.03,
+   "l2_used": 321,
+   "l2_correct": 287,
+   "unresolved": 0,
+   "strict_pipeline_acc_pct": 87.45,
+   "llm_cost_pct": 61.97
+  }
+ },
+ "prf1_same_class": {
+  "tp": 1222,
+  "fp": 66,
+  "tn": 1123,
+  "fn": 180,
+  "precision_pct": 94.88,
+  "recall_pct": 87.16,
+  "f1_pct": 90.86
+ },
+ "reference_random_split_pipeline_aware_unified": 91.51
+}

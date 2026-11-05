@@ -1,0 +1,94 @@
+{
+ "P1_closure": {
+  "gt_same_pairs": 1398,
+  "gt_diff_pairs": 1193,
+  "clusters_gt2": 160,
+  "implied_pairs_missing_from_candidates": 459,
+  "inconsistent_inside_candidates": 76,
+  "missing_examples": [
+   "equip_100(equipment): BAE Systems shipyard at Barrow <-> loc_1136(location): Barrow-in-Furness",
+   "equip_1009(equipment): Virginia-class attack submarine <-> equip_1970(equipment): Virginia-class submarines",
+   "equip_1009(equipment): Virginia-class attack submarine <-> equip_99(equipment): Virginia-class SSN",
+   "equip_1581(equipment): Virginia-class submarine <-> equip_221(equipment): Virginia-class attack boats",
+   "equip_1581(equipment): Virginia-class submarine <-> equip_99(equipment): Virginia-class SSN",
+   "equip_1898(equipment): Virginia-class submarine <-> equip_221(equipment): Virginia-class attack boats",
+   "equip_1898(equipment): Virginia-class submarine <-> equip_99(equipment): Virginia-class SSN",
+   "equip_1970(equipment): Virginia-class submarines <-> equip_221(equipment): Virginia-class attack boats",
+   "equip_1970(equipment): Virginia-class submarines <-> equip_99(equipment): Virginia-class SSN",
+   "equip_221(equipment): Virginia-class attack boats <-> equip_99(equipment): Virginia-class SSN"
+  ],
+  "inconsistent_examples": [
+   "equip_1097(equipment): F/A-18E <-> equip_214(equipment): F/A-18",
+   "equip_1098(equipment): F/A-18F <-> equip_214(equipment): F/A-18",
+   "equip_1493(equipment): F/A-18C/E/F Super Hornet <-> equip_756(equipment): F/A-18F Super Hornet",
+   "equip_214(equipment): F/A-18 <-> equip_433(equipment): F/A-18E Super Hornet",
+   "equip_214(equipment): F/A-18 <-> equip_686(equipment): F/A-18E/F Super Hornet",
+   "equip_214(equipment): F/A-18 <-> equip_756(equipment): F/A-18F Super Hornet",
+   "equip_433(equipment): F/A-18E Super Hornet <-> equip_756(equipment): F/A-18F Super Hornet",
+   "equip_2744(equipment): Arleigh Burke-class Flight III destroyer <-> equip_908(equipment): Arleigh Burke-class destroyer",
+   "equip_1200(equipment): Aegis Baseline 10 Combat System <-> equip_1403(equipment): Aegis Combat System",
+   "equip_1200(equipment): Aegis Baseline 10 Combat System <-> equip_707(equipment): AEGIS Combat System"
+  ]
+ },
+ "P2_cross_type": {
+  "n_cross_type_same_name_excluded": 19,
+  "type_combinations": {
+   "location/organization": 8,
+   "equipment/location": 7,
+   "equipment/person": 1,
+   "equipment/event": 1,
+   "equipment/organization": 1,
+   "event/organization": 1
+  },
+  "examples": [
+   "General Dynamics Electric Boat [organization vs location]",
+   "Newport News Shipbuilding [organization vs location]",
+   "Joint Strike Missile [equipment vs location]",
+   "CENTCOM [organization vs location]",
+   "Wisconsin [equipment vs location]",
+   "Groton [equipment vs location]",
+   "Ingalls Shipbuilding [organization vs location]",
+   "CENTCOM [organization vs location]",
+   "Choe Hyon [equipment vs person]",
+   "Squadron 2020 Project [equipment vs event]"
+  ]
+ },
+ "P3_noncandidate_overlap": {
+  "alias_overlap_pairs": 403,
+  "alias_examples_v2": [
+   "person_506(person): Kim Jong-un <-> person_543(person): Kim Jong Un shared[kimjongun]",
+   "person_506(person): Kim Jong-un <-> person_55(person): Kim Jong Un shared[kimjongun]",
+   "person_10(person): Daryl Caudle <-> person_123(person): Adm. Daryl Caudle shared[admdarylcaudle]",
+   "person_1(person): Retired Navy Capt. William Toti <-> person_88(person): William Toti shared[williamtoti]",
+   "equip_1700(equipment): Liaoning <-> equip_1719(equipment): CNS Liaoning shared[liaoning]",
+   "equip_1719(equipment): CNS Liaoning <-> equip_2527(equipment): Liaoning aircraft carrier shared[liaoning]",
+   "equip_1898(equipment): Virginia-class submarine <-> equip_2159(equipment): Virginia class shared[virginiaclass]",
+   "equip_1898(equipment): Virginia-class submarine <-> equip_2298(equipment): Virginia class submarine shared[virginiaclass]",
+   "equip_1898(equipment): Virginia-class submarine <-> equip_896(equipment): Virginia class shared[virginiaclass]",
+   "equip_1898(equipment): Virginia-class submarine <-> equip_897(equipment): Virginia class shared[virginiaclass]",
+   "equip_2159(equipment): Virginia class <-> equip_78(equipment): Virginia-class shared[virginiaclass]",
+   "equip_2298(equipment): Virginia class submarine <-> equip_78(equipment): Virginia-class shared[virginiaclass]",
+   "equip_78(equipment): Virginia-class <-> equip_896(equipment): Virginia class shared[virginiaclass]",
+   "equip_78(equipment): Virginia-class <-> equip_897(equipment): Virginia class shared[virginiaclass]",
+   "equip_2159(equipment): Virginia class <-> equip_99(equipment): Virginia-class SSN shared[virginiaclassssn]"
+  ],
+  "attr_overlap_pairs": 61,
+  "attr_examples": [
+   "loc_1434(location): Groom Lake <-> loc_1435(location): Area 51 shared[coordinates=3724311157931]",
+   "loc_1280(location): Mediterranean Sea <-> loc_1392(location): Mediterranean waters shared[coordinates=350180]",
+   "loc_1286(location): Mediterranean Sea <-> loc_1392(location): Mediterranean waters shared[coordinates=350180]",
+   "loc_1246(location): Home Port <-> loc_1511(location): Naval Station Norfolk shared[coordinates=36947633]",
+   "loc_1246(location): Home Port <-> loc_1609(location): Naval Station Norfolk shared[coordinates=36947633]",
+   "loc_1246(location): Home Port <-> loc_1676(location): Naval Station Norfolk Pier 14 shared[coordinates=36947633]",
+   "loc_1246(location): Home Port <-> loc_282(location): Newport News Shipbuilding shared[coordinates=36947633]",
+   "loc_1246(location): Home Port <-> loc_378(location): Norfolk, Va. shared[coordinates=36947633]",
+   "loc_1246(location): Home Port <-> loc_653(location): Norfolk Naval Station shared[coordinates=36947633]",
+   "loc_1246(location): Home Port <-> loc_665(location): Homeport shared[coordinates=36947633]",
+   "loc_1511(location): Naval Station Norfolk <-> loc_282(location): Newport News Shipbuilding shared[coordinates=36947633]",
+   "loc_1511(location): Naval Station Norfolk <-> loc_378(location): Norfolk, Va. shared[coordinates=36947633]",
+   "loc_1511(location): Naval Station Norfolk <-> loc_653(location): Norfolk Naval Station shared[coordinates=36947633]",
+   "loc_1511(location): Naval Station Norfolk <-> loc_665(location): Homeport shared[coordinates=36947633]",
+   "loc_1609(location): Naval Station Norfolk <-> loc_282(location): Newport News Shipbuilding shared[coordinates=36947633]"
+  ]
+ }
+}

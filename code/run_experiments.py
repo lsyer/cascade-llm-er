@@ -402,45 +402,62 @@ print("\n" + "=" * 60)
 print("Step 7: Feedback loop convergence (Table X, Figure 3)")
 print("=" * 60)
 
-# Simulate feedback: 5-fold CV, each round adds 20% as feedback
-n = len(y)
-rounds_data = []
+# Cross-validation-based pseudo-feedback (documented protocol, matches
+# code/feedback_replay_gt2.py): round r trains the unified LR on the first r
+# fold batches (cumulative ~20%*r feedback pairs, corrected-GT labels),
+# applies the deployed L1-only-utility thresholds (0.55/0.40), and evaluates
+# strictly on the held-out complement. Pipeline = (L1-correct on intercepted +
+# GLM-correct on escalated) / eval size.
+fold_batches = [te for tr, te in skf.split(X_scaled, y)]
+_fb_ids = np.array([p['pair_id'] for p in labeled])
+_ck = json.load(open(os.path.join(RESULTS_DIR, 'checkpoints_v3', 'glm-5-turbo_checkpoint.json')))
+def _fb_l2(pid):
+    v = str(_ck.get(pid, {}).get('verdict', '')).strip().lower()
+    return 1 if v == 'same' else (0 if v == 'different' else -1)
+_fb_glm = np.array([_fb_l2(x) for x in _fb_ids])
 
-# Round 0 = fixed weights (already computed above)
+rounds_data = []
+# Round 0 = fixed weights baseline (empirical strict pipeline via GLM replay)
+_fb_score = np.array([p['l1_score_v2'] for p in labeled])
+_fx_dec = np.full(len(y), -1)
+_fx_dec[_fb_score >= 0.6] = 1
+_fx_dec[_fb_score <= -0.4] = 0
+_fx_itc = _fx_dec != -1
+_fx_l1ok = int((_fx_dec[_fx_itc] == y[_fx_itc]).sum())
+_fx_l2ok = int((_fb_glm[~_fx_itc] == y[~_fx_itc]).sum())
 rounds_data.append({
-    'round': 0, 'feedback': 0, 'l1_acc': round(l1_acc, 1),
-    'interception': round(len(intercepted) / total * 100, 1),
-    'l2_esc': round(100 - len(intercepted) / total * 100, 1),
+    'round': 0, 'feedback': 0, 'l1_acc': round(_fx_l1ok / _fx_itc.sum() * 100, 1),
+    'interception': round(_fx_itc.mean() * 100, 1),
+    'l2_esc': round((~_fx_itc).mean() * 100, 1),
+    'pipeline': round((_fx_l1ok + _fx_l2ok) / len(y) * 100, 1),
 })
 
 for round_num in range(1, 5):
-    train_size = round_num * n // 5
-    # Use first train_size as feedback, rest as test
-    indices = np.arange(n)
-    np.random.seed(42)
-    np.random.shuffle(indices)
-    train_idx = indices[:train_size]
-    test_idx = indices[train_size:]
-    
+    train_idx = np.concatenate(fold_batches[:round_num])
+    test_idx = np.concatenate(fold_batches[round_num:])
     if len(test_idx) == 0:
         continue
-    
     lr = LogisticRegression(max_iter=1000, class_weight='balanced', random_state=42)
     lr.fit(X_scaled[train_idx], y[train_idx])
-    preds = lr.predict(X_scaled[test_idx])
-    
-    # Compute accuracy and interception on test set
-    correct = (preds == y[test_idx]).sum()
-    acc = correct / len(test_idx) * 100
-    interception = 100.0  # LR predicts 0/1 for all, so 100% intercepted
-    
+    proba = lr.predict_proba(X_scaled[test_idx])[:, 1]
+    dec = np.full(len(test_idx), -1)
+    dec[proba >= 0.55] = 1
+    dec[proba <= 0.40] = 0
+    itc = dec != -1
+    esc = ~itc
+    l1ok = int((dec[itc] == y[test_idx][itc]).sum())
+    l2ok = int((_fb_glm[test_idx][esc] == y[test_idx][esc]).sum())
     rounds_data.append({
-        'round': round_num, 'feedback': train_size, 'l1_acc': round(acc, 1),
-        'interception': round(interception, 1), 'l2_esc': 0.0,
+        'round': round_num, 'feedback': int(len(train_idx)),
+        'l1_acc': round(l1ok / itc.sum() * 100, 1),
+        'interception': round(itc.mean() * 100, 1),
+        'l2_esc': round(esc.mean() * 100, 1),
+        'pipeline': round((l1ok + l2ok) / len(test_idx) * 100, 1),
     })
-    print(f"Round {round_num}: feedback={train_size}, acc={acc:.1f}%, intercept={interception:.1f}%")
+    print(f"Round {round_num}: feedback={len(train_idx)}, acc={rounds_data[-1]['l1_acc']}%, "
+          f"intercept={rounds_data[-1]['interception']}%, pipeline={rounds_data[-1]['pipeline']}%")
 
-with open(os.path.join(RESULTS_DIR, 'feedback_convergence.json'), 'w') as f:
+with open(os.path.join(RESULTS_DIR, 'feedback_convergence_gt2.json'), 'w') as f:
     json.dump(rounds_data, f, indent=2)
 
 # ============================================================
@@ -662,6 +679,10 @@ threshold_experiments = {
 }
 with open(os.path.join(RESULTS_DIR, 'threshold_selection_experiments.json'), 'w') as f:
     json.dump(threshold_experiments, f, indent=2)
+
+# GT v2: dump canonical mode_3 OOF preds for downstream replays (Qwen judge matrix)
+with open(os.path.join(RESULTS_DIR, 'mode3_unified_oof_preds.json'), 'w') as f:
+    json.dump({'pair_ids': [str(p) for p in fixed_pair_ids], 'preds': [int(v) for v in unified_preds_empirical]}, f)
 
 # ============================================================
 # 9. Per-type accuracy + feature importance

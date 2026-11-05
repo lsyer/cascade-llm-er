@@ -6567,7 +6567,7 @@
     "name_b": "P-8A Poseidon",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": -1.0,
     "l1_decision_v2": "reject",
     "features_v2": {
@@ -8365,7 +8365,7 @@
     "name_b": "MH-60R/S Sea Hawk",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": 0.8,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -11547,7 +11547,7 @@
     "name_b": "F/A-18 Hornet",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": 1.0,
     "l1_decision_v2": "merge",
     "features_v2": {
@@ -15735,7 +15735,7 @@
     "name_b": "F-35B",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": 0.575,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -15791,7 +15791,7 @@
     "name_b": "F-35B/C",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": 0.3,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -19279,7 +19279,7 @@
     "name_b": "Virginia class",
     "type_a": "equipment",
     "type_b": "equipment",
-    "label": 0,
+    "label": 1,
     "l1_score_v2": 0.39999999999999997,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -22907,7 +22907,7 @@
     "name_b": "USS Gerald R. Ford yangını",
     "type_a": "event",
     "type_b": "event",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": 0.24999999999999997,
     "l1_decision_v2": "escalate",
     "features_v2": {
@@ -42203,7 +42203,7 @@
     "name_b": "Gerald R. Ford CSG Red Sea deployment 2026",
     "type_a": "event",
     "type_b": "event",
-    "label": 1,
+    "label": 0,
     "l1_score_v2": -0.5500000000000002,
     "l1_decision_v2": "reject",
     "features_v2": {

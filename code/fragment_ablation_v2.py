@@ -38,7 +38,7 @@ for ep in env_paths:
 GLM_KEY = _env.get('LLM_API_KEY', _env.get('GLM_API_KEY', ''))
 GLM_URL = 'https://open.bigmodel.cn/api/coding/paas/v4/chat/completions'
 QWEN_URL = 'http://www.netforger.com:8009/v1/chat/completions'
-QWEN_KEY = _env.get('QWEN_KEY', 'token-abc123')
+QWEN_KEY = _env.get('QWEN_KEY') or __import__('os').environ.get('QWEN_KEY', '')
 
 MODELS = {
     'glm-5-turbo': {'url': GLM_URL, 'key': GLM_KEY, 'model_id': 'glm-5-turbo'},

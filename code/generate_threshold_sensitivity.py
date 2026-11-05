@@ -10,11 +10,11 @@ import numpy as np
 from matplotlib.colors import LinearSegmentedColormap
 
 BASE = Path(__file__).resolve().parents[1]
-DATA = BASE / 'results' / 'dual_threshold_sweep.json'
+DATA = BASE / 'results' / 'dual_threshold_sweep_gt2.json'
 OUT_DIR = BASE / 'results'
 OUT_DIR.mkdir(exist_ok=True)
 
-sweep = json.load(open(DATA))
+sweep = json.load(open(DATA))['rows']
 
 merge_ts = sorted(set(r['merge_threshold'] for r in sweep))
 reject_ts = sorted(set(r['reject_threshold'] for r in sweep))

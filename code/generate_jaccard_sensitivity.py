@@ -8,7 +8,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 BASE = Path(__file__).resolve().parents[1]
-DATA = BASE / 'results' / 'jaccard_sensitivity.json'
+DATA = BASE / 'results' / 'jaccard_sensitivity_gt2.json'
 OUT_DIR = BASE / 'results'
 OUT_DIR.mkdir(exist_ok=True)
 

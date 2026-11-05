@@ -18,25 +18,32 @@ import matplotlib.pyplot as plt
 
 BASE = os.path.join(os.path.dirname(__file__), '..')
 OOF  = os.path.join(BASE, 'results', 'oof_probabilities.npz')
-FIXED_SWEEP = os.path.join(BASE, 'results', 'dual_threshold_sweep.json')
-OUT_JSON = os.path.join(BASE, 'results', 'pareto_frontier_data.json')
+FIXED_SWEEP = os.path.join(BASE, 'results', 'dual_threshold_sweep_gt2.json')
+OUT_JSON = os.path.join(BASE, 'results', 'pareto_frontier_data_gt2.json')
 OUT_PDF  = os.path.join(BASE, 'results', 'pareto_frontier.pdf')
 
 # ---- Load OOF ----
 d = np.load(OOF)
-lr_proba, rf_proba, y = d['lr_proba'], d['rf_proba'], d['y']
+lr_proba, rf_proba = d['lr_proba'], d['rf_proba']
+# GT v2 labels in scored_pairs order (npz 'y' predates the 8-pair correction)
+scored = json.load(open(os.path.join(BASE, 'results', 'scored_pairs.json')))
+y = np.array([p['label'] for p in scored])
 N = len(y)
 print(f"N = {N}")
 
-# GLM-5-Turbo strict accuracy on ALL 2591 pairs (6 unresolved counted as incorrect).
-# Source: results/pipeline_vs_pure_l2.json -> pure_l2_acc_strict = 91.66, recomputed live from
-# results/checkpoints_v3/glm-5-turbo_checkpoint.json by code/verify_pipeline_vs_pure_l2.py.
-L2_ACC = 91.6
+# GLM-5-Turbo verdicts on the same order, for strict empirical pipeline replay
+_ck = json.load(open(os.path.join(BASE, 'results', 'checkpoints_v3', 'glm-5-turbo_checkpoint.json')))
+def _l2v(pid):
+    v = str(_ck.get(pid, {}).get('verdict', '')).strip().lower()
+    return 1 if v == 'same' else (0 if v == 'different' else -1)
+glm = np.array([_l2v(p['pair_id']) for p in scored])
+
+# Pure-L2 strict accuracy (GT v2), for the reference line and metadata only
+L2_ACC = round(float((glm == y).mean() * 100), 1)
 
 # ---- Sweep thresholds for LR/RF ----
 # probability grid: 0.50 to 0.95, step 0.05
-# merge_t >= reject_t always; intercepted = proba >= merge_t OR proba <= (1 - merge_t_complement)
-# Actually: intercept (decide) if proba >= merge_t (predict 1) or proba <= reject_t (predict 0)
+# merge_t >= reject_t always; intercepted = proba >= merge_t OR proba <= reject_t
 # escalate if reject_t < proba < merge_t
 def sweep_oof(proba, y, merge_grid, reject_grid):
     points = []
@@ -54,15 +61,16 @@ def sweep_oof(proba, y, merge_grid, reject_grid):
             correct = (preds[decided_mask] == y[decided_mask]).sum()
             acc = correct / n_decided * 100
             intercept = n_decided / N * 100
-            # pipeline accuracy: intercepted use L1 pred, escalated use L2
-            # P(correct) = intercept/100 * acc/100 + (1 - intercept/100) * L2_ACC/100
-            pipeline = intercept / 100 * acc / 100 + (1 - intercept / 100) * L2_ACC / 100
+            # strict empirical pipeline: L1-correct on intercepted + L2-correct on escalated
+            esc = ~decided_mask
+            l2_correct = int((glm[esc] == y[esc]).sum())
+            pipeline = (correct + l2_correct) / N * 100
             points.append({
                 'merge_t': round(float(mt), 3),
                 'reject_t': round(float(rt), 3),
                 'interception': round(intercept, 1),
                 'l1_accuracy': round(acc, 1),
-                'pipeline': round(pipeline * 100, 1),
+                'pipeline': round(pipeline, 1),
             })
     return points
 
@@ -76,7 +84,7 @@ print(f"RF sweep points: {len(rf_points)}")
 
 # ---- Fixed L1 sweep (already computed) ----
 with open(FIXED_SWEEP) as f:
-    fixed_sweep = json.load(f)
+    fixed_sweep = json.load(f)['rows']
 fixed_points = []
 for r in fixed_sweep:
     fixed_points.append({

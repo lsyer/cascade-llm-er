@@ -1,0 +1,13 @@
+{
+ "totals": {
+  "cat1_format_variant": 117,
+  "cat3_alias_only": 189,
+  "cat2_containment": 97
+ },
+ "total_pairs": 403,
+ "sample_quota": {
+  "cat1_format_variant": 40,
+  "cat2_containment": 40,
+  "cat3_alias_only": 20
+ }
+}

@@ -1,6 +1,6 @@
 {
-  "lr_accuracy": 78.3,
-  "rf_accuracy": 80.1,
+  "lr_accuracy": 78.9,
+  "rf_accuracy": 80.2,
   "n_features": 42,
   "feature_names": [
     "fld_aliases_conflict",

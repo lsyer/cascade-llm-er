@@ -9,5 +9,6 @@ def load_glm_key():
 
 GLM_URL = 'https://open.bigmodel.cn/api/coding/paas/v4/chat/completions'
 QWEN_URL = 'http://www.netforger.com:8009/v1/chat/completions'
-QWEN_KEY = 'token-abc123'
+import os as _os
+QWEN_KEY = _os.environ.get('QWEN_KEY', '')
 GLM_KEY = load_glm_key()

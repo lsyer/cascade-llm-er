@@ -1,0 +1,18 @@
+{
+ "GLM-5-Turbo": {
+  "correct": 1445,
+  "unknown": 4
+ },
+ "Qwen3.6-35B-A3B": {
+  "correct": 1510,
+  "unknown": 0
+ },
+ "GLM-4.5-Air": {
+  "correct": 1396,
+  "unknown": 4
+ },
+ "GLM-4.5": {
+  "correct": 1331,
+  "unknown": 22
+ }
+}

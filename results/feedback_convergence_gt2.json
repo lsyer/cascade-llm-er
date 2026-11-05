@@ -1,0 +1,42 @@
+[
+ {
+  "round": 0,
+  "n_feedback": 0,
+  "l1_acc": 79.1,
+  "interception": 38.6,
+  "l2_pct": 61.4,
+  "pipeline": 86.3
+ },
+ {
+  "round": 1,
+  "n_feedback": 519,
+  "l1_acc": 79.3,
+  "interception": 91.0,
+  "l2_pct": 9.0,
+  "pipeline": 80.0
+ },
+ {
+  "round": 2,
+  "n_feedback": 1037,
+  "l1_acc": 80.8,
+  "interception": 89.6,
+  "l2_pct": 10.4,
+  "pipeline": 81.3
+ },
+ {
+  "round": 3,
+  "n_feedback": 1555,
+  "l1_acc": 82.4,
+  "interception": 87.2,
+  "l2_pct": 12.8,
+  "pipeline": 82.7
+ },
+ {
+  "round": 4,
+  "n_feedback": 2073,
+  "l1_acc": 81.0,
+  "interception": 86.5,
+  "l2_pct": 13.5,
+  "pipeline": 80.9
+ }
+]

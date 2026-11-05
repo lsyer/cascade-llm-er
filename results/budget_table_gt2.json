@@ -1,0 +1,57 @@
+{
+ "20": {
+  "random": 80.16,
+  "confidence": 84.25,
+  "entropy": 84.25,
+  "ours": 84.56,
+  "ours_point": {
+   "mt": 0.52,
+   "rt": 0.26,
+   "cost": 19.7
+  }
+ },
+ "30": {
+  "random": 82.05,
+  "confidence": 86.68,
+  "entropy": 86.68,
+  "ours": 87.11,
+  "ours_point": {
+   "mt": 0.69,
+   "rt": 0.26,
+   "cost": 29.8
+  }
+ },
+ "50": {
+  "random": 84.87,
+  "confidence": 90.08,
+  "entropy": 90.12,
+  "ours": 90.08,
+  "ours_point": {
+   "mt": 0.85,
+   "rt": 0.17,
+   "cost": 49.9
+  }
+ },
+ "70": {
+  "random": 87.46,
+  "confidence": 90.81,
+  "entropy": 90.81,
+  "ours": 91.66,
+  "ours_point": {
+   "mt": 0.85,
+   "rt": 0.05,
+   "cost": 69.9
+  }
+ },
+ "90": {
+  "random": 89.97,
+  "confidence": 91.43,
+  "entropy": 91.43,
+  "ours": 91.7,
+  "ours_point": {
+   "mt": 0.85,
+   "rt": 0.02,
+   "cost": 74.0
+  }
+ }
+}

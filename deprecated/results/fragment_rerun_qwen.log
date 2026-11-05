@@ -1,0 +1,30 @@
+Total pairs to evaluate: 2639
+Pairs missing props_a: 0
+Resuming: 2639 done, 0 remaining
+To run: 0 pairs with 5 workers
+
+============================================================
+GLM-5-Turbo L2 experiment complete
+============================================================
+Total: 2639
+Verdicts: {'same': 1226, 'different': 1407, 'unknown': 6}
+Saved to: /root/workspace/tanshu-specs/experiments/release/results/checkpoints_v3/glm-5-turbo_checkpoint.json
+sampled 290 pairs: Counter({'equipment': 73, 'event': 73, 'location': 73, 'person': 71})
+todo 290
+with_frag (276, 290, 95.2, 0)
+no_frag (274, 290, 94.5, 0)
+{
+ "with_frag": {
+  "correct": 276,
+  "n": 290,
+  "acc_pct": 95.2,
+  "unknown": 0
+ },
+ "no_frag": {
+  "correct": 274,
+  "n": 290,
+  "acc_pct": 94.5,
+  "unknown": 0
+ },
+ "delta_pp": 0.7
+}

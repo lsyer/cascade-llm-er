@@ -1,0 +1,39 @@
+{
+ "fixed": {
+  "l1_decided": 3172,
+  "l1_correct": 2488,
+  "l1_acc_pct": 78.44,
+  "intercept_pct": 79.3,
+  "l2_used": 828,
+  "l2_correct": 733,
+  "unresolved": 9,
+  "strict_pipeline_acc_pct": 80.53,
+  "llm_cost_pct": 20.7,
+  "tp": 1232,
+  "fp": 11,
+  "tn": 1989,
+  "fn": 768,
+  "precision_pct": 99.12,
+  "recall_pct": 61.6,
+  "f1_pct": 75.98
+ },
+ "adaptive": {
+  "l1_decided": 3681,
+  "l1_correct": 3231,
+  "l1_acc_pct": 87.78,
+  "intercept_pct": 92.03,
+  "l2_used": 319,
+  "l2_correct": 290,
+  "unresolved": 9,
+  "strict_pipeline_acc_pct": 88.02,
+  "llm_cost_pct": 7.98,
+  "tp": 1748,
+  "fp": 227,
+  "tn": 1773,
+  "fn": 252,
+  "precision_pct": 88.51,
+  "recall_pct": 87.4,
+  "f1_pct": 87.95
+ },
+ "_note": "Pure-L2 row unchanged (4,843-pair all-escalated run in dbp15k_glm5turbo_results.json). Fixed/adaptive are now empirical replays."
+}

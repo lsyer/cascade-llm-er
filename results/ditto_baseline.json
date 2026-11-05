@@ -1,0 +1,25 @@
+{
+ "protocol": "nested per-fold threshold selection (train folds OOF -> apply to test fold)",
+ "ditto_pipeline_acc_pct": 91.39,
+ "llm_cost_pct": 25.2,
+ "fold_accs": [
+  91.71,
+  93.44,
+  92.08,
+  90.73,
+  89.0
+ ],
+ "fold_costs": [
+  27.4,
+  24.9,
+  23.7,
+  26.3,
+  23.7
+ ],
+ "oracle_ref": {
+  "acc": 91.47,
+  "cost": 25.2,
+  "caveat": "global grid max on full OOF = selection bias, not comparable"
+ },
+ "standalone": 87.46
+}

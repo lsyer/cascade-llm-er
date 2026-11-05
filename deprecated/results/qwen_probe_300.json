@@ -1,0 +1,1841 @@
+{
+ "summary": {
+  "model": "Qwen3.6-35B-A3B",
+  "n": 300,
+  "compliance_pct": 100.0,
+  "resolved_acc_pct": 93.33,
+  "overall_strict_pct": 93.33,
+  "unresolved": 0,
+  "by_type": {
+   "event": {
+    "acc": 90.9,
+    "n": 110,
+    "unres": 0
+   },
+   "equipment": {
+    "acc": 87.3,
+    "n": 63,
+    "unres": 0
+   },
+   "location": {
+    "acc": 98.0,
+    "n": 99,
+    "unres": 0
+   },
+   "organization": {
+    "acc": 100.0,
+    "n": 15,
+    "unres": 0
+   },
+   "person": {
+    "acc": 100.0,
+    "n": 13,
+    "unres": 0
+   }
+  },
+  "glm5turbo_subset_ref_pct": 95.7,
+  "elapsed_s": 60
+ },
+ "records": [
+  {
+   "pair_id": "p_1019",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1053",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1072",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1080",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1081",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1096",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_109",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_111",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1116",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1122",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1134",
+   "human": "same",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1143",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1145",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1147",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1151",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_116",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1155",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1167",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1177",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1169",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1184",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1189",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1196",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1199",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1212",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1217",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_122",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1223",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1231",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1237",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1269",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_124",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1273",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1293",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1296",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1297",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_13",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1307",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1328",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1334",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_132",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1311",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1348",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1392",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_138",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_140",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1408",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1412",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1414",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1416",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1421",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1432",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1434",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1436",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1453",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1471",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1477",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1487",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1492",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1493",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1494",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1518",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1520",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_153",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1551",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1567",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1574",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1575",
+   "human": "same",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1625",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1629",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_163",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1639",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1640",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1645",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1652",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1654",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1663",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1666",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1670",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1672",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1689",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1691",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1698",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1699",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1707",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1712",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1713",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1717",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1721",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1722",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1732",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1745",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1778",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1796",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1804",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1807",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1808",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1816",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1837",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1844",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1855",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1861",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1864",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1866",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1869",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1874",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1879",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1891",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1911",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1914",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1922",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1925",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_193",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1937",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1941",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1988",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_1992",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_1996",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2007",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2011",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2014",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2017",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2023",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2031",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2033",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2073",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2076",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_208",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2109",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2114",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2120",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2168",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_218",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2194",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2199",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2202",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2211",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2218",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2232",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2252",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2264",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2265",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2277",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2286",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2287",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2289",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2295",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_23",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2303",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2308",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2318",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2323",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2329",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_233",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2333",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2342",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2344",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2356",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2365",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_237",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2371",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2378",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2396",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2400",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2402",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2406",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2418",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2431",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2432",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2439",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_244",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2443",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2444",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2456",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2462",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2466",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_247",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2488",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2495",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2502",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2508",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2516",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2521",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2524",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2527",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2531",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_2555",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_256",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2569",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2572",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2592",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2596",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2600",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2609",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2622",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2627",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2629",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2631",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2638",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_2656",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_280",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_285",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_286",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_290",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_30",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_302",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_304",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_309",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_311",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_313",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_32",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_334",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_342",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_35",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_36",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_371",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_389",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_390",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_402",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_412",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_430",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_435",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_447",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_449",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_451",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_452",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_454",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_460",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_483",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_490",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_507",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_508",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_516",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_517",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_533",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_557",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_571",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_577",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_579",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_58",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_583",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_594",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_598",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_6",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_600",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_622",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_628",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_635",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_660",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_665",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_669",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_675",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_696",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_701",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_707",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_708",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_715",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_717",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_734",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_742",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_748",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_75",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_761",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_781",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_785",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_790",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_792",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_795",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_799",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_802",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_807",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_825",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_826",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_829",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_830",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_842",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_854",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_866",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_874",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_899",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_90",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_901",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_920",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_927",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_929",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_938",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_949",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_951",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_952",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_958",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_963",
+   "human": "different",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_967",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_968",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_975",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_976",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_981",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_986",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  },
+  {
+   "pair_id": "p_987",
+   "human": "different",
+   "verdict": "different",
+   "raw_head": "DIFFERENT"
+  },
+  {
+   "pair_id": "p_988",
+   "human": "same",
+   "verdict": "same",
+   "raw_head": "SAME"
+  }
+ ]
+}

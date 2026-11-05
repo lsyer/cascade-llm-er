@@ -1,0 +1,68 @@
+{
+ "GLM-5-Turbo": {
+  "location": {
+   "c": 483,
+   "n": 503
+  },
+  "equipment": {
+   "c": 301,
+   "n": 344
+  },
+  "organization": {
+   "c": 27,
+   "n": 27
+  },
+  "event": {
+   "c": 564,
+   "n": 646
+  },
+  "person": {
+   "c": 70,
+   "n": 71
+  }
+ },
+ "GLM-4.5-Air": {
+  "location": {
+   "c": 484,
+   "n": 503
+  },
+  "equipment": {
+   "c": 296,
+   "n": 344
+  },
+  "organization": {
+   "c": 27,
+   "n": 27
+  },
+  "event": {
+   "c": 520,
+   "n": 646
+  },
+  "person": {
+   "c": 69,
+   "n": 71
+  }
+ },
+ "GLM-4.5": {
+  "location": {
+   "c": 476,
+   "n": 503
+  },
+  "equipment": {
+   "c": 296,
+   "n": 344
+  },
+  "organization": {
+   "c": 26,
+   "n": 27
+  },
+  "event": {
+   "c": 467,
+   "n": 646
+  },
+  "person": {
+   "c": 66,
+   "n": 71
+  }
+ }
+}

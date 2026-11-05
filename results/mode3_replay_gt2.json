@@ -1,0 +1,39 @@
+{
+ "fold_thresholds": [
+  [
+   0.95,
+   0.05
+  ],
+  [
+   0.85,
+   0.05
+  ],
+  [
+   0.95,
+   0.05
+  ],
+  [
+   0.85,
+   0.05
+  ],
+  [
+   0.95,
+   0.05
+  ]
+ ],
+ "n_features": 42,
+ "glm": {
+  "strict": 91.05,
+  "cost_pct": 78.3,
+  "l1_acc": 94.0,
+  "intercept_pct": 21.7,
+  "unresolved": 5
+ },
+ "qwen": {
+  "strict": 94.37,
+  "cost_pct": 78.3,
+  "l1_acc": 94.0,
+  "intercept_pct": 21.7,
+  "unresolved": 0
+ }
+}

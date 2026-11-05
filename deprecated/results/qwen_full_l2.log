@@ -1,0 +1,33 @@
+Total pairs to evaluate: 2639
+Pairs missing props_a: 0
+Resuming: 2639 done, 0 remaining
+To run: 0 pairs with 5 workers
+
+============================================================
+GLM-5-Turbo L2 experiment complete
+============================================================
+Total: 2639
+Verdicts: {'same': 1226, 'different': 1407, 'unknown': 6}
+Saved to: /root/workspace/tanshu-specs/experiments/release/results/checkpoints_v3/glm-5-turbo_checkpoint.json
+total 2591, done 0, todo 2591
+200/2591 (37s)
+400/2591 (73s)
+600/2591 (112s)
+800/2591 (147s)
+1000/2591 (183s)
+1200/2591 (220s)
+1400/2591 (256s)
+1600/2591 (291s)
+1800/2591 (327s)
+2000/2591 (363s)
+2200/2591 (399s)
+2400/2591 (435s)
+{
+ "model": "Qwen3.6-35B-A3B",
+ "n": 2591,
+ "unresolved": 0,
+ "resolved_acc_pct": 95.21,
+ "overall_strict_pct": 95.21,
+ "glm5turbo_full_ref": 91.6,
+ "elapsed_s": 469
+}
