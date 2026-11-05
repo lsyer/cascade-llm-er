@@ -45,10 +45,10 @@ def parse_verdict(v):
     if isinstance(v, dict):
         v = v.get('verdict', v.get('raw', ''))
     v = str(v).strip().lower()
-    if re.search(r'\bsame\b|\bmatch\b|\bidentical\b|yes|是', v):
-        return 1
-    if re.search(r'\bdifferent\b|\bnot.*match\b|\bdistinct\b|no|否|不同', v):
+    if re.search(r'\bdifferent\b|\bnot.*match\b|\bnot.*same\b|\bdistinct\b|\bno\b|\bunknown\b|否|不同', v):
         return 0
+    if re.search(r'\bsame\b|\bmatch\b|\bidentical\b|\byes\b|是', v):
+        return 1
     return None
 
 
@@ -122,7 +122,7 @@ for i in range(N):
     cand.union(vids_a[i], vids_b[i])
 comp_members = defaultdict(list)
 all_vids = set(vids_a) | set(vids_b)
-for v in all_vids:
+for v in sorted(all_vids):
     comp_members[cand.find(v)].append(v)
 universe_pairs = 0
 gt_same_pairs = set()
@@ -159,8 +159,6 @@ for name, decisions in policy_decisions().items():
     prec = tp / len(pred_same) * 100 if pred_same else 0.0
     rec = tp / len(gt_same_pairs) * 100
     f1 = 2 * prec * rec / (prec + rec) if prec + rec else 0.0
-    n_clusters = sum(1 for members in comp_members.values()
-                     if members and closure(decisions).find(members[0]) == closure(decisions).find(members[0]))
     # count predicted clusters with >= 2 members
     pc = defaultdict(list)
     for members in comp_members.values():

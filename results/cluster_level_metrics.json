@@ -1,7 +1,7 @@
 {
  "protocol": "pairwise cluster metrics over entity pairs sharing a candidate-graph component (2012 entities, 4629 adjudicable pairs)",
  "gt_same_entity_pairs": 1795,
- "gt_clusters_ge2": 431,
+ "gt_clusters_ge2": 439,
  "policies": {
   "fixed_l1_cascade": {
    "pairwise_precision_pct": 86.8,
